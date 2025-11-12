@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sem 3 — Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #fff;
+      min-height: 100vh;
+      padding: 60px 24px;
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.03) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+      animation: fadeInDown 0.6s ease-out;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 24px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .subtitle {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 16px;
+      font-weight: 400;
+    }
+    
+    .count {
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      margin-bottom: 32px;
+      animation: fadeIn 0.8s ease-out;
+    }
+    
+    .count span {
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    
+    .card {
+      padding: 12px 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      text-decoration: none;
+      color: #333;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      animation: slideUp 0.5s ease-out forwards;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, #000, #1a1a1a);
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.4s ease;
+    }
+    
+    .card:hover::before {
+      transform: scaleY(1);
+    }
+    
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+    
+    .card:hover {
+      transform: translateX(4px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      background: #fff;
+    }
+    
+    .card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #000, #1a1a1a);
+      display: grid;
+      place-items: center;
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .card:active {
+      transform: translateX(2px);
+    }
+    
+    .card-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #1a1a1a;
+      transition: color 0.3s ease;
+    }
+    
+    .card:hover .card-title {
+      color: #000;
+    }
+    
+    .card-meta {
+      display: none;
+    }
+    
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 13px;
+      animation: fadeIn 1s ease-out;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .contribution {
+      margin-top: 16px;
+      padding: 16px 24px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+    
+    .contribution-title {
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 6px;
+    }
+    
+    .contribution-text {
+      color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .contribution-number {
+      color: #000;
+      font-weight: 600;
+      font-family: 'Monaco', monospace;
+    }
+    
+    footer .path {
+      font-family: 'Monaco', monospace;
+      margin-bottom: 8px;
+      opacity: 0.8;
+    }
+    
+    footer span {
+      color: #000;
+      font-weight: 600;
+    }
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 40px 16px;
+      }
+      
+      h1 {
+        font-size: 32px;
+      }
+      
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">⚡</div>
+      <h1>Sem 3 Notes</h1>
+      <div class="subtitle">Your organized knowledge base</div>
+    </header>
+
+    <main>
+      <div class="count"><span id="count">0</span> folders available</div>
+      
+      <div id="grid" class="grid"></div>
+    </main>
+
+    <footer>
+      <div class="path">/home/musafir/notes_public</div>
+      <div>Made with ❤️ by <span>Ibrahim Shaikh</span></div>
+      
+      <div class="contribution">
+        <div class="contribution-title">📝 Contribute Notes</div>
+        <div class="contribution-text">
+          Send me notes to contribute: <span class="contribution-number">9969379339</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const items = [
+      { href: 'aoa/', title: 'AOA', meta: 'directory', icon: 'A' },
+      { href: 'coa/', title: 'COA', meta: 'directory', icon: 'C' },
+      { href: 'dsgt/', title: 'DSGT', meta: 'directory', icon: 'D' },
+      { href: 'maths/', title: 'Maths', meta: 'directory', icon: 'M' },
+      { href: 'oe/', title: 'OE', meta: 'directory', icon: 'O' },
+    ];
+
+    const grid = document.getElementById('grid');
+    const count = document.getElementById('count');
+
+    function render() {
+      grid.innerHTML = items.map(item => `
+        <a href="${item.href}" class="card">
+          <div class="card-title">${item.title}</div>
+        </a>
+      `).join('');
+      count.textContent = items.length;
+    }
+
+    render();
+  </script>
+</body>
+</html>
