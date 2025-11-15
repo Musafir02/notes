@@ -9,234 +9,434 @@
     gtag('config', 'G-03022V9LRJ');
   </script>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
   <title>Sem 3 — Notes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
-    body {
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: #000;
-      min-height: 100vh;
-      padding: 60px 24px;
-      position: relative;
-      overflow-x: hidden;
+    :root {
+      --primary: #ffffff;
+      --secondary: #888888;
+      --accent: #ffffff;
     }
     
-    #light-rays-canvas {
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0a;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    #animated-bg {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
       z-index: 0;
-      opacity: 0.6;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    
+    .grain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.01) 2px,
+        rgba(255, 255, 255, 0.01) 4px
+      );
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.3;
     }
     
     .container {
-      max-width: 800px;
+      max-width: 1400px;
       margin: 0 auto;
+      padding: 0 32px;
       position: relative;
-      z-index: 1;
+      z-index: 2;
     }
     
-    header {
-      text-align: center;
-      margin-bottom: 56px;
-      animation: fadeInDown 0.6s ease-out;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+      animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
     
-    .logo {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 24px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    
+    .nav-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      border-radius: 10px;
       display: grid;
       place-items: center;
-      font-size: 36px;
-      font-weight: 700;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-      animation: float 3s ease-in-out infinite;
+      font-size: 20px;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .nav-link {
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    
+    @media (hover: hover) {
+      .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.05);
+      }
+    }
+    
+    .hero {
+      padding: 80px 0 120px;
+      text-align: center;
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 24px;
+      animation: fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+    }
+    
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      animation: blink 1.5s ease-in-out infinite;
     }
     
     h1 {
-      font-size: 42px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 96px;
       font-weight: 700;
-      color: #fff;
-      margin-bottom: 12px;
-      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.03em;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
     }
     
     .subtitle {
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 600px;
+      margin: 0 auto 48px;
+      line-height: 1.6;
     }
     
-    .count {
-      text-align: center;
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 14px;
-      margin-bottom: 32px;
-      animation: fadeIn 0.8s ease-out;
-    }
-    
-    .count span {
-      color: #fff;
-      font-weight: 600;
-      font-size: 18px;
-    }
-    
-    .grid {
+    .cta-buttons {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+      gap: 16px;
       justify-content: center;
+      flex-wrap: wrap;
     }
     
-    .card {
-      padding: 12px 20px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    .btn {
+      padding: 16px 32px;
       border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #ffffff, #cccccc);
+      color: #000;
+      box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
+    }
+    
+    @media (hover: hover) {
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 48px rgba(255, 255, 255, 0.3);
+      }
+    }
+    
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+    
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    
+    @media (hover: hover) {
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+    
+    .btn-secondary:active {
+      transform: scale(0.98);
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+    }
+    
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    
+    .section-title .animated-word {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    
+    .section-title .animated-word:hover {
+      transform: scale(1.05);
+    }
+    
+    .section-subtitle {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .subjects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-bottom: 48px;
+      max-width: 700px;
+      margin: 0 auto;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+    }
+    
+    .subject-card:last-child {
+      grid-column: 1 / -1;
+      max-width: 340px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .contribute-section {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+    }
+
+    .contribute-text {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 500;
+    }
+    
+    .subject-card {
+      position: relative;
+      padding: 32px 24px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
       text-decoration: none;
       color: #fff;
-      display: inline-flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 12px;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      position: relative;
+      transition: all 0.3s ease;
       overflow: hidden;
-      opacity: 0;
-      animation: slideUp 0.5s ease-out forwards;
-      -webkit-tap-highlight-color: transparent;
-      user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      cursor: pointer;
+      min-height: 180px;
     }
     
-    .card::before {
+    .subject-card::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
+      right: 0;
       bottom: 0;
-      width: 3px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: transform 0.4s ease;
+      background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
     
-    .card:hover::before {
-      transform: scaleY(1);
+    @media (hover: hover) and (pointer: fine) {
+      .subject-card {
+        will-change: transform;
+      }
+      
+      .subject-card:hover::before {
+        opacity: 1;
+      }
+      
+      .subject-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(59, 130, 246, 0.4);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.2);
+      }
     }
     
-    .card:nth-child(1) { animation-delay: 0.1s; }
-    .card:nth-child(2) { animation-delay: 0.2s; }
-    .card:nth-child(3) { animation-delay: 0.3s; }
-    .card:nth-child(4) { animation-delay: 0.4s; }
-    .card:nth-child(5) { animation-delay: 0.5s; }
-    
-    .card:hover {
-      transform: translateX(4px);
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.2);
+    .subject-card:active {
+      transform: translateY(-2px);
+      transition: all 0.1s ease;
     }
     
-    .card-icon {
+    .subject-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .subject-icon {
       width: 56px;
       height: 56px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
-      backdrop-filter: blur(10px);
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
       border: 1px solid rgba(255, 255, 255, 0.2);
       display: grid;
       place-items: center;
-      color: #fff;
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 700;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
+      font-family: 'Space Grotesk', sans-serif;
     }
     
-    .card:active {
-      transform: translateX(2px);
+    @media (hover: hover) and (pointer: fine) {
+      .subject-card:hover .subject-icon {
+        transform: scale(1.1) rotate(-5deg);
+        box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.4);
+      }
     }
     
-    .card-title {
-      font-weight: 600;
-      font-size: 15px;
-      color: #fff;
-      transition: color 0.3s ease;
+    .subject-arrow {
+      display: none;
     }
     
-    .card:hover .card-title {
-      color: #fff;
+    .subject-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
     }
     
-    .card-meta {
+    .subject-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    
+    .subject-desc {
+      display: none;
+    }
+    
+    .stats {
       display: none;
     }
     
     footer {
-      margin-top: 80px;
-      padding-top: 32px;
+      padding: 20px 0 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       text-align: center;
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 13px;
-      animation: fadeIn 1s ease-out;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
     }
     
-    .contribution {
-      margin-top: 16px;
-      padding: 16px 24px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    .footer-bottom {
+      display: none;
+    }
+
+    .contribute-btn {
+      padding: 16px 32px;
       border-radius: 12px;
-      display: inline-block;
-    }
-    
-    .contribution-title {
       font-weight: 600;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       color: #fff;
-      margin-bottom: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: none;
     }
     
-    .contribution-text {
-      color: rgba(255, 255, 255, 0.7);
-    }
-    
-    .contribution-number {
-      color: #fff;
-      font-weight: 600;
-      font-family: 'Monaco', monospace;
-    }
-    
-    footer .path {
-      font-family: 'Monaco', monospace;
-      margin-bottom: 8px;
-      opacity: 0.8;
-    }
-    
-    footer span {
-      color: #fff;
-      font-weight: 600;
-    }
-    
-    @keyframes fadeInDown {
+    @keyframes slideDown {
       from {
         opacity: 0;
-        transform: translateY(-30px);
+        transform: translateY(-20px);
       }
       to {
         opacity: 1;
@@ -244,19 +444,30 @@
       }
     }
     
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    @keyframes slideUp {
+    @keyframes fadeInUp {
       from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
       }
       to {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+    
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
       }
     }
     
@@ -269,226 +480,307 @@
       }
     }
     
-    @media (max-width: 600px) {
-      body {
-        padding: 40px 16px;
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    
+    @media (max-width: 1024px) {
+      .subjects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+      }
+      
+      .subject-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 290px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 20px;
+      }
+      
+      nav {
+        padding: 24px 0;
+      }
+      
+      .nav-logo {
+        font-size: 18px;
+      }
+      
+      .nav-logo-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
       }
       
       h1 {
-        font-size: 32px;
+        font-size: 52px;
       }
       
-      .grid {
-        grid-template-columns: 1fr;
+      .hero {
+        padding: 40px 0 60px;
+      }
+      
+      .subjects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        max-width: 100%;
+      }
+      
+      .subject-card {
+        min-height: 160px;
+        padding: 24px 20px;
+      }
+      
+      .subject-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 28px;
+      }
+      
+      .subject-title {
+        font-size: 16px;
+      }
+      
+      .subject-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 48%;
+        margin: 0 auto;
+      }
+      
+      .section-title {
+        font-size: 24px;
+      }
+      
+      .section-subtitle {
+        font-size: 16px;
+      }
+      
+      .contribute-section .contribute-btn {
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+      }
+      
+      footer {
+        padding: 16px 20px 32px;
+        font-size: 13px;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 42px;
+      }
+      
+      .hero {
+        padding: 30px 0 50px;
+      }
+      
+      .section-header {
+        margin-bottom: 40px;
+      }
+      
+      .section-title {
+        font-size: 20px;
+      }
+      
+      .btn {
+        padding: 14px 24px;
+        font-size: 14px;
+      }
+      
+      .subject-card {
+        min-height: 140px;
+      }
+      
+      .subject-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+      }
+      
+      .subject-title {
+        font-size: 14px;
+      }
+      
+      .subject-card:last-child {
+        max-width: 47%;
       }
     }
   </style>
 </head>
 <body>
-  <canvas id="light-rays-canvas"></canvas>
+  <canvas id="animated-bg"></canvas>
+  <div class="grain"></div>
   
   <div class="container">
-    <header>
-      <div class="logo">⚡</div>
-      <h1>Sem 3 Notes</h1>
-      <div class="subtitle">Your organized knowledge base</div>
-    </header>
+    <nav>
+    </nav>
 
-    <main>
-      <div class="count"><span id="count">0</span> folders available</div>
+    <section class="hero">
+      <h1>Your <span class="gradient-text">Ultimate</span><br>Study Resource</h1>
+    </section>
+
+    <section id="subjects">
+      <div class="section-header">
+        <h2 class="section-title">Semester 3 <span class="animated-word">Subject</span> Notes</h2>
+
+      </div>
       
-      <div id="grid" class="grid"></div>
-    </main>
+      <div class="subjects-grid" id="subjects-grid"></div>
+      
+      <div class="contribute-section">
+        <div class="contribute-text">Made by Ibrahim Shaikh</div>
+      </div>
+    </section>
 
     <footer>
-      <div>Made by <span>Ibrahim Shaikh</span></div>
-      
-      <div class="contribution">
-        <div class="contribution-title">📝 Contribute Notes</div>
-        <div class="contribution-text">
-          Send me notes to contribute<span class="contribution-number"></span>
-        </div>
-      </div>
+      <div>Contribute by sending your notes</div>
     </footer>
   </div>
 
   <script>
-    const items = [
-      { href: 'aoa/', title: 'AOA', meta: 'directory', icon: 'A' },
-      { href: 'coa/', title: 'COA', meta: 'directory', icon: 'C' },
-      { href: 'dsgt/', title: 'DSGT', meta: 'directory', icon: 'D' },
-      { href: 'maths/', title: 'Maths', meta: 'directory', icon: 'M' },
-      { href: 'oe/', title: 'OE', meta: 'directory', icon: 'O' },
+    const subjects = [
+      { 
+        href: 'aoa/', 
+        title: 'Analysis of Algorithms',
+        icon: 'A'
+      },
+      { 
+        href: 'coa/', 
+        title: 'Computer Organization',
+        icon: 'C'
+      },
+      { 
+        href: 'dsgt/', 
+        title: 'Data Structures',
+        icon: 'D'
+      },
+      { 
+        href: 'maths/', 
+        title: 'Mathematics III',
+        icon: 'M'
+      },
+      { 
+        href: 'oe/', 
+        title: 'Open Elective',
+        icon: 'O'
+      },
     ];
 
-    const grid = document.getElementById('grid');
-    const count = document.getElementById('count');
+    const grid = document.getElementById('subjects-grid');
 
     function render() {
-      grid.innerHTML = items.map(item => `
-        <a href="${item.href}" class="card">
-          <div class="card-title">${item.title}</div>
+      grid.innerHTML = subjects.map(subject => `
+        <a href="${subject.href}" class="subject-card">
+          <div class="subject-header">
+            <div class="subject-icon">${subject.icon}</div>
+          </div>
+          <div class="subject-content">
+            <h3 class="subject-title">${subject.title}</h3>
+          </div>
         </a>
       `).join('');
-      count.textContent = items.length;
+
+      document.querySelectorAll('.subject-card').forEach(card => {
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        
+        if (!isMobile) {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            card.style.setProperty('--mouse-x', `${x}%`);
+            card.style.setProperty('--mouse-y', `${y}%`);
+          });
+          
+          card.addEventListener('mouseleave', () => {
+            card.style.setProperty('--mouse-x', '50%');
+            card.style.setProperty('--mouse-y', '50%');
+          });
+        }
+      });
     }
 
     render();
   </script>
 
   <script>
-    const canvas = document.getElementById('light-rays-canvas');
-    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    const canvas = document.getElementById('animated-bg');
+    const ctx = canvas.getContext('2d');
     
-    if (!gl) {
-      console.warn('WebGL not supported');
-    } else {
-      const dpr = Math.min(window.devicePixelRatio, 2);
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const gradient = ctx.createRadialGradient(
+      canvas.width / 2, canvas.height / 2, 0,
+      canvas.width / 2, canvas.height / 2, canvas.width / 2
+    );
+    gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
+    gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
+    gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
       
-      function resize() {
-        canvas.width = window.innerWidth * dpr;
-        canvas.height = window.innerHeight * dpr;
-        gl.viewport(0, 0, canvas.width, canvas.height);
-      }
+      const gradient = ctx.createRadialGradient(
+        canvas.width / 2, canvas.height / 2, 0,
+        canvas.width / 2, canvas.height / 2, canvas.width / 2
+      );
+      gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
+      gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
+      gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
       
-      resize();
-      window.addEventListener('resize', resize);
-      
-      const vertexShaderSource = `
-        attribute vec2 position;
-        void main() {
-          gl_Position = vec4(position, 0.0, 1.0);
-        }
-      `;
-      
-      const fragmentShaderSource = `
-        precision highp float;
-        uniform float iTime;
-        uniform vec2 iResolution;
-        uniform vec2 mousePos;
-        
-        float rayStrength(vec2 raySource, vec2 rayRefDirection, vec2 coord, float seedA, float seedB, float speed) {
-          vec2 sourceToCoord = coord - raySource;
-          float distance = length(sourceToCoord);
-          vec2 direction = normalize(sourceToCoord);
-          
-          float cosAngle = dot(direction, rayRefDirection);
-          float spreadFactor = pow(max(cosAngle, 0.0), 2.0);
-          
-          float maxDistance = iResolution.x * 1.5;
-          float lengthFalloff = clamp((maxDistance - distance) / maxDistance, 0.0, 1.0);
-          
-          float fadeFalloff = clamp((iResolution.x * 0.8 - distance) / (iResolution.x * 0.8), 0.5, 1.0);
-          
-          float baseStrength = clamp(
-            (0.45 + 0.15 * sin(cosAngle * seedA + iTime * speed)) +
-            (0.3 + 0.2 * cos(-cosAngle * seedB + iTime * speed)),
-            0.0, 1.0
-          );
-          
-          return baseStrength * lengthFalloff * fadeFalloff * spreadFactor;
-        }
-        
-        void main() {
-          vec2 coord = gl_FragCoord.xy;
-          vec2 raySource = vec2(iResolution.x * 0.5, -0.2 * iResolution.y);
-          vec2 rayDirection = vec2(0.0, 1.0);
-          
-          vec2 mouseDir = normalize(mousePos * iResolution - raySource);
-          rayDirection = normalize(mix(rayDirection, mouseDir, 0.1));
-          
-          float rays1 = rayStrength(raySource, rayDirection, coord, 36.2214, 21.11349, 1.5);
-          float rays2 = rayStrength(raySource, rayDirection, coord, 22.3991, 18.0234, 1.1);
-          
-          float totalRays = rays1 * 0.5 + rays2 * 0.4;
-          
-          float brightness = 1.0 - (coord.y / iResolution.y);
-          vec3 color = vec3(
-            0.1 + brightness * 0.8,
-            0.3 + brightness * 0.6,
-            0.5 + brightness * 0.5
-          );
-          
-          gl_FragColor = vec4(color * totalRays, totalRays * 0.8);
-        }
-      `;
-      
-      function createShader(gl, type, source) {
-        const shader = gl.createShader(type);
-        gl.shaderSource(shader, source);
-        gl.compileShader(shader);
-        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-          console.error(gl.getShaderInfoLog(shader));
-          gl.deleteShader(shader);
-          return null;
-        }
-        return shader;
-      }
-      
-      const vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
-      const fragmentShader = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource);
-      
-      const program = gl.createProgram();
-      gl.attachShader(program, vertexShader);
-      gl.attachShader(program, fragmentShader);
-      gl.linkProgram(program);
-      
-      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-        console.error(gl.getProgramInfoLog(program));
-      }
-      
-      const positionBuffer = gl.createBuffer();
-      gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
-        -1, -1,
-         1, -1,
-        -1,  1,
-        -1,  1,
-         1, -1,
-         1,  1
-      ]), gl.STATIC_DRAW);
-      
-      const positionLocation = gl.getAttribLocation(program, 'position');
-      const iTimeLocation = gl.getUniformLocation(program, 'iTime');
-      const iResolutionLocation = gl.getUniformLocation(program, 'iResolution');
-      const mousePosLocation = gl.getUniformLocation(program, 'mousePos');
-      
-      gl.useProgram(program);
-      gl.enableVertexAttribArray(positionLocation);
-      gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-      gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
-      
-      gl.enable(gl.BLEND);
-      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
-      
-      let mouseX = 0.5, mouseY = 0.5;
-      let smoothMouseX = 0.5, smoothMouseY = 0.5;
-      
-      window.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX / window.innerWidth;
-        mouseY = 1.0 - (e.clientY / window.innerHeight);
-      });
-      
-      function render(time) {
-        time *= 0.001;
-        
-        smoothMouseX = smoothMouseX * 0.92 + mouseX * 0.08;
-        smoothMouseY = smoothMouseY * 0.92 + mouseY * 0.08;
-        
-        gl.clearColor(0, 0, 0, 1);
-        gl.clear(gl.COLOR_BUFFER_BIT);
-        
-        gl.uniform1f(iTimeLocation, time);
-        gl.uniform2f(iResolutionLocation, canvas.width, canvas.height);
-        gl.uniform2f(mousePosLocation, smoothMouseX, smoothMouseY);
-        
-        gl.drawArrays(gl.TRIANGLES, 0, 6);
-        
-        requestAnimationFrame(render);
-      }
-      
-      requestAnimationFrame(render);
-    }
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
   </script>
 </body>
 </html>
