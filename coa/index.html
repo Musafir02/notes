@@ -22,6 +22,7 @@
       padding: 60px 24px;
       position: relative;
       overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
     }
     
     #light-rays-canvas {
@@ -33,6 +34,8 @@
       pointer-events: none;
       z-index: 0;
       opacity: 0.6;
+      will-change: transform;
+      transform: translateZ(0);
     }
     
     .container {
@@ -84,7 +87,6 @@
       place-items: center;
       font-size: 40px;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-      animation: float 3s ease-in-out infinite;
     }
     
     h1 {

@@ -33,6 +33,7 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       -webkit-tap-highlight-color: transparent;
+      -webkit-overflow-scrolling: touch;
     }
     
     #animated-bg {
@@ -44,6 +45,8 @@
       z-index: 0;
       opacity: 0.4;
       pointer-events: none;
+      will-change: transform;
+      transform: translateZ(0);
     }
     
     .grain {
@@ -62,6 +65,8 @@
       z-index: 1;
       pointer-events: none;
       opacity: 0.3;
+      will-change: transform;
+      transform: translateZ(0);
     }
     
     .container {
@@ -147,7 +152,6 @@
       height: 6px;
       background: #fff;
       border-radius: 50%;
-      animation: blink 1.5s ease-in-out infinite;
     }
     
     h1 {
@@ -533,6 +537,10 @@
     }
     
     @media (max-width: 768px) {
+      .grain {
+        display: none;
+      }
+      
       .container {
         padding: 0 20px;
       }
