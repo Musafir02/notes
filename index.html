@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-03022V9LRJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-03022V9LRJ');
   </script>
@@ -13,16 +14,22 @@
   <title>Sem 3 — Notes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     :root {
       --primary: #ffffff;
       --secondary: #888888;
       --accent: #ffffff;
     }
-    
+
     body {
       font-family: 'Inter', -apple-system, sans-serif;
       background: #0a0a0a;
@@ -35,7 +42,7 @@
       -webkit-tap-highlight-color: transparent;
       -webkit-overflow-scrolling: touch;
     }
-    
+
     #animated-bg {
       position: fixed;
       top: 0;
@@ -48,27 +55,25 @@
       will-change: transform;
       transform: translateZ(0);
     }
-    
+
     .grain {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        rgba(255, 255, 255, 0.01) 2px,
-        rgba(255, 255, 255, 0.01) 4px
-      );
+      background: repeating-linear-gradient(0deg,
+          transparent,
+          transparent 2px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.01) 4px);
       z-index: 1;
       pointer-events: none;
       opacity: 0.3;
       will-change: transform;
       transform: translateZ(0);
     }
-    
+
     .container {
       max-width: 1400px;
       margin: 0 auto;
@@ -76,7 +81,7 @@
       position: relative;
       z-index: 2;
     }
-    
+
     nav {
       display: flex;
       justify-content: space-between;
@@ -84,7 +89,7 @@
       padding: 32px 0;
       animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    
+
     .nav-logo {
       display: flex;
       align-items: center;
@@ -93,7 +98,7 @@
       font-weight: 700;
       font-size: 20px;
     }
-    
+
     .nav-logo-icon {
       width: 40px;
       height: 40px;
@@ -103,12 +108,12 @@
       place-items: center;
       font-size: 20px;
     }
-    
+
     .nav-links {
       display: flex;
       gap: 8px;
     }
-    
+
     .nav-link {
       padding: 10px 20px;
       border-radius: 10px;
@@ -118,20 +123,20 @@
       font-weight: 500;
       transition: all 0.2s ease;
     }
-    
+
     @media (hover: hover) {
       .nav-link:hover {
         color: #fff;
         background: rgba(255, 255, 255, 0.05);
       }
     }
-    
+
     .hero {
       padding: 80px 0 120px;
       text-align: center;
       animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
     }
-    
+
     .badge {
       display: inline-flex;
       align-items: center;
@@ -146,14 +151,14 @@
       margin-bottom: 24px;
       animation: fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
     }
-    
+
     .badge-dot {
       width: 6px;
       height: 6px;
       background: #fff;
       border-radius: 50%;
     }
-    
+
     h1 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 96px;
@@ -166,7 +171,7 @@
       background-clip: text;
       letter-spacing: -0.03em;
     }
-    
+
     .gradient-text {
       background: linear-gradient(135deg, #ffffff, #888888);
       -webkit-background-clip: text;
@@ -175,7 +180,7 @@
       background-size: 200% 200%;
       animation: gradientShift 3s ease infinite;
     }
-    
+
     .subtitle {
       font-size: 20px;
       color: rgba(255, 255, 255, 0.5);
@@ -183,14 +188,14 @@
       margin: 0 auto 48px;
       line-height: 1.6;
     }
-    
+
     .cta-buttons {
       display: flex;
       gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
     }
-    
+
     .btn {
       padding: 16px 32px;
       border-radius: 12px;
@@ -204,47 +209,47 @@
       cursor: pointer;
       border: none;
     }
-    
+
     .btn-primary {
       background: linear-gradient(135deg, #ffffff, #cccccc);
       color: #000;
       box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
     }
-    
+
     @media (hover: hover) {
       .btn-primary:hover {
         transform: translateY(-2px);
         box-shadow: 0 12px 48px rgba(255, 255, 255, 0.3);
       }
     }
-    
+
     .btn-primary:active {
       transform: translateY(0);
     }
-    
+
     .btn-secondary {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
       color: #fff;
     }
-    
+
     @media (hover: hover) {
       .btn-secondary:hover {
         background: rgba(255, 255, 255, 0.1);
         border-color: rgba(255, 255, 255, 0.2);
       }
     }
-    
+
     .btn-secondary:active {
       transform: scale(0.98);
     }
-    
+
     .section-header {
       text-align: center;
       margin-bottom: 64px;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
     }
-    
+
     .section-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 40px;
@@ -252,7 +257,7 @@
       margin-bottom: 16px;
       letter-spacing: -0.02em;
     }
-    
+
     .section-title .animated-word {
       display: inline-block;
       background: linear-gradient(135deg, #ffffff, #888888);
@@ -264,16 +269,16 @@
       transition: transform 0.3s ease;
       cursor: default;
     }
-    
+
     .section-title .animated-word:hover {
       transform: scale(1.05);
     }
-    
+
     .section-subtitle {
       font-size: 18px;
       color: rgba(255, 255, 255, 0.5);
     }
-    
+
     .subjects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -283,14 +288,7 @@
       margin: 0 auto;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
     }
-    
-    .subject-card:last-child {
-      grid-column: 1 / -1;
-      max-width: 340px;
-      margin: 0 auto;
-      width: 100%;
-    }
-    
+
     .contribute-section {
       display: flex;
       justify-content: center;
@@ -303,7 +301,7 @@
       color: rgba(255, 255, 255, 0.6);
       font-weight: 500;
     }
-    
+
     .subject-card {
       position: relative;
       padding: 32px 24px;
@@ -322,7 +320,7 @@
       cursor: pointer;
       min-height: 180px;
     }
-    
+
     .subject-card::before {
       content: '';
       position: absolute;
@@ -334,16 +332,16 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-    
+
     @media (hover: hover) and (pointer: fine) {
       .subject-card {
         will-change: transform;
       }
-      
+
       .subject-card:hover::before {
         opacity: 1;
       }
-      
+
       .subject-card:hover {
         transform: translateY(-8px);
         border-color: rgba(59, 130, 246, 0.4);
@@ -351,12 +349,12 @@
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.2);
       }
     }
-    
+
     .subject-card:active {
       transform: translateY(-2px);
       transition: all 0.1s ease;
     }
-    
+
     .subject-header {
       display: flex;
       flex-direction: column;
@@ -365,7 +363,7 @@
       position: relative;
       z-index: 1;
     }
-    
+
     .subject-icon {
       width: 56px;
       height: 56px;
@@ -379,7 +377,7 @@
       transition: all 0.3s ease;
       font-family: 'Space Grotesk', sans-serif;
     }
-    
+
     @media (hover: hover) and (pointer: fine) {
       .subject-card:hover .subject-icon {
         transform: scale(1.1) rotate(-5deg);
@@ -387,39 +385,39 @@
         border-color: rgba(255, 255, 255, 0.4);
       }
     }
-    
+
     .subject-arrow {
       display: none;
     }
-    
+
     .subject-content {
       position: relative;
       z-index: 1;
       text-align: center;
     }
-    
+
     .subject-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 18px;
       font-weight: 700;
       letter-spacing: -0.01em;
     }
-    
+
     .subject-desc {
       display: none;
     }
-    
+
     .stats {
       display: none;
     }
-    
+
     footer {
       padding: 20px 0 40px;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
       text-align: center;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
     }
-    
+
     .footer-bottom {
       display: none;
     }
@@ -436,85 +434,117 @@
       transition: all 0.3s ease;
       display: none;
     }
-    
+
     @keyframes slideDown {
       from {
         opacity: 0;
         transform: translateY(-20px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-    
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
         transform: translateY(40px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-    
+
     @keyframes gradientShift {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
     }
-    
+
     @keyframes fadeInScale {
       from {
         opacity: 0;
         transform: scale(0.95);
       }
+
       to {
         opacity: 1;
         transform: scale(1);
       }
     }
-    
+
     @keyframes float {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0px);
       }
+
       50% {
         transform: translateY(-10px);
       }
     }
-    
+
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
     }
-    
+
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
     }
-    
+
     @keyframes fadeInScale {
       from {
         opacity: 0;
         transform: scale(0.95);
       }
+
       to {
         opacity: 1;
         transform: scale(1);
       }
     }
-    
+
     @keyframes float {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0px);
       }
+
       50% {
         transform: translateY(-10px);
       }
     }
-    
+
     @media (prefers-reduced-motion: reduce) {
+
       *,
       *::before,
       *::after {
@@ -523,147 +553,133 @@
         transition-duration: 0.01ms !important;
       }
     }
-    
+
     @media (max-width: 1024px) {
       .subjects-grid {
         grid-template-columns: repeat(2, 1fr);
         max-width: 600px;
       }
-      
-      .subject-card:last-child {
-        grid-column: 1 / -1;
-        max-width: 290px;
-      }
     }
-    
+
     @media (max-width: 768px) {
       .grain {
         display: none;
       }
-      
+
       .container {
         padding: 0 20px;
       }
-      
+
       nav {
         padding: 24px 0;
       }
-      
+
       .nav-logo {
         font-size: 18px;
       }
-      
+
       .nav-logo-icon {
         width: 36px;
         height: 36px;
         font-size: 18px;
       }
-      
+
       h1 {
         font-size: 52px;
       }
-      
+
       .hero {
         padding: 40px 0 60px;
       }
-      
+
       .subjects-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         max-width: 100%;
       }
-      
+
       .subject-card {
         min-height: 160px;
         padding: 24px 20px;
       }
-      
+
       .subject-icon {
         width: 56px;
         height: 56px;
         font-size: 28px;
       }
-      
+
       .subject-title {
         font-size: 16px;
       }
-      
-      .subject-card:last-child {
-        grid-column: 1 / -1;
-        max-width: 48%;
-        margin: 0 auto;
-      }
-      
+
       .section-title {
         font-size: 24px;
       }
-      
+
       .section-subtitle {
         font-size: 16px;
       }
-      
+
       .contribute-section .contribute-btn {
         width: 100%;
         max-width: 400px;
         justify-content: center;
       }
-      
+
       footer {
         padding: 16px 20px 32px;
         font-size: 13px;
       }
-      
+
       .nav-links {
         display: none;
       }
     }
-    
+
     @media (max-width: 480px) {
       h1 {
         font-size: 42px;
       }
-      
+
       .hero {
         padding: 30px 0 50px;
       }
-      
+
       .section-header {
         margin-bottom: 40px;
       }
-      
+
       .section-title {
         font-size: 20px;
       }
-      
+
       .btn {
         padding: 14px 24px;
         font-size: 14px;
       }
-      
+
       .subject-card {
         min-height: 140px;
       }
-      
+
       .subject-icon {
         width: 48px;
         height: 48px;
         font-size: 24px;
       }
-      
+
       .subject-title {
         font-size: 14px;
-      }
-      
-      .subject-card:last-child {
-        max-width: 47%;
       }
     }
   </style>
 </head>
+
 <body>
   <canvas id="animated-bg"></canvas>
   <div class="grain"></div>
-  
+
   <div class="container">
     <nav>
     </nav>
@@ -677,9 +693,9 @@
         <h2 class="section-title">Semester 3 <span class="animated-word">Subject</span> Notes</h2>
 
       </div>
-      
+
       <div class="subjects-grid" id="subjects-grid"></div>
-      
+
       <div class="contribute-section">
         <div class="contribute-text">Made by Ibrahim Shaikh</div>
       </div>
@@ -692,30 +708,35 @@
 
   <script>
     const subjects = [
-      { 
-        href: 'aoa/', 
+      {
+        href: 'aoa/',
         title: 'Analysis of Algorithms',
         icon: 'A'
       },
-      { 
-        href: 'coa/', 
+      {
+        href: 'coa/',
         title: 'Computer Organization & Architecture',
         icon: 'C'
       },
-      { 
-        href: 'dsgt/', 
+      {
+        href: 'dsgt/',
         title: 'Discrete Structure & Graph Theory',
         icon: 'D'
       },
-      { 
-        href: 'maths/', 
+      {
+        href: 'maths/',
         title: 'Mathematics III',
         icon: 'M'
       },
-      { 
-        href: 'oe/', 
+      {
+        href: 'oe/',
         title: 'Open Elective',
         icon: 'O'
+      },
+      {
+        href: 'youtube/',
+        title: 'YouTube links',
+        icon: 'y'
       },
     ];
 
@@ -735,7 +756,7 @@
 
       document.querySelectorAll('.subject-card').forEach(card => {
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        
+
         if (!isMobile) {
           card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
@@ -744,7 +765,7 @@
             card.style.setProperty('--mouse-x', `${x}%`);
             card.style.setProperty('--mouse-y', `${y}%`);
           });
-          
+
           card.addEventListener('mouseleave', () => {
             card.style.setProperty('--mouse-x', '50%');
             card.style.setProperty('--mouse-y', '50%');
@@ -759,10 +780,10 @@
   <script>
     const canvas = document.getElementById('animated-bg');
     const ctx = canvas.getContext('2d');
-    
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    
+
     const gradient = ctx.createRadialGradient(
       canvas.width / 2, canvas.height / 2, 0,
       canvas.width / 2, canvas.height / 2, canvas.width / 2
@@ -770,14 +791,14 @@
     gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
     gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
     gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
-    
+
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
+
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      
+
       const gradient = ctx.createRadialGradient(
         canvas.width / 2, canvas.height / 2, 0,
         canvas.width / 2, canvas.height / 2, canvas.width / 2
@@ -785,10 +806,11 @@
       gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
       gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
       gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
-      
+
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
     });
   </script>
 </body>
+
 </html>
