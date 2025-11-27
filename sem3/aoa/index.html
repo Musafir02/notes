@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-03022V9LRJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-03022V9LRJ');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AOA - Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #000;
+      min-height: 100vh;
+      padding: 60px 24px;
+      position: relative;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    #light-rays-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      margin-bottom: 32px;
+    }
+    
+    .back-btn:hover {
+      transform: translateX(-4px);
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      animation: fadeInDown 0.6s ease-out;
+    }
+    
+    .folder-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    h1 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .subtitle {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+    }
+    
+    .count {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      margin-bottom: 32px;
+      animation: fadeIn 0.8s ease-out;
+    }
+    
+    .count span {
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .pdf-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .pdf-card {
+      padding: 20px 24px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      animation: slideUp 0.5s ease-out forwards;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    .pdf-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.4s ease;
+    }
+    
+    .pdf-card:hover::before {
+      transform: scaleY(1);
+    }
+    
+    .pdf-card:nth-child(1) { animation-delay: 0.1s; }
+    .pdf-card:nth-child(2) { animation-delay: 0.15s; }
+    .pdf-card:nth-child(3) { animation-delay: 0.2s; }
+    .pdf-card:nth-child(4) { animation-delay: 0.25s; }
+    .pdf-card:nth-child(5) { animation-delay: 0.3s; }
+    .pdf-card:nth-child(6) { animation-delay: 0.35s; }
+    .pdf-card:nth-child(7) { animation-delay: 0.4s; }
+    .pdf-card:nth-child(8) { animation-delay: 0.45s; }
+    .pdf-card:nth-child(9) { animation-delay: 0.5s; }
+    .pdf-card:nth-child(10) { animation-delay: 0.55s; }
+    .pdf-card:nth-child(11) { animation-delay: 0.6s; }
+    .pdf-card:nth-child(12) { animation-delay: 0.65s; }
+    
+    .pdf-card:hover {
+      transform: translateX(6px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .pdf-icon {
+      width: 56px;
+      height: 56px;
+      min-width: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    .pdf-info {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    .pdf-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 4px;
+      word-break: break-word;
+    }
+    
+    .pdf-meta {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .pdf-arrow {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .pdf-card:hover .pdf-arrow {
+      color: #fff;
+      transform: translateX(4px);
+    }
+    
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+      animation: fadeIn 1s ease-out;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 40px 16px;
+      }
+      
+      h1 {
+        font-size: 32px;
+      }
+      
+      .pdf-card {
+        padding: 16px 20px;
+      }
+      
+      .pdf-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 20px;
+      }
+      
+      .pdf-title {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="light-rays-canvas"></canvas>
+  
+  <div class="container">
+    <a href="../index.html" class="back-btn">
+      <span>←</span>
+      <span>Back to Home</span>
+    </a>
+
+    <header>
+      <div class="folder-icon">📊</div>
+      <h1>AOA Notes</h1>
+      <div class="subtitle">Analysis of Algorithms</div>
+    </header>
+
+    <main>
+      <div class="count"><span>12</span> PDFs available</div>
+      
+      <div class="pdf-list">
+        <a href="AOA Previous Year Question.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">AOA Previous Year Question</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="aoa q&a .pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">aoa q&a</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="AOA Sample Paper NEP-2020.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">AOA Sample Paper NEP-2020</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="Aoa-1,2.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">Aoa-1,2</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="AOA....pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">AOA....</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="AOA.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">AOA</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="module 1.aoa.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">module 1.aoa</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="module 2.AoA.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">module 2.AoA</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="module 3.aoa.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">module 3.aoa</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="module 4.aoa.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">module 4.aoa</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="module 5.aoa.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">module 5.aoa</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+
+        <a href="module 6.aoa.pdf" class="pdf-card" target="_blank">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-info">
+            <div class="pdf-title">module 6.aoa</div>
+            <div class="pdf-meta"><span>PDF Document</span></div>
+          </div>
+          <div class="pdf-arrow">→</div>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('light-rays-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    function drawGradient() {
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, 'rgba(25, 75, 125, 0.15)');
+      gradient.addColorStop(0.5, 'rgba(15, 45, 75, 0.1)');
+      gradient.addColorStop(1, 'rgba(5, 15, 25, 0.05)');
+      
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+    
+    drawGradient();
+    
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      drawGradient();
+    });
+  </script>
+</body>
+</html>

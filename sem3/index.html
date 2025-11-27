@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-03022V9LRJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-03022V9LRJ');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
+  <title>Sem 3 — Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #ffffff;
+      --secondary: #888888;
+      --accent: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0a;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0.4;
+      pointer-events: none;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    .grain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(0deg,
+          transparent,
+          transparent 2px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.01) 4px);
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.3;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+      animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero {
+      padding: 80px 0 120px;
+      text-align: center;
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.03em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 600px;
+      margin: 0 auto 48px;
+      line-height: 1.6;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title .animated-word {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+
+    .section-title .animated-word:hover {
+      transform: scale(1.05);
+    }
+
+    .subjects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding-bottom: 48px;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+    }
+
+    .subject-card {
+      position: relative;
+      padding: 32px 24px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      cursor: pointer;
+      min-height: 140px;
+      backdrop-filter: blur(10px);
+    }
+
+    .subject-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.15), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .subject-card:hover::before {
+        opacity: 1;
+      }
+
+      .subject-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 255, 255, 0.35);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .subject-card:hover .subject-arrow {
+        transform: translate(4px, -4px);
+      }
+    }
+
+    .subject-card:active {
+      transform: translateY(-2px);
+      transition: all 0.1s ease;
+    }
+
+    .subject-content {
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      width: 100%;
+    }
+
+    .subject-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .subject-arrow {
+      position: relative;
+      z-index: 1;
+      align-self: flex-end;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 24px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientShift {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .subjects-grid {
+        max-width: 550px;
+        gap: 14px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .grain {
+        display: none;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      nav {
+        padding: 24px 0;
+      }
+
+      h1 {
+        font-size: 52px;
+      }
+
+      .hero {
+        padding: 40px 0 60px;
+      }
+
+      .subjects-grid {
+        gap: 12px;
+        max-width: 100%;
+      }
+
+      .subject-card {
+        min-height: 120px;
+        padding: 24px 20px;
+        border-radius: 16px;
+      }
+
+      .subject-title {
+        font-size: 18px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .subject-arrow {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero {
+        padding: 30px 0 50px;
+      }
+
+      .section-header {
+        margin-bottom: 40px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .subjects-grid {
+        gap: 10px;
+      }
+
+      .subject-card {
+        min-height: 110px;
+        padding: 20px 18px;
+      }
+
+      .subject-title {
+        font-size: 16px;
+      }
+
+      .subject-arrow {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="animated-bg"></canvas>
+  <div class="grain"></div>
+
+  <div class="container">
+    <nav>
+      <a href="../index.html" class="back-btn">
+        <span>←</span>
+        <span>Back to Home</span>
+      </a>
+    </nav>
+
+    <section class="hero">
+      <h1>Semester <span class="gradient-text">3</span></h1>
+      <p class="subtitle">Select a subject to view notes</p>
+    </section>
+
+    <section id="subjects">
+      <div class="section-header">
+        <h2 class="section-title">Available <span class="animated-word">Subjects</span></h2>
+      </div>
+
+      <div class="subjects-grid" id="subjects-grid"></div>
+    </section>
+
+  </div>
+
+  <script>
+    const subjects = [
+      {
+        href: 'aoa/',
+        title: 'AOA'
+      },
+      {
+        href: 'coa/',
+        title: 'COA'
+      },
+      {
+        href: 'dsgt/',
+        title: 'DSGT'
+      },
+      {
+        href: 'maths/',
+        title: 'Maths'
+      },
+      {
+        href: 'oe/',
+        title: 'OE'
+      },
+      {
+        href: 'youtube/',
+        title: 'YouTube'
+      }
+    ];
+
+    const grid = document.getElementById('subjects-grid');
+
+    function render() {
+      grid.innerHTML = subjects.map(subject => `
+        <a href="${subject.href}" class="subject-card">
+          <div class="subject-content">
+            <h3 class="subject-title">${subject.title}</h3>
+          </div>
+          <div class="subject-arrow">→</div>
+        </a>
+      `).join('');
+    }
+
+    render();
+  </script>
+
+  <script>
+    const canvas = document.getElementById('animated-bg');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const gradient = ctx.createRadialGradient(
+      canvas.width / 2, canvas.height / 2, 0,
+      canvas.width / 2, canvas.height / 2, canvas.width / 2
+    );
+    gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
+    gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
+    gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const gradient = ctx.createRadialGradient(
+        canvas.width / 2, canvas.height / 2, 0,
+        canvas.width / 2, canvas.height / 2, canvas.width / 2
+      );
+      gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
+      gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
+      gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
+
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
+  </script>
+</body>
+
+</html>
