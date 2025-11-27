@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-03022V9LRJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-03022V9LRJ');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
+  <title>Sem 3 — Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #ffffff;
+      --secondary: #888888;
+      --accent: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0a;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0.4;
+      pointer-events: none;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    .grain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(0deg,
+          transparent,
+          transparent 2px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.01) 4px);
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.3;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+      animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .nav-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-link {
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    @media (hover: hover) {
+      .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.05);
+      }
+    }
+
+    .hero {
+      padding: 80px 0 120px;
+      text-align: center;
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 24px;
+      animation: fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.03em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 600px;
+      margin: 0 auto 48px;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ffffff, #cccccc);
+      color: #000;
+      box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
+    }
+
+    @media (hover: hover) {
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 48px rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    @media (hover: hover) {
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .btn-secondary:active {
+      transform: scale(0.98);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title .animated-word {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+
+    .section-title .animated-word:hover {
+      transform: scale(1.05);
+    }
+
+    .section-subtitle {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .subjects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-bottom: 48px;
+      max-width: 500px;
+      margin: 0 auto;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+    }
+
+    .contribute-section {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+    }
+
+    .contribute-text {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 500;
+    }
+
+    .subject-card {
+      position: relative;
+      padding: 20px 28px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      cursor: pointer;
+      width: auto;
+      min-height: 75px;
+    }
+
+    .subject-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .subject-card {
+        will-change: transform;
+      }
+
+      .subject-card:hover::before {
+        opacity: 1;
+      }
+
+      .subject-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(59, 130, 246, 0.4);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.2);
+      }
+    }
+
+    .subject-card:active {
+      transform: translateY(-2px);
+      transition: all 0.1s ease;
+    }
+
+    .subject-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .subject-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .subject-desc {
+      display: none;
+    }
+
+    .stats {
+      display: none;
+    }
+
+    footer {
+      padding: 20px 0 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: center;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
+    }
+
+    .footer-bottom {
+      display: none;
+    }
+
+    .contribute-btn {
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: none;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientShift {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .subjects-grid {
+        gap: 16px;
+        max-width: 450px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .grain {
+        display: none;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      nav {
+        padding: 24px 0;
+      }
+
+      .nav-logo {
+        font-size: 18px;
+      }
+
+      .nav-logo-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 52px;
+      }
+
+      .hero {
+        padding: 40px 0 60px;
+      }
+
+      .subjects-grid {
+        gap: 12px;
+        max-width: 400px;
+      }
+
+      .subject-title {
+        font-size: 14px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .section-subtitle {
+        font-size: 16px;
+      }
+
+      .contribute-section .contribute-btn {
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+      }
+
+      footer {
+        padding: 16px 20px 32px;
+        font-size: 13px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero {
+        padding: 30px 0 50px;
+      }
+
+      .section-header {
+        margin-bottom: 40px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .btn {
+        padding: 14px 24px;
+        font-size: 14px;
+      }
+      
+      .subjects-grid {
+        gap: 10px;
+        max-width: 350px;
+      }
+
+      .subject-title {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="animated-bg"></canvas>
+  <div class="grain"></div>
+
+  <div class="container">
+    <nav>
+    </nav>
+
+    <section class="hero">
+      <h1>Your <span class="gradient-text">Ultimate</span><br>Study Resource</h1>
+    </section>
+
+    <section id="subjects">
+      <div class="section-header">
+        <h2 class="section-title">Mumbai <span class="animated-word">University</span> Notes</h2>
+
+      </div>
+
+      <div class="subjects-grid" id="subjects-grid"></div>
+    </section>
+
+  </div>
+
+  <script>
+    const subjects = [
+      {
+        href: 'sem1/',
+        title: 'Sem 1'
+      },
+      {
+        href: 'sem2/',
+        title: 'Sem 2'
+      },
+      {
+        href: 'sem3/',
+        title: 'Sem 3'
+      },
+      {
+        href: 'sem4/',
+        title: 'Sem 4'
+      },
+      {
+        href: 'sem5/',
+        title: 'Sem 5'
+      },
+      {
+        href: 'sem6/',
+        title: 'Sem 6'
+      },
+      {
+        href: 'sem7/',
+        title: 'Sem 7'
+      },
+      {
+        href: 'sem8/',
+        title: 'Sem 8'
+      },
+    ];
+
+    const grid = document.getElementById('subjects-grid');
+
+    function render() {
+      grid.innerHTML = subjects.map(subject => `
+        <a href="${subject.href}" class="subject-card">
+          <div class="subject-content">
+            <h3 class="subject-title">${subject.title}</h3>
+          </div>
+        </a>
+      `).join('');
+
+      document.querySelectorAll('.subject-card').forEach(card => {
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+        if (!isMobile) {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            card.style.setProperty('--mouse-x', `${x}%`);
+            card.style.setProperty('--mouse-y', `${y}%`);
+          });
+
+          card.addEventListener('mouseleave', () => {
+            card.style.setProperty('--mouse-x', '50%');
+            card.style.setProperty('--mouse-y', '50%');
+          });
+        }
+      });
+    }
+
+    render();
+  </script>
+
+  <script>
+    const canvas = document.getElementById('animated-bg');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const gradient = ctx.createRadialGradient(
+      canvas.width / 2, canvas.height / 2, 0,
+      canvas.width / 2, canvas.height / 2, canvas.width / 2
+    );
+    gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
+    gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
+    gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const gradient = ctx.createRadialGradient(
+        canvas.width / 2, canvas.height / 2, 0,
+        canvas.width / 2, canvas.height / 2, canvas.width / 2
+      );
+      gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
+      gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
+      gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
+
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
+  </script>
+</body>
+
+</html>
