@@ -11,7 +11,7 @@
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
-  <title>Sem 3 — Notes</title>
+  <title>Sem Notes — Ibrahim Shaikh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -27,7 +27,6 @@
     :root {
       --primary: #ffffff;
       --secondary: #888888;
-      --accent: #ffffff;
     }
 
     body {
@@ -109,30 +108,8 @@
       font-size: 20px;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 8px;
-    }
-
-    .nav-link {
-      padding: 10px 20px;
-      border-radius: 10px;
-      color: rgba(255, 255, 255, 0.6);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-
-    @media (hover: hover) {
-      .nav-link:hover {
-        color: #fff;
-        background: rgba(255, 255, 255, 0.05);
-      }
-    }
-
     .hero {
-      padding: 80px 0 120px;
+      padding: 80px 0 60px;
       text-align: center;
       animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
     }
@@ -185,68 +162,13 @@
       font-size: 20px;
       color: rgba(255, 255, 255, 0.5);
       max-width: 600px;
-      margin: 0 auto 48px;
+      margin: 0 auto 64px;
       line-height: 1.6;
-    }
-
-    .cta-buttons {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 16px 32px;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 15px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #ffffff, #cccccc);
-      color: #000;
-      box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
-    }
-
-    @media (hover: hover) {
-      .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 48px rgba(255, 255, 255, 0.3);
-      }
-    }
-
-    .btn-primary:active {
-      transform: translateY(0);
-    }
-
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
-    }
-
-    @media (hover: hover) {
-      .btn-secondary:hover {
-        background: rgba(255, 255, 255, 0.1);
-        border-color: rgba(255, 255, 255, 0.2);
-      }
-    }
-
-    .btn-secondary:active {
-      transform: scale(0.98);
     }
 
     .section-header {
       text-align: center;
-      margin-bottom: 64px;
+      margin-bottom: 48px;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
     }
 
@@ -258,22 +180,6 @@
       letter-spacing: -0.02em;
     }
 
-    .section-title .animated-word {
-      display: inline-block;
-      background: linear-gradient(135deg, #ffffff, #888888);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      background-size: 200% 200%;
-      animation: gradientShift 3s ease infinite;
-      transition: transform 0.3s ease;
-      cursor: default;
-    }
-
-    .section-title .animated-word:hover {
-      transform: scale(1.05);
-    }
-
     .section-subtitle {
       font-size: 18px;
       color: rgba(255, 255, 255, 0.5);
@@ -283,7 +189,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
-      padding-bottom: 48px;
+      padding-bottom: 20px;
       max-width: 700px;
       margin: 0 auto;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
@@ -292,19 +198,19 @@
     .contribute-section {
       display: flex;
       justify-content: center;
-      padding-bottom: 20px;
+      padding-bottom: 16px;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
     }
 
     .contribute-text {
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.6);
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
       font-weight: 500;
     }
 
     .subject-card {
       position: relative;
-      padding: 32px 24px;
+      padding: 40px 24px;
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 16px;
@@ -318,7 +224,7 @@
       justify-content: center;
       gap: 20px;
       cursor: pointer;
-      min-height: 180px;
+      min-height: 200px;
     }
 
     .subject-card::before {
@@ -348,37 +254,7 @@
         background: rgba(255, 255, 255, 0.04);
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.2);
       }
-    }
 
-    .subject-card:active {
-      transform: translateY(-2px);
-      transition: all 0.1s ease;
-    }
-
-    .subject-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .subject-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      display: grid;
-      place-items: center;
-      font-size: 28px;
-      font-weight: 700;
-      transition: all 0.3s ease;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-
-    @media (hover: hover) and (pointer: fine) {
       .subject-card:hover .subject-icon {
         transform: scale(1.1) rotate(-5deg);
         box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
@@ -386,8 +262,23 @@
       }
     }
 
-    .subject-arrow {
-      display: none;
+    .subject-card:active {
+      transform: translateY(-2px);
+      transition: all 0.1s ease;
+    }
+
+    .subject-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: grid;
+      place-items: center;
+      font-size: 36px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      font-family: 'Space Grotesk', sans-serif;
     }
 
     .subject-content {
@@ -398,41 +289,25 @@
 
     .subject-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       letter-spacing: -0.01em;
+      margin-bottom: 6px;
     }
 
-    .subject-desc {
-      display: none;
-    }
-
-    .stats {
-      display: none;
+    .subject-count {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 500;
     }
 
     footer {
       padding: 20px 0 40px;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
       text-align: center;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 13px;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
-    }
-
-    .footer-bottom {
-      display: none;
-    }
-
-    .contribute-btn {
-      padding: 16px 32px;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 15px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: none;
     }
 
     @keyframes slideDown {
@@ -483,84 +358,6 @@
       }
     }
 
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-
-    @keyframes pulse {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.7;
-      }
-    }
-
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.3;
-      }
-    }
-
-    @keyframes fadeInScale {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .subjects-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 600px;
-      }
-    }
-
     @media (max-width: 768px) {
       .grain {
         display: none;
@@ -574,66 +371,41 @@
         padding: 24px 0;
       }
 
-      .nav-logo {
-        font-size: 18px;
-      }
-
-      .nav-logo-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 18px;
-      }
-
       h1 {
         font-size: 52px;
       }
 
       .hero {
-        padding: 40px 0 60px;
+        padding: 40px 0 40px;
       }
 
       .subjects-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         max-width: 100%;
       }
 
       .subject-card {
-        min-height: 160px;
-        padding: 24px 20px;
+        min-height: 170px;
+        padding: 28px 20px;
       }
 
       .subject-icon {
-        width: 56px;
-        height: 56px;
+        width: 60px;
+        height: 60px;
         font-size: 28px;
       }
 
       .subject-title {
-        font-size: 16px;
+        font-size: 17px;
       }
 
       .section-title {
         font-size: 24px;
       }
 
-      .section-subtitle {
-        font-size: 16px;
-      }
-
-      .contribute-section .contribute-btn {
-        width: 100%;
-        max-width: 400px;
-        justify-content: center;
-      }
-
-      footer {
-        padding: 16px 20px 32px;
-        font-size: 13px;
-      }
-
-      .nav-links {
-        display: none;
+      .subtitle {
+        font-size: 17px;
+        margin-bottom: 48px;
       }
     }
 
@@ -642,35 +414,14 @@
         font-size: 42px;
       }
 
-      .hero {
-        padding: 30px 0 50px;
-      }
-
-      .section-header {
-        margin-bottom: 40px;
-      }
-
-      .section-title {
-        font-size: 20px;
-      }
-
-      .btn {
-        padding: 14px 24px;
-        font-size: 14px;
-      }
-
-      .subject-card {
-        min-height: 140px;
-      }
-
       .subject-icon {
-        width: 48px;
-        height: 48px;
+        width: 52px;
+        height: 52px;
         font-size: 24px;
       }
 
       .subject-title {
-        font-size: 14px;
+        font-size: 15px;
       }
     }
   </style>
@@ -681,101 +432,40 @@
   <div class="grain"></div>
 
   <div class="container">
-    <nav>
-    </nav>
-
     <section class="hero">
+      <div class="badge">
+        <div class="badge-dot"></div>
+        Notes Hub
+      </div>
       <h1>Your <span class="gradient-text">Ultimate</span><br>Study Resource</h1>
+      <p class="subtitle">Pick your semester to access all subject notes, PDFs, and resources.</p>
     </section>
 
     <section id="subjects">
-      <div class="section-header">
-        <h2 class="section-title">Semester 3 <span class="animated-word">Subject</span> Notes</h2>
-
+      <div class="subjects-grid">
+        <a href="sem3/" class="subject-card">
+          <div class="subject-icon">3</div>
+          <div class="subject-content">
+            <div class="subject-title">Semester 3</div>
+            <div class="subject-count">6 Subjects</div>
+          </div>
+        </a>
+        <a href="sem4/" class="subject-card">
+          <div class="subject-icon">4</div>
+          <div class="subject-content">
+            <div class="subject-title">Semester 4</div>
+            <div class="subject-count">5 Subjects</div>
+          </div>
+        </a>
       </div>
-
-      <div class="subjects-grid" id="subjects-grid"></div>
 
       <div class="contribute-section">
         <div class="contribute-text">Made by Ibrahim Shaikh</div>
       </div>
     </section>
 
-    <footer>
-      <div>Share your notes to contribute.</div>
-    </footer>
+    <footer>Share your notes to contribute.</footer>
   </div>
-
-  <script>
-    const subjects = [
-      {
-        href: 'aoa/',
-        title: 'Analysis of Algorithms',
-        icon: 'A'
-      },
-      {
-        href: 'coa/',
-        title: 'Computer Organization & Architecture',
-        icon: 'C'
-      },
-      {
-        href: 'dsgt/',
-        title: 'Discrete Structure & Graph Theory',
-        icon: 'D'
-      },
-      {
-        href: 'maths/',
-        title: 'Mathematics III',
-        icon: 'M'
-      },
-      {
-        href: 'oe/',
-        title: 'Open Elective',
-        icon: 'O'
-      },
-      {
-        href: 'youtube/',
-        title: 'YouTube links',
-        icon: 'y'
-      },
-    ];
-
-    const grid = document.getElementById('subjects-grid');
-
-    function render() {
-      grid.innerHTML = subjects.map(subject => `
-        <a href="${subject.href}" class="subject-card">
-          <div class="subject-header">
-            <div class="subject-icon">${subject.icon}</div>
-          </div>
-          <div class="subject-content">
-            <h3 class="subject-title">${subject.title}</h3>
-          </div>
-        </a>
-      `).join('');
-
-      document.querySelectorAll('.subject-card').forEach(card => {
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-        if (!isMobile) {
-          card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            card.style.setProperty('--mouse-x', `${x}%`);
-            card.style.setProperty('--mouse-y', `${y}%`);
-          });
-
-          card.addEventListener('mouseleave', () => {
-            card.style.setProperty('--mouse-x', '50%');
-            card.style.setProperty('--mouse-y', '50%');
-          });
-        }
-      });
-    }
-
-    render();
-  </script>
 
   <script>
     const canvas = document.getElementById('animated-bg');
@@ -798,17 +488,25 @@
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-
-      const gradient = ctx.createRadialGradient(
-        canvas.width / 2, canvas.height / 2, 0,
-        canvas.width / 2, canvas.height / 2, canvas.width / 2
-      );
-      gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
-      gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
-      gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
-
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
+
+    document.querySelectorAll('.subject-card').forEach(card => {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      if (!isMobile) {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          card.style.setProperty('--mouse-x', `${x}%`);
+          card.style.setProperty('--mouse-y', `${y}%`);
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.setProperty('--mouse-x', '50%');
+          card.style.setProperty('--mouse-y', '50%');
+        });
+      }
     });
   </script>
 </body>
