@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-03022V9LRJ"></script>
   <script>
@@ -11,484 +10,286 @@
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
-  <title>Sem 1 — Notes</title>
+  <title>Semester 1 - Notes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0c0e14;
+      --surface:#141620;
+      --surface-border:#1e2030;
+      --surface-hover:#1a1d2e;
+      --text-primary:#e2e4ed;
+      --text-secondary:#8a8fa8;
+      --text-muted:#5a5f78;
+      --accent-purple:#a78bfa;
+      --accent-green:#34d399;
+      --accent-blue:#60a5fa;
+      --accent-amber:#fbbf24;
+      --radius:16px;
+      --radius-sm:10px;
+    }
+    body{
+      font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+      background:var(--bg);
+      color:var(--text-primary);
+      min-height:100vh;
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.4;
+    }
+    .bg-glow{
+      position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;
+      background:
+        radial-gradient(ellipse 60% 40% at 50% 0%,rgba(99,102,241,.08),transparent),
+        radial-gradient(ellipse 40% 30% at 20% 20%,rgba(139,92,246,.06),transparent),
+        radial-gradient(ellipse 40% 30% at 80% 20%,rgba(52,211,153,.04),transparent);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+    .container::after{
+      content:'';
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);
+      background-size:36px 36px;
+      mask-image:radial-gradient(circle at center,rgba(0,0,0,.7),transparent 75%);
+      z-index:-1;
+    }
+    nav{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 0;
+      animation:fadeDown .6s cubic-bezier(.16,1,.3,1);
+    }
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text-primary)}
+    .nav-logo-icon{
+      width:36px;height:36px;border-radius:10px;
+      background:linear-gradient(135deg,#6366f1,#8b5cf6);
+      display:grid;place-items:center;font-size:12px;font-weight:700;
+    }
+    .nav-logo-text{font-weight:700;font-size:18px;letter-spacing:-.02em}
+    .nav-btn{
+      padding:8px 20px;border-radius:100px;font-size:13px;font-weight:600;
+      border:1px solid var(--surface-border);background:transparent;
+      color:var(--text-secondary);cursor:pointer;transition:all .2s;text-decoration:none;
+    }
+    .nav-btn:hover{border-color:var(--text-muted);color:var(--text-primary)}
+
+    .hero{
+      text-align:center;padding:72px 0 38px;
+      animation:fadeUp .8s cubic-bezier(.16,1,.3,1) .1s both;
+    }
+    .hero-badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 16px;border-radius:100px;
+      background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);
+      font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--accent-blue);margin-bottom:22px;
+    }
+    .hero h1{
+      font-size:clamp(34px,6.5vw,60px);font-weight:800;line-height:1.1;
+      letter-spacing:-.04em;margin-bottom:14px;
+      color:var(--text-primary);
+    }
+    .hero h1 .glow{
+      background:linear-gradient(135deg,var(--accent-purple),var(--accent-green));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    }
+    .hero-sub{
+      font-size:16px;color:var(--text-secondary);max-width:640px;margin:0 auto 28px;line-height:1.7;
     }
 
-    :root {
-      --primary: #ffffff;
-      --secondary: #888888;
-      --accent: #ffffff;
+    .stats{
+      display:flex;justify-content:center;gap:48px;margin-bottom:44px;
+      animation:fadeUp .8s cubic-bezier(.16,1,.3,1) .25s both;
+    }
+    .stat{text-align:center}
+    .stat-val{font-size:28px;font-weight:800;letter-spacing:-.03em}
+    .stat-label{font-size:12px;color:var(--text-muted);margin-top:2px;font-weight:500}
+
+    .section-label{
+      font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+      color:var(--text-muted);margin-bottom:18px;
     }
 
-    body {
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: #0a0a0a;
-      min-height: 100vh;
-      position: relative;
-      overflow-x: hidden;
-      color: #fff;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-overflow-scrolling: touch;
+    .sem-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+      margin-bottom:44px;
+      animation:fadeUp .8s cubic-bezier(.16,1,.3,1) .35s both;
     }
 
-    #animated-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      opacity: 0.4;
-      pointer-events: none;
-      will-change: transform;
-      transform: translateZ(0);
+    .sem-card{
+      background:var(--surface);border:1px solid var(--surface-border);
+      border-radius:var(--radius);padding:24px;
+      text-decoration:none;color:inherit;transition:all .25s;
+      position:relative;overflow:hidden;
+      display:flex;flex-direction:column;gap:16px;
+    }
+    .sem-card:hover{
+      border-color:#2a2d42;background:var(--surface-hover);
+      transform:translateY(-4px);
+      box-shadow:0 20px 60px rgba(0,0,0,.4);
+    }
+    .sem-card-head{display:flex;justify-content:space-between;align-items:flex-start}
+    .sem-badge{
+      width:40px;height:40px;border-radius:var(--radius-sm);
+      display:grid;place-items:center;
+      font-size:14px;font-weight:800;color:#fff;
+      background:#6366f1;
+    }
+    .sem-arrow{color:var(--text-muted);font-size:16px;opacity:.5;transition:opacity .2s}
+    .sem-card:hover .sem-arrow{opacity:1}
+    .sem-info h3{font-size:16px;font-weight:700;letter-spacing:-.01em}
+    .sem-info p{font-size:12px;color:var(--text-muted);margin-top:2px}
+    .sem-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}
+    .sem-count{font-size:13px;color:var(--text-secondary)}
+    .sem-count strong{font-weight:700;color:var(--text-primary)}
+    .sem-status{padding:3px 10px;border-radius:100px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .status-available{background:rgba(52,211,153,.12);color:var(--accent-green);border:1px solid rgba(52,211,153,.2)}
+    .status-empty{background:rgba(251,191,36,.1);color:var(--accent-amber);border:1px solid rgba(251,191,36,.2)}
+
+    .pdf-list{display:flex;flex-direction:column;gap:12px;margin-bottom:34px}
+    .pdf-card{
+      background:var(--surface);border:1px solid var(--surface-border);
+      border-radius:var(--radius);padding:16px 18px;
+      text-decoration:none;color:inherit;transition:all .25s;
+      display:flex;align-items:center;gap:12px;
+    }
+    .pdf-card:hover{border-color:#2a2d42;background:var(--surface-hover);transform:translateX(4px)}
+    .pdf-icon{
+      width:38px;height:38px;border-radius:10px;
+      display:grid;place-items:center;font-size:11px;font-weight:800;
+      background:#1f2233;color:#c5cae2;flex:0 0 auto;
+    }
+    .pdf-info{min-width:0;flex:1}
+    .pdf-title{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .pdf-meta{font-size:12px;color:var(--text-muted);margin-top:2px}
+    .pdf-arrow{font-size:14px;color:var(--text-muted)}
+
+    .empty-search{
+      border:1px dashed var(--surface-border);
+      border-radius:var(--radius);
+      padding:28px;
+      text-align:center;
+      color:var(--text-secondary);
+      background:rgba(255,255,255,.01);
+      margin-bottom:36px;
     }
 
-    .grain {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: repeating-linear-gradient(0deg,
-          transparent,
-          transparent 2px,
-          rgba(255, 255, 255, 0.01) 2px,
-          rgba(255, 255, 255, 0.01) 4px);
-      z-index: 1;
-      pointer-events: none;
-      opacity: 0.3;
-      will-change: transform;
-      transform: translateZ(0);
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:768px){
+      .hero{padding:48px 0 28px}
+      .hero h1{font-size:36px}
+      .sem-grid{grid-template-columns:1fr}
+      .stats{gap:32px}
+      .stat-val{font-size:22px}
     }
-
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 32px;
-      position: relative;
-      z-index: 2;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 32px 0;
-      animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 20px;
-      border-radius: 10px;
-      color: rgba(255, 255, 255, 0.6);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-
-    .back-btn:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .hero {
-      padding: 80px 0 120px;
-      text-align: center;
-      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
-    }
-
-    h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 96px;
-      font-weight: 700;
-      line-height: 1.1;
-      margin-bottom: 24px;
-      background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -0.03em;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #ffffff, #888888);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      background-size: 200% 200%;
-      animation: gradientShift 3s ease infinite;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      color: rgba(255, 255, 255, 0.5);
-      max-width: 600px;
-      margin: 0 auto 48px;
-      line-height: 1.6;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 64px;
-      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
-    }
-
-    .section-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .section-title .animated-word {
-      display: inline-block;
-      background: linear-gradient(135deg, #ffffff, #888888);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      background-size: 200% 200%;
-      animation: gradientShift 3s ease infinite;
-      transition: transform 0.3s ease;
-      cursor: default;
-    }
-
-    .section-title .animated-word:hover {
-      transform: scale(1.05);
-    }
-
-    .subjects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      padding-bottom: 48px;
-      max-width: 600px;
-      margin: 0 auto;
-      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
-    }
-
-    .subject-card {
-      position: relative;
-      padding: 32px 24px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      text-decoration: none;
-      color: #fff;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      cursor: pointer;
-      min-height: 140px;
-      backdrop-filter: blur(10px);
-    }
-
-    .subject-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.15), transparent 60%);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-      .subject-card:hover::before {
-        opacity: 1;
-      }
-
-      .subject-card:hover {
-        transform: translateY(-4px);
-        border-color: rgba(255, 255, 255, 0.35);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-      }
-
-      .subject-card:hover .subject-arrow {
-        transform: translate(4px, -4px);
-      }
-    }
-
-    .subject-card:active {
-      transform: translateY(-2px);
-      transition: all 0.1s ease;
-    }
-
-    .subject-content {
-      position: relative;
-      z-index: 1;
-      text-align: left;
-      width: 100%;
-    }
-
-    .subject-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-
-    .subject-arrow {
-      position: relative;
-      z-index: 1;
-      align-self: flex-end;
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 24px;
-      transition: all 0.3s ease;
-      margin-top: auto;
-    }
-
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes gradientShift {
-
-      0%,
-      100% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .subjects-grid {
-        max-width: 550px;
-        gap: 14px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .grain {
-        display: none;
-      }
-
-      .container {
-        padding: 0 20px;
-      }
-
-      nav {
-        padding: 24px 0;
-      }
-
-      h1 {
-        font-size: 52px;
-      }
-
-      .hero {
-        padding: 40px 0 60px;
-      }
-
-      .subjects-grid {
-        gap: 12px;
-        max-width: 100%;
-      }
-
-      .subject-card {
-        min-height: 120px;
-        padding: 24px 20px;
-        border-radius: 16px;
-      }
-
-      .subject-title {
-        font-size: 18px;
-      }
-
-      .section-title {
-        font-size: 24px;
-      }
-
-      .subject-arrow {
-        font-size: 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 42px;
-      }
-
-      .hero {
-        padding: 30px 0 50px;
-      }
-
-      .section-header {
-        margin-bottom: 40px;
-      }
-
-      .section-title {
-        font-size: 20px;
-      }
-
-      .subjects-grid {
-        gap: 10px;
-      }
-
-      .subject-card {
-        min-height: 110px;
-        padding: 20px 18px;
-      }
-
-      .subject-title {
-        font-size: 16px;
-      }
-
-      .subject-arrow {
-        font-size: 18px;
-      }
+    @media(min-width:769px) and (max-width:1024px){
+      .sem-grid{grid-template-columns:repeat(2,1fr)}
     }
   </style>
 </head>
-
 <body>
-  <canvas id="animated-bg"></canvas>
-  <div class="grain"></div>
+  <div class="bg-glow"></div>
 
   <div class="container">
     <nav>
-      <a href="../index.html" class="back-btn">
-        <span>←</span>
-        <span>Back to Home</span>
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">S1</div>
+        <span class="nav-logo-text">Semester 1</span>
       </a>
+      <a href="../index.html" class="nav-btn">All Semesters</a>
     </nav>
 
     <section class="hero">
-      <h1>Semester <span class="gradient-text">1</span></h1>
-      <p class="subtitle">Select a subject to view notes</p>
+      <div class="hero-badge">SEMESTER RESOURCES</div>
+      <h1 id="pageTitle">Choose a <span class="glow">Subject</span></h1>
+      <p class="hero-sub" id="pageSubtitle"></p>
     </section>
 
-    <section id="subjects">
-      <div class="section-header">
-        <h2 class="section-title">Available <span class="animated-word">Subjects</span></h2>
-      </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-val" id="statOne">0</div><div class="stat-label" id="statOneLabel">Subjects</div></div>
+      <div class="stat"><div class="stat-val" id="statTwo">0</div><div class="stat-label" id="statTwoLabel">PDF Files</div></div>
+      <div class="stat"><div class="stat-val">Live</div><div class="stat-label">Status</div></div>
+    </div>
 
-      <div class="subjects-grid" id="subjects-grid"></div>
+    <section>
+      <div class="section-label" id="sectionLabel">AVAILABLE SUBJECTS</div>
+      <div id="content"></div>
     </section>
-
   </div>
 
+  <script src="data.js"></script>
   <script>
-    const subjects = [
-      // Add subjects here
-    ];
+    const data = window.SEM1_DATA;
+    const params = new URLSearchParams(window.location.search);
+    const subjectKey = params.get('s');
+    const selected = data.subjects.find(item => item.key === subjectKey);
 
-    const grid = document.getElementById('subjects-grid');
+    const content = document.getElementById('content');
+    const pageTitle = document.getElementById('pageTitle');
+    const pageSubtitle = document.getElementById('pageSubtitle');
+    const sectionLabel = document.getElementById('sectionLabel');
+    const statOne = document.getElementById('statOne');
+    const statTwo = document.getElementById('statTwo');
+    const statOneLabel = document.getElementById('statOneLabel');
+    const statTwoLabel = document.getElementById('statTwoLabel');
 
-    function render() {
-      if (subjects.length === 0) {
-        grid.innerHTML = `
-          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: rgba(255, 255, 255, 0.5);">
-            <div style="font-size: 48px; margin-bottom: 16px;">📚</div>
-            <div>No subjects available yet</div>
-          </div>
+    if (!selected) {
+      const totalPdfs = data.subjects.reduce((sum, item) => sum + item.files.length, 0);
+      pageSubtitle.textContent = `${data.semesterLabel} · ${data.subtitle}`;
+      statOne.textContent = String(data.subjects.length);
+      statTwo.textContent = String(totalPdfs);
+      statOneLabel.textContent = 'Subjects';
+      statTwoLabel.textContent = 'PDF Files';
+
+      content.innerHTML = `<div class="sem-grid">${data.subjects.map((subject, index) => {
+        const isAvailable = subject.files.length > 0;
+        return `
+          <a href="?s=${encodeURIComponent(subject.key)}" class="sem-card">
+            <div class="sem-card-head">
+              <div class="sem-badge">${index + 1}</div>
+              <span class="sem-arrow">-></span>
+            </div>
+            <div class="sem-info">
+              <h3>${subject.title}</h3>
+              <p>${subject.fullName}</p>
+            </div>
+            <div class="sem-footer">
+              <span class="sem-count"><strong>${subject.files.length}</strong> PDFs</span>
+              <span class="sem-status ${isAvailable ? 'status-available' : 'status-empty'}">${isAvailable ? 'Available' : 'Empty'}</span>
+            </div>
+          </a>
         `;
-        return;
+      }).join('')}</div>`;
+    } else {
+      pageTitle.innerHTML = `${selected.title} <span class="glow">Notes</span>`;
+      pageSubtitle.textContent = selected.fullName;
+      sectionLabel.textContent = 'PDF DOCUMENTS';
+      statOne.textContent = String(selected.files.length);
+      statTwo.textContent = 'S1';
+      statOneLabel.textContent = 'PDF Files';
+      statTwoLabel.textContent = 'Semester';
+
+      if (!selected.files.length) {
+        content.innerHTML = '<div class="empty-search">No PDFs available yet for this subject.<br><a href="index.html" class="nav-btn" style="display:inline-block;margin-top:14px">Back to subjects</a></div>';
+      } else {
+        content.innerHTML = `<div class="pdf-list">${selected.files.map(file => `
+          <a href="${selected.key}/${encodeURIComponent(file)}" class="pdf-card" target="_blank">
+            <div class="pdf-icon">PDF</div>
+            <div class="pdf-info">
+              <div class="pdf-title">${file.replace(/\.pdf$/i, '')}</div>
+              <div class="pdf-meta">PDF Document</div>
+            </div>
+            <div class="pdf-arrow">-></div>
+          </a>
+        `).join('')}</div><a href="index.html" class="nav-btn" style="display:inline-block;margin-bottom:36px">Back to subjects</a>`;
       }
-
-      grid.innerHTML = subjects.map(subject => `
-        <a href="${subject.href}" class="subject-card">
-          <div class="subject-content">
-            <h3 class="subject-title">${subject.title}</h3>
-          </div>
-          <div class="subject-arrow">→</div>
-        </a>
-      `).join('');
     }
-
-    render();
-  </script>
-
-  <script>
-    const canvas = document.getElementById('animated-bg');
-    const ctx = canvas.getContext('2d');
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    const gradient = ctx.createRadialGradient(
-      canvas.width / 2, canvas.height / 2, 0,
-      canvas.width / 2, canvas.height / 2, canvas.width / 2
-    );
-    gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
-    gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
-    gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
-
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-
-      const gradient = ctx.createRadialGradient(
-        canvas.width / 2, canvas.height / 2, 0,
-        canvas.width / 2, canvas.height / 2, canvas.width / 2
-      );
-      gradient.addColorStop(0, 'rgba(50, 50, 50, 0.3)');
-      gradient.addColorStop(0.5, 'rgba(30, 30, 30, 0.2)');
-      gradient.addColorStop(1, 'rgba(10, 10, 10, 0.1)');
-
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-    });
   </script>
 </body>
-
 </html>
