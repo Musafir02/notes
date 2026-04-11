@@ -264,8 +264,8 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="stat-val">8</div><div class="stat-label">Semesters</div></div>
-      <div class="stat"><div class="stat-val">45+</div><div class="stat-label">Subjects</div></div>
+      <div class="stat"><div class="stat-val" id="statSemesters">8</div><div class="stat-label">Semesters</div></div>
+      <div class="stat"><div class="stat-val" id="statSubjects">0</div><div class="stat-label">Subjects</div></div>
       <div class="stat"><div class="stat-val">Free</div><div class="stat-label">Always</div></div>
     </div>
 
@@ -294,8 +294,8 @@
       {
         id: 2, name: 'Semester 2', desc: 'Foundation Year · Part II', href: 'sem2/',
         color: '#f59e0b',
-        subjects: [],
-        total: 0, available: false
+        subjects: ['Maths', 'EG', 'Chemistry', 'PCE'],
+        total: 4, available: true
       },
       {
         id: 3, name: 'Semester 3', desc: 'Core Engineering · Year 2', href: 'sem3/',
@@ -306,37 +306,43 @@
       {
         id: 4, name: 'Semester 4', desc: 'Core Engineering · Year 2', href: 'sem4/',
         color: '#8b5cf6',
-        subjects: [],
-        total: 0, available: false
+        subjects: ['Cloud Computing', 'DBMS Lab', 'Mini Project'],
+        total: 3, available: false
       },
       {
         id: 5, name: 'Semester 5', desc: 'Advanced Core · Year 3', href: 'sem5/',
         color: '#ec4899',
-        subjects: [],
-        total: 0, available: false
+        subjects: ['AI', 'CN', 'SE'],
+        total: 3, available: false
       },
       {
         id: 6, name: 'Semester 6', desc: 'Advanced Core · Year 3', href: 'sem6/',
         color: '#14b8a6',
-        subjects: [],
-        total: 0, available: false
+        subjects: ['ML', 'Compiler', 'Project'],
+        total: 3, available: false
       },
       {
         id: 7, name: 'Semester 7', desc: 'Specialisation · Year 4', href: 'sem7/',
         color: '#f97316',
-        subjects: [],
-        total: 0, available: false
+        subjects: ['Internship', 'Elective I', 'Research'],
+        total: 3, available: false
       },
       {
         id: 8, name: 'Semester 8', desc: 'Specialisation · Year 4', href: 'sem8/',
         color: '#06b6d4',
-        subjects: [],
-        total: 0, available: false
+        subjects: ['Capstone', 'Seminar', 'Viva'],
+        total: 3, available: false
       }
     ];
 
     const grid = document.getElementById('semGrid');
     const searchInput = document.getElementById('searchInput');
+    const statSemesters = document.getElementById('statSemesters');
+    const statSubjects = document.getElementById('statSubjects');
+
+    const totalSubjects = semesters.reduce((sum, semester) => sum + semester.total, 0);
+    statSemesters.textContent = String(semesters.length);
+    statSubjects.textContent = String(totalSubjects);
 
     function renderSemesters(filter = '') {
       const q = filter.toLowerCase();
