@@ -477,11 +477,40 @@ footer span {
   overflow: hidden;
 }
 
-.pdf-iframe {
-  display: block;
-  width: 100%;
+.pdfjs-container {
   height: 100%;
-  border: none;
+  overflow-y: auto;
+  background: #111;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.pdf-page-wrap {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-page-canvas {
+  display: block;
+}
+
+.pdfjs-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.pdfjs-status--error {
+  color: #e05a5a;
 }
 
 .btn-upload--form {

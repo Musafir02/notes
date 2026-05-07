@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 import Header from '../components/Header'
+import PdfViewer from '../components/PdfViewer'
 import { SEMESTERS } from '../data/notes'
 
 function IconPdf() {
@@ -48,11 +49,7 @@ export default function SubjectPage() {
           </div>
         </div>
         <div className="pdf-viewer-wrap">
-          <iframe
-            src={buildPdfUrl(activePdf.path)}
-            title={activePdf.name}
-            className="pdf-iframe"
-          />
+          <PdfViewer url={buildPdfUrl(activePdf.path)} />
         </div>
       </div>
     )
