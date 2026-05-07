@@ -1,7 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
+import { Sun, Moon } from 'lucide-react'
+import useTheme from '../hooks/useTheme'
 
 export default function Header() {
   const { pathname } = useLocation()
+  const { theme, toggle } = useTheme()
 
   return (
     <header>
@@ -14,6 +17,9 @@ export default function Header() {
           >
             Upload
           </Link>
+          <button className="theme-toggle btn-bare" onClick={toggle} aria-label="Toggle theme">
+            {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
         </nav>
       </div>
     </header>

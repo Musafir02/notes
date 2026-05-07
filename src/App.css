@@ -7,6 +7,15 @@
   --accent: #c8693a;
 }
 
+[data-theme="light"] {
+  --bg: #faf8f5;
+  --surface: #f0ede8;
+  --border: rgba(0, 0, 0, 0.08);
+  --text-primary: #1a1714;
+  --text-secondary: #8a8480;
+  --accent: #c8693a;
+}
+
 *,
 *::before,
 *::after {
@@ -70,6 +79,18 @@ nav {
 
 .nav-link:hover,
 .nav-link.active {
+  color: var(--text-primary);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: color 0.15s ease;
+}
+
+.theme-toggle:hover {
   color: var(--text-primary);
 }
 
@@ -480,7 +501,7 @@ footer span {
 .pdfjs-container {
   height: 100%;
   overflow-y: auto;
-  background: #111;
+  background: var(--surface);
   padding: 16px;
   display: flex;
   flex-direction: column;
