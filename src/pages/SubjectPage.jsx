@@ -1,8 +1,9 @@
 import { useParams, Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ExternalLink } from 'lucide-react'
 import Header from '../components/Header'
 import PdfViewer from '../components/PdfViewer'
+import { preloadPdfLib, prefetchPdf } from '../utils/pdfLoader'
 import { SEMESTERS } from '../data/notes'
 
 function IconPdf() {
@@ -26,6 +27,8 @@ export default function SubjectPage() {
 
   const sem = SEMESTERS.find((s) => s.id === Number(semId))
   const subject = sem?.subjects.find((s) => s.id === subjectId)
+
+  useEffect(() => { preloadPdfLib() }, [])
 
   if (activePdf) {
     return (
@@ -74,7 +77,7 @@ export default function SubjectPage() {
               <p className="section-label">Notes</p>
               <div className="pdfs-list">
                 {subject.pdfs.map((pdf, idx) => (
-                  <button key={idx} className="pdf-item" onClick={() => setActivePdf(pdf)}>
+                  <button key={idx} className="pdf-item" onClick={() => setActivePdf(pdf)} onMouseEnter={() => prefetchPdf(buildPdfUrl(pdf.path))}>
                     <span className="pdf-item-icon">
                       <IconPdf />
                     </span>

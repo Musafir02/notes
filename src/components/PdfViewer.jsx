@@ -1,10 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import * as pdfjsLib from 'pdfjs-dist'
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).href
+import { preloadPdfLib } from '../utils/pdfLoader'
 
 function PdfPage({ pdf, pageNum, containerWidth }) {
   const canvasRef = useRef(null)
@@ -65,10 +60,19 @@ function PdfPage({ pdf, pageNum, containerWidth }) {
 
 export default function PdfViewer({ url }) {
   const containerRef = useRef(null)
+  const [lib, setLib] = useState(null)
   const [pdf, setPdf] = useState(null)
   const [numPages, setNumPages] = useState(0)
   const [containerWidth, setContainerWidth] = useState(0)
   const [error, setError] = useState(null)
+
+  useEffect(() => {
+    let cancelled = false
+    preloadPdfLib().then((loaded) => {
+      if (!cancelled) setLib(loaded)
+    })
+    return () => { cancelled = true }
+  }, [])
 
   useEffect(() => {
     const el = containerRef.current
@@ -87,12 +91,13 @@ export default function PdfViewer({ url }) {
   }, [])
 
   useEffect(() => {
+    if (!lib) return
     let cancelled = false
     setPdf(null)
     setNumPages(0)
     setError(null)
 
-    const task = pdfjsLib.getDocument(url)
+    const task = lib.getDocument(url)
     task.promise
       .then((loaded) => {
         if (!cancelled) {
@@ -108,7 +113,7 @@ export default function PdfViewer({ url }) {
       cancelled = true
       task.destroy()
     }
-  }, [url])
+  }, [url, lib])
 
   return (
     <div ref={containerRef} className="pdfjs-container">
