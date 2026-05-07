@@ -469,29 +469,6 @@ footer span {
   gap: 18px;
 }
 
-.viewer-open-btn {
-  display: none;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 2px;
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
-.viewer-title {
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
 .pdf-viewer-wrap {
   flex: 1;
@@ -834,16 +811,6 @@ footer span {
   .viewer-bar-inner {
     flex-wrap: wrap;
     gap: 10px;
-  }
-
-  .viewer-title {
-    font-size: 0.76rem;
-    width: 100%;
-    order: 3;
-  }
-
-  .viewer-open-btn {
-    display: inline-flex !important;
   }
 
   .hero-headline {

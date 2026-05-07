@@ -1,6 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { ExternalLink } from 'lucide-react'
 import Header from '../components/Header'
 import PdfViewer from '../components/PdfViewer'
 import { preloadPdfLib, prefetchPdf } from '../utils/pdfLoader'
@@ -37,18 +36,8 @@ export default function SubjectPage() {
         <div className="viewer-bar">
           <div className="container viewer-bar-inner">
             <button className="breadcrumb btn-bare" onClick={() => setActivePdf(null)}>
-              ← {subject?.name}
+              ← {subject?.name} — {activePdf.name}
             </button>
-            <span className="viewer-title">{activePdf.name}</span>
-            <a
-              href={buildPdfUrl(activePdf.path)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="viewer-open-btn"
-            >
-              <ExternalLink size={13} />
-              Open PDF
-            </a>
           </div>
         </div>
         <div className="pdf-viewer-wrap">
