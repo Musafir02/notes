@@ -1,0 +1,852 @@
+hat
+j5 an
+Algortbm2
+Ao
+alqorithm is
+a
+inite
+set ot (nstucthionsthat,
+iF
+followed
+a ccomplishes
+a
+partialar
+taskaoon
+8Cate n'a!
+Inaddition allalgorithms must
+gahsk tne folloai
+Input:Zero
+Supplied.
+qugnhtes
+re externaly
+2. Output:At least
+ne
+quanithy I5 produced
+3.Detiniteness
+:Eachinshruchonisclear
+ond
+uhambiauaus.
+.
+Finiteness:
+we
+traceot theinstructiobs
+o} an
+ahaorthm,thenioral)Casesthe alg
+terminates after a
+finitenumber o steps.
+5. Effecti
+veness.Everyinstruchíonmust
+be
+very
+basic
+90 that itcan
+be
+carriedout
+frograrm
+A
+A
+proaram is the
+expres5ionof an
+algor'tbmina.
+proqramming
+onguaqe
+Such
+lahquaqes
+axe desiqsed
+Gretnatensh legitimaie
+9entence hsu a oigue
+meonin
+Someimes
+words
+Such cu
+proceduTe
+Funchon,and
+Used
+Synony mouly
+Subroutineare used
+torprgra
+he
+Stud
+o
+alaonthms includesmany importantand
+gctive red 5
+t
+e sedrch . There are tour distnctareas
+
+Stud- One
+identity'
+1.Houw
+to device
+alqorithms
+2. How
+to
+validalealqorithms.
+B. Houw
+to
+nalyze alqorithms
+How to fest
+a
+proaram.
+Shot onOnePlus
+2025.08.0611:28
+
+3
+How to devise algonthms
+Creating
+algonith
+i6 an
+art
+which
+may Dever
+be Flly qutomated
+There qre
+some important desan
+techniguesuck
+liocar non-linearandnrqer pragramining
+here
+as
+they
+are traditionalky
+are
+not covered bere
+a5
+Coe
+How
+to
+validate Alqorithms
+Once
+an
+alo.i6 denced iti5 necessary
+show
+that itcomputes
+the
+Corect ansuer tor al)posk
+legalinputs. we
+geier to this
+process as alaune
+validation.
+How
+to
+Analyze
+alqor'thms
+Tbis
+eld
+of
+study iskho wn
+a
+$
+As
+an
+odaorithm i6 executedit
+uses
+the
+Computer's
+CPU
+to perorm operahonsandts
+emog
+to
+bol
+the proqrm and data
+memo
+AoA
+performance anaysi
+me
+Fers to thetat
+o
+deterrmininqhow
+much
+omputing timeand
+6torage
+an
+alontom Tequre s.
+How
+tO
+test
+gram
+dsing
+debuggin
+proiingperioroante
+meosren
+-ent
+debuagioq
+y
+process
+o
+executinq proqrams
+0?
+-Sample ato sesto determine hehertauhy
+Teswt
+cCur end
+S0,to
+Correct hem
+Per
+bovn
+Shoton OnePlus
+Lower
+oound
+2025.08.061hptdata
+
+Os-Ho
+algohm is eoo
+n ncal oesf d
+scehoso
+ecoleei
+rcert
+What
+is
+more impostant thon perormance
+Manpuoby
+madalarity
+Correctnes5
+mauntainability
+Functionality
+Robustness
+User- Fr'endlyness
+Proqrammer time
+Simplicihy
+extensibi)lity
+Reliability
+why
+stud
+alorithms
+pexforrmance2
+Algonttmshelp
+w to
+understand
+$ca)ability
+Pertormonce oftendraas tbe ine betwees
+ha
+is
+teosibleand
+wbat is (mpass ible.
+Alqonthic
+mathermatics
+athamatics providesaJanguaqe
+o
+talking aboutproqrambehavior.
+uTrencyotcomputing
+Pertormance i5 the
+Currenc
+tsymptotic
+Hotahion
+Worst
+Co se
+Bestotota
+Average
+Case
+Case
+Biq
+0h.
+Notation
+Notationaoto20
+Theta
+Notation
+ perbound
+Runct'on
+Lower
+bound
+Funcion
+Avera
+Shoton OnePlus
+adechesry
+2025.08.06 11:28
+
+Worst
+Caue
+It
+i5
+the
+lonqest timethot an
+alqo nthm
+will Userover
+all
+desired
+result.
+instances of size n for q 
+Ven problem to prodce
+Averase
+Cas
+Casei
+Itis the
+qveraqe time (oraverage Space )thatthe
+alqorithm
+oi)
+se Overdll instdnces 
+5i7DTora
+venpobem
+to ptodue
+desiredest
+Best
+Case:
+the shostest time (or eat space)thatthe
+algonthm
+wil)
+use
+startioginstanceso
+5iza
+n tr
+gi ven
+problem
+to
+produceadesfred
+reswt
+4nptohc Hotatona
+Calaulate the
+munning
+trme camplehy ofan alaonh
+BiaOb
+Ho tati'on
+Norst Case
+The
+Notation OCo)
+5
+the
+tormo
+the
+upper
+bound
+otan
+alaonthnms
+measures
+he
+Worst
+Case
+ime
+omptex
+0rthe
+longest
+amount of time
+an
+a3it
+take to complete
+fco) indicat
+)ven iof
+Toe
+coropex
+ooC9tj
+upper
+ttme comar
+bound
+fCn)
+
+he.
+blgonthm
+q Cn) i5on
+aymptothicupper
+Ioputdo
+beund For cn )
+Shoton OnePius
+12025.08.06 11:28
+T
+
+Omeqa
+Notaljon
+Best case
+The
+notationn
+Co)isthe For mo)
+y to
+express the
+Aower
+oound
+at an
+algonthm's runningtime
+neasures the best case time complexity
+0Y
+fhe.
+best amound
+o
+time an
+alaoritbmcan
+pos5iblytake
+ot
+to complebe
+fcm)-9Cn)4C-fcn)
+Time
+eerLaulerbaund
+K
+Inputdata
+C)
+gcn
+indicaleven jnpw
+indícaes bJe
+bestcae time
+Complex/ty oftheazo.
+Theta
+Notation
+The
+nohat'on
+e
+co)is
+a
+torma
+way to expres
+both
+fo
+algontin's
+the
+ower
+bound
+upperr bund of
+an
+unning
+time
+with
+A verage coe time complexiy
+e(Fn)=0(F)& gcn)=(fe))
+lower BoundK Running Time
+Uppex
+Bound
+Shot onOnePlus
+2025.08.0611:28
+
+WoST care
+4m
+iveninput
+go)Bestcare
+Follawoing
+Htaho
+i5aist
+ot
+some
+Common
+symptot'e
+Constant
+logarthic
+oear
+nlog
+Quad ratie
+Cubic
+palynomial
+Exponenhial
+ Cnl0qh,
+Shoton OnePlus
+2025.08,0611:28
+
+Time
+Conmplexity
+deal,u)ththe quontiicat
+lon
+The amount o
+time taken by
+a
+set of
+code
+or
+alaonthmtopsoces
+oF
+mocess.
+Tund5 a funchionf the amount ofinput.
+Tine complexih
+is de'ned
+o
+the number
+ot tines
+OU
+a onrtblarbstmuction setis exeutedather than
+the toa time taken. depends on
+3ome
+externa
+Factorskethe
+compilex
+ed
+thepoCessoT'sspeed
+tc:
+The
+time TCe) taken by aproqram Pi3
+the
+Compile time
+ond
+tbe
+runtimeCexecutton
+Constaot
+time
+oY
+0C1),s
+the
+time
+complexIhy
+t
+an alsethmtha aays Le the-6ame nd.
+ot
+aperahons,reqardles0
+no.oelementsbena_
+of
+o
+operated
+For
+alaontb
+to returnthe lenqth o
+single operahion to
+returnthe
+er
+oftheindex bumber
+o
+the ioa
+index number
+
+element inthe
+ist
+perahionis
+doesnot imply that only One
+Gused
+butratherthat the
+number oF peraH'ons
+ways
+Constant
+neaT
+Hme
+oY 0Co)
+indicat
+es thatthe timeit
+takes
+an
+ag0 rih m
+qTOus
+in a linear
+fauhi
+as
+ncreaes
+In lineartime searchin
+list
+oo0 recods shou)dtoke rodahy l time
+\ong
+searchinga st
+lo0records,
+which inturn shoudd be
+take
+goughly l
+longas
+searchng
+a
+Jist oF
+o
+records.
+Shoton OnePlus
+t2025.08,0611:28
+
+Quardrattc
+oY
+0Cagnindicotestbo the
+HasnyanitbmisTime
+an
+olgorithm
+ro0s
+as
+a togohro
+needed
+to
+n
+an
+n
+For
+example- in
+a
+6election
+5 onst aqonhn
+hstissortedb
+repedledlyndingthe
+b4
+min
+Vvalue
+the
+unsrted patf
++he )
+of
+and
+placinq this vaue
+ir the beqininq
+the
+Because
+the
+no
+o operations needed
+to fnd
+minm vaue
+inthe
+'st ago u5
+O
+the lengtb
+
+the starousand the no 
+ValMes
+úes
+Hhat
+nust
+be
+sonted ago
+arOUOS
+with n,the
+total noo
+o
+operati'onsqTOWS
+uwth n'.hoe
+algonthns qrows
+much
+fasterthantbose
+ado
+ipeor time
+Loqa mtbm
+c
+Hme
+Coq n) ndcoe d the
+time
+needed
+to
+un
+alqp ithm
+-nhm
+o
+n.
+med
+The
+istis
+9e0rch
+orted tispertor
+Gearched
+b
+divdingit
+inholE
+repeadey untlthe
+desired elemeot is
+ound
+The
+ro.o
+ivsiansnecesso
+cessa
+to
+nd the ee
+arows
+with the
+routh
+thon
+proporton
+a)4
+to
+n noq n)iss)ewer
+ratetho OCnth
+w
+theecyoton
+have
+ower
+i
+me
+mplexitthon
+neortfmu
+algonthms.
+Shoton OnePlus
+12025.08.0611:29
+
+,P,
+1p-7ord,f-coglete
+PalynomoJ
+&
+on - polynomia
+time
+Poly nomials
+only involveaperatton of addition
+sub fraction mutiplicahiondnd
+non-negahve
+inteqeT
+xponents.
+on- Polynomuals CoD hvolve otherOperaond
+exponents
+polunomia-timealgo
+15 one
+whose
+running
+time
+qrows
+as
+a
+poly nomialfunchtan at the
+4i2 e
+o isinput
+NP-Hgrd
+ardeT
+ard
+medium
+Easy
+ent
+EasyP
+Medum
+>
+NP
+NP-Complete
+Hordest
+Np- Hard
+The pin the Pchass 6tands or
+Polyo.dmdtm
+i5
+the
+collechon
+decision problem Cproble
+answer) that
+Qqn
+be
+6olved
+a de ermini6HC
+m achinein
+poynomial
+timei
+Shoton OnePius
+|2025.08.0611:29
+
+eotures:
+The
+solutionto
+P-psoblems jis
+eauy
+to
+Hod
+Pis
+oftena class
+camputarionalneo ble
+th
+are
+Golvable ond
+tractable
+Tractable meanS
+that the poblem5
+Can besole
+in theoy
+as
+wellas
+in
+prach'ce.But the
+proems
+that can
+be
+solved in theo
+but
+not
+in Qractice
+ar
+known
+This
+class
+Calcalatig
+Fnbin
+Merge
+sot
+Confans
+many
+problems
+the qreatest Lommon
+mamum
+atchio
+divses
+The
+in
+N
+las6
+6
+stands
+fo Hon- determin
+Pol nom ià
+Time. It15
+the
+collectronot
+dec'sion problems that
+Oan
+bebe Solved
+a non -
+-determintsHc nochine in ponomia n
+time.
+Features
+The
+6olutionsthefla55
+since tbey
+are beig Bo1ved
+machine
+but
+the
+Solut'ons
+are hTd to
+nd
+a non- determipst'
+Shoton OnePlus
+32025.08.06 11:29
+
+vere
+-
+O Cn)- Bedr
+OCn
+-
+Wors
+Selehiem
+Ne -hard class
+An
+Np-ba rd problem i5 at least
+as
+bardos
+the
+hordest problem in NP
+and
+s
+qdleS5.
+prrobiermsuchthaterenyoblem
+redaces to p-aro.
+Features
+1e-ard09plemsaTe notin
+p
+takes
+a
+long
+long Hmeto
+chbeck
+them
+Shoton OnePlus
+412025.08.0611:29
+
+3.MOster
+thon
+Method:onlybrSpeibic
+oblem,
+aste
+method
+ubtitutionnethod)
+MteY
+Method i
+a
+direct
+00y
+tO
+qet the
+Solution
+Method
+wOTKSOnly
+or the
+follouoingtype
+ReuYence
+that
+an
+e
+xonxhormed
+itotheI1owinqpe
+Tn)=
+a T(b)+ FCn)
+ohere
+€.9.
+ReencevRelaio
+1. T(n)=T ()+n
+. TCn)- 8T(n/a)+n
+3. T(n)= T(n/)t c
+Anong
+uaing
+thil
+mater
+only nd
+theorern d
+Can
+be
+Solve
+loluton:
+Tn)=
+U (n) depends
+on
+hCn)
+hln) F (n)
+Shoton OnePlus
+t
+2025.08.0611:34

@@ -1,0 +1,252 @@
+FILE MANAGEMENT in OS
+
+Contents
+File Concepts
+File Types
+File Operations
+Access Methods
+Directory Structure
+File System Structure
+
+File Concept
+The file is a collection of related
+information that is recorded on storage
+device.
+The files stores information and data.
+It is a way of data collection which is
+used as medium of giving input
+and collecting output from
+any application.
+
+File Types
+1. Ordinary Files ( Regular Files )
+–
+It contains user information
+–
+It contains text or executable programs
+–
+It is either text file or binary file
+–
+User can apply various operations 
+2. Directory Files
+–
+It is like a folder that contains files or 
+other folder
+–
+It don’t contain data
+–
+But they have references to file contain 
+within them
+
+File Types
+3. Device File
+–
+It contains device information
+–
+It is used to communicate with 
+hardware 
+–
+Device file is of two types
+i.
+Character special file
+It is a hardware file which read or write 
+data character by character
+e.g.: mouse, printer
+ii. Block file
+It contains data related to hard disk
+e g : file related to hard disk
+
+File Types
+4. FIFO Files
+–
+It is a file which provides temporary 
+buffer for two or more process to 
+communicates by writing data & 
+reading data from buffer
+–
+The buffer associated with this file is 
+allocated when any process opens the 
+file & buffer is discarded when all 
+processes which are connected to this 
+file close their reference
+
+File Operations
+1. Create
+2. Delete
+3. Open
+4. Close
+5. Read 
+6. Write
+7. Append
+8. Seek
+9. Get Attributes
+10. Set Attributes
+11. Rename
+
+Directory Structure
+• To keep track of files, file systems normally 
+have directories of folders.
+• Directories are system files for maintaining 
+the structure of the file system.
+1. Single Level Directory Structure
+2. Hierarchical Directory
+i.
+Two Level Directory Structure
+ii.
+Tree Level Directory Structure
+iii. Acyclic Graph Directory
+
+Single Level Directory
+Directory
+File 1
+File 2
+File 3
+Figure :  Single Level Directory
+
+Hierarchical Directory
+User1
+User2
+User3
+User4
+A1
+B1
+c1
+F1
+F2
+F10
+Figure :  Two Level Directory
+
+Hierarchical Directory
+Root
+Figure :  Tree Level Directory
+Sort.c
+a.txt
+b.txt
+reverse.cp
+p
+
+Hierarchical Directory
+Figure :  Acyclic Directory
+b.txt
+b.txt
+b.txt
+
+File System Structure
+The concept of file system is to access 
+the disk efficiently. It allows data to 
+store & retrieve from disk. 
+File system structure is composed of 
+many layers as following:
+1. Input-Output Control Interface
+
+It consist of device driver and interrupt 
+handler. 
+
+Both are used for data transfer between 
+memory & disk
+
+The device driver translates file level 
+command & output is hardware instruction
+
+2. Basic File System Layers
+
+It generates commands for device driver
+
+Device driver read or write physical block on 
+disk
+3. File Organization Module Layer
+
+This layer translates logical block address to 
+physical block address
+4. Logical System Layer
+
+It manages metadata of any file like location & 
+permission of file
+5. Application Program Layer
+
+This is a layer in which user creates an 
+application program
+
+Access Methods
+The
+information
+stored
+in
+the
+file
+needs to be accessed and read into
+the computer memory.
+There are different methods available
+to do it.
+1) Sequential Access
+2) Indexed Access
+3) Direct Access 
+
+Sequential Access
+Most
+common
+form
+of
+file
+structure
+A fixed
+format
+is
+used
+for
+records
+Key field uniquely identifies the
+record & determines storage
+order
+Typically
+used
+in
+batch
+applications
+Only organization that is easily
+stored on tape as well as disk
+
+Indexed Access
+Records
+are
+accessed
+only
+through their indexes
+Variable-length records can be
+employed
+Exhaustive index contains one
+entry for every record in the
+main file
+Partial index contains entries
+to records where the field of
+interest exists
+Used
+mostly
+in
+applications
+where
+timeliness
+of
+information is critical
+Examples
+would
+be
+airline
+reservation
+systems
+and
+inventory control systems
+
+Direct Access
+Access directly any block of a known address
+Makes use of hashing on the key value
+Often used where:
+◦very rapid access is required
+◦fixed-length records are used
+◦records are always accessed one at a time
+
+References
+Operating System By Andrew 
+Tanenbaums
+
+THANK YOU

@@ -1,0 +1,238 @@
+Module 2
+Process and Process 
+Scheduling
+
+Concept of Process
+• A process is basically a program in execution. 
+The execution of a process must progress in a 
+sequential fashion.
+• A process is defined as an entity which 
+represents the basic unit of work to be 
+implemented in the system.
+
+Layout of a process
+stackpointer
+start
+End
+
+Process States/Process Life Cycle
+
+Process Description
+•The operating system is responsible for the following activities in 
+connection with Process Management
+1.
+Scheduling processes and threads on the CPUs.
+2.
+Creating and deleting both user and system processes.
+3.
+Suspending and resuming processes.
+4.
+Providing mechanisms for process synchronization.
+5.
+Providing mechanisms for process communication.
+
+Process Control Block (PCB)
+Definition: A Process Control Block is a data structure maintained by the 
+Operating System for every process. The PCB is identified by an integer 
+process ID (PID). A PCB keeps all the information needed to keep track of a 
+process as listed below:
+-Process states
+-Process privileges
+-Process ID
+-Pointer
+-Program counter
+-CPU registers
+-CPU Scheduling Information
+-Memory management information
+-Accounting information
+-IO status information
+
+Process Scheduling
+Definition: The process scheduling is the activity of the process manager that 
+handles the removal of the running process from the CPU and the selection of 
+another process on the basis of a particular strategy.
+Process Scheduling Queues:
+
+CPU Scheduling
+• CPU Scheduling is a process of determining 
+which process will own CPU for execution 
+while another process is on hold. The main 
+task of CPU scheduling is to make sure that 
+whenever the CPU remains idle, the OS at 
+least select one of the processes available in 
+the ready queue for execution. The selection 
+process will be carried out by the CPU 
+scheduler. It selects one of the processes in 
+memory that are ready for execution.
+
+Schedulers
+Definition: Schedulers are special system software which handle 
+process scheduling in various ways. Their main task is to select the 
+jobs to be submitted into the system and to decide which process to 
+run. Schedulers are of three types −
+∙
+Long-Term Scheduler/   job scheduler
+∙
+Short-Term Scheduler/CPU scheduler/dispatchers
+∙
+Medium-Term Scheduler/swapping.
+
+Comparison among Scheduler
+S.N
+.
+Long-Term Scheduler
+Short-Term Scheduler
+Medium-Term Scheduler
+1
+It is a job scheduler
+It is a CPU scheduler
+It is a process swapping scheduler.
+2
+Speed is lesser than short term 
+scheduler
+Speed is fastest among other two
+Speed is in between both short and 
+long term scheduler.
+3
+It controls the degree of 
+multiprogramming
+It provides lesser control over degree 
+of multiprogramming
+It reduces the degree of 
+multiprogramming.
+4
+It is almost absent or minimal in time 
+sharing system
+It is also minimal in time sharing 
+system
+It is a part of Time sharing systems.
+5
+It selects processes from pool and 
+loads them into memory for execution
+It selects those processes which are 
+ready to execute
+It can re-introduce the process into 
+memory and execution can be 
+continued.
+
+
+• Non-pre-emptive Scheduling : In non-preemptive 
+mode, once if a process enters into running state, 
+it continues to execute until it terminates or 
+blocks itself to wait for Input/Output or by 
+requesting some operating system service. 
+• Preemptive Scheduling : In preemptive mode, 
+currently running process may be interrupted and 
+moved to the ready State by the operating 
+system. When a new process arrives or when an 
+interrupt occurs, preemptive policies may incur 
+greater overhead than nonpreemptive version but 
+preemptive version may provide better service.
+
+Scheduling Algorithms
+•The Purpose of a Scheduling algorithm
+1.
+Maximum CPU utilization
+2.
+Fare allocation of CPU
+3.
+Maximum throughput
+4.
+Minimum turnaround time
+5.
+Minimum waiting time
+6.
+Minimum response time
+
+Types of Scheduling Algorithms
+
+1. First Come First Serve
+It is the simplest algorithm to implement. The process with the minimal arrival time 
+will get the CPU first. The lesser the arrival time, the sooner will the process gets the 
+CPU. It is the non-preemptive type of scheduling.
+2. Round Robin
+In the Round Robin scheduling algorithm, the OS defines a time quantum (slice). All 
+the processes will get executed in the cyclic way. Each of the process will get the 
+CPU for a small amount of time (called time quantum) and then get back to the 
+ready queue to wait for its next turn. It is a preemptive type of scheduling.
+3. Shortest Job First
+The job with the shortest burst time will get the CPU first. The lesser the burst time, 
+the sooner will the process get the CPU. It is the non-preemptive type of scheduling.
+4. Shortest remaining time first
+It is the preemptive form of SJF. In this algorithm, the OS schedules the Job 
+according to the remaining time of the execution.
+5. Priority based scheduling
+In this algorithm, the priority will be assigned to each of the processes. The higher 
+the priority, the sooner will the process get the CPU. If the priority of the two 
+processes is same then they will be scheduled according to their arrival time.
+
+Threads
+• Definition: A thread is a path of execution within a 
+process. A process can contain multiple threads.
+
+Difference between Process and Thread
+S.N.
+Process
+Thread
+1
+Process is heavy weight or resource intensive.
+Thread is light weight, taking lesser resources than a process.
+2
+Process switching needs interaction with 
+operating system.
+Thread switching does not need to interact with operating 
+system.
+3
+In multiple processing environments, each 
+process executes the same code but has its own 
+memory and file resources.
+All threads can share same set of open files, child processes.
+4
+If one process is blocked, then no other process 
+can execute until the first process is unblocked.
+While one thread is blocked and waiting, a second thread in 
+the same task can run.
+5
+Multiple processes without using threads use 
+more resources.
+Multiple threaded processes use fewer resources.
+6
+In multiple processes each process operates 
+independently of the others.
+One thread can read, write or change another thread's data.
+
+Types of Threads
+• In the operating system, there are two types of threads.
+1. Kernel level thread.
+2. User-level thread.
+
+S.N.
+User-Level Threads
+Kernel-Level Thread
+1
+User-level threads are faster to create and manage.
+Kernel-level threads are slower to create and manage.
+2
+Implementation is by a thread library at the user level.
+Operating system supports creation of Kernel threads.
+3
+User-level thread is generic and can run on any operating 
+system.
+Kernel-level thread is specific to the operating system.
+4
+Multi-threaded applications cannot take advantage of 
+multiprocessing.
+Kernel routines themselves can be multithreaded.
+
+Conept of Multithreading
+Multithreading models are three types
+• Many to many relationship.
+• Many to one relationship.
+• One to one relationship.
+
+Many to Many Model
+
+Many to One Model
+
+One to One Model
+

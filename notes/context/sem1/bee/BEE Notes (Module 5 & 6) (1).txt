@@ -1,0 +1,268 @@
+Module: 5      
+Special Purpose Diodes 
+Characteristics and operation of Zener Diode and application as a voltage regulator. Basic and 
+structure of LED. Application of LED in indicative and lighting displays.  
+________________________________________________________________________________ 
+Zener Diode 
+A Zener diode is a highly doped semiconductor device specifically designed to function in the reverse 
+direction. It is made with a wide range of Zener voltages (Vz).  
+ 
+Operation: A Zener diode functions similarly to a regular semiconductor PN junction diode when 
+forward-biased. However, in reverse-biased mode, a small leakage current flows through the diode. As 
+the reverse voltage across Zener diode increases and reaches the predetermined breakdown voltage 
+(VZ), the junction experiences a breakdown, allowing current to flow through Zener diode in the 
+opposite direction. This current reaches a maximum level determined by the series resistor, after which 
+it stabilizes and remains constant across a wide range of applied voltages. 
+There are two types of breakdowns in a Zener Diode: Zener Breakdown and Avalanche Breakdown  
+Zener Breakdown in Zener Diode 
+When the reverse bias voltage applied to a Zener diode approaches its Zener voltage, the electric field 
+within the depletion region becomes strong enough to attract and remove electrons from their valence 
+band. These valence electrons, energized by the intense electric field, break free from their parent 
+atoms. This phenomenon takes place in the Zener breakdown region, where even a slight increase in 
+voltage leads to a rapid surge in electric current. 
+Avalanche Breakdown in Zener Diode 
+Avalanche breakdown occurs in both normal diodes and Zener diodes when subjected to high reverse 
+voltage. When a significant reverse voltage is applied to the PN junction, the free electrons gain enough 
+energy to accelerate at high velocities. These high-velocity electrons collide with other atoms (collide 
+with electrons in the covalent bond) causing the ejection of additional electrons. This continuous 
+collision process generates a large number of free electrons, resulting in a rapid increase in electric 
+current through the diode. In the case of a normal diode, this sudden surge in current could permanently 
+
+damage it. However, a Zener diode is specifically designed to withstand avalanche breakdown and can 
+handle the sudden current spike.  
+The avalanche effect allows a larger current through the diode compared to what a Zener breakdown 
+would permit. 
+Characteristics of Zener diode:  
+ 
+The V-I characteristics of a Zener diode can be divided into two parts as follows: 
+a. Forward Characteristics, b. Reverse Characteristics 
+a. Forward Characteristics of Zener Diode: 
+The first quadrant in the graph represents the forward characteristics of a Zener diode. It is almost 
+identical to the forward characteristics of P-N junction diode. 
+b. Reverse Characteristics of Zener Diode: 
+When a reverse voltage is applied to a Zener voltage, a small leakage current flows through the diode. 
+As the reverse voltage across Zener diode increases and reaches the predetermined breakdown voltage 
+(VZ), the junction experiences a breakdown, allowing current to flow through Zener diode in the 
+opposite direction. This current reaches a maximum level determined by the series resistor, after which 
+it stabilizes and remains constant across a wide range of applied voltages. 
+Application of Zener Diode:  
+Zener diode as a voltage regulator: 
+Figure shows the circuit diagram of a voltage regulator using a Zener diode.  
+
+During reverse biased, that is the Cathode becomes more positive than the Anode, as soon as the 
+reverse voltage exceeds a pre-determined value (VZ), the Zener Breakdown occurs and the current 
+starts to flow through the Zener diode in the reverse direction. This current reaches a maximum level 
+determined by the series resistor RS, after which it stabilizes and remains constant across a wide range 
+of applied voltages. 
+The voltage across a Zener diode remains constant equal to VZ irrespective of changes in Vin and IL.  
+There is a series resistor RS connected to limit the total current drawn from the unregulated DC power 
+supply (Vin) into the diode to a safe value. As the output voltage (Vo) across load resistor RL is constant 
+and equal to VZ, we get a regulated output voltage. 
+If Vin increases, then IS increases but IL is remains constant as IL= VZ / RL. Hence IZ increases as IZ = 
+IS - IL 
+ 
+_________________________________________________________________ 
+Light Emitting Diode (LED) 
+The LED is a special type of diode and they have similar electrical characteristics to a PN junction 
+diode. Hence the LED allows the flow of current in the forward direction to emits light and blocks 
+the current in the reverse direction.  
+ 
+
+The LED symbol is similar to a diode symbol except for two small arrows that specify the emission 
+of light, thus it is called LED (light-emitting diode). The LED includes two terminals namely anode 
+(+) and the cathode (-). The LED symbol is shown below. 
+LED is constructed by depositing three semiconductor layers on the substrate. The three 
+semiconductor layers deposited on the substrate are n-type semiconductor, p-type semiconductor and 
+active region. Active region is present in between the n-type and p-type semiconductor layers.  
+The construction of LED is similar to the normal p-n junction diode except that gallium, phosphorus 
+and arsenic materials are used for construction instead of silicon or germanium materials 
+ 
+Different materials emit different colours of light. 
+Gallium arsenide LEDs emit red and infrared light. 
+Gallium nitride LEDs emit bright blue light. 
+Yttrium aluminium garnet LEDs emit white light. 
+Gallium phosphide LEDs emit red, yellow and green light. 
+Aluminium gallium nitride LEDs emit ultraviolet light. 
+Aluminium gallium phosphide LEDs emit green light. 
+Principle of operation: 
+When Light Emitting Diode (LED) is forward biased, free electrons in the conduction band 
+recombines with the holes in the valence band and releases energy in the form of light. 
+When LED is forward biased, free electrons from n-type semiconductor and holes from p-type 
+semiconductor are pushed towards the active region. 
+
+When free electrons from n-side and holes from p-side recombine with the opposite charge carriers 
+(free electrons with holes or holes with free electrons) in active region, an invisible or visible light is 
+emitted. 
+In LED, most of the charge carriers recombine at active region. Therefore, most of the light is emitted 
+by the active region. The active region is also called as depletion region. 
+The safe forward biased voltage of most LEDs is from 1V to 3 V and forward current ratings is from 
+200 mA to 100 mA. 
+Application of LED in indicative and lighting displays: 
+LEDs are used as status indicators on a range of equipment and installations because of their small 
+size, low maintenance requirements, and low energy consumption.  
+LED Indicators are used for signal lamps, or warning lights, in many industries to provide visual 
+indications of a system's status.  
+LED indicators are used to show the status of a function, a battery, or electronics.  
+LED displays are widely used in digital signage, scoreboards, advertising billboards, Stadium 
+displays, dynamic decorative displays, and dynamic message signs on highways and more. They can 
+withstand harsh weather conditions making them ideal for use in both indoor and outdoor 
+environments. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Module: 6     
+Introduction to Transistors 
+Structure and operation of BJT. BJT configurations (only common emitter). FET structure 
+and operation. Application of BJT and FET in amplification, switching and oscillators. 
+Transistors generally come in two types. They are bipolar junction transistor (BJT) and field effect 
+transistor (FET). 
+Bipolar Junction Transistor (BJT) 
+The word transistor is derived from words transfer and resistor. The operation of a bipolar junction 
+transistor is the transmission of the input signal from low to high resistance circuit. 
+Construction of BJT 
+BJT is a three-terminal (base, collector, and emitter) semiconductor device consisting of two p-n-
+junctions that are formed by sandwiching either p-type or n-type semiconductors between two p-type 
+semiconductors. There are two junctions formed in BJT. They are Emitter-Base junction and 
+Collector-Base junction.  
+Based on how the p-type and n-type semiconductor materials are arranged physically, there are two 
+types of BJTs  
+NPN Transistor 
+p-type of semiconductor material is sandwiched between the two n-types of semiconductors in NPN 
+type transistor. The two semiconductors of the n type act as the emitter and collector, respectively, 
+while of p-type acts as the base.  
+PNP Transistor 
+n-types of semiconductor material is sandwiched between the two p-types of semiconductors in PNP 
+type transistor. The two p-type semiconductors act as the emitter and collector, respectively, and the 
+n-type acts as the base.  
+ 
+
+BJT operates in three regions: 
+ 
+Active region: The transistor is in this region. When the collector-base junction is reverse-
+biased while the emitter-base junction is in forward-bias, then BJT works in the active area. 
+As a result, BJT is used as an amplifier. 
+ 
+Saturation region: The saturation region arises when the collector-base junctions and the 
+emitter-base junction are both forward-biased. The transistor is on. Transistor operate as ON 
+switch in or near the saturation region 
+ 
+Cut-off region: Because the emitter and collector junctions are both in the reversed bias, 
+so the BJT is off in this condition. Transistor operate as OFF switch.  
+BJT Configurations: 
+There are basically three possible ways to connect BJT in an electric circuit are: 
+ 
+Common Collector (CC) Configuration: In the common collector configuration, the collector 
+of the transistor is grounded, then the base turns as input and the emitter turns as output. 
+ 
+Common Base (CB) Configuration: The base of transistor is grounded in common base 
+configuration, with the emitter acting as the input and the collector as the output. 
+ 
+Common Emitter (CE) Configuration.: Emitter of transistor is grounded in common-
+emitter configuration, and the base serves as input and the collector serves as output. The CE 
+configuration has a forward biased BE junction and a reverse biased CB junction. The emitter 
+current in given by: IE = IC + IB 
+A CE configuration offers a high voltage gain. So, it is frequently employed in voltage 
+amplification. Typically used in general-purpose amplification, audio amplifiers and RF 
+amplifiers. 
+ 
+ 
+Input Characteristics of CE: Input characteristics refer to the curve between base current IB 
+and base-emitter voltage (VBE) for a particular collector-emitter voltage value (VCE). 
+
+ 
+Output characteristics of CE: The output characteristics for a given base current IB are 
+shown by the curve formed between collector current (IC) and collector-emitter voltage (VCE).  
+ 
+Application of BJT in amplification, switching and oscillators. 
+ 
+When BJT used in the saturation and cutoff region, then it acts as a ON-OFF switch   
+ 
+When BJT is operated in the active region is used as an amplifier.  
+ 
+A transistor is used as an oscillator to produce electric oscillations of constant frequency and 
+amplitude without any externally applied input signal, effectively converting DC energy 
+obtained from a battery into AC energy. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Field-effect transistor (FET) 
+Field-Effect Transistor (FET) is a semiconductor device that consists of a channel made of a 
+semiconductor material (n-type or p-type), with two electrodes connected at either end, namely the 
+drain and the source.  
+The flow of current between the source and the drain terminals is controlled by a third electrode, 
+known as the gate. The gate terminal is electrically insulated from the channel between source and 
+drain. 
+ 
+When a voltage is applied to the gate terminal, it creates an electric field in the channel region 
+between source and drain. This electric field modulates the conductivity of the channel, acting like a 
+"valve" that controls the current flow between source and drain. 
+Figure shows the structure of  p-channel FET and n-channel FET 
+ 
+ 
+              p-channel FET                                                     n-channel FET 
+The working principle: 
+It has 3 terminals: source, drain, and gate.  
+When No voltage applied to Gate terminal, and when a certain voltage is applied between the drain 
+and the source, a majority carrier will drift between the drain and the source, generating a drain 
+current. 
+
+For an n-channel FET, applying a positive voltage to the gate attracts free electrons in the channel, 
+increasing its conductivity and allowing more current to flow between source and drain. For a p-
+channel FET, a negative voltage on the gate repels holes, increasing conductivity. 
+By varying the gate voltage, the conductivity and current flow through the channel can be finely 
+controlled. This allows FETs to be used as electronic switches and in amplifying circuits. 
+A FET uses the electric field effect at input to control the output current, therefore its names as Field 
+Effect Transistor. Because it only depends on the majority carrier in the semiconductor to conduct 
+electricity, it is also called the unipolar transistor.  
+There are two main types of FET: Junction FET (JFET) and metal-oxide-semiconductor FET 
+(MOSFET). 
+The electric field effect provides a high input impedance and low noise performance, making FETs 
+useful in RF signal amplifiers. 
+ 
+Comparison of BJT and FET: 
+BJT 
+FET 
+BJT stands for Bipolar Junction Transistor. 
+FET stands for Field Effect Transistor. 
+In BJT, the current flow is due to both majority 
+and minority charge carriers. Thus, it is a bipolar 
+device. 
+In FET, the electric current flows only due 
+to majority charge carriers. Thus, it is a 
+unipolar device. 
+BJT has three terminals viz. Emitter, Base and 
+Collector. 
+FET also has three terminals viz. Source, 
+Drain and Gate. 
+BJT is a current-controlled device. 
+FET is a voltage-controlled device. 
+BJT are of two types: NPN transistor and PNP 
+transistor. 
+FET are also of two types: N-channel FET 
+and P-channel FET. 
+Low input impedance 
+High input impedance 
+The switching speed of BJT is low. 
+FET has higher switching speed. 
+BJT has more thermal noise. 
+BJT has less thermal noise. 
+ 

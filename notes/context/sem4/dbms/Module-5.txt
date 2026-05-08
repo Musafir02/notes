@@ -1,0 +1,426 @@
+[Page 1]
+This page appears to be part of a textbook or study guide for computer science or engineering students, focusing on database management systems and transactions.
+
+The main topic is "5.1 TRANSACTION CONCEPT", which covers various aspects of transactions in database management systems. The page is divided into two columns, with the left column discussing the poor design and planning of transactions, while the right column delves into the concept of transactions, including the write/change data and commit processes.
+
+The poor design and planning of transactions section highlights the importance of proper transaction design to ensure data consistency and integrity. It emphasizes that transactions are a set of operations used to perform a logical set of work, and that a transaction usually means that the data in the database has changed. The section also explains that one of the major uses of DBMS is to protect the user's data from system failures, and that it is done by ensuring that all the data is restored to a consistent state when the computer is restarted after a crash.
+
+The concept of transactions section explains that a transaction is any one execution of the user program in a DBMS, and that it contains a finite number of steps. It also discusses the steps for an ATM transaction, including transaction start, inserting an ATM card, selecting a language for the transaction, selecting the savings account option, entering the amount to withdraw, entering a secret pin, waiting for some time for processing, collecting cash, and transaction completion.
+
+The write/change data and commit processes section explains that write/change data involves writing the data item from the memory variable to the disk, while commit involves committing the transaction to ensure data consistency and integrity. It also provides examples of how these processes work, including transferring 50 rupees from account A to account B, initially A = 500, B = 800, and accessing data from RAM.
+
+The page also includes a table illustrating the different types of transaction states, including active state, partially committed state, and committed state. The table shows how these states are related to each other and how they change during the transaction process.
+
+Overall, this page provides a comprehensive overview of transactions in database management systems, covering both the theoretical concepts and practical examples. It is an essential resource for students studying computer science or engineering, providing a solid foundation for understanding the principles of transactions and their importance in ensuring data consistency and integrity.
+
+[Page 3]
+This page delves into the essential concepts of Atomicity, Consistency, Isolation, and Durability (ACID) in database transactions, providing a comprehensive understanding of these fundamental principles.
+
+**Main Topic: ACID Properties**
+
+The main topic of this page is the explanation of ACID properties, which are crucial for ensuring the integrity and reliability of database transactions. ACID stands for Atomicity, Consistency, Isolation, and Durability.
+
+**Atomicity**
+
+Atomicity refers to the property that a database transaction must be executed as a single, indivisible unit. This means that either the entire transaction is completed successfully or it is rolled back to its original state, maintaining consistency and preventing errors. An example illustrates this concept: if a balance is restored to $1000, and no changes are made to Account B, the transaction is considered successful. If the transaction fails, the balance reverts to its original state.
+
+**Consistency**
+
+Consistency ensures that the database remains in a valid state before and after a transaction. This means that the database must adhere to all defined rules, constraints, and relationships, such as primary keys, foreign keys, etc. If a transaction violates any of these rules, it is rolled back to prevent corrupt or invalid data.
+
+**Isolation**
+
+Isolation ensures that concurrent transactions do not interfere with each other. This means that a transaction must be executed independently, without affecting other transactions. If a transaction deducts money from one account but does not add it to another, it violates consistency.
+
+**Durability**
+
+Durability ensures that once a transaction is committed, its effects are permanent and cannot be rolled back. This means that the changes made during a transaction are saved in the database, and any subsequent transactions must respect these changes.
+
+**Example:**
+
+Suppose we have a bank system with two accounts, A and B. We want to transfer $100 from account A to account B. The transaction is as follows:
+
+1. Read (X) = 500
+2. Read (Y) = 200
+3. Write (X) = 400
+4. Write (Y) = 300
+
+After the transaction, the total balance remains $700. If the transaction fails in the middle, the system should maintain its consistency by rolling back the transaction.
+
+**Properties of ACID**
+
+The page also explains the properties of ACID, which are:
+
+* Atomicity: A transaction is all-or-nothing, either succeeding or failing.
+* Commit: If the transaction is successful, the changes are permanently applied.
+* Abort/Rollback: If the transaction fails, any changes made during the transaction are discarded.
+
+**Example:**
+
+Consider the following transaction T consisting of T1 and T2:
+
+* T1: Transfer $100 from account X to account Y.
+* T2: If the transaction fails, the database would be left in an inconsistent state.
+
+With Atomicity, if any part of the transaction fails, the entire process is rolled back to its original state, and no partial changes are made.
+
+**Conclusion**
+
+In conclusion, this page provides a comprehensive explanation of the ACID properties, which are essential for ensuring the integrity and reliability of database transactions. By understanding these properties, developers can design and implement transactions that are atomic, consistent, isolated, and durable, ensuring that the database remains in a valid state before and after a transaction.
+
+[Page 5]
+This page delves into the concept of Atomicity, Consistency, Isolation, and Durability (ACID) properties in the context of database transactions. It also covers concurrent execution, critical use cases for ACID in databases, and a table illustrating the lost update problem.
+
+**Atomicity, Consistency, Isolation, and Durability (ACID) Properties**
+
+The page begins by defining ACID properties:
+
+*   **Atomicity**: Money must be moved from one account to another for a transaction to be completed. The data would become inconsistent if funds were taken out of one account and not added to another.
+*   **Consistency**: Let us take a look at a database constraint where an account balance cannot be lower than $0. Any changes made to the account balance during a transaction must result in a legitimate, non-negative balance when the transaction is completed; otherwise, it should be cancelled.
+*   **Isolation**: Take into consideration two requests for money transfers from the same bank account made at the same time. When the transfer requests are processed sequentially and simultaneously, the outcome should be the same.
+*   **Durability**: As soon as a database verifies that funds have been moved from one bank account to another, take into consideration a power outage. Despite the unexpected failure, the database ought to still have the updated data.
+
+**Concurrent Execution**
+
+The page also discusses concurrent execution, highlighting the challenges it poses:
+
+*   **Problems with Concurrent Execution**: In a database transaction, the two main operations are READ and WRITE operations. So, there is a need to manage these two operations in the concurrent execution of the transactions as if these operations are not performed in an interleaved manner, and the data may become inconsistent.
+
+**Critical Use Cases for ACID in Databases**
+
+The page explains that in modern applications, ensuring the reliability and consistency of data is crucial. ACID properties are fundamental in sectors like:
+
+*   **Banking**: Transactions involving money transfers, deposits, or withdrawals must maintain strict consistency and durability to prevent errors and fraud.
+*   **E-Commerce**: Ensuring that inventory counts, orders, and customer details are handled correctly and consistently, even during high traffic, requires ACID compliance.
+*   **Healthcare**: Patient records, test results, and prescriptions must adhere to strict consistency, integrity, and security standards.
+
+**Lost Update Problem**
+
+The page illustrates the lost update problem with a table:
+
+| Time | Tx | Ty |
+| --- | --- | --- |
+| t1 | READ (A) |  |
+| t2 | A = A - 50 |  |
+| t3 |  | READ (A) |
+| t4 |  | A = A + 100 |
+| t5 |  |  |
+| t6 | WRITE (A) |  |
+| t7 |  | WRITE (A) |
+
+At time t1, transaction Tx reads the value of account A. At time t2, Tx subtracts 50 from A. At time t3, Ty reads the value of A and adds 100. At time t6, Tx writes the updated value of A. At time t7, Ty writes the updated value of A. The table shows that the final value of A is -50, which is incorrect because Tx should have read the value of A as -100.
+
+In summary, this page provides a comprehensive overview of ACID properties, concurrent execution, critical use cases, and the lost update problem. It highlights the importance of ensuring the reliability and consistency of data in various sectors and provides examples and numerical values to illustrate the concepts.
+
+[Page 8]
+This page delves into the realm of database management systems (DBMS), focusing on the concepts of schedules, serializability, and transactions.
+
+**Schedules**
+
+The page introduces two types of schedules: **serializable** and **non-serializable**. A serializable schedule is one where a single transaction is executed at a time, ensuring that only one transaction is active before starting another. In contrast, a non-serializable schedule involves interleaving or interchanging transactions, which can lead to conflicts and inconsistencies.
+
+**Serializability**
+
+The page explains that serializability is a critical concept in DBMS, as it ensures that the execution of transactions appears to occur in a serial manner, even if they are executed concurrently. This is achieved by testing the serializability of a schedule using a **serialization graph** or **precedence graph**. The serialization graph represents the entire transactions of a schedule, while the precedence graph shows the relationships between transactions.
+
+**Testing Serializability**
+
+To test the serializability of a schedule, the page describes two methods:
+
+*   **Serialization Graph**: A graph that represents the entire transactions of a schedule, with nodes representing transactions and edges representing the relationships between them.
+*   **Precedence Graph**: A graph that shows the relationships between transactions, with nodes representing transactions and edges representing the precedence relationships between them.
+
+**Examples and Formulas**
+
+The page provides examples of serializable and non-serializable schedules, as well as formulas and equations to illustrate the concepts. For instance, the formula for calculating the slip of a transmission line is given as:
+
+slip s = (Ns - Nr) / Ns
+
+where Ns is the number of slips and Nr is the number of revolutions.
+
+**Diagrams and Figures**
+
+The page includes several diagrams and figures to illustrate the concepts of schedules, serializability, and transactions. These diagrams show the relationships between transactions, the serialization graph, and the precedence graph.
+
+**Definitions and Key Terms**
+
+The page defines important terms such as **transaction**, **schedule**, **serializable**, and **non-serializable**. It also explains the concepts of **interleaving** and **interchanging** transactions, and how they relate to serializability.
+
+In summary, this page provides a comprehensive overview of the concepts of schedules, serializability, and transactions in DBMS. It explains the different types of schedules, how to test serializability, and provides examples and formulas to illustrate the concepts. The page also includes diagrams and figures to help students understand the relationships between transactions and the serialization graph and precedence graph.
+
+[Page 10]
+The main topic of this page is "Conflict Serializable Schedule" and "View Serializability and View Serializable Schedules".
+
+This page explains two important concepts in database transactions: conflict serializable schedules and view serializable schedules. A conflict serializable schedule is a schedule where transactions do not conflict with each other, meaning that they do not access the same data at the same time. This is achieved by ensuring that transactions execute in a way that avoids conflicts, such as by executing them in a specific order or by using locks to prevent concurrent access.
+
+A view serializable schedule, on the other hand, is a schedule where transactions are executed in a way that ensures that the view of the data is consistent. This means that the transactions are executed in a way that maintains the consistency of the data, even if they access different parts of the database.
+
+The page also explains the concept of view equivalence, which is the idea that two schedules are equivalent if they produce the same view of the data. This is important because it allows us to determine whether two schedules are conflict serializable or not.
+
+In addition to these concepts, the page also discusses the idea of mid-read-write operations, which are operations that read and write data simultaneously. This is important because it can affect the serializability of transactions.
+
+The page also includes several diagrams and figures that illustrate these concepts. For example, Figure 5.6 shows a conflict serializable schedule, while Figure 5.13 shows a view serializable schedule. These diagrams help to clarify the concepts and make it easier to understand how they work.
+
+Overall, this page provides a clear and concise explanation of conflict serializable schedules and view serializable schedules, along with the concepts of view equivalence and mid-read-write operations. It also includes diagrams and figures to help illustrate these concepts and make them easier to understand.
+
+*Answer*: This page provides a clear and concise explanation of conflict serializable schedules and view serializable schedules, along with the concepts of view equivalence and mid-read-write operations. It also includes diagrams and figures to help illustrate these concepts and make them easier to understand.
+
+[Page 12]
+The main topic of this page is concurrency control, which is a crucial aspect of database management systems. Concurrency control ensures that multiple transactions can be executed simultaneously without violating data integrity.
+
+**Stock Market Transactions**
+
+The page begins by discussing stock market transactions, where every single second, a trading platform processes millions of buy and sell requests. Serializability arrangements are used to ensure that these transactions happen sequentially, or else a certain price might get incorrectly updated. However, if there is not any serializability foresight implemented, investors can incur catastrophic financial losses when selling or purchasing stocks at unreasonably set prices.
+
+**Hospital Management Systems**
+
+The next section focuses on hospital management systems, where doctors and nurses can take a look at a patient's file concurrently. Serializability orders each transaction to be completed fully, so there isn't any data mix-up. For example, if one doctor changes the prescribed medication and another changes the results of tests, both actions can be taken together because of Serializability.
+
+**Concurrency Control**
+
+The main topic of the page is concurrency control, which is a procedure of managing simultaneous operations without conflicting with each other. It ensures that database transactions are performed concurrently and accurately to produce correct results without violating data integrity of the respective Database. Concurrency access is quite easy if all users are just reading data. There is no way they can interfere with one another. Though for any practical Database, it would have a mix of READ and WRITE operations and hence the concurrency is a challenge.
+
+**DBMS Concurrency Control**
+
+DBMS Concurrency Control is used to address such conflicts, which mostly occur with a multi-user system. Therefore, Concurrency Control is the most important element for proper functioning of a Database Management System where two or more database transactions are executed simultaneously, which require access to the same data. Concurrency Control is the working concept that is required for controlling and managing the concurrent execution of database operations and thus avoiding the inconsistencies in the database.
+
+**Need of Concurrency Control**
+
+There can be many problems that can occur when concurrent in an uncontrolled manner, so we need to control it. Concurrency control is the activity of managing concurrent operations such as updates, deletes etc. in the database without overlapping with each other. In other words, concurrency control is concerned with ensuring that two or more users do not get in each other's way.
+
+**Challenges in Concurrent Transactions**
+
+Isolation is one of the major issues which the community has to consider to achieve data consistency, integrity and good performance of a DBMS when it supports concurrent transactions. These are a few of the major difficulties:
+
+*   **Data Consistency**: Lost Updates: Happens when two or more transactions attempt to read the same record, modify it and then write it back, it would result in writing only one of changes.
+*   **Temporary Inconsistencies**: Raise when a transaction is reading data that another transaction is simultaneously processing, resulting in interim or unpredictable values.
+*   **Data Integrity**: Non-Repeatable Reads: Occur when one transaction retries a read operation and obtains a different value than before because another transaction has updated the value in between.
+*   **Phantom Reads**: Happen when a transaction resubmit a query that returns a set of rows which meet a condition and discover that the set of rows has been changed by another transaction that was inserting or deleting rows.
+
+In conclusion, concurrency control is a critical aspect of database management systems, ensuring that multiple transactions can be executed simultaneously without violating data integrity. Understanding the need for concurrency control, the challenges it poses, and the techniques used to address these challenges is essential for effective database management. By implementing concurrency control mechanisms, we can ensure that database operations are executed efficiently and accurately, even in the presence of multiple concurrent transactions.
+
+[Page 15]
+This page delves into the intricacies of locking mechanisms in DBMS, specifically focusing on shared locks and exclusive locks. The main topic is divided into two primary sections: "Rules of Locking" and "Two Phase Locking Protocol."
+
+**Rules of Locking**
+
+The "Rules of Locking" section outlines the fundamental principles governing locking in DBMS. It begins by explaining that both locks are available, and the system grants them. The execution of transactions is denoted by the symbol "T1." The system then releases the locks on X and Y, allowing the read lock on X to T2 to proceed. This method is simple but may lead to inefficiency in systems with a high number of transactions.
+
+The section also introduces the concept of "Read Lock (or) Shared Lock(S)," which is granted when a transaction has a read lock on a data item but not updates it. If a transaction has a read lock on the data item, other transactions can obtain read locks on the data item but no write locks. Additionally, the section explains "Write Lock (or) Exclusive Lock (X)," which is granted when a transaction has a write lock on a data item, it can both read and update the data item. If a transaction has a write lock on the data item, then other transactions cannot obtain either a read lock or write lock on the data item.
+
+Furthermore, the section discusses "Starvation," which occurs when a transaction needs to wait for an indefinite period to acquire a lock. It also explains "Deadlock," where two or more processes are waiting for each other to release a resource or more than two processes are waiting for the resource in a circular chain.
+
+**Two Phase Locking Protocol**
+
+The "Two Phase Locking Protocol" section provides an in-depth explanation of the protocol. The first phase is the "Sharing Phase," where the lock is granted, and the second phase is the "Locking Phase," where the lock is released. The protocol also explains the concept of "Concurrency Control," which ensures that multiple transactions can read and write data simultaneously.
+
+The section also provides a table comparing shared locks and exclusive locks, highlighting their differences in terms of purpose, data access, lock compatibility, concurrency, data modification, and isolation. The table illustrates that shared locks allow only reading of data, have multiple transactions that can hold S-lock simultaneously, have high concurrency, do not allow data modification, prevent dirty reads, and prevent dirty reads and lost updates.
+
+In conclusion, this page provides a comprehensive overview of the rules of locking and the two-phase locking protocol in DBMS, including the differences between shared locks and exclusive locks, and the importance of concurrency control. By understanding these concepts, students can gain a deeper appreciation for the complexities of locking mechanisms in DBMS and how they impact system performance and reliability.
+
+[Page 17]
+The page under review appears to be a part of a textbook or study guide on computer science, specifically focusing on the topic of "Timestamp Ordering" in database systems.
+
+**Main Topic**
+
+The main topic of this page is "Timestamp Ordering," which is a crucial concept in ensuring the consistency and integrity of data in a database system. Timestamp ordering refers to the process of assigning unique timestamps to transactions or operations in a database to determine their order of execution.
+
+**Concepts Explained**
+
+Several key concepts are explained on this page:
+
+*   **Working of Timestamp Ordering**: Each data item X in the database has two timestamps: W_TS(X), which represents the timestamp of the last transaction that wrote to X, and R_TS(X), which represents the timestamp of the last transaction that read from X. These timestamps are used to determine the order in which transactions can be executed.
+*   **Basic Timestamp Ordering**: This concept involves comparing the timestamps of the current transaction with the timestamps on the data items it wants to read or write. If the timestamp of the current transaction is greater than the timestamp on the data item, the transaction can proceed. Otherwise, it must wait until the data item's timestamp is updated.
+*   **Precedence Graph for TS Ordering**: This concept involves creating a graph to visualize the relationships between transactions based on their timestamps. The graph shows which transactions can execute concurrently and which must wait for others to complete.
+*   **Rules for Read Operation R_item(X)**: These rules specify when a read operation can be executed on a data item X. The rules state that a read operation can only be executed if the transaction that last wrote X has committed, and the transaction that last wrote X has committed.
+*   **Rules for Write Operation W_item(X)**: These rules specify when a write operation can be executed on a data item X. The rules state that a write operation can only be executed if all previous readers/writers of X have committed, and the operation is not aborted immediately.
+
+**Formulas and Equations**
+
+Several formulas and equations are presented on this page:
+
+*   **TS(T1) = 10**: This equation states that the timestamp of transaction T1 is 10.
+*   **TS(T2) = 20**: This equation states that the timestamp of transaction T2 is 20.
+*   **T1**: This equation represents the timestamp of transaction T1.
+*   **T2**: This equation represents the timestamp of transaction T2.
+*   **READ(A)**: This equation represents a read operation on data item A.
+*   **WRITE(A)**: This equation represents a write operation on data item A.
+*   **READ(B)**: This equation represents a read operation on data item B.
+*   **WRITE(B)**: This equation represents a write operation on data item B.
+
+**Diagrams and Figures**
+
+There are two diagrams on this page:
+
+*   **Figure 5.9**: This diagram illustrates the basic timestamp ordering protocol. It shows how transactions are assigned timestamps and how they are compared to determine their order of execution.
+*   **Table 5.18**: This table illustrates the rules for read operation R_item(X). It shows the conditions under which a read operation can be executed on a data item X.
+*   **Table 5.19**: This table illustrates the rules for write operation W_item(X). It shows the conditions under which a write operation can be executed on a data item X.
+*   **Table 5.20**: This table illustrates the conflicting operations and read/write operations. It shows which operations can execute concurrently and which must wait for others to complete.
+
+**Definitions of Important Terms**
+
+Several important terms are defined on this page:
+
+*   **Transaction**: A transaction is a sequence of operations that are executed as a single unit.
+*   **Timestamp**: A timestamp is a unique identifier assigned to a transaction to determine its order of execution.
+*   **Read Operation**: A read operation is an operation that retrieves data from a data item.
+*   **Write Operation**: A write operation is an operation that updates data in a data item.
+*   **Commit**: A commit is the final state of a transaction, indicating that it has completed successfully.
+*   **Abort**: An abort is the final state of a transaction, indicating that it has failed or been rolled back.
+
+**Examples and Numerical Values**
+
+Several examples and numerical values are provided on this page
+
+[Page 19]
+This page appears to be a continuation of a textbook or lecture notes on database management systems, covering topics such as concurrency control, locking protocols, and recovery systems.
+
+**Concurrency Control**
+
+The page begins by discussing the concept of concurrency control, which is essential for ensuring that multiple transactions can be executed simultaneously without interfering with each other. The author explains that an ideal concurrency control DBMS mechanism should have the following objectives:
+
+*   Must be resilient to site and communication failures
+*   Allows the parallel execution of transactions to achieve maximum concurrency
+*   Storage mechanisms and computational methods should be modest to minimize overhead
+*   Enforce some constraints on the structure of atomic actions of transactions
+
+The author then introduces the concept of locking protocols, which are used to manage access to shared resources in a database. There are two types of locking protocols: general lock-based and two-phase locking protocol (2PL). The general lock-based protocol has no strict rule on when to acquire/release locks, while the 2PL protocol has two phases: growing (acquire only) and shrinking (release only).
+
+**Locking Protocols**
+
+The author explains that the 2PL protocol is more robust than the general lock-based protocol because it ensures that locks are acquired and released in a specific order. This prevents deadlocks, which occur when two or more transactions are blocked indefinitely, waiting for each other to release resources.
+
+**Recovery System**
+
+The page also discusses the importance of a recovery system in a DBMS. A recovery system is responsible for ensuring that the database remains consistent and up-to-date even in the event of failures or crashes. The author explains that a recovery system should be able to:
+
+*   Monitor, store, and change data rapidly and effectively using a DBMS (Database Management System)
+*   Possess atomicity, consistency, isolation, and durability qualities
+*   Preserve data and changes made to data defines its durability
+*   Fail for any of the following reasons:
+    *   System breakdowns occur as a result of hardware or software issues in the system
+    *   Transaction failures arise when a certain process dealing with data updates cannot be completed
+    *   Disk crashes may occur as a result of the system's failure to read the disc
+    *   Physical damages include issues such as power outages or natural disasters
+
+The author concludes by emphasizing the importance of a recovery system in ensuring the reliability and consistency of a DBMS.
+
+**Key Takeaways**
+
+In summary, this page covers the following key concepts:
+
+*   Concurrency control: ensuring multiple transactions can be executed simultaneously without interfering with each other
+*   Locking protocols: managing access to shared resources in a database
+*   Recovery system: ensuring the database remains consistent and up-to-date even in the event of failures or crashes
+
+The author provides detailed explanations and examples to help students understand these complex concepts. By mastering these topics, students will be well-equipped to design and implement robust database management systems that can handle concurrent transactions and recover from failures.
+
+[Page 22]
+This page appears to be a comprehensive guide to transaction logs and their modifications, covering key concepts, formulas, and diagrams.
+
+**Main Topic: Transaction Logs**
+
+The main topic of this page is transaction logs, which are used to record and manage changes made to a database. The page explains that a transaction log is a record of all changes made to a database, including insertions, updates, and deletions.
+
+**Concepts:**
+
+* **Commit:** A commit is when a transaction is completed and its changes are applied to the database. The log records <T_0 commit>, and the new values of A and B are permanently written to storage.
+* **Change to C:** A change to C is updated from 200 to 180. The change is logged as <T_1, C, 200, 180>, and C's new value is reflected in memory.
+* **Commit:** After the change, T_1 is committed. The log records <T_1 commit>, and the new value of C is permanently written to storage.
+* **Requires Undo and Redo for Recovery:** Uncommitted changes are reverted using undo, while committed changes are reapplied using redo during recovery.
+* **Logs Are Written First:** All changes are logged before being applied to ensure recoverability and consistency in case of failure.
+* **Deferred Modification:** In the Deferred Modification method, changes to the database are not applied immediately. Instead, they are logged and stored temporarily.
+* **Transaction T_1:** The log records <T_1 start>, <T_1, C, 700, 600>, <T_1 commit>, and <T_1 start>.
+* **Transaction T_0:** The log records <T_0 start>, <T_0, B, 2000, 2050>, <T_0, C, 700, 600>, <T_0 commit>, and <T_0 start>.
+* **Transaction T_0:** The log records <T_0 start>, <T_0, B, 2000, 2050>, <T_0, C, 700, 600>, <T_0 commit>, and <T_0 start>.
+
+**Formulas and Equations:**
+
+* None are presented on this page.
+
+**Diagrams and Figures:**
+
+* A table illustrates the differences between a transaction log with and without deferred modification. The table shows that when changes are applied only after commit, no updates are made to the database until the transaction commits. This prevents partial changes in case of a failure.
+* Another table shows the key characteristics of deferred modification, including that changes are logged first, all updates are recorded in the log before any changes are applied to the database, and changes are applied only after commit.
+
+**Definitions of Important Terms:**
+
+* **Transaction:** A transaction is a sequence of operations that are executed as a single, atomic unit.
+* **Log:** A log is a record of all changes made to a database.
+* **Commit:** A commit is when a transaction is completed and its changes are applied to the database.
+* **Undo:** Undo is the process of reverting uncommitted changes.
+* **Redo:** Redo is the process of reapplying committed changes.
+
+**Examples and Numerical Values:**
+
+* The page provides several examples of transactions and their corresponding log records, including:
+	+ Transaction T_1: <T_1 start>, <T_1, C, 700, 600>, <T_1 commit>, and <T_1 start>.
+	+ Transaction T_0: <T_0 start>, <T_0, B, 2000, 2050>, <T_0, C, 700, 600>, <T_0 commit>, and <T_0 start>.
+
+Overall, this page provides a comprehensive overview of transaction logs and their modifications, including key concepts, formulas, and diagrams. It also provides several examples and numerical values to illustrate the concepts.
+
+[Page 24]
+This page from a textbook delves into the concept of deadlock in computer science, a critical issue that can arise when multiple processes or threads are competing for shared resources. The main topic of this page is understanding and preventing deadlocks.
+
+**What is a Deadlock?**
+
+A deadlock occurs when two or more transactions are waiting indefinitely for one another to give up locks. This can happen when multiple processes or threads are trying to access the same resources simultaneously. For example, consider a student table and a grade table. If transaction T1 holds a lock on the student table and needs to update the rows in the grade table, while transaction T2 holds a lock on the grade table and needs to update the rows in the student table, a deadlock can occur if both transactions wait for each other to release their locks.
+
+**Characteristics of Deadlock**
+
+Deadlocks are characterized by the following conditions:
+
+* Mutual Exclusion: There must be at least one resource that is in a non-shareable mode. Thus, only one transaction can access the resource at one time.
+* Hold and Wait: A transaction is holding one resource and waiting for other resources held by other transactions.
+* No Preemption: A resource cannot be removed from a transaction forcefully that is holding it. The system must wait until the transaction releases it voluntarily.
+* Circular Wait: Circular wait for transactions always exists. Here, each transaction holds a resource on which the next one needs to hold. A waits for B, B waits for C, and so on, until a transaction waits on A.
+
+**Deadlock Detection**
+
+Deadlock detection involves checking for conditions that guarantee no circular wait conditions. However, deadlock avoidance may degrade the performance of the system since the algorithms running for continuous monitoring and forecasting possible deadlocks incur computational overhead.
+
+**Deadlock Avoidance**
+
+Stopping deadlocks before they occur is often better than recovering from them. Deadlock avoidance is an example of careful resource allocation. The DBMS checks whether granting a resource to a transaction will potentially lead to a deadlock. If it predicts a deadlock, it denies the request, making the system safe.
+
+**Deadlock Detection Techniques**
+
+If deadlocks are not avoided, they must be detected; hence, deadlock detection techniques periodically check for deadlock conditions and resolve these by aborting one or more transactions involved. The DBMS may employ deadlock detection algorithms to look for cycles in the resource allocation graph. If any cycle is detected, it implies a deadlock, and the system might abort one of the transactions to break the cycle.
+
+In summary, this page provides a comprehensive overview of deadlocks, including their definition, characteristics, detection, and avoidance. It also discusses the importance of preventing deadlocks and the techniques used to detect and resolve them. By understanding these concepts, students can better appreciate the challenges of managing concurrent access to shared resources in computer systems.
+
+[Page 26]
+The page you've provided is a comprehensive overview of the Wait-Die and Wound-Wait schemes, which are used in computer science to manage transactions in a database or other shared resource. The main topic of the page is "Differences between the Wait-Die scheme and Wound wait scheme," which is a key concept in understanding how these schemes work.
+
+**Wait-Die Scheme**
+
+The Wait-Die scheme is a transaction management technique that uses a wait-for graph to detect deadlocks. A wait-for graph is a directed graph where each node represents a transaction, and each edge represents a wait relationship between two transactions. The scheme works as follows:
+
+*   When a transaction requests a data item that is locked by another transaction, it waits until the data item is released.
+*   If the data item is not released within a certain time limit, the transaction is rolled back.
+*   The wait-for graph is used to detect deadlocks by checking for cycles in the graph. If a cycle is detected, it means that there is a deadlock, and the transactions involved in the cycle are rolled back.
+
+**Wound-Wait Scheme**
+
+The Wound-Wait scheme is another transaction management technique that uses a similar approach to the Wait-Die scheme. However, instead of waiting for a data item to be released, a transaction in the Wound-Wait scheme will "wound" the data item by incrementing its version number. This means that the transaction is indicating that it has made progress on the data item, even if it has not yet completed.
+
+If another transaction attempts to access the data item while it is being "wounded," it will be rolled back. This prevents deadlocks from occurring, as each transaction is able to make progress on the data item without blocking other transactions.
+
+**Deadlock Detection and Recovery**
+
+Deadlocks can occur when two or more transactions are blocked indefinitely, waiting for each other to release resources. The page explains how to detect deadlocks using the wait-for graph and how to recover from them by rolling back transactions.
+
+**Example**
+
+The page provides an example of how the Wait-Die scheme works. Suppose we have two transactions, T1 and T2, that are accessing the same data item. T1 requests the data item first, and T2 requests it later. If T1 is still holding the data item when T2 requests it, T2 will wait for T1 to release the data item. If T1 does not release the data item within a certain time limit, T2 will be rolled back.
+
+**Key Concepts**
+
+The page covers several key concepts related to transaction management, including:
+
+*   **Wait-for graph**: A directed graph used to detect deadlocks in the Wait-Die scheme.
+*   **Deadlock**: A situation where two or more transactions are blocked indefinitely, waiting for each other to release resources.
+*   **Rollback**: The process of undoing a transaction's changes when a deadlock is detected.
+*   **Wound-wait scheme**: A transaction management technique that uses a similar approach to the Wait-Die scheme, but with a different mechanism for detecting deadlocks.
+
+Overall, the page provides a clear and concise overview of the Wait-Die and Wound-Wait schemes, as well as the concepts of deadlock detection and recovery. It is an essential resource for anyone studying transaction management in computer science.

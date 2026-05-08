@@ -1,0 +1,597 @@
+ 
+ 
+Why Memory management ?
+Why Memory management ?
+1.
+1.
+To ensure protection of different 
+To ensure protection of different 
+processes from each other (so that 
+processes from each other (so that 
+they do not interfere with each other’s 
+they do not interfere with each other’s 
+operations).
+operations).
+2.
+2.
+To place the programs in memory 
+To place the programs in memory 
+(such that memory is utilized to its 
+(such that memory is utilized to its 
+fullest  extent.
+fullest  extent.
+
+ 
+ 
+Logical vs. physical address 
+Logical vs. physical address 
+space
+space
+►A logical address is the address of an 
+A logical address is the address of an 
+instruction or data as used by a program. 
+instruction or data as used by a program. 
+►A physical address is the effective memory 
+A physical address is the effective memory 
+address of an instruction or data i.e. it is the 
+address of an instruction or data i.e. it is the 
+address obtained after binding of logical 
+address obtained after binding of logical 
+addresses has been done. 
+addresses has been done. 
+
+ 
+ 
+Program relocation
+Program relocation
+
+ 
+ 
+Relocation register
+Relocation register
+►Relocation register is a special register in 
+Relocation register is a special register in 
+the CPU used for program relocation means 
+the CPU used for program relocation means 
+mapping of logical addresses used by the 
+mapping of logical addresses used by the 
+program to physical addresses of the 
+program to physical addresses of the 
+system’s main memory 
+system’s main memory 
+
+ 
+ 
+Storage Allocation and 
+Storage Allocation and 
+Management Techniques
+Management Techniques  
+The Storage allocation can be of two types: 
+The Storage allocation can be of two types: 
+(i) Contiguous storage allocation.
+(i) Contiguous storage allocation.
+(ii) Non-contiguous storage allocation. 
+(ii) Non-contiguous storage allocation. 
+
+ 
+ 
+Contiguous Storage Allocation
+Contiguous Storage Allocation  
+►Contiguous storage allocation implies that a 
+Contiguous storage allocation implies that a 
+program’s data and instructions are assured 
+program’s data and instructions are assured 
+to occupy a single contiguous memory area. 
+to occupy a single contiguous memory area. 
+►It is further subdivided into Fixed-partition 
+It is further subdivided into Fixed-partition 
+storage allocation strategy and variable-
+storage allocation strategy and variable-
+partition storage allocation strategy.
+partition storage allocation strategy.
+
+ 
+ 
+1. Fixed-partition contiguous 
+1. Fixed-partition contiguous 
+storage allocation
+storage allocation
+►processes with small address space use 
+processes with small address space use 
+small partitions and processes with large 
+small partitions and processes with large 
+address space use large partitions. This is 
+address space use large partitions. This is 
+known as fixed partition contiguous storage 
+known as fixed partition contiguous storage 
+allocation. 
+allocation. 
+
+ 
+ 
+
+ 
+ 
+2. Variable - partition 
+2. Variable - partition 
+contiguous storage allocation
+contiguous storage allocation
+This notion is derived from parking of vehicles on 
+This notion is derived from parking of vehicles on 
+the sides of streets where the one who manages 
+the sides of streets where the one who manages 
+to enter will get the space.  Two vehicles can 
+to enter will get the space.  Two vehicles can 
+leave a space between them that cannot be used 
+leave a space between them that cannot be used 
+by any vehicle.  This means that whenever a 
+by any vehicle.  This means that whenever a 
+process needs memory, a search for the space 
+process needs memory, a search for the space 
+needed by it, is done.  If contiguous space is 
+needed by it, is done.  If contiguous space is 
+available to accommodate that process, then the 
+available to accommodate that process, then the 
+process is loaded into memory. 
+process is loaded into memory. 
+
+ 
+ 
+External Fragmentation
+External Fragmentation
+►This phenomenon of entering and leaving 
+This phenomenon of entering and leaving 
+the memory can cause the formation of 
+the memory can cause the formation of 
+unusable memory holes (like the unused 
+unusable memory holes (like the unused 
+space between two vehicles).  This is 
+space between two vehicles).  This is 
+known as External Fragmentation. 
+known as External Fragmentation. 
+
+ 
+ 
+Three strategies that can be used to 
+Three strategies that can be used to 
+allocate memory to Variable - partition
+allocate memory to Variable - partition 
+They are the following:
+They are the following:
+1.
+1.
+Best - Fit
+Best - Fit 
+2.
+2.
+Worst - fit
+Worst - fit 
+3.
+3.
+First - fit
+First - fit 
+
+ 
+ 
+Best - Fit - 
+Best - Fit - chooses a partition that is smallest and whose 
+chooses a partition that is smallest and whose 
+size is greater than equal to k.  It leaves small-sized 
+size is greater than equal to k.  It leaves small-sized 
+unusable partitions or holes.
+unusable partitions or holes.
+
+ 
+ 
+First - fit - 
+First - fit - chooses the first partition whose 
+chooses the first partition whose 
+size is greater than equal to k.
+size is greater than equal to k.
+
+ 
+ 
+Worst - fit - 
+Worst - fit - chooses the largest partition and 
+chooses the largest partition and 
+allocates it to process p.  It can leave bigger 
+allocates it to process p.  It can leave bigger 
+unusable partitions.
+unusable partitions.
+
+ 
+ 
+Compaction
+Compaction means to move the processes in the 
+ means to move the processes in the 
+memory in such a way that scattered pieces of 
+memory in such a way that scattered pieces of 
+unused (free) memory can be placed together so 
+unused (free) memory can be placed together so 
+that any other process demanding contiguous 
+that any other process demanding contiguous 
+memory for it can use it.
+memory for it can use it. 
+
+ 
+ 
+Non-contiguous Storage 
+Non-contiguous Storage 
+Allocation
+Allocation 
+►To resolve the 
+To resolve the problem of external 
+problem of external 
+fragmentation
+fragmentation and to 
+ and to enhance the 
+enhance the 
+degree of multiprogramming
+degree of multiprogramming  to a 
+ to a 
+greater extent, it was decided to sacrifice 
+greater extent, it was decided to sacrifice 
+the simplicity of allocating contiguous 
+the simplicity of allocating contiguous 
+memory to every process.  It was decided to 
+memory to every process.  It was decided to 
+have a non-contiguous physical address 
+have a non-contiguous physical address 
+space of a process so that a process could 
+space of a process so that a process could 
+be allocated memory wherever it was 
+be allocated memory wherever it was 
+available. 
+available. 
+
+ 
+ 
+Non-contiguous Storage Allocation
+Non-contiguous Storage Allocation
+There are 2 techniques for non-contiguous 
+There are 2 techniques for non-contiguous 
+allocation:
+allocation:
+1. Paging
+1. Paging
+2. Segmentation
+2. Segmentation
+
+ 
+ 
+1. 
+1. Paging
+Paging 
+►In this approach, 
+In this approach, physical memory is 
+physical memory is 
+divided into fixed-size blocks called 
+divided into fixed-size blocks called 
+frames
+frames and the 
+ and the logical memory is 
+logical memory is 
+divided into the fixed-sized blocks 
+divided into the fixed-sized blocks 
+called pages.  
+called pages.  The size of a page is 
+The size of a page is 
+same as that of frame.  The key idea of 
+same as that of frame.  The key idea of 
+this method is to place the pages of a 
+this method is to place the pages of a 
+process into the available frames of 
+process into the available frames of 
+memory, whenever, this process is to be 
+memory, whenever, this process is to be 
+executed. The address mapping is done 
+executed. The address mapping is done 
+by Page table.
+by Page table.
+
+ 
+ 
+Paging example 
+Paging example 
+
+ 
+ 
+It works as:
+It works as:
+Translate logical address 13 = 01101 in 
+Translate logical address 13 = 01101 in 
+binary
+binary
+Offset = 01 in binary or 1 in decimal 
+Offset = 01 in binary or 1 in decimal 
+Page no. = 011 in binary or 3 in decimal
+Page no. = 011 in binary or 3 in decimal
+Physical address = pageframe*pagesize + 
+Physical address = pageframe*pagesize + 
+offset i.e. 2*4+1 = 9 (which is the real 
+offset i.e. 2*4+1 = 9 (which is the real 
+address of page containing character “n” 
+address of page containing character “n” 
+in the main memory)
+in the main memory)
+
+ 
+ 
+Problem with paging
+Problem with paging  
+►It uses a page table per process for 
+It uses a page table per process for 
+translating logical to physical address 
+translating logical to physical address 
+space.  A basic issue associated with the 
+space.  A basic issue associated with the 
+use of page table is, that the look up in the 
+use of page table is, that the look up in the 
+page table should be very fast (which is 
+page table should be very fast (which is 
+generally slow), as it is done on every 
+generally slow), as it is done on every 
+memory reference. 
+memory reference. 
+►So to make the look up time less, caching 
+So to make the look up time less, caching 
+is used. In this case, the specific cache 
+is used. In this case, the specific cache 
+device is called a translation look aside 
+device is called a translation look aside 
+buffer (TLB). 
+buffer (TLB). 
+
+ 
+ 
+Translation look aside buffer (TLB). 
+Translation look aside buffer (TLB). 
+►The TLB contains a set of entries, each of 
+The TLB contains a set of entries, each of 
+which contains a page number, the 
+which contains a page number, the 
+corresponding frame number, and the 
+corresponding frame number, and the 
+protection bits. 
+protection bits. 
+►So if we use TLB, then mapping is done 
+So if we use TLB, then mapping is done 
+by TLB and we generally find the entry in 
+by TLB and we generally find the entry in 
+TLB but in case the entry is not found in 
+TLB but in case the entry is not found in 
+TLB than we have a TLB miss and finally 
+TLB than we have a TLB miss and finally 
+we go to page table.
+we go to page table.
+
+ 
+ 
+Segmentation
+Segmentation 
+►segmentation is another technique for the 
+segmentation is another technique for the 
+noncontiguous storage allocation.  It is different 
+noncontiguous storage allocation.  It is different 
+from paging as it supports users’ view of his 
+from paging as it supports users’ view of his 
+program.
+program.
+►For a programmer it might be more relevant to 
+For a programmer it might be more relevant to 
+divide the logical address space of his program 
+divide the logical address space of his program 
+into variable sized segments (with respect to his 
+into variable sized segments (with respect to his 
+view of main program, subroutines, data, etc.) 
+view of main program, subroutines, data, etc.) 
+than to divide it into fixed size pages.  Such 
+than to divide it into fixed size pages.  Such 
+variable sized segments, which are a collection 
+variable sized segments, which are a collection 
+of logically related information, are the basis of 
+of logically related information, are the basis of 
+segmentation technique.  
+segmentation technique.  
+
+ 
+ 
+Segmentation example
+Segmentation example
+
+ 
+ 
+Virtual Memory
+Virtual Memory 
+►Virtual memory is a technique of executing 
+Virtual memory is a technique of executing 
+program instructions that may not fit entirely in 
+program instructions that may not fit entirely in 
+system memory.  This is done by calling 
+system memory.  This is done by calling 
+instructions as and when the application requires 
+instructions as and when the application requires 
+it.  Virtual memory is implemented by using 
+it.  Virtual memory is implemented by using 
+secondary storage to augment the main 
+secondary storage to augment the main 
+memory. Data is transferred from secondary to 
+memory. Data is transferred from secondary to 
+main storage as and when necessary and the 
+main storage as and when necessary and the 
+data modified is written back to the secondary 
+data modified is written back to the secondary 
+storage according to a predetermined algorithm. 
+storage according to a predetermined algorithm. 
+
+ 
+ 
+Swapping
+Swapping 
+►Swapping is the technique of temporarily 
+Swapping is the technique of temporarily 
+removing inactive programs from the main 
+removing inactive programs from the main 
+memory of a computer system.  An 
+memory of a computer system.  An 
+inactive program is one that is neither 
+inactive program is one that is neither 
+executing nor performing an I/O operation. 
+executing nor performing an I/O operation. 
+►This may also happen when it is desired to 
+This may also happen when it is desired to 
+place a higher-priority process in the 
+place a higher-priority process in the 
+memory.  A lower priority process may be 
+memory.  A lower priority process may be 
+swapped out so that higher-priority 
+swapped out so that higher-priority 
+process may be loaded and executed. 
+process may be loaded and executed. 
+
+ 
+ 
+
+ 
+ 
+Demand Paging
+Demand Paging 
+►In virtual memory system, demand paging is a 
+In virtual memory system, demand paging is a 
+type of swapping in which pages of programs 
+type of swapping in which pages of programs 
+are not copied from disk to main memory until 
+are not copied from disk to main memory until 
+they are needed for execution.
+they are needed for execution.
+►In demand paging, virtual address (logical 
+In demand paging, virtual address (logical 
+address) is accessed by CPU, the 
+address) is accessed by CPU, the 
+corresponding page number is looked up in the 
+corresponding page number is looked up in the 
+page table and if it shows that currently this 
+page table and if it shows that currently this 
+page is not in main memory, then this page must 
+page is not in main memory, then this page must 
+be brought into the main-memory.  
+be brought into the main-memory.  
+
+ 
+ 
+►A 
+A page fault
+page fault occurs when an invalid 
+ occurs when an invalid 
+page is addressed.  Page fault must be 
+page is addressed.  Page fault must be 
+followed by swapping-in the page 
+followed by swapping-in the page 
+(demanded just now by the CPU) from 
+(demanded just now by the CPU) from 
+disk to main-memory or a trap should be 
+disk to main-memory or a trap should be 
+generated to the operating system if the 
+generated to the operating system if the 
+page being demanded is not within the 
+page being demanded is not within the 
+logical address space of the process.   To 
+logical address space of the process.   To 
+determine whether the reference to the 
+determine whether the reference to the 
+requested page is within the logical 
+requested page is within the logical 
+address space or not, an internal table 
+address space or not, an internal table 
+may be consulted 
+may be consulted 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+Pure Demand Paging
+Pure Demand Paging  
+►Pure demand paging is the form of 
+Pure demand paging is the form of 
+demand paging in which 
+demand paging in which not even a 
+not even a 
+single page is loaded into memory, 
+single page is loaded into memory, 
+initially.
+initially.  Thus, the very first instruction 
+  Thus, the very first instruction 
+causes a page fault in this case.  This kind 
+causes a page fault in this case.  This kind 
+of demand paging may significantly 
+of demand paging may significantly 
+decrease the performance of a computer 
+decrease the performance of a computer 
+system by generally increasing the 
+system by generally increasing the 
+effective access time of memory. 
+effective access time of memory. 
+
+ 
+ 
+Page Replacement
+Page Replacement  
+►Once the main memory fills up, a page 
+Once the main memory fills up, a page 
+must be swapped out to make room for 
+must be swapped out to make room for 
+any pages to be swapped in.  This is 
+any pages to be swapped in.  This is 
+known as page replacement. 
+known as page replacement. 
+►We have page replacement algorithms for 
+We have page replacement algorithms for 
+page replacement purpose, which are as 
+page replacement purpose, which are as 
+follows:
+follows:
+
+ 
+ 
+1.
+1.
+The optimal page replacement 
+The optimal page replacement 
+algorithm
+algorithm 
+2.
+2.
+The first-in, first-out (FIFO) page 
+The first-in, first-out (FIFO) page 
+replacement algorithm
+replacement algorithm
+3.
+3.
+The second chance page replacement 
+The second chance page replacement 
+algorithm
+algorithm
+4.
+4.
+The least recently used (LRU) page 
+The least recently used (LRU) page 
+replacement algorithm
+replacement algorithm
+5.
+5.
+Simulating LRU in Software
+Simulating LRU in Software (Not frequently 
+(Not frequently 
+used algorithm)
+used algorithm)
+6.
+6.
+The Working Set Page Replacement 
+The Working Set Page Replacement 
+Algorithm
+Algorithm 

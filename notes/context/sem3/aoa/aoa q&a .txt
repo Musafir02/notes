@@ -1,0 +1,155 @@
+VIVA QUESTIONS AND ANSWERS
+Here are 40 viva questions and answers based on the experiments in this lab
+manual. They cover conceptual understanding, time complexities, diٲerences, and
+applications in easy language.
+Q1: WHAT IS THE TIME COMPLEXITY OF INSERTION SORT?
+A1: The time complexity of insertion sort is O(n²) in the worst case, O(n) in the best
+case (when the array is already sorted), and O(n²) on average.
+Q2: EXPLAIN HOW SELECTION SORT WORKS.
+A2: Selection sort divides the list into sorted and unsorted sublists. It repeatedly
+selects the smallest (or largest) element from the unsorted portion and places it at
+the beginning (or end) of the sorted portion.
+Q3: WHAT IS THE DIFFERENCE BETWEEN MERGE SORT AND QUICK
+SORT?
+A3: Merge sort uses divide-and-conquer and always has O(n log n) time complexity.
+Quick sort also uses divide-and-conquer but has an average time complexity of O(n
+log n), though its worst-case time complexity is O(n²) if the pivot is poorly chosen.
+Q4: WHAT IS THE BEST USE CASE FOR MERGE SORT?
+A4: Merge sort is best used when we need guaranteed O(n log n) performance and
+when the data is too large to ٳt in memory, as it can be implemented externally.
+
+Q5: WHAT IS THE PIVOT SELECTION STRATEGY IN QUICK SORT?
+A5: Common pivot selection strategies include choosing the ٳrst element, last
+element, middle element, or a random element. The choice aٲects the algorithm's
+performance in terms of worst-case scenarios.
+Q6: WHAT IS THE TIME COMPLEXITY OF MERGE SORT?
+A6: The time complexity of merge sort is O(n log n) in all cases — best, average,
+and worst.
+Q7: WHAT IS THE SPACE COMPLEXITY OF MERGE SORT?
+A7: The space complexity of merge sort is O(n) due to the auxiliary space needed
+for merging.
+Q8: WHAT IS THE DIFFERENCE BETWEEN STABLE AND UNSTABLE
+SORTING ALGORITHMS?
+A8: A stable sorting algorithm preserves the relative order of records with equal
+keys, while an unstable one may not.
+Q9: IS QUICK SORT STABLE?
+A9: No, quick sort is not stable because the swapping of elements during
+partitioning can change the relative order of equal elements.
+
+Q10: WHAT IS THE WORST-CASE INPUT FOR QUICK SORT?
+A10: The worst-case input for quick sort occurs when the pivot is always the
+smallest or largest element, such as when the input array is already sorted or
+reverse sorted.
+Q11: WHAT IS DIJKSTRA’S ALGORITHM USED FOR?
+A11: Dijkstra’s algorithm is used to ٳnd the shortest path between nodes in a
+weighted graph with non-negative edge weights.
+Q12: WHAT IS THE TIME COMPLEXITY OF DIJKSTRA’S ALGORITHM
+USING A BINARY HEAP?
+A12: The time complexity of Dijkstra’s algorithm using a binary heap is O((V + E) log
+V), where V is the number of vertices and E is the number of edges.
+Q13: WHAT IS THE MAIN DRAWBACK OF DIJKSTRA’S ALGORITHM?
+A13: Dijkstra’s algorithm cannot handle graphs with negative edge weights.
+Q14: WHAT IS BELLMAN-FORD ALGORITHM USED FOR?
+A14: Bellman-Ford algorithm is used to ٳnd the shortest path from a single source
+vertex to all other vertices in a weighted graph, even when the graph contains
+negative-weight edges.
+
+Q15: WHAT IS THE TIME COMPLEXITY OF BELLMAN-FORD ALGORITHM?
+A15: The time complexity of Bellman-Ford algorithm is O(V * E), where V is the
+number of vertices and E is the number of edges.
+Q16: WHAT IS THE DIFFERENCE BETWEEN DIJKSTRA’S AND BELLMAN-
+FORD ALGORITHMS?
+A16: Dijkstra’s algorithm works only with non-negative edge weights and is faster
+(O((V + E) log V) with a heap), while Bellman-Ford can handle negative weights but
+is slower (O(V * E)).
+Q17: WHAT IS KRUSKAL’S ALGORITHM USED FOR?
+A17: Kruskal’s algorithm is used to ٳnd the Minimum Spanning Tree (MST) of a
+connected, undirected graph with weighted edges.
+Q18: WHAT DATA STRUCTURE IS COMMONLY USED WITH KRUSKAL’S
+ALGORITHM?
+A18: Kruskal’s algorithm typically uses a disjoint-set (union-ٳnd) data structure to
+avoid cycles while building the MST.
+Q19: WHAT IS THE TIME COMPLEXITY OF KRUSKAL’S ALGORITHM?
+
+A19: The time complexity of Kruskal’s algorithm is O(E log E) or O(E log V),
+depending on the sorting method used for edges.
+Q20: WHAT IS PRIM’S ALGORITHM USED FOR?
+A20: Prim’s algorithm is used to ٳnd the Minimum Spanning Tree (MST) of a
+connected, undirected graph with weighted edges.
+Q21: WHAT IS THE TIME COMPLEXITY OF PRIM’S ALGORITHM USING A
+BINARY HEAP?
+A21: The time complexity of Prim’s algorithm using a binary heap is O((V + E) log V).
+Q22: WHAT IS THE DIFFERENCE BETWEEN KRUSKAL’S AND PRIM’S
+ALGORITHMS?
+A22: Kruskal’s algorithm sorts all edges and adds the smallest that does not form a
+cycle, while Prim’s algorithm grows the MST by adding the smallest edge
+connecting a vertex in the MST to one outside it.
+Q23: WHAT IS BACKTRACKING?
+A23: Backtracking is a systematic way of exploring all possible conٳgurations or
+solutions by incrementally building candidates and removing those that fail to
+satisfy the constraints.
+
+Q24: WHAT IS THE N-QUEEN PROBLEM?
+A24: The N-Queen problem is to place N queens on an N×N chessboard such that
+no two queens threaten each other (i.e., no two queens share the same row,
+column, or diagonal).
+Q25: HOW DOES BACKTRACKING SOLVE THE N-QUEEN PROBLEM?
+A25: Backtracking places queens row by row, and for each row, tries all columns. If
+a placement leads to a conٴict, it backtracks and tries a diٲerent column.
+Q26: WHAT IS GRAPH COLORING?
+A26: Graph coloring is the problem of assigning colors to vertices of a graph such
+that no two adjacent vertices share the same color.
+Q27: HOW IS BACKTRACKING USED IN GRAPH COLORING?
+A27: Backtracking assigns a color to each vertex one by one. If assigning a color to
+a vertex causes a conٴict with an adjacent vertex, it removes the color and tries
+another.
+Q28: WHAT IS THE TIME COMPLEXITY OF THE BACKTRACKING
+APPROACH TO N-QUEEN?
+A28: The time complexity of the backtracking approach to N-Queen is exponential
+in the worst case, speciٳcally O(N!), though pruning reduces the actual runtime.
+
+Q29: WHAT IS STRING MATCHING?
+A29: String matching is the problem of ٳnding all occurrences of a pattern string
+within a given text string.
+Q30: WHAT IS THE NAIVE STRING MATCHING ALGORITHM?
+A30: The naive string matching algorithm checks for a match between the pattern
+and every substring of the text of the same length, resulting in O((n - m + 1) * m)
+time complexity, where n is the text length and m is the pattern length.
+Q31: WHY IS INSERTION SORT EFFICIENT FOR NEARLY SORTED DATA?
+A31: Insertion sort is eٵcient for nearly sorted data because it only needs to make
+small adjustments, shifting few elements, leading to near O(n) time in the best
+case.
+Q32: EXPLAIN THE PARTITION STEP IN QUICK SORT.
+A32: In quick sort, the partition step selects a pivot and rearranges the array so
+that all elements smaller than the pivot are on the left, and larger on the right. The
+pivot is then in its ٳnal position.
+Q33: WHAT IS THE ROLE OF THE MERGE STEP IN MERGE SORT?
+
+A33: The merge step combines two sorted subarrays into one sorted array by
+comparing elements from each and placing the smaller one ٳrst.
+Q34: HOW DOES DIJKSTRA'S ALGORITHM HANDLE UPDATES TO
+DISTANCES?
+A34: It uses a priority queue to always select the node with the smallest known
+distance, then relaxes (updates) the distances to its neighbors if a shorter path is
+found.
+Q35: WHY CAN BELLMAN-FORD DETECT NEGATIVE CYCLES?
+A35: After V-1 relaxations, if a further relaxation can still update a distance, it
+means there's a negative cycle aٲecting the path.
+Q36: EXPLAIN UNION-FIND IN KRUSKAL'S ALGORITHM.
+A36: Union-ٳnd tracks disjoint sets of vertices. Find checks if two vertices are in the
+same set (cycle), and union merges sets when adding an edge.
+Q37: HOW DOES PRIM'S ALGORITHM GROW THE MST?
+A37: It starts with a single vertex, then repeatedly adds the smallest-weight edge
+that connects a vertex in the MST to one outside it.
+Q38: WHAT IS THE CHROMATIC NUMBER IN GRAPH COLORING?
+
+A38: The chromatic number is the smallest number of colors needed to color the
+graph so no adjacent vertices share the same color.
+Q39: WHY IS NAIVE STRING MATCHING INEFFICIENT?
+A39: It compares every possible position without skipping, leading to O(nm) time in
+worst case, where many comparisons are redundant.
+Q40: COMPARE BACKTRACKING AND BRANCH-AND-BOUND FOR N-
+QUEEN.
+A40: Backtracking explores all possibilities and prunes on failure. Branch-and-
+bound adds bounds to prune more aggressively, estimating if a path can lead to a
+better solution.

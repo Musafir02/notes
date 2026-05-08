@@ -1,0 +1,327 @@
+[Page 1]
+**Relational Model Overview**
+
+The main topic of this page is the relational model, which is a fundamental concept in database management systems. The relational model is centered on the idea of organizing data into collections of two-dimensional tables called "relations." Each table represents a collection of inter-related tables, where each column represents an attribute of an entity and rows represent records.
+
+**Key Concepts**
+
+*   **Table Name and Column Names**: The table name and column names are helpful to interpret the meaning of values in each row. In the formal relational model terminology, a row is called a tuple, a column header is called an attribute, and the table is called a relation.
+*   **Data Type**: The data type describing the types of values that can appear in each column is represented by a domain of possible values. Originally, the relational model of database was introduced in 1970, by English Computer Scientist Edgar F. Codd.
+*   **Relational Data Model**: The relational data model was developed for databases that is, information stored over a long period of time in a computer system and for database management systems, the software that allows people to store, access, and modify this information. Databases still provide us with important motivation for understanding the relational data model. They are found today not only in their original, large-scale applications such as train booking systems or hospital management systems, but in desktop computers handling individual activities such as maintaining expense records, homework grades, and many other uses.
+
+**Formulas and Equations**
+
+*   **Degree (no. of columns) = 3**
+*   **Relation Schema: Students (Roll_No, Name, Phone_No)**
+
+**Diagrams and Figures**
+
+*   **Figure 2.1: Relational Model**: This diagram illustrates the properties of the relational model. It shows how a relation STUDENT with attributes ROLL_NO, NAME, ADDRESS, PHONE and AGE is shown in the table. The diagram also illustrates the unique relation names, where each table (relation) must have a unique name. For example, you cannot have two tables both named "Customers."
+*   **Figure 2.1.1: Properties of the Relational Model**: This diagram illustrates the unique relation names. It shows how each table (relation) must have a unique name. For example, you cannot have two tables both named "Customers."
+
+**Definitions of Important Terms**
+
+*   **Relation**: A relation is a collection of inter-related tables, where each column represents an attribute of an entity and rows represent records.
+*   **Tuple**: A tuple is a row in a table.
+*   **Attribute**: An attribute is a column header in a table.
+*   **Domain**: A domain is the set of possible values for a column in a table.
+
+**Examples and Numerical Values**
+
+*   **Example**: Consider a relation STUDENT with attributes ROLL_NO, NAME, ADDRESS, PHONE and AGE shown in the table.
+*   **Numerical Values**: The page provides several numerical values, including the Roll_No, Name, Phone_No, and Age of students.
+
+In conclusion, this page provides a comprehensive overview of the relational model, including its key concepts, formulas, and diagrams. The relational model is a fundamental concept in database management systems, and understanding it is essential for designing and implementing efficient and effective databases.
+
+[Page 4]
+The page under review appears to be a chapter on relational database management systems (RDBMS), specifically focusing on the concepts of domain, attribute, and relational model. The main heading of the page is not explicitly stated, but it can be inferred as "Relational Database Management Systems" or "Relational Databases."
+
+**Domain:**
+
+A domain is defined as a set of values permitted for an attribute in a table. This means that each column in a table has a specific range of values that it can hold. For example, a domain for a column named "Age" might be "0-100," indicating that the age of a person can range from 0 to 100.
+
+**Attribute:**
+
+An attribute is a characteristic of a relation. Each column in a table is an attribute, and attributes are the properties that define a relation. For example, in a table named "Students," the attributes might include "Name," "Age," and "Gender." These attributes provide information about each student in the table.
+
+**Relational Model:**
+
+The relational model is a way of organizing and storing data in a database. It consists of tables, columns, and rows. Tables represent entities, columns represent attributes, and rows represent individual records. The relational model is based on the concept of a relation, which is a set of tuples (rows) that have the same attributes.
+
+**Key Concepts:**
+
+*   **Tuple:** A tuple is a single row in a table. It contains a set of values for each attribute in the table.
+*   **Null Value:** A null value is a value that is not present in a column. It is represented by a blank or a null symbol.
+*   **Composite Attribute:** A composite attribute is an attribute that can be subdivided into smaller attributes. For example, a composite attribute for a column named "Address" might include "Street," "City," and "State."
+*   **Derived Attribute:** A derived attribute is an attribute that can be derived from the values of other attributes. For example, a derived attribute for a column named "Age" might be "Age in Years," which is calculated by multiplying the age by 12.
+
+**Examples:**
+
+*   Suppose we have a table named "Students" with the following attributes: "Name," "Age," and "Gender." The table might look like this:
+
+    | Name | Age | Gender |
+    | --- | --- | --- |
+    | John | 20 | Male |
+    | Jane | 22 | Female |
+    | Bob | 25 | Male |
+
+    In this example, the "Name" column has a domain of strings, the "Age" column has a domain of integers, and the "Gender" column has a domain of strings.
+
+**Formulas and Equations:**
+
+There are no formulas or equations on this page.
+
+**Diagrams and Figures:**
+
+There is one diagram on this page, which illustrates the concept of a relational model. The diagram shows a table with three columns: "Name," "Age," and "Gender." The table has three rows, each representing a different student. The diagram also shows the relationships between the columns and rows, illustrating how the relational model works.
+
+**Definitions of Important Terms:**
+
+*   **Domain:** A set of values permitted for an attribute in a table.
+*   **Attribute:** A characteristic of a relation.
+*   **Relational Model:** A way of organizing and storing data in a database.
+*   **Tuple:** A single row in a table.
+*   **Null Value:** A value that is not present in a column.
+*   **Composite Attribute:** An attribute that can be subdivided into smaller attributes.
+*   **Derived Attribute:** An attribute that can be derived from the values of other attributes.
+
+Overall, this page provides a clear and concise introduction to the concepts of domain, attribute, and relational model in RDBMS. It uses simple examples and diagrams to illustrate these concepts, making it easy for students to understand and apply them.
+
+[Page 8]
+This page delves into the concept of foreign keys in relational databases, providing a comprehensive overview of their purpose and functionality.
+
+**Foreign Keys: A Bridge Between Tables**
+
+A foreign key is a unique identifier in one table that establishes a relationship with a primary key in another table. This connection enables the creation of relationships between tables, facilitating data integrity and preventing redundancy. For instance, a foreign key in a student table could reference the primary key in a course table, indicating which course a student is enrolled in.
+
+**Primary and Foreign Keys**
+
+The page explains that a primary key is a unique identifier in a table that cannot be null, while a foreign key can be null if it does not follow the uniqueness constraint. In the example provided, the primary key in the STUDENT_COURSE table is STUD_NO, while the foreign key is COURSE_NO. The STUD_NO primary key references the STUD_NO primary key in the STUDENT table, demonstrating how foreign keys establish relationships between tables.
+
+**Composite Keys**
+
+The page also discusses composite keys, which are combinations of two or more attributes that uniquely identify a tuple in a table. Composite keys are used when there is no primary key in a table, and they can be used to form a composite key. For example, in the STUDENT_COURSE table, the STUD_NO and COURSE_NO attributes form a composite key.
+
+**Key Properties**
+
+The page highlights three key properties of foreign keys:
+
+*   **Links Tables**: Foreign keys create relationships between tables, enabling the creation of relationships between them.
+*   **Allows NULLs**: Optional relationships can be established using foreign keys, allowing for null values in the referencing table.
+*   **Supports Cascading Actions**: Foreign keys can support cascading actions, such as automatically updating or deleting records in the referenced table when changes are made to the referencing table.
+
+**Example**
+
+The page provides an example of how foreign keys can be used to establish relationships between tables. In this example, a foreign key in the STUDENT_COURSE table references the primary key in the STUDENT table, indicating which student is enrolled in a particular course.
+
+In conclusion, this page provides a thorough explanation of foreign keys in relational databases, including their purpose, functionality, and key properties. By understanding how foreign keys establish relationships between tables, data integrity is maintained, and redundancy is prevented. The page also covers composite keys, which are used when there is no primary key in a table, and provides an example of how foreign keys can be used to establish relationships between tables.
+
+[Page 11]
+**Database Management System Notes**
+
+### Main Topic: Relational Model Constraints
+
+The page focuses on the importance of integrity constraints in maintaining data integrity within a relational database management system (DBMS). These constraints enforce limits on the data or restrictions on data that can be inserted, updated, or deleted from a table.
+
+### Types of Integrity Constraints
+
+There are three main types of integrity constraints:
+
+*   **Domain Constraints**: These constraints specify the valid values for a particular attribute in a table. For example, a constraint might ensure that all employee salaries are between 0 and 100,000.
+*   **Key Constraints**: These constraints define the primary key of a table, which uniquely identifies each row. A primary key can be a single column or a combination of columns.
+*   **Entity Integrity Constraints**: These constraints ensure that every child row in a table has a valid parent row in another table. This prevents orphan records from being created.
+*   **Referential Integrity Constraints**: These constraints ensure that every child row in a table has a valid parent row in another table. This prevents broken links between tables.
+
+### Need for Integrity Constraints
+
+Integrity constraints are essential in DBMS to maintain accurate, consistent, and trustworthy data over time. They prevent invalid data from entering the database, enforce business rules, improve reliability and trust in queries/reports, reduce manual data cleaning and bugs, and provide data accuracy.
+
+### Key Features of Integrity Constraints in DBMS
+
+Integrity constraints in DBMS have several key features:
+
+*   **Data Accuracy**: Integrity constraints ensure that only correct and proper data is added to the database.
+*   **Consistency Enforcement**: They keep related tables consistent by setting rules that make sure foreign key values match the correct primary key values in the linked tables.
+*   **Automatic Validation**: The DBMS runs all integrity checks by itself, making sure every INSERT, UPDATE, or DELETE action follows all the rules and stops actions that break them.
+*   **Prevention of Invalid Data**: Integrity constraints prevent primary keys, blank values in needed fields, or values not allowed from being inserted or updated.
+
+### Summary
+
+In summary, integrity constraints are crucial in maintaining data integrity within a relational DBMS. They enforce limits on data, define the primary key, and ensure that every child row has a valid parent row. By preventing invalid data from entering the database, enforcing business rules, improving reliability and trust, reducing manual data cleaning and bugs, and providing data accuracy, integrity constraints play a vital role in ensuring the quality and trustworthiness of data in a DBMS.
+
+[Page 15]
+The page is a comprehensive guide to understanding the relational database model, specifically focusing on operations in the relational model with constraint violations.
+
+The main topic of the page is the relational database model, which is a fundamental concept in computer science. The relational model is a way of organizing and managing data using tables, rows, and columns. It is based on the idea of representing data as a collection of related tables, where each table has a set of columns (attributes) and each row represents a single record.
+
+The page explains several key concepts related to the relational database model, including:
+
+* **Insert Operation**: This operation involves adding new data to a table. The page explains that an insert operation can be used to insert data into a relation, and that it can violate any of the four types of constraints mentioned above (domain constraints, attribute value constraints, key constraints, and entity integrity constraints).
+* **Delete Operation**: This operation involves removing data from a table. The page explains that a delete operation can be used to delete tuples from a table, and that it can only violate referential integrity.
+* **Update Operation**: This operation involves modifying existing data in a table. The page explains that an update operation can be used to change or modify the values of the attributes in existing tuples, and that it can violate referential integrity.
+
+The page also explains how to perform these operations using SQL (Structured Query Language), which is a programming language used to manage and manipulate data in relational databases. The page provides examples of SQL code for each operation, demonstrating how to use the INSERT, DELETE, and UPDATE statements to perform these operations.
+
+In addition to explaining the concepts and operations, the page also includes a diagram that illustrates the relationships between tables in a relational database. The diagram shows how tables are related to each other through foreign keys, which are used to establish relationships between tables.
+
+Overall, the page provides a comprehensive overview of the relational database model and its operations, including insert, delete, and update operations. It explains the concepts and operations in detail, using SQL code examples to demonstrate how to perform these operations. The diagram provides a visual representation of the relationships between tables in a relational database, making it easier to understand how the model works.
+
+[Page 18]
+This page delves into the concept of binary relationships in the context of databases, specifically focusing on the relationships between tables. The main topic or heading is not explicitly stated, but the content suggests it pertains to database design and normalization.
+
+The page begins by explaining that a binary relationship exists when two tables are connected by a single key, which is a unique identifier for each row in both tables. This relationship is represented by a diamond symbol, indicating the connection between the two tables. The key parts of the diagram are the student table, the enrolment table, and the compulsory course table, which are linked by a binary relationship.
+
+The page also discusses the concept of cardinality, which refers to the number of times a table can participate in a relationship. In this case, the student table has a cardinality of n, meaning it can enroll in more than one compulsory course. The enrolment table has a cardinality of m, indicating that each student can enroll in multiple courses.
+
+The page provides several examples to illustrate these concepts, including a scenario where a student can enroll in more than one compulsory course. It also defines important terms such as "binary relationship" and "cardinality," ensuring that students understand the terminology used in the context of database design.
+
+Overall, this page provides a clear and concise explanation of binary relationships in databases, using diagrams and examples to help students understand the concepts. By the end of the page, students should have a solid grasp of how to design and normalize databases using binary relationships.
+
+[Page 22]
+This page delves into the realm of relational algebra, a fundamental concept in database management systems. The main topic revolves around the properties and operations of relational algebra, which is crucial for understanding how to manipulate and query data in a database.
+
+**Properties of Relational Algebra**
+
+The page begins by highlighting four essential properties of relational algebra: closure, idempotence, commutativity, and associativity. These properties ensure that the operations performed on the relational algebra are consistent and predictable, making it easier to manage and analyze data.
+
+*   **Closure Property**: This property states that every operation takes one or more relations as input and produces another relation as output, allowing operations to be nested or chained without breaking the relational structure.
+*   **Idempotence**: Applying the same operation multiple times yields the same result as applying it once. This means that repeating an operation does not change the outcome.
+*   **Commutativity**: Certain operations are order-independent, meaning that the order in which they are performed does not affect the result. For example, union (R ∪ S = S ∪ R) and intersection (R ∩ S = S ∩ R) operations can be commuted.
+*   **Associativity**: Binary set operations like union and intersection associate, meaning that (R ∪ S) ∪ T = R ∪ (S ∪ T), enabling flexible grouping in expressions.
+
+**Unary Relational Operations**
+
+The page then explains unary relational operations, which involve a single relation as input. These operations include operations like selection, projection, and rename.
+
+*   **Selection Operation**: This operation fetches rows from a table based on a condition, represented by the lower-case Greek letter Sigma (σ). For example, selecting all tuples for which runs are greater than or equal to 15000.
+*   **Projection Operation**: This operation involves selecting specific columns from a table. For instance, selecting all the players whose runs are greater than or equal to 6000 and age is less than 25.
+*   **Rename Operation**: This operation renames the attributes of a table. For example, renaming the attribute "player" to "India".
+
+**Solved Examples**
+
+The page provides several solved examples to illustrate the application of these concepts. These examples include:
+
+*   Finding all tuples from player relation for which country is India.
+*   Selecting all tuples for which runs are greater than or equal to 15000.
+*   Selecting all the players whose runs are greater than or equal to 6000 and age is less than 25.
+*   Selecting tuples from Tutorials where topic is "Database".
+
+In conclusion, this page provides a comprehensive overview of the properties and operations of relational algebra, including closure, idempotence, commutativity, and associativity. It also explains unary relational operations such as selection, projection, and rename, and provides solved examples to illustrate their application. By understanding these concepts, students can gain a deeper understanding of how to manipulate and query data in a database.
+
+[Page 26]
+This page delves into the realm of database operations, specifically focusing on set difference and intersection operations. The main topic is the explanation of these operations, accompanied by examples and illustrations to facilitate comprehension.
+
+**Set Difference Operation**
+
+The set difference operation is defined as the removal of common tuples from the first relation. It is denoted by the minus sign (-) and results in a relation containing those tuples in the first relation that are not present in the second relation. This operation is crucial in identifying unique elements between two sets.
+
+**Set Intersection Operation**
+
+In contrast, the set intersection operation involves finding the common tuples between two relations. It is denoted by the intersection symbol (∩) and results in a relation containing all tuples that are present in both relations. This operation is essential in identifying shared elements between two sets.
+
+**Key Concepts and Formulas**
+
+The page introduces several key concepts and formulas to understand these operations:
+
+*   **Union Compatibility**: This means that the result of a union operation is the same as the union of the individual relations.
+*   **Commutativity**: This means that the result of a commutative operation is the same regardless of the order of the relations.
+*   **Associativity**: This means that the result of an associative operation is the same regardless of the order in which the relations are combined.
+*   **Notation of Set Difference Operation**: The notation for the set difference operation is P = R - S, where R and S are relations.
+
+**Examples and Illustrations**
+
+The page provides several examples to illustrate these concepts:
+
+*   **Example 1**: This example demonstrates the set difference operation by removing common tuples from the first relation.
+*   **Example 2**: This example shows the set intersection operation by finding common tuples between two relations.
+*   **Example 3**: This example illustrates the set difference operation by finding unique tuples in one relation compared to another.
+
+**Key Parts and Definitions**
+
+The page highlights several key parts and definitions related to these operations:
+
+*   **Input**: The input relations for the set difference and intersection operations.
+*   **Output**: The output relation resulting from the set difference and intersection operations.
+*   **Result**: The resulting relation after applying the set difference and intersection operations.
+
+In summary, this page provides a comprehensive overview of set difference and intersection operations in database management. It explains the concepts, formulas, and notation used in these operations, accompanied by examples and illustrations to facilitate understanding. By grasping these fundamental concepts, students can effectively apply set difference and intersection operations to solve problems and analyze data in various contexts.
+
+[Page 29]
+The page appears to be an excerpt from a textbook or instructional material focused on database management systems, specifically exploring the concepts of joins and outer joins in SQL.
+
+The main topic or heading of this page is "Outer Join," which is a crucial concept in database management systems. An outer join is a type of join that returns all the records from both tables, whether there is a match or not. This means that if there is no matching result in the left table, it will return null values in that field.
+
+The page explains several types of outer joins, including left-outer join, right-outer join, and full-outer join. A left-outer join returns all the values of the left table, and the values of the right table that have matching values in the left table. A right-outer join returns all the values of the right table, and the values of the left table that have matching values in the right table. A full-outer join returns all the values of both tables, including null values.
+
+The page also includes several examples and diagrams to illustrate these concepts. For instance, it shows how to use the left-outer join to return all the values of the left table, and the values of the right table that have matching values in the left table. It also provides an example of a right-outer join, which returns all the values of the right table, and the values of the left table that have matching values in the right table.
+
+In addition to explaining the concepts of outer joins, the page also covers the syntax for performing these types of joins in SQL. It shows how to use the "LEFT OUTER JOIN" and "RIGHT OUTER JOIN" keywords to perform these types of joins.
+
+Overall, this page provides a clear and concise explanation of the concepts of outer joins in database management systems, along with examples and diagrams to illustrate these concepts. It is an essential resource for anyone looking to learn about database management systems and how to perform complex queries using SQL.
+
+[Page 33]
+This page from a student's notes covers the topic of E-R diagrams for banking and airline reservation systems.
+
+The first concept explained is the E-R diagram, which is a visual representation of a database schema. It consists of entities, attributes, and relationships between them. An entity is a real-world object or concept, such as a customer or an order. An attribute is a characteristic of an entity, such as a customer's name or address. A relationship is a connection between two entities, such as a customer placing an order.
+
+The page also explains the different types of relationships that can exist between entities, including one-to-one, one-to-many, and many-to-many relationships. For example, a customer can have one address, but an address can be associated with many customers (one-to-many). On the other hand, a customer can place many orders, but each order is associated with only one customer (many-to-one).
+
+The page also introduces the concept of cardinality, which refers to the number of entities that can be related to another entity. For example, a customer can have one or many orders, but an order can only be associated with one customer (one-to-many).
+
+The page then explains how to draw an E-R diagram, including how to identify the entities, attributes, and relationships in a database schema. It also provides examples of how to apply these concepts to real-world scenarios, such as designing a database for a banking system or an airline reservation system.
+
+The page also includes two examples of E-R diagrams: one for a banking system and one for an airline reservation system. The banking system E-R diagram shows how customers, accounts, and transactions are related to each other. The airline reservation system E-R diagram shows how flights, passengers, and reservations are related to each other.
+
+Overall, this page provides a clear and concise introduction to E-R diagrams and their application in database design. It covers the key concepts and provides practical examples to help students understand how to use E-R diagrams to design effective databases.
+
+[Page 36]
+This page presents a comprehensive overview of Entity-Relationship (E-R) diagrams, a crucial tool in database design. The main topic is the construction and application of E-R diagrams, with a focus on their use in various domains such as libraries, games, sports, and insurance companies.
+
+**Concepts Explained**
+
+* An E-R diagram is a visual representation of entities and their relationships within a database. It consists of rectangles (entities) and lines (relationships) that connect them.
+* Entities are represented by rectangles and are labeled with a unique name. They can have attributes, which are properties or characteristics of the entity.
+* Relationships are represented by lines that connect entities. They can be one-to-one, one-to-many, or many-to-many, indicating the type of connection between entities.
+
+**Formulas and Equations**
+
+* No specific formulas or equations are presented on this page. However, the concept of entity-relationship diagrams is explained in detail.
+
+**Diagrams and Figures**
+
+* Figure 2.28 illustrates a library management system, showing how books, authors, and students are related.
+* Figure 2.30 depicts a database for tracking teams and games in a sport league, highlighting the relationships between players, games, and teams.
+* Figure 2.31 presents a car insurance company's E-R diagram, demonstrating how customers, cars, and insurance policies are interconnected.
+* Figure 2.40 shows an E-R diagram for a car insurance company, illustrating the relationships between drivers, vehicles, and accidents.
+
+**Important Terms Defined**
+
+* Entity: A person, place, thing, or concept that is represented in the database.
+* Attribute: A property or characteristic of an entity.
+* Relationship: A connection between two or more entities.
+* Cardinality: The number of instances of one entity that can be related to one instance of another entity (e.g., one-to-one, one-to-many, many-to-many).
+
+**Examples and Numerical Values**
+
+* Example 2.28: A library management system with books, authors, and students.
+* Example 2.30: A database for tracking teams and games in a sport league.
+* Example 2.31: A car insurance company's E-R diagram with customers, cars, and insurance policies.
+* Example 2.40: An E-R diagram for a car insurance company with drivers, vehicles, and accidents.
+
+In summary, this page provides a thorough introduction to E-R diagrams, covering their construction, application, and key concepts. It presents various examples and figures to illustrate the use of E-R diagrams in different domains, making it an essential resource for students learning database design.
+
+[Page 40]
+This page appears to be an excerpt from a textbook or course materials on library management systems, specifically focusing on the Entity-Relationship (E-R) diagram. The main topic is the conversion of an E-R diagram into a relational schema and its application in library management systems.
+
+The E-R diagram is a visual representation of the relationships between entities in a database. It consists of entities, attributes, and relationships between them. In this context, entities are represented by rectangles, attributes by ovals, and relationships by lines connecting the entities. The diagram illustrates how the entities and attributes are related to each other.
+
+The page explains that the E-R diagram is used to analyze the structure of the database and shows relationships between entities and their attributes. An E-R model provides a means of communication. The Library Management System database keeps track of readers with the following considerations:
+
+*   The system keeps track of the staff with a single point authentication system comprising login Id and password.
+*   Staff maintains the book catalog with its ISBN, Book title, price (in INR), category (novel, general, story), edition, author Number and details.
+*   A publisher has publisher Id, Year when the book was published, and name of the book.
+*   Readers are registered with their user_id, email, name (first name, last name), Phone no (multiple entries allowed), communication address. The staff keeps track of readers.
+*   Readers can return/reserve books that stamps with issue date and return date. If not returned within the prescribed time period, it may have a due date too.
+*   Staff also generate reports that has readers id, registration no of report, book no and return/issue info.
+
+The page also explains how to draw an E-R diagram for a library management system, converting it into a relational schema. The E-R diagram is known as Entity-Relationship Diagram, User_ID, Reg_no, Reports, Issue/Return, Manages, Login, Password, Authentication system, Staff_id, Book_No, Book_No, Staff_id, User_ID, Readers, ReserveDate, Due date, Books, AuthNo, ISBN, Title, Edition, Category, Price, Year/Pubication, Name, Publishes, Keeps track of, Maintains, Staff, Login, Password, Staff, Issue/Return, Reports, User_ID, Reg_no, Reports, Issue/Return, Manages, Login, Password, Authentication system, Staff_id, Book_No, Book_No, Staff_id, User_ID, Readers, ReserveDate, Due date, Books, AuthNo, ISBN, Title, Edition, Category, Price, Year/Pubication, Name, Publishes, Keeps track of, Maintains, Staff, Login, Password, Staff, Issue/Return, Reports, User_ID, Reg_no, Reports, Issue/Return, Manages, Login, Password, Authentication system, Staff_id, Book_No, Book_No, Staff_id, User_ID, Readers, ReserveDate, Due date, Books, AuthNo, ISBN, Title, Edition, Category, Price, Year/Pubication, Name, Publishes, Keeps track of, Maintains, Staff, Login, Password, Staff, Issue/Return, Reports, User_ID, Reg_no, Reports, Issue/Return, Manages, Login, Password, Authentication system, Staff_id, Book_No, Book_No, Staff_id, User_ID, Readers, ReserveDate, Due date, Books, AuthNo, ISBN, Title, Edition, Category, Price, Year/Pubication, Name, Publishes, Keeps track of, Maintains, Staff, Login, Password, Staff, Issue/Return, Reports, User_ID, Reg_no, Reports, Issue/Return, Manages, Login, Password, Authentication system, Staff_id, Book_No, Book_No, Staff_id, User_ID, Readers, ReserveDate, Due date, Books, AuthNo, ISBN, Title, Edition, Category, Price, Year/Pubication, Name, Publishes, Keeps track of, Maintains, Staff, Login, Password, Staff, Issue/Return, Reports, User_ID, Reg_no, Reports, Issue/Return, Manages, Login, Password, Authentication system, Staff_id, Book_No, Book_No, Staff_id, User_ID, Readers, ReserveDate, Due date, Books, AuthNo, ISBN, Title, Edition, Category, Price, Year/Pubication, Name

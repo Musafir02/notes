@@ -1,0 +1,128 @@
+[Page 1]
+This page from the student's notes covers the topic of functions, which are relations from a set of non-empty sets. A relation is defined as a correspondence between elements of two sets, where each element in one set is associated with one or more elements in the other set.
+
+The page explains that a function f from set A to set B is a relation where each element of A is assigned to a unique element of B. This is denoted as f: A → B. The page also defines the concept of an image, which is the set of all elements in B that are mapped to by at least one element in A. The range of a function is defined as the set of all elements in B that are mapped to by at least one element in A.
+
+The page provides several examples of functions, including:
+
+* f(1) = 2, f(2) = 3, f(3) = 4
+* f(x) = x^2 + 2
+
+The page also explains the concept of a codomain, which is the set of all possible outputs of a function. The codomain is denoted as C.
+
+The page includes several diagrams to illustrate the concepts of functions and relations. The first diagram shows a relation between two sets, A and B, where each element of A is associated with one or more elements in B. The second diagram shows a function from set A to set B, where each element of A is assigned to a unique element of B.
+
+The page also defines important terms such as "domain" and "range". The domain of a function is the set of all possible inputs of the function, while the range is the set of all possible outputs of the function.
+
+Overall, this page provides a clear and concise introduction to the concept of functions and relations, including definitions, examples, and diagrams to illustrate the concepts.
+
+[Page 2]
+The main topic of this page is "Types of Functions" and it covers various concepts related to functions, including their definitions, properties, and examples.
+
+A function is defined as a mapping from one set of elements (called the domain) to another set of elements (called the range). It is denoted by f: A → B, where A is the domain and B is the range. The function f maps each element a in A to a unique element b in B.
+
+There are several types of functions, including:
+
+*   **Injective (one-to-one) functions**: These are functions where every element in the domain maps to a unique element in the range. In other words, no two distinct elements in the domain can map to the same element in the range.
+*   **Surjective (onto) functions**: These are functions where every element in the range is mapped to by at least one element in the domain. In other words, every element in the range has a corresponding element in the domain.
+*   **Bijective functions**: These are functions that are both injective and surjective. They map each element in the domain to a unique element in the range, and every element in the range is mapped to by at least one element in the domain.
+
+The page also provides examples of functions, including:
+
+*   f: {1, 2, 3} → {a, b, c} defined by f(1) = a, f(2) = b, and f(3) = c.
+*   g: {x, y, z} → {1, 2, 3} defined by g(x) = 1, g(y) = 2, and g(z) = 3.
+
+The page also explains how to determine if a function is injective or surjective using diagrams. For example, the diagram for the function f: {1, 2, 3} → {a, b, c} shows that f is injective because each element in the domain maps to a unique element in the range. The diagram for the function g: {x, y, z} → {1, 2, 3} shows that g is surjective because every element in the range is mapped to by at least one element in the domain.
+
+Finally, the page provides a formula for determining if a function is bijective: f is bijective if and only if f is one-to-one and onto. This means that a function is bijective if it is both injective and surjective.
+
+In summary, this page provides a clear explanation of the different types of functions, including injective, surjective, and bijective functions. It also provides examples and diagrams to illustrate these concepts, and explains how to determine if a function is injective, surjective, or bijective using formulas and diagrams.
+
+[Page 3]
+This page from a student's notes covers the topic of one-to-one and bijective functions. The main concept is to test whether a function is one-to-one or bijective by checking if it maps every element of the domain to a unique element in the range.
+
+The student has written down several examples of functions, including f(x) = x^2 + x + 1, f(x) = 2x - 1, and f(x) = x + 1. They have also provided diagrams to illustrate these functions, with the x-axis representing the domain and the y-axis representing the range.
+
+To determine if a function is one-to-one, the student has explained that it must pass the horizontal line test. This means that no horizontal line should intersect the graph of the function more than once. If a horizontal line intersects the graph at more than one point, then the function is not one-to-one.
+
+On the other hand, to determine if a function is bijective, the student has explained that it must be both one-to-one and onto. This means that every element in the range must have a corresponding element in the domain.
+
+The student has also provided examples of functions that are not one-to-one or bijective, such as f(x) = x^2, which is not one-to-one because it fails the horizontal line test, and f(x) = x + 1, which is not bijective because it is not onto.
+
+Overall, this page provides a clear and concise explanation of one-to-one and bijective functions, along with examples and diagrams to help illustrate the concepts. The student has done a good job of breaking down the material into manageable chunks and providing clear explanations and definitions of important terms.
+
+[Page 4]
+The main topic of this page is the definition and properties of a bijective function. A bijective function is a function that maps each element of its domain to exactly one element of its range, and vice versa.
+
+A key concept on this page is the idea of one-to-one and onto functions. A one-to-one function is a function where each element in the domain maps to a unique element in the range, while an onto function is a function where every element in the range has at least one element in the domain that maps to it.
+
+The page also explains how to determine if a function is bijective by checking if it is both one-to-one and onto. This can be done by using the horizontal line test, which states that a function is one-to-one if and only if no horizontal line intersects the graph of the function in more than one place.
+
+The page also provides examples of bijective functions, including the identity function and the inverse of a bijective function.
+
+In addition to these concepts, the page also discusses the properties of bijective functions, such as the fact that they have an inverse function that is also bijective.
+
+Overall, this page provides a clear and concise explanation of the definition and properties of bijective functions, as well as examples and visual aids to help illustrate these concepts.
+
+In summary, this page covers the following key points:
+
+* Definition of bijective function
+* One-to-one and onto functions
+* Horizontal line test for one-to-one functions
+* Examples of bijective functions
+* Properties of bijective functions
+
+The page also includes several diagrams and figures to help illustrate these concepts, including a graph of a bijective function and a diagram showing how to determine if a function is bijective using the horizontal line test.
+
+[Page 5]
+This page appears to be from a math notebook, covering the topic of "Compositions" and exploring the concept of function composition.
+
+The page begins by defining the composition of two functions, f and g, as g(f(a)) and f(g(a)), where g(f(a)) is a function of a. The author then illustrates this concept with a diagram, which shows the composition of two functions, f and g, with the domain and range of each function labeled.
+
+The page goes on to explain that the composition of functions is not commutative, meaning that the order in which the functions are composed matters. The author provides examples to illustrate this point, including the composition of two linear functions and the composition of a linear function and a quadratic function.
+
+The page also discusses the properties of function composition, including the fact that the composition of two functions is a function, and that the domain and range of the composition are determined by the domains and ranges of the individual functions.
+
+Finally, the page concludes by providing some examples of function composition, including the composition of a linear function and a quadratic function, and the composition of two quadratic functions.
+
+Overall, this page provides a clear and concise introduction to the concept of function composition, including its definition, properties, and examples. It is a useful resource for students who are learning about functions and their compositions.
+
+[Page 6]
+This page appears to be a handwritten note from a student, likely from an engineering course. The main topic or heading is not explicitly stated, but it seems to cover functions and their properties.
+
+The student has written several equations and formulas, including:
+
+* f(x) = 2x + 3
+* g(x) = 3x + 4
+* h(x) = 4x for all x in the domain
+
+These equations represent functions, which are defined as sets of ordered pairs where each input corresponds to exactly one output. The student has also provided examples of how to find the value of a function at a specific input, such as f(1) = 2(1) + 3 = 5.
+
+The student has also written several diagrams, which illustrate the concept of functions and their properties. One diagram shows two functions, f(x) and g(x), intersecting at a point (1, 3). The student has labeled the x-axis as "input" and the y-axis as "output".
+
+Another diagram shows three functions, f(x), g(x), and h(x), with their respective domains and ranges. The student has labeled the x-axis as "input" and the y-axis as "output".
+
+The student has also defined several important terms, including:
+
+* Domain: the set of all possible input values for a function
+* Range: the set of all possible output values for a function
+* Function: a relation between a set of inputs and a set of outputs
+
+Overall, this page provides a clear and concise overview of functions and their properties, including how to find the value of a function at a specific input, how to graph functions, and how to define the domain and range of a function.
+
+[Page 7]
+This page delves into the concept of functions, specifically focusing on the definition of a function, its notation, and various types of functions. The main topic is the definition of a function and its notation.
+
+A function is defined as a relation between a set of inputs (called the domain) and a set of possible outputs (called the range). In mathematical notation, this is represented as f: A → B, where A is the domain and B is the range. For example, the function f(x) = 2x + 3 takes an input from the set of real numbers and produces an output that is also a real number.
+
+The page also explains the concept of identity functions, which are functions that leave their input unchanged. In mathematical notation, this is represented as f(x) = x. An example of an identity function is f(x) = x, which means that the output of the function is the same as the input.
+
+Furthermore, the page discusses the concept of inverse functions. An inverse function is a function that undoes the action of the original function. In other words, if f(x) = y, then the inverse function f^(-1)(y) = x. The page provides an example of finding the inverse of a function, which is a crucial concept in mathematics.
+
+In addition, the page explains the concept of bijections, which are functions that are both one-to-one and onto. A one-to-one function is a function that maps each input to a unique output, while an onto function is a function that maps every output to at least one input. The page provides an example of a bijection, which is a function that is both one-to-one and onto.
+
+The page also discusses the concept of composite functions, which are functions that are composed of other functions. The page provides an example of a composite function, which is a function that takes the output of one function and uses it as the input for another function.
+
+Finally, the page explains the concept of function notation, which is used to represent functions in mathematical equations. The page provides an example of function notation, which is used to represent a function in a mathematical equation.
+
+In summary, this page provides a comprehensive overview of the concept of functions, including their definition, notation, and various types of functions. The page explains key concepts such as identity functions, inverse functions, bijections, and composite functions, and provides examples to illustrate each concept. By understanding these concepts, students can develop a solid foundation in mathematics and apply them to real-world problems.

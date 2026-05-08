@@ -1,0 +1,203 @@
+[Page 1]
+This page from a student's notes appears to cover the topic of "AOA (UT-2)" and outlines a general method of dynamic programming. The main idea is to break down complex problems into simpler subproblems, find optimal solutions to these subproblems, and store the results for reuse.
+
+The concept of dynamic programming is explained as a greedy method that picks the best choice at each step without looking back. It involves solving small problems and saving their solutions to combine them for the best overall solution. The key steps in this process are:
+
+1. Breaking down the complex problem into simpler subproblems
+2. Finding optimal solutions to these subproblems
+3. Storing the results of subproblems for reuse
+
+The page also mentions that the optimal binary search tree is an example of a problem that can be solved using dynamic programming. This involves finding the most efficient way to organize a binary search tree to minimize the average time it takes to search for a key.
+
+The page includes several formulas and equations, including:
+
+* V = IR (the formula for voltage)
+* Slip s = (Ns - Nr) / Ns (the formula for slip in a synchronous motor)
+
+There are no diagrams or figures on this page, but the text provides clear explanations of the concepts and formulas presented.
+
+Overall, this page provides a concise overview of the general method of dynamic programming and its application to solving complex problems. The student has taken notes on the key concepts and formulas, and has highlighted the importance of breaking down complex problems into simpler subproblems and storing the results of subproblems for reuse.
+
+[Page 2]
+**Summary of the Page**
+
+The main topic of this page appears to be related to computer science, specifically focusing on algorithms and problem-solving techniques. The page is divided into two columns, with the left column discussing the "Greedy Method" and the right column covering "Dynamic Programming".
+
+**Greedy Method**
+
+The Greedy Method is a problem-solving approach that selects the best option in the current situation. It makes decision faster as compared to D.P. (Dynamic Programming). However, it doesn't always give the best answer, as it only works for short problems. The key concepts explained in this section include:
+
+* Time complexity: O(n log n)
+* Space complexity: O(n)
+* Example: Dijkstra's algorithm, Knapsack
+
+The page also includes a diagram illustrating the Longest Subsequence problem, which is a classic example of the Greedy Method. The diagram shows a table with a sequence of numbers and arrows indicating the longest subsequence that can be formed using each number.
+
+**Dynamic Programming**
+
+The right column discusses Dynamic Programming, which splits the problem into sub-problems and solves them. It takes time to solve each sub-problem carefully. Dynamic Programming can be used for complex problems and works on problems that have overlapping sub-problems. The key concepts explained in this section include:
+
+* Time complexity: O(n^2)
+* Space complexity: O(n)
+* Example: Longest Common Subsequence
+
+The page also includes a table illustrating the Longest Common Subsequence problem, which is a classic example of Dynamic Programming. The table shows a sequence of numbers and arrows indicating the longest common subsequence that can be formed using each number.
+
+**Key Takeaways**
+
+* The Greedy Method is a fast but not always optimal approach to solving problems.
+* Dynamic Programming is a more general approach that can solve complex problems with overlapping sub-problems.
+* Both methods have their own time and space complexities, and examples of each are provided.
+
+Overall, this page provides a clear and concise overview of the Greedy Method and Dynamic Programming, two important concepts in computer science. By understanding these concepts, students can develop problem-solving skills and tackle complex problems with confidence.
+
+[Page 3]
+This page of notes appears to cover the topics of the Greedy Method and Backtracking, as well as graph coloring.
+
+The Greedy Method is described as a locally optimal approach that makes the locally optimal choice at each step, hoping it will lead to a globally optimal solution. This method is characterized by three key features: it is sequential, focused on a single path, and generally faster and more efficient, although it may not always be the case. The notes also mention that the Greedy Method is not guaranteed to find the optimal solution, but it can be faster and more efficient than other methods.
+
+The Backtracking method is described as an approach that explores the entire solution space by building a solution step by step and then undoing the last step if the current solution is not optimal. This method is used to ensure that the optimal solution is found, and it is particularly useful when the problem has a large solution space.
+
+The notes also cover the topic of graph coloring, which involves assigning colors to vertices in a graph so that no two connected points have the same color. The algorithm for graph coloring is described as follows:
+
+1. If adjacent vertices have the same color, then assign a different color to one of them.
+2. If the color of a vertex is adjacent to another vertex with the same color, then assign a different color to the first vertex.
+
+The notes also provide an example of how to use the algorithm to color a graph with four vertices. The graph is represented as a set of vertices and edges, and the algorithm is used to assign colors to each vertex.
+
+Overall, the notes provide a clear and concise overview of the Greedy Method, Backtracking, and graph coloring, and they include examples and formulas to help illustrate the concepts. The notes are well-organized and easy to follow, making them a useful resource for students learning these topics.
+
+[Page 4]
+The page appears to be a handwritten note from a student, covering the topic of N-Queen Problem and Algorithm. The main topic or heading is not explicitly stated, but it can be inferred that the page is focused on solving the N-Queen Problem using an algorithm.
+
+**N-Queen Problem**
+
+The N-Queen Problem is a classic problem in computer science and mathematics, where the goal is to place N queens on an NxN chessboard such that no two queens attack each other. A queen can attack another queen if they are in the same row, column, or diagonal. The problem is to find a solution that places all N queens safely on the board.
+
+The student has written a few lines of text that attempt to explain the problem, but it is not entirely clear what they are trying to say. However, it seems that they are trying to convey the idea that the problem involves placing queens on a chessboard in such a way that no two queens are in the same row, column, or diagonal.
+
+**Algorithm**
+
+The student has also written some code that appears to be an algorithm for solving the N-Queen Problem. The algorithm is written in a programming language, but it is not clear what language it is or what the code is supposed to do.
+
+The algorithm consists of several lines of code, including:
+
+* `if check Vertex(i)==1 then`
+* `if t==N then`
+* `print color (i---n) else`
+* `j++`
+* `while (i < M) do`
+* `color (P+1)←j`
+* `3 = j+1`
+* `end`
+* `end`
+* `end`
+
+It is not entirely clear what this code is supposed to do, but it appears to be some kind of loop that iterates over the vertices of the chessboard and checks whether a queen can be placed at each vertex without attacking any other queen.
+
+**Diagram**
+
+There is no diagram on this page, but the student has drawn a simple diagram of an NxN chessboard in the top-right corner of the page. The diagram shows the rows and columns of the chessboard, but it does not show any queens or other pieces.
+
+**Definitions**
+
+There are no definitions on this page, but the student has written a few words that appear to be related to the N-Queen Problem. For example, they have written "illegal" next to a few lines of code, which suggests that these lines of code are not valid or do not produce a solution to the problem.
+
+**Examples**
+
+There are no examples on this page, but the student has written a few numerical values that appear to be related to the N-Queen Problem. For example, they have written "N" next to a few lines of code, which suggests that N is a variable that represents the size of the chessboard.
+
+Overall, this page appears to be a student's notes on the N-Queen Problem and Algorithm. The student has written some code that attempts to solve the problem, but it is not entirely clear what the code is supposed to do or how it works. The page also includes a few diagrams and definitions, but they are not particularly helpful in understanding the problem or the algorithm.
+
+[Page 5]
+**Summary of Backtracking in Graph Coloring**
+
+The main topic of this page is backtracking, a technique used in graph coloring to find a solution when there are no other options left. The concept is explained as follows:
+
+*   **Backtracking**: This technique involves trying one path at a time and looking at many paths at once. It's like coloring one dot at a time in graph coloring.
+*   **Graph Coloring**: In graph coloring, two connected dots get the same color if they go back and pick a new color. This ensures that no two connected dots have the same color.
+*   **Keeps Trying**: The algorithm keeps trying until it finds a solution. If it can't find a solution, it stops exploring paths that can't way to color the whole graph without conflicts.
+*   **Use it When You Just Need a Solution**: Use backtracking when you just need a solution and graph isn't too big. It's best used when you want the best way to color the graph with fewest colors possible.
+
+**Key Points**
+
+*   **Try One Path at a Time**: Try one path at a time and look at many paths at once.
+*   **Look at Many Paths at Once**: Look at many paths at once in graph coloring.
+*   **No Two Connected Dots Have the Same Color**: No two connected dots have the same color in graph coloring.
+*   **Keeps Trying Until It Finds a Solution**: Keeps trying until it finds a solution.
+*   **Stops Exploring Paths That Can't Way to Color the Whole Graph Without Conflicts**: Stops exploring paths that can't way to color the whole graph without conflicts.
+*   **Use it When You Just Need a Solution**: Use backtracking when you just need a solution and graph isn't too big.
+*   **Best Way to Color the Graph with Fewest Colors Possible**: Best way to color the graph with fewest colors possible.
+
+**Formulas and Equations**
+
+*   **None**: There are no formulas or equations on this page.
+
+**Diagrams and Figures**
+
+*   **None**: There are no diagrams or figures on this page.
+
+**Definitions of Important Terms**
+
+*   **Backtracking**: A technique used in graph coloring to find a solution when there are no other options left.
+*   **Graph Coloring**: A method of assigning colors to the vertices of a graph such that no two adjacent vertices have the same color.
+*   **Connected Dots**: Dots that are connected by an edge in a graph.
+*   **Solution**: A way to color the graph such that no two connected dots have the same color.
+
+**Examples and Numerical Values**
+
+*   **None**: There are no examples or numerical values on this page.
+
+In summary, backtracking is a technique used in graph coloring to find a solution when there are no other options left. It involves trying one path at a time and looking at many paths at once. The algorithm keeps trying until it finds a solution and stops exploring paths that can't way to color the whole graph without conflicts. Backtracking is best used when you just need a solution and graph isn't too big. It's the best way to color the graph with fewest colors possible.
+
+[Page 6]
+The page appears to be from a notebook or textbook, featuring handwritten notes on two distinct topics: "Naive String Matching Algorithm" and "15 Puzzled Problem." 
+
+**Naive String Matching Algorithm**
+
+The first topic is an introduction to the Naive String Matching Algorithm, a straightforward method for finding a small string inside a larger string. The algorithm works by checking every possible position in the text to see if the pattern matches or not, character by character. This approach is simple but inefficient, especially for large strings, as it checks every position in the text.
+
+**15 Puzzled Problem**
+
+The second topic is the 15 Puzzled Problem, which involves rearranging a set of 15 numbered tiles to form a specific arrangement. The goal is to transform the initial arrangement into the goal arrangement by sliding tiles into the correct positions. The problem requires careful planning and strategy to solve efficiently.
+
+In summary, the page covers two topics: the Naive String Matching Algorithm, which is a basic approach to finding a small string inside a larger string, and the 15 Puzzled Problem, which involves rearranging a set of 15 numbered tiles to form a specific arrangement. Both topics require careful consideration and planning to solve effectively.
+
+[Page 7]
+The page from a student's notes appears to be discussing Knuth-Morris-Pratt (KMP) algorithms, which are used for pattern searching in strings. The main topic of this page is the KMP algorithm, and it covers several key concepts related to this algorithm.
+
+**Key Concepts:**
+
+*   **Prefix Array:** A prefix array is a table used in the KMP algorithm to store information about the prefix of a pattern. The prefix of a string is the substring from the beginning to a certain position. In the context of the KMP algorithm, the prefix array is used to build the suffix information of the pattern.
+*   **Suffix Information:** Suffix information refers to the information about the suffix of a pattern. The suffix of a string is the substring from a certain position to the end. In the KMP algorithm, the suffix information is used to determine the next position to match the pattern.
+*   **Overlapping of Prefix and Suffix:** The overlapping of prefix and suffix refers to the situation where the prefix of a pattern overlaps with the suffix of the same pattern. This is an important concept in the KMP algorithm, as it allows for efficient searching of patterns in strings.
+*   **Efficiency of KMP Algorithm:** The KMP algorithm is designed to achieve efficiency by avoiding repeated comparison of characters. This is done by using the prefix array to build the suffix information of the pattern, which allows for efficient searching of patterns in strings.
+
+**Formulas and Equations:**
+
+*   **No formulas or equations are explicitly mentioned on this page.**
+
+**Diagrams and Figures:**
+
+*   **No diagrams or figures are present on this page.**
+
+**Definitions of Important Terms:**
+
+*   **No definitions of important terms are provided on this page.**
+
+**Examples and Numerical Values:**
+
+*   **No examples or numerical values are given on this page.**
+
+In summary, this page provides an overview of the KMP algorithm, including its main concepts, such as prefix arrays, suffix information, and overlapping of prefix and suffix. The page also mentions the efficiency of the KMP algorithm, which is achieved through the avoidance of repeated comparison of characters. However, no specific formulas, equations, diagrams, or examples are provided on this page.
+
+[Page 8]
+This page from a student's notes appears to be focused on pattern matching, specifically discussing the concept of "spurious hits." The main topic is not explicitly stated, but it seems to be related to a problem involving finding a pattern in a sequence of numbers.
+
+The first section of the notes explains that when searching for a pattern, the student should apply pattern matching. This is followed by a mathematical formula, p mod 8 = 26 mod 11 = 4, which is not fully understood in this context. However, it is likely related to the pattern matching process.
+
+The next section provides a list of numbers, ranging from 31 to 93, with some numbers marked as "not matched" or "spurious hits." The student is instructed to apply pattern matching to these numbers, but the exact method is not specified.
+
+The final section of the notes appears to be a continuation of the pattern matching process, with the student applying the formula p mod 8 = 26 mod 11 = 4 to the list of numbers. However, the calculations are not fully completed, and the student seems to be struggling with the concept.
+
+Overall, this page of notes suggests that the student is having difficulty understanding the concept of pattern matching and is struggling to apply it to a specific problem. The notes provide a good starting point for further instruction and practice, but may require additional clarification and explanation to help the student fully grasp the concept.

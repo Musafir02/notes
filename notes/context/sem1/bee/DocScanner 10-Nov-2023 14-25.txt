@@ -1,0 +1,349 @@
+[Page 1]
+The main topic of this page is "Generation of Three-Phase Voltages." This concept involves creating three separate but identical electrical voltages that are displaced by 120 degrees from each other.
+
+**Concept Explanation**
+
+The page explains that when these three windings are rotated in an anticlockwise direction with constant angular velocity in a uniform magnetic field, the voltages induced in each winding have the same magnitude and frequency but are displaced 120 electrical degrees from one another. This is illustrated in Figure 5.7, which shows a three-phase system with three windings labeled R, Y, and B. The instantaneous values of induced voltages in these windings are given by the following formulas:
+
+* V_R = V_m sin(θ)
+* V_Y = V_m sin(θ - 120°)
+* V_B = V_m sin(θ - 240°)
+
+where V_m is the maximum voltage, θ is the angle of rotation, and V_R, V_Y, and V_B are the instantaneous voltages in windings R, Y, and B, respectively.
+
+**Waveforms and Phasor Diagrams**
+
+The induced voltage in winding Y lags behind that in winding R by 120°, and the induced voltage in winding B lags behind that in winding R by 240°. These waveforms are shown in Figure 5.8. The phasor diagram of these induced voltages is also illustrated in Figure 5.9.
+
+**Key Terms and Definitions**
+
+* **Three-phase system**: A system that uses three separate but identical electrical voltages that are displaced by 120 electrical degrees from each other.
+* **Instantaneous values of induced voltages**: The values of the induced voltages at a given instant in time.
+* **Maximum voltage (V_m)**: The maximum value of the induced voltage in a winding.
+* **Angle of rotation (θ)**: The angle by which the windings are rotated in an anticlockwise direction.
+* **Lag**: The delay in the phase of one voltage with respect to another.
+
+**Example and Numerical Values**
+
+The page does not provide any specific examples or numerical values, but it does illustrate the concept of three-phase voltages and their waveforms and phasor diagrams.
+
+In summary, this page explains the concept of generating three-phase voltages, which involves creating three separate but identical electrical voltages that are displaced by 120 electrical degrees from each other. The instantaneous values of induced voltages in these windings are given by specific formulas, and the waveforms and phasor diagrams are illustrated. The key terms and definitions are also explained, and no specific examples or numerical values are provided.
+
+[Page 3]
+**Voltage, Current, and Power Relation in a Balanced Star-Connected Load**
+
+The main topic of this page is the relationship between voltage, current, and power in a balanced star-connected load. This concept is crucial in understanding how electrical systems operate.
+
+**Concepts Explained**
+
+*   **Star-Connected Load**: A star-connected load is a type of electrical connection where three-phase power is distributed from a central point (the "star") to three separate loads. This configuration is commonly used in industrial and commercial applications.
+*   **Phase Voltage (Vph)**: Phase voltage refers to the voltage between any two phases of a three-phase system. In a star-connected load, the phase voltage is the voltage between any two phases.
+*   **Line Voltage (Vln)**: Line voltage refers to the voltage between any two lines of a three-phase system. In a star-connected load, the line voltage is the voltage between any two lines.
+*   **Power Factor (PF)**: Power factor is the ratio of real power to apparent power in an electrical system. It is a measure of how efficiently the system uses power.
+
+**Formulas and Equations**
+
+*   **Vph = Vln / √3**: This equation relates the phase voltage to the line voltage in a star-connected load.
+*   **V = IR**: This equation represents Ohm's law, which relates voltage, current, and resistance in an electrical circuit.
+*   **slip s = (Ns - Nr) / Ns**: This equation calculates the slip of an induction motor, which is the difference between the synchronous speed (Ns) and the rotor speed (Nr), divided by the synchronous speed.
+
+**Diagrams and Figures**
+
+*   **The first diagram illustrates a star-connected load with three phases (A, B, and C) and three lines (R, Y, and B).** The key parts labelled in the diagram are:
+    *   **Vph**: Phase voltage
+    *   **Vln**: Line voltage
+    *   **Iph**: Phase current
+    *   **Il**: Line current
+*   **The second diagram shows a three-phase system with a load connected between the phases.** The key parts labelled in the diagram are:
+    *   **Vph**: Phase voltage
+    *   **Vln**: Line voltage
+    *   **Iph**: Phase current
+    *   **Il**: Line current
+
+**Definitions**
+
+*   **Balanced System**: A balanced system is an electrical system where the voltage and current are equal in magnitude and phase-shifted by 120 degrees between each phase.
+*   **Unbalanced System**: An unbalanced system is an electrical system where the voltage and current are not equal in magnitude or phase-shifted by 120 degrees between each phase.
+
+**Examples and Numerical Values**
+
+*   **Example 1:** A star-connected load has a line voltage of 400 V. What is the phase voltage?
+    *   **Solution:** Using the equation Vph = Vln / √3, we can calculate the phase voltage: Vph = 400 V / √3 = 231 V.
+*   **Example 2:** An induction motor has a synchronous speed of 1500 rpm and a rotor speed of 1400 rpm. What is the slip?
+    *   **Solution:** Using the equation slip s = (Ns - Nr) / Ns, we can calculate the slip: s = (1500 - 1400) / 1500 = 0.067 or 6.7%.
+
+In conclusion, this page provides a comprehensive overview of the relationship between voltage, current, and power in a balanced star-connected load. The concepts explained include star-connected loads, phase voltage, line voltage, power factor, and slip. The formulas and equations provided allow students to calculate these quantities and understand how they relate to each other. The diagrams and figures illustrate the key parts of a star-connected load and a three-phase system. Finally, the definitions and examples provide a clear understanding of the concepts and their applications.
+
+[Page 6]
+The main topic of this page is the steps for drawing a phasor diagram. A phasor diagram is a graphical representation of the relationships between different electrical quantities, such as voltage, current, and power, in an AC circuit. It is a useful tool for analyzing and understanding the behavior of AC circuits.
+
+The first step in drawing a phasor diagram is to draw the reference voltage, denoted by V_RN. This is the voltage that we will use as a reference point for all other voltages in the circuit. The second step is to draw the voltages in magnitude and phase from one another. This means that we need to determine the magnitude (or amplitude) of each voltage and the phase shift between them.
+
+To do this, we can use the concept of phase angle. The phase angle is the angle between the reference voltage and the other voltage. For example, if we have two voltages, V_YN and V_BN, and we want to draw them in phase from one another, we would draw V_YN lagging 120 degrees behind V_BN. This means that V_YN is 120 degrees out of phase with V_BN.
+
+The third step is to draw V_YN equal and opposite to V_YN. This means that we need to draw a phasor that is equal in magnitude to V_YN, but opposite in direction. This is done using the parallelogram law of vector addition.
+
+The fourth step is to add V_RN and V_NT using the parallelogram law of vector addition. This means that we need to add the two phasors together to get the resultant phasor.
+
+Finally, the fifth step is to draw V_NB equal and opposite to V_BN. This means that we need to draw a phasor that is equal in magnitude to V_BN, but opposite in direction.
+
+Overall, the steps for drawing a phasor diagram involve determining the magnitude and phase of each voltage, drawing the phasors in phase from one another, and adding them together using the parallelogram law of vector addition.
+
+In terms of formulas and equations, there are none explicitly stated on this page. However, the concept of phase angle and the parallelogram law of vector addition are used throughout the steps.
+
+The diagram on this page is not visible, but based on the text, it appears to be a phasor diagram with several phasors drawn in phase from one another. The key parts of the diagram would include the reference voltage V_RN, the other voltages V_YN, V_BN, V_NT, and V_NB, and the resultant phasor.
+
+Important terms that are defined on this page include:
+
+* Phasor diagram: a graphical representation of the relationships between different electrical quantities in an AC circuit.
+* Reference voltage: the voltage that is used as a reference point for all other voltages in the circuit.
+* Phase angle: the angle between the reference voltage and another voltage.
+* Parallelogram law of vector addition: a method for adding two or more phasors together to get the resultant phasor.
+
+There are no examples or numerical values given on this page.
+
+[Page 8]
+The main topic of this page is the relationship between voltage, current, and power in a balanced delta-connected load. The page explains the concepts of voltage, current, and power in a balanced delta-connected load, including the formulas and equations that describe these relationships.
+
+The page begins by explaining that the voltage, current, and power in a balanced delta-connected load are related by the following equation: V = IR. This equation states that the voltage across a resistor is equal to the product of the current flowing through it and the resistance.
+
+The page then explains the concept of phase angle, which is the angle between the voltage and current waves. The phase angle is measured in degrees and is represented by the symbol θ. The page states that the phase angle is equal to the difference between the voltage and current waves.
+
+The page also explains the concept of power factor, which is the ratio of the real power to the apparent power. The power factor is represented by the symbol pf and is measured in units of power factor (PF). The page states that the power factor is equal to the cosine of the phase angle.
+
+The page includes two diagrams that illustrate the relationships between voltage, current, and power in a balanced delta-connected load. The first diagram shows the voltage and current waves in a balanced delta-connected load, with the phase angle labeled as θ. The second diagram shows the power factor and the real and apparent power in a balanced delta-connected load.
+
+The page defines several important terms, including:
+
+* **Voltage (V)**: The voltage across a resistor is equal to the product of the current flowing through it and the resistance.
+* **Current (I)**: The current flowing through a resistor is equal to the voltage across it divided by the resistance.
+* **Power (P)**: The power consumed by a resistor is equal to the product of the voltage across it and the current flowing through it.
+* **Phase Angle (θ)**: The phase angle is the angle between the voltage and current waves.
+* **Power Factor (pf)**: The power factor is the ratio of the real power to the apparent power.
+
+The page also provides several examples and numerical values to illustrate the concepts being explained. For example, it states that if the voltage is 120 volts and the current is 10 amps, the power consumed by the resistor is 1200 watts.
+
+Overall, the page provides a clear and concise explanation of the relationships between voltage, current, and power in a balanced delta-connected load, including the formulas and equations that describe these relationships. It also defines important terms and provides examples and numerical values to illustrate the concepts being explained.
+
+[Page 11]
+The main topic of this page is "Power" in the context of Basic Electrical Engineering. The page explains two key concepts: the power triangle and the relationship between voltage, current, and power in a three-phase system.
+
+**Power Triangle**
+
+The power triangle is a fundamental concept in electrical engineering that describes the relationship between voltage, current, and power in a three-phase system. The power triangle is represented by a right-angled triangle with three sides: the voltage (V), the current (I), and the power (P). The power triangle is used to calculate the power in a three-phase system by using the formula:
+
+P = 3VphIph cos φ
+
+Where:
+• P is the power in watts (W)
+• Vph is the phase voltage in volts (V)
+• Iph is the phase current in amperes (A)
+• φ is the power factor angle in degrees
+
+The power triangle also illustrates the concept of power factor, which is the ratio of the real power to the apparent power. The power factor is represented by the cosine of the power factor angle (φ).
+
+**Three-Phase System**
+
+In a three-phase system, the power is calculated by multiplying the voltage, current, and power factor together. The formula for calculating the power in a three-phase system is:
+
+P = 3VphIph sin φ = √3VLL sin φ
+
+Where:
+• P is the power in watts (W)
+• Vph is the phase voltage in volts (V)
+• Iph is the phase current in amperes (A)
+• φ is the power factor angle in degrees
+• VLL is the line-to-line voltage in volts (V)
+
+The page also includes a diagram of a three-phase system, which illustrates the relationship between the voltage, current, and power in a three-phase system. The diagram shows the three-phase system as a set of three identical triangles, each representing a phase of the system. The voltage, current, and power are represented by the sides of the triangles.
+
+**Definitions**
+
+The page defines several important terms related to power and three-phase systems, including:
+
+* **Power**: The rate at which electrical energy is transferred or converted.
+* **Voltage**: The potential difference between two points in a circuit.
+* **Current**: The flow of electric charge through a circuit.
+* **Power Factor**: The ratio of the real power to the apparent power.
+* **Apparent Power**: The product of the voltage and current in a circuit.
+* **Real Power**: The actual power delivered to a load.
+
+**Examples**
+
+The page provides several examples of how to calculate the power in a three-phase system using the formulas provided. For example, if the phase voltage is 120 volts, the phase current is 10 amperes, and the power factor angle is 30 degrees, the power in the system can be calculated as follows:
+
+P = 3VphIph sin φ
+= 3(120)(10) sin 30°
+= 600 watts
+
+Overall, this page provides a clear and concise explanation of the power triangle and the relationship between voltage, current, and power in a three-phase system. The formulas and equations provided allow students to calculate the power in a three-phase system using simple trigonometric functions. The diagram of a three-phase system helps to illustrate the concept of power factor and how it is related to the voltage, current, and power in a three-phase system.
+
+[Page 13]
+This page from an engineering textbook delves into the concept of inductive loads and their representation in phasor diagrams. The diagram illustrates the relationship between voltage (V) and current (I) in an inductive load, highlighting the phase difference between the two.
+
+The diagram features three key phase voltages: VRN, VYN, and VBN. These voltages are displaced by an angle of 120 degrees electrical, as shown in the phasor diagram. The phase current lag behind their respective phase voltages by an angle, and the current flowing through the coil of the wattmeter W1 will be given as W1 = IR.
+
+The page also introduces the concept of potential difference across the pressure or potential coil of the wattmeter W1, denoted as W1 = VRB = VRN - VBN. This equation represents the relationship between the potential difference and the phase voltages.
+
+In summary, this page provides a comprehensive overview of inductive loads and their representation in phasor diagrams, including the phase differences between voltage and current, the phase current lag, and the potential difference across the pressure or potential coil of the wattmeter.
+
+[Page 16]
+This page of handwritten notes covers the topic of reactive power in electrical engineering, specifically focusing on the determination of reactive power using two wattmeter methods. The main concept explained is how to calculate reactive power using the two wattmeter method, which involves measuring the power consumed by an inductive or capacitive load.
+
+The formulas and equations presented on the page include:
+
+*   W1 - W2 = 2VIL sin(30 sin(phi)
+*   W1 - W2 = 2VIL J3 sin(phi
+*   W1 - W2 = VIL sin(phi
+
+These equations are used to calculate the reactive power of an inductive or capacitive load. The first equation is used when the load is purely inductive, the second equation is used when the load is purely capacitive, and the third equation is used when the load is a combination of inductive and capacitive.
+
+The diagram on the page illustrates the two-wattmeter method for measuring reactive power. The two wattmeters are connected to the load in a specific configuration, and the readings from the wattmeters are used to calculate the reactive power.
+
+Important terms defined on the page include:
+
+*   Reactive power: The power that is stored in the magnetic field of an inductive load or the electric field of a capacitive load.
+*   Inductive load: A load that stores energy in a magnetic field.
+*   Capacitive load: A load that stores energy in an electric field.
+*   Two-wattmeter method: A method for measuring reactive power using two wattmeters connected to the load in a specific configuration.
+
+Examples given on the page include:
+
+*   A 2V, 30 sin(phi) load with a reactive power of 2VIL sin(30 sin(phi)
+*   A 2V, J3 sin(phi) load with a reactive power of 2VIL J3 sin(phi
+
+These examples illustrate how to apply the formulas and equations to calculate the reactive power of different loads.
+
+In summary, this page of notes provides a clear explanation of the two-wattmeter method for measuring reactive power and how to apply it to different types of loads. The formulas and equations presented are used to calculate the reactive power of an inductive or capacitive load, and the diagram illustrates the configuration of the two wattmeters. The important terms defined include reactive power, inductive load, capacitive load, and the two-wattmeter method. The examples provided illustrate how to apply the formulas and equations to calculate the reactive power of different loads.
+
+[Page 18]
+This page from an engineering textbook delves into the realm of three-phase power systems, focusing on the comparison between star and delta connections. The main topic is the analysis of power factor, active power consumption, and line voltage and phase voltage in both configurations.
+
+The page begins by defining key terms, including the power factor (pf), active power (P), and line voltage (VL). It then presents a series of equations to calculate these values for both star and delta connections. The formulas are accompanied by numerical examples, which illustrate how to apply them to real-world scenarios.
+
+One of the key concepts discussed is the relationship between power factor, active power, and line voltage. The page explains that the power factor is the ratio of active power to apparent power, and that it can be calculated using the formula pf = cos(φ), where φ is the power factor angle. The active power, on the other hand, is calculated as P = VL × IL × cos(φ), where IL is the line current.
+
+The page also discusses the differences between star and delta connections. In a star connection, the phase voltage (Vph) is equal to the line voltage (VL) divided by √3, while in a delta connection, the phase voltage is equal to the line voltage. The page provides examples of how to calculate the phase voltage and line current in both configurations.
+
+Throughout the page, the author uses clear and concise language to explain complex concepts, making it accessible to students who may not have a strong background in electrical engineering. The use of numerical examples and formulas helps to illustrate the concepts and provide a practical application of the theory.
+
+Overall, this page provides a comprehensive overview of the comparison between star and delta connections in three-phase power systems. It covers key concepts such as power factor, active power, and line voltage, and provides practical examples to help students understand the material. With its clear and concise language, this page is an excellent resource for students looking to improve their understanding of three-phase power systems.
+
+[Page 21]
+The main topic of this page is power factor correction in electrical engineering. 
+
+The concept of power factor is explained as the ratio of real power (P) to apparent power (S). The real power is the actual power used by a load, while the apparent power is the vector sum of the real and reactive powers. The power factor is a measure of how effectively the current drawn by a load is converted into useful work. 
+
+The formula for power factor is given as pf = P / S, where P is the real power and S is the apparent power. 
+
+The page also discusses the concept of impedance, which is the total opposition to the flow of an alternating current (AC) in an AC circuit. Impedance is measured in ohms and is represented by the symbol Z. 
+
+The formula for impedance is given as Z = R + jX, where R is the resistance and X is the reactance. 
+
+The page also discusses the concept of phase angle, which is the angle between the voltage and current in an AC circuit. The phase angle is measured in degrees and is represented by the symbol φ. 
+
+The formula for phase angle is given as φ = arctan(X/R), where X is the reactance and R is the resistance. 
+
+The page also discusses the concept of power factor correction, which is the process of improving the power factor of a load by reducing the reactive power. 
+
+The formula for power factor correction is given as pf = P / (P + jQ), where P is the real power and Q is the reactive power. 
+
+The page also discusses the concept of total variable apparent power (S), which is the vector sum of the real and reactive powers. 
+
+The formula for total variable apparent power is given as S = √3(VLIL)cosφ, where VL is the line voltage, IL is the line current, and φ is the phase angle. 
+
+The page also discusses the concept of reactive power (Q), which is the power that is not used by a load but is instead stored in the magnetic field of the inductor. 
+
+The formula for reactive power is given as Q = VLILsinφ, where VL is the line voltage, IL is the line current, and φ is the phase angle. 
+
+The page also discusses the concept of slip (s), which is the ratio of the difference between the synchronous speed (Ns) and the rotor speed (Nr) to the synchronous speed. 
+
+The formula for slip is given as s = (Ns - Nr) / Ns, where Ns is the synchronous speed and Nr is the rotor speed. 
+
+The page also discusses the concept of synchronous speed (Ns), which is the speed at which the rotor of an induction motor would rotate if it were not connected to the stator. 
+
+The formula for synchronous speed is given as Ns = 120f / P, where f is the frequency and P is the number of poles. 
+
+The page also discusses the concept of rotor speed (Nr), which is the actual speed at which the rotor of an induction motor rotates. 
+
+The formula for rotor speed is given as Nr = Ns(1 - s), where Ns is the synchronous speed and s is the slip. 
+
+The page also discusses the concept of torque (T), which is the rotational force that causes the rotor of an induction motor to rotate. 
+
+The formula for torque is given as T = (3 / 2)PωILcosφ, where P is the number of poles, ω is the angular velocity, IL is the line current, and φ is the phase angle. 
+
+The page also discusses the concept of power (P), which is the rate at which work is done by a load. 
+
+The formula for power is given as P = VIcosφ, where V is the voltage, I is the current, and φ is the phase angle. 
+
+The page also discusses the concept of efficiency (η), which is the ratio of the output power to the input power. 
+
+The formula for efficiency is given as η = Pout / Pin, where Pout is the output power and Pin is the input power. 
+
+The page also discusses the concept of power factor correction using a capacitor. 
+
+The formula for power factor correction using a capacitor is given as pf = P / (P + jQc), where P is the real power, Qc is the reactive power of the
+
+[Page 23]
+This page delves into the realm of electrical engineering, specifically focusing on the concept of power factor. The main topic or heading is not explicitly stated, but the content suggests it is related to power factor calculations.
+
+**Power Factor**
+
+The power factor is defined as the ratio of real power (P) to apparent power (S). In other words, it measures how effectively electrical power is being utilized in a circuit. A power factor of 1 indicates that all the power being consumed is real power, while a power factor of 0 indicates that no real power is being consumed.
+
+**Formulas and Equations**
+
+The page presents several formulas and equations related to power factor calculations:
+
+*   P = V x I x cos(φ)
+*   S = V x I x sin(φ)
+*   cos(φ) = P / S
+
+These equations demonstrate how to calculate power factor, apparent power, and real power in a circuit.
+
+**Definitions of Important Terms**
+
+The page defines several key terms:
+
+*   **Power Factor**: The ratio of real power to apparent power.
+*   **Real Power (P)**: The actual power being consumed by a load.
+*   **Apparent Power (S)**: The total power being drawn by a load, including both real and reactive power.
+*   **Reactive Power**: The power that is not being utilized by a load and is instead stored in the circuit's magnetic fields.
+*   **Cosine of the Power Angle (cos(φ))**: A measure of the power factor, where a value of 1 indicates a perfect power factor and a value of 0 indicates no real power being consumed.
+
+**Examples and Numerical Values**
+
+The page provides an example calculation to illustrate the concept of power factor:
+
+*   Given: V = 550 V, I = 24.6 A, φ = 63.43°
+*   Calculated: P = 18.14 kW, S = 40.59 kVA, cos(φ) = 0.447
+
+This example demonstrates how to apply the formulas and equations to calculate power factor and other related quantities.
+
+In summary, this page provides a comprehensive introduction to the concept of power factor, including definitions, formulas, and examples. It is essential for students to understand these concepts to analyze and design electrical circuits effectively.
+
+[Page 26]
+This page appears to be from an electrical engineering textbook, focusing on power factor and its measurement. The main topic is the power factor, defined as the ratio of real power to apparent power in an AC circuit. Real power is the actual power used to perform work, while apparent power is the vector sum of the real and reactive power. The power factor is a measure of how efficiently the real power is being used in the circuit.
+
+The page explains that the power factor can be measured using the two-wattmeter method, which involves connecting two wattmeters to the circuit. The readings from these wattmeters are then used to calculate the power factor. The formulas for calculating the power factor are provided, including the relationship between the readings of the two wattmeters and the power factor.
+
+The page also discusses the concept of lagging power factor, which occurs when the current lags behind the voltage in the circuit. This is illustrated by a diagram showing the relationship between the voltage and current waveforms. The key parts of the diagram are labelled, including the voltage and current waveforms, and the power factor.
+
+Important terms are defined, including "power factor," "real power," "apparent power," and "reactive power." Examples and numerical values are provided to illustrate the concepts, including a calculation of the power factor using the readings from the two wattmeters.
+
+Overall, this page provides a clear and concise explanation of the power factor and its measurement, as well as the concepts of real and reactive power. The diagrams and formulas help to illustrate the relationships between these quantities, making it easier for students to understand and apply the concepts in practice.
+
+[Page 28]
+This page appears to be from an electrical engineering textbook or lecture notes, covering the topic of three-phase power systems. The main heading is not explicitly stated, but it seems to be discussing the analysis of power in a three-phase system.
+
+The page begins by explaining that each phase of a three-phase delta-connected load has an impedance of Zph = 50.260°Ω. It then asks the reader to calculate the total power and measure the power. The solution to this problem is provided, using the formula P = √3 Vph IL cos φ, where Vph is the phase voltage, Iph is the phase current, L is the line current, and φ is the power factor angle.
+
+The page also discusses the concept of power factor, which is defined as the ratio of the real power (P) to the apparent power (S). The power factor is given by the cosine of the power factor angle (φ). The page provides an example of how to calculate the power factor using the given values of Vph, Iph, and φ.
+
+Additionally, the page explains the concept of line current and how it relates to the phase currents. It states that the line current (IL) is √3 times the phase current (Iph). The page also provides a formula for calculating the line current: IL = √3 Iph.
+
+Furthermore, the page discusses the concept of wattmeters, which are used to measure power in a three-phase system. It explains that two wattmeters are connected to measure the power and provides a formula for calculating the power: P = W1 + W2, where W1 and W2 are the readings on the two wattmeters.
+
+Finally, the page provides an example of how to calculate the power using the wattmeter readings. It gives the values of W1 and W2 as 4.8 kW and 0, respectively, and asks the reader to calculate the total power.
+
+Overall, this page provides a comprehensive overview of the analysis of power in a three-phase system, including the calculation of total power, power factor, line current, and wattmeters. It also provides examples and formulas to help the reader understand these concepts.

@@ -1,0 +1,368 @@
+[Page 1]
+This page appears to be part of a larger document, likely a textbook or study guide, focused on the topic of "THEEM COLLEGE OF ENGINEERING." The page is divided into two main sections: the top section presents a series of questions and problems, while the bottom section provides explanations and solutions.
+
+The top section contains a list of questions and problems, each with a numerical value or a brief description. These questions cover various topics, including mathematics, physics, chemistry, and engineering. The questions are written in a clear and concise manner, making it easy for students to understand what is being asked.
+
+The bottom section of the page provides explanations and solutions to the questions and problems presented in the top section. The explanations are written in a clear and concise manner, using simple language that is easy for students to understand. The solutions are also provided, along with any relevant formulas or equations.
+
+One of the key concepts covered on this page is the concept of "MUPUC," which is defined as the sum of the number of math problems, physics problems, chemistry problems, and engineering problems. The formula for calculating MUPUC is provided, along with an example of how to use it.
+
+Another important concept covered on this page is the concept of "N(MUPUC)," which is defined as the sum of the number of math problems, physics problems, chemistry problems, and engineering problems, minus the number of math problems, physics problems, chemistry problems, and engineering problems. The formula for calculating N(MUPUC) is provided, along with an example of how to use it.
+
+In addition to these concepts, the page also covers other topics, such as the concept of "slip," which is defined as the ratio of the number of slips to the total number of problems. The formula for calculating slip is provided, along with an example of how to use it.
+
+Overall, this page provides a comprehensive overview of the key concepts and formulas related to MUPUC and N(MUPUC). The explanations and solutions are clear and concise, making it easy for students to understand and apply these concepts to real-world problems.
+
+In summary, this page is a valuable resource for students who are studying engineering and want to improve their understanding of MUPUC and N(MUPUC). The page provides clear explanations and solutions to a variety of problems, making it an excellent study aid for students who are preparing for exams or working on projects.
+
+[Page 2]
+The page appears to be a continuation of a math problem, focusing on the concept of inclusion-exclusion principle. The main topic or heading is not explicitly stated, but the content suggests it's related to probability theory.
+
+**Key Concepts:**
+
+*   **Inclusion-Exclusion Principle**: This principle is used to count the number of elements in the union of multiple sets by adding the sizes of the individual sets and then subtracting the sizes of their intersections to avoid double counting.
+*   **Sets**: A set is a collection of unique objects, such as numbers or events, that can be combined using set operations like union, intersection, and difference.
+*   **Probability**: Probability measures the likelihood of an event occurring, ranging from 0 (impossible) to 1 (certain).
+
+**Formulas and Equations:**
+
+*   **n(TUBUJ)**: This formula calculates the total number of elements in the union of sets T, U, B, U, and J. It is given by the sum of the sizes of each set minus the sizes of their intersections, plus the size of the intersection of all sets.
+*   **n(T) + n(B) + n(J) - n(T ∩ B) - n(T ∩ J) - n(B ∩ J) + n(T ∩ B ∩ J)**: This equation represents the inclusion-exclusion principle applied to the sets T, B, and J. It calculates the total number of elements in the union of these sets by adding their sizes and subtracting the sizes of their intersections.
+
+**Diagram:**
+
+*   **The diagram illustrates the concept of inclusion-exclusion principle**: It shows three sets, T, B, and J, and their intersections. The diagram helps visualize how the principle works, highlighting the need to subtract the sizes of the intersections to avoid double counting.
+
+**Important Terms:**
+
+*   **Union**: The union of two or more sets contains all elements that are in at least one of the sets.
+*   **Intersection**: The intersection of two or more sets contains all elements that are common to all sets.
+*   **Difference**: The difference of two sets contains all elements that are in one set but not in the other.
+
+**Examples and Numerical Values:**
+
+*   **Example 1**: The problem provides an example with sets T, B, and J, and calculates the total number of elements in the union of these sets using the inclusion-exclusion principle.
+*   **Numerical Values**: The problem provides numerical values for the sizes of the sets and their intersections, allowing students to practice applying the inclusion-exclusion principle with specific numbers.
+
+In summary, this page explains the concept of inclusion-exclusion principle and its application to counting the number of elements in the union of multiple sets. It provides formulas, equations, and examples to help students understand and practice this important mathematical concept.
+
+[Page 3]
+**Summary of the Page**
+
+This page appears to be a student's notes on a statistics or engineering topic, focusing on the inclusion-exclusion principle and its application to counting people who watch all three games.
+
+**Main Topic and Heading**
+
+The main topic or heading of the page is not explicitly stated, but it seems to be related to the inclusion-exclusion principle and its use in counting people who watch all three games.
+
+**Concepts Explained**
+
+The page explains several concepts, including:
+
+*   **Inclusion-Exclusion Principle**: This principle is used to count the number of people who watch all three games by adding the number of people who watch each game individually, subtracting the number of people who watch exactly two games, and adding back the number of people who watch all three games.
+*   **Inclusion**: This refers to the act of adding the number of people who watch each game individually.
+*   **Exclusion**: This refers to the act of subtracting the number of people who watch exactly two games.
+*   **Intersection**: This refers to the act of adding back the number of people who watch all three games.
+
+**Formulas and Equations**
+
+The page presents several formulas and equations, including:
+
+*   **n(FnH) = 70**: This equation represents the number of people who watch football and hockey.
+*   **n(HnB) = 50**: This equation represents the number of people who watch hockey and basketball.
+*   **n(FnB) = 45**: This equation represents the number of people who watch football and basketball.
+*   **n(FnH) + n(HnB) - n(FnB) - n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB) + n(FnH) + n(FnB) + n(HnB)
+
+[Page 4]
+**Summary of the Page**
+
+This page appears to be from a math or computer science textbook, focusing on the concept of functions and relations. The main topic is "How many people watch exactly one game?" which seems unrelated to the rest of the content.
+
+**Concepts and Formulas**
+
+The page explains several concepts:
+
+*   **Relations**: A relation R is a set of ordered pairs (a, b) where a and b are elements of a set. The notation R = {(a, b, c, d)} indicates that the relation R contains the ordered pairs (a, b), (b, c), and (d, 2).
+*   **Functions**: A function is a special type of relation where each element in the domain has exactly one image in the range. In other words, for every input, there is only one possible output. The notation R = [(a, 1), (b, 2), (c, 1), (d, 2)] represents a function with inputs a, b, c, and d, and corresponding outputs 1, 2, 1, and 2, respectively.
+*   **Range**: The range of a function is the set of all possible outputs. In this case, the range is {1, 2}.
+*   **Composition of Functions**: The page also discusses the composition of functions, which is a way of combining two or more functions to create a new function. The notation R = [(a, 1), (b, 2), (c, 1), (d, 2)] illustrates the composition of functions.
+
+**Diagrams and Figures**
+
+There are no diagrams or figures on this page.
+
+**Definitions and Examples**
+
+The page defines important terms such as "relation" and "function" and provides examples to illustrate these concepts. For instance, the relation R = {(a, b, c, d)} is used to demonstrate how a relation can be defined, and the function R = [(a, 1), (b, 2), (c, 1), (d, 2)] is used to show how a function can be represented.
+
+**Conclusion**
+
+In conclusion, this page provides a clear and concise introduction to the concepts of relations and functions, including their definitions, notation, and examples. The page also touches on the composition of functions, which is an important topic in mathematics and computer science. Overall, this page serves as a useful resource for students looking to understand these fundamental concepts.
+
+[Page 5]
+The page appears to be a student's notes on a college-level engineering course, focusing on functions and their properties. The main topic is the definition and characteristics of functions, with a specific emphasis on the concept of a function as a relation between two sets.
+
+**Definition of a Function**
+
+A function is defined as a relation between two sets, where each element in the first set (domain) maps to exactly one element in the second set (range). This means that for every input value, there is only one corresponding output value. The student has provided examples of relations that are not functions, illustrating the importance of this definition.
+
+**Properties of Functions**
+
+The student has listed several properties of functions, including:
+
+* **One-to-one (injective)**: Each element in the range corresponds to exactly one element in the domain.
+* **Onto (surjective)**: Every element in the range is mapped to by at least one element in the domain.
+* **Bijective**: A function that is both one-to-one and onto.
+
+The student has also provided examples of functions that exhibit these properties, such as the identity function and the constant function.
+
+**Domain and Range**
+
+The student has discussed the concept of the domain and range of a function, highlighting their importance in defining the function's behavior. The domain is the set of input values, while the range is the set of output values.
+
+**Examples and Numerical Values**
+
+The student has provided several examples of functions, including:
+
+* **Linear functions**: f(x) = mx + b, where m is the slope and b is the y-intercept.
+* **Quadratic functions**: f(x) = ax^2 + bx + c, where a, b, and c are constants.
+* **Polynomial functions**: f(x) = a_nx^n + a_(n-1)x^(n-1) + ... + a_1x + a_0, where a_n, a_(n-1), ..., a_1, and a_0 are constants.
+
+These examples illustrate the different types of functions and their properties.
+
+**Conclusion**
+
+In conclusion, the page provides a comprehensive overview of the concept of functions and their properties. The student has demonstrated a clear understanding of the definition and characteristics of functions, as well as their importance in mathematics and engineering. By analyzing the page, we can see that the student has a strong grasp of the material and is able to apply it to real-world examples.
+
+[Page 6]
+This page is part of a comprehensive engineering notebook, focusing on the concept of function notation and its applications.
+
+The main topic or heading is not explicitly stated, but the content suggests it deals with function notation and its uses. The page is divided into sections, each addressing a specific aspect of function notation.
+
+The first section introduces the concept of function notation, where a function f(x) is defined as f(x) = (4x + 3) / (5x - 2). This notation is used to represent a mathematical relationship between input values (x) and output values (f(x)).
+
+The next section explains how to replace f(x) with y, which involves substituting f(x) with y in the original function. For example, if f(x) = (4x + 3) / (5x - 2), then y = (4x + 3) / (5x - 2).
+
+The following section demonstrates how to swap x and y in the function, resulting in the new function x = (5y - 2) / 4. This step is crucial in understanding the symmetry of functions.
+
+The subsequent section shows how to solve for y by rearranging the equation x = (5y - 2) / 4. By multiplying both sides by 4 and then subtracting 2 from both sides, the equation can be solved for y.
+
+The final section provides an example of solving a quadratic equation using the method of substitution. The equation 5xy - 2x = 3 + 2x is solved by substituting y = (2x + 3) / 5x - 4 into the equation.
+
+Throughout the page, various formulas and equations are presented, including:
+
+* f(x) = (4x + 3) / (5x - 2)
+* y = (4x + 3) / (5x - 2)
+* x = (5y - 2) / 4
+* 5xy - 2x = 3 + 2x
+* y = (2x + 3) / (5x - 4)
+
+These equations are used to illustrate the concepts of function notation, substitution, and solving quadratic equations.
+
+The page does not contain any diagrams or figures, but the text provides clear explanations and examples to help students understand the concepts.
+
+Important terms defined on this page include:
+
+* Function notation: a way of representing a mathematical relationship between input values (x) and output values (f(x))
+* Substitution: replacing a variable in an equation with an expression involving another variable
+* Solving for y: rearranging an equation to isolate the variable y
+
+Overall, this page provides a comprehensive introduction to function notation and its applications, covering topics such as substitution, solving quadratic equations, and defining important terms.
+
+[Page 7]
+The page is from a student's notes on engineering principles, specifically covering the topic of "THEEM COLLEGE OF ENGINEERING". The main heading is not explicitly stated, but the content suggests it might be related to the assignment of functions and values to variables.
+
+The first concept explained is that each person in the earth is assigned a number, which corresponds to their cage. This is likely referring to the concept of unique identifiers or labels assigned to individuals or objects. The student has listed several examples of functions and their corresponding injective, surjective, and bijective properties.
+
+The second concept discussed is that each student is assigned a teacher, and each student assigns a teacher (assuming). This is likely related to the concept of functions and their properties, specifically the idea that a function can be injective, surjective, or bijective depending on the mapping between the domain and codomain.
+
+The third concept explained is that each country has assigned its capital. This is likely referring to the concept of geographical locations and their corresponding attributes, such as capitals.
+
+The formulas and equations on the page are not explicitly stated, but the student has listed several examples of functions and their properties, including:
+
+*   Function - Yes
+*   Injective - No
+*   Surjective - No
+*   Bijective - No
+
+The diagrams and figures on the page are not present, so there is no key to label the parts.
+
+Important terms defined on the page include:
+
+*   Function
+*   Injective
+*   Surjective
+*   Bijective
+
+Examples or numerical values given on the page include:
+
+*   Each person in the earth is assigned a number, which corresponds to their cage.
+*   Each student is assigned a teacher, and each student assigns a teacher (assuming).
+*   Each country has assigned its capital.
+
+In summary, the page covers the concepts of unique identifiers, functions, and geographical locations, with examples and numerical values provided to illustrate these concepts. The student has listed several functions and their properties, including injective, surjective, and bijective, but does not provide any diagrams or figures to support their explanations.
+
+[Page 8]
+**Summary of the Page**
+
+The main topic of this page is the concept of injectivity in functions. An injective function is a function that maps each element in its domain to a unique element in its codomain. In other words, no two distinct elements in the domain can map to the same element in the codomain.
+
+**Concepts Explained**
+
+*   **Injectivity**: A function f is said to be injective if it maps each element in its domain to a unique element in its codomain. This means that for any two distinct elements x and y in the domain, f(x) ≠ f(y).
+*   **Surjectivity**: A function f is said to be surjective if every element in its codomain is mapped to by at least one element in its domain. This means that for any element y in the codomain, there exists an element x in the domain such that f(x) = y.
+*   **Bijectivity**: A function f is said to be bijective if it is both injective and surjective. This means that f is a one-to-one correspondence between its domain and codomain.
+
+**Formulas and Equations**
+
+*   **Injectivity Condition**: A function f is injective if and only if f(a) ≠ f(b) for all a ≠ b in the domain.
+*   **Surjectivity Condition**: A function f is surjective if and only if for every y in the codomain, there exists an x in the domain such that f(x) = y.
+*   **Bijectivity Condition**: A function f is bijective if and only if it is both injective and surjective.
+
+**Diagrams and Figures**
+
+*   **Injective Function**: The diagram illustrates an injective function f that maps each element in its domain to a unique element in its codomain. The arrows represent the mapping of elements from the domain to the codomain.
+*   **Surjective Function**: The diagram illustrates a surjective function f that maps every element in its codomain to at least one element in its domain. The arrows represent the mapping of elements from the domain to the codomain.
+*   **Bijective Function**: The diagram illustrates a bijective function f that is both injective and surjective. The arrows represent the one-to-one correspondence between the domain and codomain.
+
+**Definitions**
+
+*   **Domain**: The set of all possible input values for a function.
+*   **Codomain**: The set of all possible output values for a function.
+*   **Injective Function**: A function that maps each element in its domain to a unique element in its codomain.
+*   **Surjective Function**: A function that maps every element in its codomain to at least one element in its domain.
+*   **Bijective Function**: A function that is both injective and surjective.
+
+**Examples and Numerical Values**
+
+*   **Injective Function Example**: Let f(x) = 2x + 1. This function is injective because it maps each element in its domain to a unique element in its codomain. For example, f(1) = 3 and f(2) = 5, which are both unique elements in the codomain.
+*   **Surjective Function Example**: Let f(x) = x^2. This function is surjective because it maps every element in its codomain to at least one element in its domain. For example, f(1) = 1 and f(-1) = 1, which are both elements in the codomain.
+
+In conclusion, the main topic of this page is the concept of injectivity in functions. An injective function is a function that maps each element in its domain to a unique element in its codomain. The page explains the concepts of injectivity, surjectivity, and bijectivity, and provides examples and numerical values to illustrate these concepts.
+
+[Page 9]
+**Summary of the Page:**
+
+This page appears to be from a college engineering course, covering the basics of graph theory. The main topic is "Define," which includes several key concepts and definitions.
+
+**Main Topic:**
+
+The main topic is "Define," which suggests that the page is focused on explaining and defining various terms related to graph theory.
+
+**Concepts and Definitions:**
+
+The page explains several concepts, including:
+
+* **Planner Graph:** A planner graph is a way to represent a graph with no two edges intersecting or overlapping, except at a common vertex.
+* **Cut Vertices:** A cut vertex is a vertex that, if deleted, breaks the graph into two or more parts.
+* **Chain:** A chain is a path that links one vertex to another through a sequence of connected edges.
+* **Monoid:** A monoid is a set with an associative operation, but it also has an identity element.
+
+**Formulas and Equations:**
+
+There are no formulas or equations on this page.
+
+**Diagrams and Figures:**
+
+There are no diagrams or figures on this page.
+
+**Examples and Numerical Values:**
+
+There are no examples or numerical values provided on this page.
+
+**Key Takeaways:**
+
+* Planner graphs are a way to represent graphs without intersecting or overlapping edges.
+* Cut vertices are important in graph theory, as they can break a graph into two or more parts.
+* Chains are paths that link vertices together through connected edges.
+* Monoids are sets with associative operations and identity elements.
+
+Overall, this page provides a clear and concise introduction to the basics of graph theory, including key concepts and definitions.
+
+[Page 10]
+The page appears to be a handwritten note on a concept in engineering, specifically focusing on the application of a pigeonhole principle. The main topic or heading is not explicitly stated, but the content suggests that it may be related to combinatorics or discrete mathematics.
+
+The concept explained on this page involves a group of elements combined in various ways to follow a rule. The rule is not explicitly stated, but it seems to be related to the properties of the elements being combined. The note mentions that a group is a collection of elements with a way to combine them that follows a rule, and it provides an example of how this rule can be applied to a specific problem.
+
+The formulas and equations written on this page are:
+
+* Total bicycle = 50 → n = 50
+* Total color = 7 → k = 7
+
+These equations appear to be related to the concept of a group and the properties of the elements being combined. The note also mentions that if we have 7 bicycles per color and 7 colors, then the total number of bicycles is 49.
+
+The diagram or figure on this page is not present, but the note mentions that it is a direct application of a pigeonhole principle. This suggests that the concept being explained is related to the pigeonhole principle, which is a mathematical concept that states that if n items are put into m containers, with n > m, then at least one container must contain more than one item.
+
+Important terms defined on this page include:
+
+* Group: A collection of elements with a way to combine them that follows a rule.
+* Pigeonhole principle: A mathematical concept that states that if n items are put into m containers, with n > m, then at least one container must contain more than one item.
+
+Examples or numerical values given on this page include:
+
+* 50 bicycles
+* 7 colors
+* 7 bicycles per color
+* 7 colors
+* 49 total bicycles
+
+In summary, this page appears to be a handwritten note on the application of a pigeonhole principle in engineering. The concept explained involves a group of elements combined in various ways to follow a rule, and the note provides an example of how this rule can be applied to a specific problem. The formulas and equations written on this page are related to the properties of the elements being combined, and the diagram or figure is not present. Important terms defined on this page include "group" and "pigeonhole principle", and examples or numerical values given include 50 bicycles, 7 colors, 7 bicycles per color, 7 colors, and 49 total bicycles.
+
+[Page 11]
+The main topic of this page appears to be a mathematical problem related to distributing friends into groups of 4, with the goal of ensuring that at least 5 friends have a birthday in the same month.
+
+The first concept explained is the pigeonhole principle, which states that if we distribute friends into 12 months (the worst-case scenario), and each month can have up to 4 friends without any month reaching 5, then each of the 12 months had 4 friends. This means that there are 48 friends in total (12 months x 4 friends per month).
+
+The next concept is the formula for calculating the number of friends who will have a birthday in the same month. The formula is 48 + 1 = 49. This means that as soon as we add one more friend, we need 49 friends to guarantee that at least 5 friends have a birthday in the same month.
+
+The diagram on the page is not present, so there is nothing to illustrate or label.
+
+The important terms defined are:
+
+* Pigeonhole principle: a mathematical principle that states that if we distribute objects into containers, and the number of objects exceeds the number of containers, then at least one container must contain more than one object.
+* Worst-case scenario: the most unfavorable outcome or situation that can occur in a given set of circumstances.
+* Friends: individuals who are being distributed into groups of 4.
+
+The example given is the scenario where we distribute friends into 12 months, with each month having up to 4 friends without any month reaching 5. The numerical values given are:
+
+* 12 months
+* 4 friends per month
+* 48 friends (12 months x 4 friends per month)
+* 49 friends (48 + 1)
+
+In summary, this page explains the pigeonhole principle and its application to a problem involving distributing friends into groups of 4. It also provides a formula for calculating the number of friends who will have a birthday in the same month and defines important terms.
+
+[Page 12]
+The main topic of this page is "Abelian Groups," a concept in abstract algebra that deals with the properties of groups under addition. The page is divided into four sections, each addressing a specific aspect of abelian groups.
+
+**Closure**
+The first section explains that an abelian group is a set of elements that can be added together in a way that satisfies certain properties. These properties include closure, meaning that the result of adding two elements together is also an element in the set. For example, if we have a set of integers, the sum of two integers is also an integer, so the set of integers is closed under addition.
+
+**Associative**
+The second section discusses the associative property, which states that the order in which we add elements together does not matter. In other words, if we have three elements a, b, and c, then (a + b) + c = a + (b + c). This property is important because it allows us to simplify expressions and make calculations easier.
+
+**Identity**
+The third section introduces the concept of an identity element, which is an element that does not change the result when added to another element. In the case of abelian groups, the identity element is usually denoted as 0 or e. For example, if we have an element a in an abelian group, then a + 0 = a. This means that adding 0 to a does not change its value.
+
+**Inverse**
+The fourth section explains the concept of an inverse element, which is an element that, when added to another element, results in the identity element. In other words, if we have an element a in an abelian group, then there exists an element -a such that a + (-a) = 0. This means that adding -a to a results in the identity element 0.
+
+**Formulas and Equations**
+The page includes several formulas and equations that illustrate the properties of abelian groups. For example, the equation (a*b)*c = a*(b*c) shows that the associative property holds for multiplication. Similarly, the equation a*e = a shows that the identity element e does not change the result when added to an element a.
+
+**Diagrams and Figures**
+There are no diagrams or figures on this page, but they may be included in subsequent pages to illustrate the concepts being discussed.
+
+**Definitions of Important Terms**
+The page defines several important terms, including:
+
+* Abelian group: a set of elements that can be added together in a way that satisfies certain properties.
+* Closure: the property that the result of adding two elements together is also an element in the set.
+* Associative property: the property that the order in which we add elements together does not matter.
+* Identity element: an element that does not change the result when added to another element.
+* Inverse element: an element that, when added to another element, results in the identity element.
+
+**Examples and Numerical Values**
+There are no examples or numerical values given on this page, but they may be included in subsequent pages to illustrate the concepts being discussed.
+
+In summary, this page provides an introduction to the concept of abelian groups, including the properties of closure, associativity, identity, and inverse. It also defines important terms and provides formulas and equations to illustrate the concepts being discussed.

@@ -1,0 +1,254 @@
+[Page 1]
+The main topic of this page appears to be a method for finding the minimum and maximum values in a set of numbers without using the divide and conquer technique. The page explains that this method can be used to find the minimum and maximum values in a set of numbers by comparing the numbers one by one.
+
+The first formula on the page is:
+
+i + j = mid
+
+This formula is used to calculate the midpoint of the range of numbers being compared. The midpoint is then used to divide the range into two halves, with the left half containing the minimum value and the right half containing the maximum value.
+
+The second formula on the page is:
+
+T(n) = 2T(n/2) + 2
+
+This formula is used to calculate the time complexity of the algorithm. The time complexity is O(n), which means that the algorithm takes linear time to find the minimum and maximum values in a set of numbers.
+
+The third formula on the page is:
+
+3n - 2 (DAC) Approach
+
+This formula is used to calculate the number of comparisons required to find the minimum and maximum values in a set of numbers using the divide and conquer technique. The formula shows that the number of comparisons is proportional to the size of the input, which is a characteristic of linear time complexity.
+
+The diagrams on the page illustrate the process of finding the minimum and maximum values in a set of numbers using the linear method. The first diagram shows a set of numbers being compared one by one, with the minimum value being found first. The second diagram shows the same process, but with the maximum value being found first.
+
+The key parts labelled in the diagrams are:
+
+*   Min: the minimum value in the set of numbers
+*   Max: the maximum value in the set of numbers
+*   Compare: the comparison operation used to find the minimum and maximum values
+
+The page also defines important terms such as "linear" and "divide and conquer". Linear refers to an algorithm that takes linear time to solve a problem, while divide and conquer refers to an algorithm that solves a problem by breaking it down into smaller sub-problems and solving each sub-problem recursively.
+
+Finally, the page provides an example of how to use the linear method to find the minimum and maximum values in a set of numbers. The example shows how to apply the formulas and diagrams to find the minimum and maximum values in a set of numbers.
+
+Overall, the page provides a clear and concise explanation of the linear method for finding the minimum and maximum values in a set of numbers. The formulas, diagrams, and examples all work together to provide a comprehensive understanding of the algorithm and its time complexity.
+
+[Page 2]
+**Main Topic:** The main topic of this page appears to be a discussion on how to draw a recursive tree, specifically focusing on the merge sort algorithm.
+
+**Concepts Explained:**
+
+*   **Recursive Tree:** A recursive tree is a data structure that represents a hierarchical relationship between nodes. In the context of the merge sort algorithm, the recursive tree is used to visualize the process of sorting an array.
+*   **Merge Sort Algorithm:** The merge sort algorithm is a divide-and-conquer algorithm that sorts an array by dividing it into smaller subarrays, sorting each subarray recursively, and then merging the sorted subarrays back together.
+*   **Cost at Level n:** The cost at level n represents the time complexity of the merge sort algorithm at each level of the recursive tree. The cost is measured in terms of the number of operations required to sort the subarrays at each level.
+*   **Total Cost:** The total cost is the sum of the costs at each level of the recursive tree. It represents the overall time complexity of the merge sort algorithm.
+
+**Formulas and Equations:**
+
+*   **Cn = Cn-1 + Cn-2:** This equation represents the relationship between the costs at consecutive levels of the recursive tree. The cost at level n is equal to the sum of the costs at levels n-1 and n-2.
+*   **Cn = 2T(Cn/2) + Cn:** This equation represents the time complexity of the merge sort algorithm at each level of the recursive tree. The cost at level n is equal to twice the cost of sorting the subarray at level n/2, plus the cost of merging the two sorted subarrays.
+
+**Diagrams and Figures:**
+
+*   **Recursive Tree Diagram:** The diagram illustrates the recursive tree structure of the merge sort algorithm. It shows how the array is divided into smaller subarrays at each level, and how the sorted subarrays are merged back together.
+*   **Key Parts Labeled:** The diagram labels the key parts of the recursive tree, including the root node, the leaf nodes, and the edges that connect them.
+
+**Definitions:**
+
+*   **O(n):** O(n) represents the time complexity of the merge sort algorithm, which is proportional to the size of the input array.
+*   **O(log n):** O(log n) represents the time complexity of the recursive tree, which is proportional to the logarithm of the size of the input array.
+
+**Examples and Numerical Values:**
+
+*   **Example Array:** The example array is [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]. This array is used to illustrate the merge sort algorithm and the recursive tree structure.
+*   **Numerical Values:** The numerical values used in the example are 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, and 5. These values are used to demonstrate the merge sort algorithm and the recursive tree structure.
+
+In summary, this page provides a detailed explanation of how to draw a recursive tree for the merge sort algorithm. It covers the concepts of recursive trees, the merge sort algorithm, and the time complexity of the algorithm. The page also includes diagrams and figures to illustrate the recursive tree structure and the key parts labeled in it. Additionally, it provides definitions of important terms and examples and numerical values to demonstrate the concepts.
+
+[Page 3]
+The page is about the recurrence relation for the merge sort algorithm.
+
+The main topic is the recurrence relation for the merge sort algorithm. The first concept explained is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The first formula, 2TC(n/2), represents how long it would take to sort the two sides of the array recursively. The second formula, O(n), represents the time it takes to combine the two sorted parts of the array since each element in the two halves must be compared and merged, merging requires linear time.
+
+The second concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The third concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The fourth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The fifth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The sixth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The seventh concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The eighth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The ninth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The tenth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The eleventh concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The twelfth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The thirteenth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means that the time complexity of the merge sort algorithm can be expressed as a function of the size of the input array n.
+
+The fourteenth concept is that the merge sort algorithm's essence is encapsulated by the recurrence relation T(n) = 2T(n/2) + O(n). This means
+
+[Page 4]
+The page appears to be a handwritten note on an algorithm for finding the minimum and maximum values in a sorted array. The main topic is titled "In Divide & Conquer Approach".
+
+The algorithm is described in five steps:
+
+*   Step 1: Find the middle of the array.
+*   Step 2: Find the maximum and minimum of the left subarray recursively.
+*   Step 3: Find the maximum and minimum of the right subarray recursively.
+*   Step 4: Compare the result of steps 3 and 4.
+*   Step 5: Return the minimum and maximum values.
+
+The algorithm uses a recursive approach to find the minimum and maximum values in the array. It divides the array into two halves and finds the minimum and maximum values in each half recursively. The minimum and maximum values are then compared, and the smaller minimum value and the larger maximum value are returned as the final result.
+
+The algorithm is illustrated with a diagram showing the recursive calls to the function. The diagram shows how the array is divided into smaller subarrays and how the minimum and maximum values are found in each subarray.
+
+The key parts of the diagram are:
+
+*   The array A is divided into two halves, A[0..i-1] and A[i..n-1].
+*   The function is called recursively on each half of the array.
+*   The minimum and maximum values are found in each half of the array.
+*   The minimum and maximum values are compared, and the smaller minimum value and the larger maximum value are returned as the final result.
+
+The algorithm is defined as follows:
+
+*   The function takes an array A and an index i as input.
+*   The function returns the minimum and maximum values in the subarray A[i..n-1].
+*   The function calls itself recursively on the subarray A[0..i-1] and A[i..n-1].
+
+The time complexity of the algorithm is O(n), where n is the size of the array. This is because the algorithm divides the array into two halves in each recursive call, and the number of recursive calls is proportional to the size of the array.
+
+The space complexity of the algorithm is O(log n), where n is the size of the array. This is because the algorithm uses a recursive approach, and the maximum depth of the recursion tree is logarithmic in the size of the array.
+
+In summary, the algorithm is a recursive approach to finding the minimum and maximum values in a sorted array. It divides the array into two halves and finds the minimum and maximum values in each half recursively. The minimum and maximum values are then compared, and the smaller minimum value and the larger maximum value are returned as the final result. The algorithm has a time complexity of O(n) and a space complexity of O(log n).
+
+[Page 5]
+The main topic of this page is the merge sort algorithm, which is a divide-and-conquer approach to sorting a list of elements. The algorithm works by recursively dividing the list into smaller sublists until each sublist contains only one element, and then merging these sublists back together in sorted order.
+
+The first concept explained on the page is the recurrence relation of the merge sort algorithm. This is a mathematical formula that describes how the time taken by the algorithm changes as the size of the input list increases. The formula is:
+
+T(n) = 2T(n/2) + O(n)
+
+where T(n) is the time taken to sort a list of size n, and n/2 is the size of the two halves of the list that are being merged.
+
+The next concept explained is the best case and worst case scenarios for the merge sort algorithm. The best case scenario occurs when the input list is already sorted, in which case the algorithm takes O(n log n) time. The worst case scenario occurs when the input list is in reverse sorted order, in which case the algorithm takes O(n^2) time.
+
+The page also includes a diagram illustrating the merge sort algorithm. The diagram shows how the list is divided into smaller sublists, and how these sublists are merged back together in sorted order. The key parts of the diagram are:
+
+*   The input list
+*   The two halves of the list that are being merged
+*   The merged sublist
+
+The page also defines some important terms related to the merge sort algorithm. These include:
+
+*   **Merge sort**: A divide-and-conquer algorithm for sorting a list of elements.
+*   **Recurrence relation**: A mathematical formula that describes how the time taken by the algorithm changes as the size of the input list increases.
+*   **Best case scenario**: The scenario in which the input list is already sorted, resulting in the fastest possible time for the algorithm.
+*   **Worst case scenario**: The scenario in which the input list is in reverse sorted order, resulting in the slowest possible time for the algorithm.
+
+Finally, the page provides an example of how the merge sort algorithm works on a small input list. The example shows how the list is divided into smaller sublists, and how these sublists are merged back together in sorted order.
+
+In summary, this page provides a clear and concise explanation of the merge sort algorithm, including its recurrence relation, best case and worst case scenarios, and a diagram illustrating how the algorithm works. The page also defines important terms related to the algorithm and provides an example of how it works on a small input list.
+
+[Page 6]
+**Summary of Binary Search Algorithm**
+
+The main topic of this page is the binary search algorithm, which is a fast and efficient method for finding an element in a sorted list. The algorithm works by repeatedly dividing the list in half and searching for the element in one of the two halves.
+
+**Linear Search vs. Binary Search**
+
+Linear search is a simple algorithm that checks each element in the list one by one until it finds the desired element. However, this approach can be slow for large lists, especially if the element is not near the beginning of the list. Binary search, on the other hand, is much faster because it uses a divide-and-conquer approach to narrow down the search space.
+
+**How Binary Search Works**
+
+The binary search algorithm starts by finding the middle element of the list. If the desired element is less than the middle element, the algorithm repeats the process with the left half of the list. If the desired element is greater than the middle element, the algorithm repeats the process with the right half of the list. This process continues until the desired element is found or it is determined that the element is not in the list.
+
+**Example**
+
+Let's say we have a sorted list of numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9. We want to find the number 5 using binary search. Here's how the algorithm would work:
+
+1. Start with the entire list.
+2. Find the middle element: 5.
+3. Compare the desired element (5) to the middle element (5). Since they are equal, the algorithm stops and returns the index of the middle element (4).
+
+**Formulas and Equations**
+
+There are no formulas or equations on this page.
+
+**Diagrams and Figures**
+
+There are no diagrams or figures on this page.
+
+**Important Terms**
+
+* **Sorted list**: A list of elements that are in order from smallest to largest.
+* **Binary search**: A fast and efficient algorithm for finding an element in a sorted list.
+* **Divide-and-conquer**: A problem-solving approach that involves breaking down a complex problem into smaller sub-problems and solving each sub-problem recursively.
+
+**Conclusion**
+
+In conclusion, the binary search algorithm is a powerful tool for finding elements in sorted lists. By repeatedly dividing the list in half and searching for the element in one of the two halves, the algorithm can find the desired element much faster than linear search. Understanding how binary search works can help you write more efficient code and solve problems more quickly.
+
+[Page 7]
+**Binary Search Algorithm**
+
+This page outlines the binary search algorithm, a method for finding an element in a sorted list. The algorithm works by dividing the list in half and comparing the middle element to the target value. If the target is found, the algorithm returns its location. Otherwise, the process is repeated with the appropriate half of the list.
+
+**Algorithm Overview**
+
+The algorithm consists of four steps:
+
+1. **Set Start and End**: Initialize two pointers, `start` and `end`, to the first and last elements of the list, respectively.
+2. **Calculate Midpoint**: Calculate the midpoint of the range defined by `start` and `end`.
+3. **Compare Midpoint to Target**: Compare the midpoint element to the target value. If they are equal, return the midpoint index.
+4. **Update Range**: If the midpoint element is less than the target, update `start` to the midpoint index + 1. If it is greater, update `end` to the midpoint index - 1. Repeat steps 2-4 until the target is found or the range is empty.
+
+**Example**
+
+Suppose we have a sorted list `[1, 2, 3, 4, 5, 6, 7, 8, 9]` and we want to find the element `5`. We start by setting `start` to `0` and `end` to `8`. The midpoint is `4`, which is less than `5`. We update `start` to `5` and repeat the process. The new midpoint is `7`, which is greater than `5`. We update `end` to `6` and repeat the process. The new midpoint is `5`, which is equal to the target. We return the index `5`.
+
+**Code**
+
+Here is a simple implementation of the binary search algorithm in Python:
+```python
+def binary_search(arr, target):
+    start = 0
+    end = len(arr) - 1
+    while start <= end:
+        midpoint = (start + end) // 2
+        if arr[midpoint] == target:
+            return midpoint
+        elif arr[midpoint] < target:
+            start = midpoint + 1
+        else:
+            end = midpoint - 1
+    return -1  # Target not found
+```
+This code uses a while loop to repeatedly divide the range in half until the target is found or the range is empty. The `midpoint` variable is calculated using the formula `(start + end) // 2`, which rounds down to the nearest integer. The `if` statement checks if the midpoint element is equal to the target, and if so, returns the midpoint index. If the midpoint element is less than the target, the `start` pointer is updated to the midpoint index + 1. If it is greater, the `end` pointer is updated to the midpoint index - 1. The loop continues until the target is found or the range is empty, at which point the function returns `-1` to indicate that the target was not found.
+
+[Page 8]
+The page appears to be a set of handwritten notes on a piece of lined paper, likely from a computer science or programming course. The main topic or heading is not explicitly stated, but the content suggests that it may be related to algorithms or data structures.
+
+The notes are written in a clear and concise manner, with each step or concept explained in detail. The first step explains the concept of a midpoint, which is defined as the average of two values. The formula for calculating the midpoint is given as (a + b) / 2, where a and b are the two values being averaged.
+
+The second step discusses the concept of a value not being present in an array. The notes explain that this can occur when the value is not found in the array, and provide an example of how to handle this situation.
+
+The third step introduces the concept of a loop, which is used to iterate over a set of values. The notes explain that the loop will continue to run until a certain condition is met, and provide an example of how to use a loop to find the midpoint of a range of values.
+
+The fourth step explains how to use the midpoint formula to find the midpoint of a range of values. The notes provide an example of how to use the formula to find the midpoint of the values 10 and 20.
+
+The fifth step discusses the concept of a value being not present in an array. The notes explain that this can occur when the value is not found in the array, and provide an example of how to handle this situation.
+
+The sixth step provides a summary of the key concepts covered in the notes, including the midpoint formula, loops, and handling missing values in arrays.
+
+Overall, the notes provide a clear and concise explanation of the concepts covered, along with examples and formulas to help illustrate the ideas. They appear to be a useful resource for students looking to learn about algorithms and data structures.

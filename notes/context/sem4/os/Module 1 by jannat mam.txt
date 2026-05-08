@@ -1,0 +1,914 @@
+-0 
+Jaonod Shaild 
+Sub 0S 
+Chap 1 '- Openaing Syskrn ovotuieo 
+tI0t0duckion to opetaig SySern 
+lbat is opexaliq Sysken? 
+An onexalina SyseroisUsm Ssfeoata 
+hic 
+Liou 
+Sopps 
+lorgLage lik,C,Ctti Python, Jaya. Shelscipt 
+Java Serht 
+go long 
+USy 
+Defioieion_o gpenating Sysitm 
+10s), 
+The 
+maio Jo6 a the 
+os 
+is to pmiola MeSOocoS 
+ond Bexices to toe useH poqran. So cotaoud 
+0S.a copputen cuould be 
+uselel&. 
+exeoiop o aplicaion prosgorn 
+Cornpue 
+0S is 
+lso callec 
+a 
+esourte maoAe 
+1 exete 
+Usen proqzam 
+make Saluing osen 
+poobler 
+easlen. 
+Make the Cornputen Systen CoDVenîent to USecl 
+USe Corten baHcune in an efficient mgnoe 
+(Prioter, cisk, cP, Monitor de. 
+The 
+yaxicUs fnctions those aa penömed 
+
+M 
+D 
+o 
+4 
+funcHion of Openating 
+1. Pyoress Monggeneot 
+2MeMoy Mona gemeDt 
+3.Fle 
+Management. 
+4Device Man9ement 
+.Rroteclioo end Ceceity 
+usen 1oheofacz cn Comoondl Iotenporeten 
+1. Process 
+MangeMent 
+lontal onol co npintoes 
+Proceske 
+mooDiog on tae Coropuden ensuring 
+efficient use at 
+(PU eMeman 
+h.Booiog tac Computen 
+onong 
+% Pefogns basit Compulea folsks. 
+The Process Monogersent activiies nvolvelr 
+like 
+ile 
+MemoyIOonol CPU 
+2. Contol the execufion of usen applicoation 
+3. Creobion, execution on 
+deltion o 
+seA onel 
+Systern Processe. 
+Rsomeo Process fxelution ax Conel it 
+G. Sychoniza4ion, oteoses commynication an 
+oeodlockhoncling fr Pmces8es. 
+Memoy 
+onagement 
+r can allacales Pclealle
+Cales 
+memOny as neecleol Preening 
+cilfenet_Ppgrom 
+Conlict 
+
+1TL 
+ab econclay memony to th csen 
+lystm prseSes. 
+Reclaim tu al oCates 
+mnemoy dom alla pneK 
+kesllethore Einishec 
+s execution. 
+9Once 
+uSec 
+block 
+beComes beeos ollocctes iE 
+aqoin 
+o tae poceSses. 
+2 
+4Monikoög ? Keeping 
+ock of hou) mch memany 
+USecl b the Proes. 
+Gle Monagement 
+An 
+0S 
+deal cott the Stozoge of 
+Gle ok 
+VaiOue 
+toaages 
+olevices to ooothern. It also 
+olloco al) Ele fo he easiy Chongeol anc 
+miLeal 
+thpgh te cse of text eciter o7 Bome cthe 
+1 Elea 
+eCtomes 09e Ceatto 
+eleteol by 0S_ 
+2. 0S offen toe Sevice to accesh the ie 2 also 
+it allocaes the Blaroge Spale ferr ile by uing 
+diffenent 
+metaods of oaloca4ion. 
+3. 1E keeps back - 0p of 
+fles 
+4. lt 
+offers the 
+Jecesty for Glea. 
+Device 
+Mongement 
+olevices 
+liks 
+iokD, csk chet oncl TlO detes 
+1. Devices des ane opened cloSecl ano 
+wnten 
+2. keep an pye on derice onen. Commuoicale 
+Contolmonitor tlu olece oine 
+Batctionond decnsbyi 
+Gegtem 
+akes 
+se 
+of sert Qtaentication, ile 
+LWHsbudes Aclo as 
+tead custe enrypton,ano/ 
+batk - up a oata 
+Gle panipulaion 
+utines 
+
+S 
+NO 
+1 
+USen intenfole or oromono In4en preten' 
+S. 
+Ponviles USer feny ntatace Por Communicatio 
+betoeen tlu usen anc tlu Corputen, aHeing 
+Commond 
+line 0x 
+raphical usen intenlcce (iay ). 
+USen Ibtacts oith Computn Sysern to 
+vgh oS 
+OS 
+act 
+as on I0teotoce beteentlses 
+ty 
+Computen hanclwae 
+hDuah 
+is nteofoce 
+sen make Interaction wtty 
+dw pplícodions 
+dlu maChine haNoluase 
+Booting the Computen 
+The protas 
+a slarting or ste Staing te compaken 
+booting: 
+to seStard tl 
+lomputes. 
+)Perfomns bosic Comprter tasksi 
+The 
+monagemend of vasous peå phenal deices 
+&uch as tlu mose. keyboacd and psoteo is 
+Ca9tiec! out by OS. 
+The Cvolution of Openoting System 
+De caolo 
+|910 
+|480 
+Mochines 
+2000 
+Mainfroames 
+MiniComputens 
+openating Systerm 
+feates 
+Handhel 
+(omputern 
+ULTICS 
+MulH useH, Hime Shig 
+|990 
+Deskiop (onmpute 
+DOs, MS-AINDOWS,uindowsAS 
+ONIXMOliUsen, +ioe Slhaig ? 
+Nedu0kod 
+windous.9Roidows-xp For 
+olesktop VSens), 
+odouos ANT 
+UNIXLiox et 
+MUliuSen,imeT
+lindos- XP (For estop usen)inchw 
+2000, Lin, Mulipz0cesoMulise 
+and netoorke d 
+shaing Aehorkac 
+CluSerecl 
+
+MolkitoSking 
+is 
+abilihy 
+to 
+Suppnt 
+two r 
+mt 
+Molhnle 
+task 
+ad 
+a 
+tine 
+ià 
+khawn 
+as 
+pog-amin 
+erecution.A 
+(pO 
+ing 
+PUs 
+3x|MulHBaskigz-Task 
+meana. 
+pntesk. 
+Exomple 
+8-, 
+LioUNIX 
+Oos 2 
+000 
+oood 
+Jonmetime 
+memn 
+and 
+peniphanal 
+olete 
+(ormunication, 
+Shasing t 
+Cooputeo 
+bus, 
+the 
+ck. 
+and 
+domeLine 
+mn 
+toputen 
+bul, 
+the 
+ct 
+thon 
+one 
+pocesor 
+in 
+a 
+se 
+They 
+daae 
+moe 
+tightly 
+Coupled 
+yem 
+paiallesy 
+enn 
+Mulipmcelsing 
+openatirg 
+m 
+iS 
+als 
+koun 
+Mulitakig 
+WindauE.NET 
+aindous 
+2o00 
+Some 
+exarnple 
+Muli-usey 
+OSi-
+iouA 
+UNIK. 
+Computenat 
+he 
+Sohoe 
+tone. 
+9. 
+24 
+MolipnlSiga 
+2Mollipnseing 
+Molt 
+use 
+1. 
+MulH 
+-USe 
+lgpes 
+of 
+pestading 
+stn. 
+Chapi 
+
+achre 
+rcesbes SimultonouSls. 
+4MoHcaciat-A Sioqle proqpor 
+eKompei-
+LionUNIYindous 2oao. 
+pastallel s called Multithreonliog 
+Mutecacicg is a process ) execatinq mulhiple threads 
+MUltiple threac 
+that Can 
+un în 
+qutc kly 
+al thot tine 
+SReal Eine' 0s 
+may be olelioe & one ubih Contol 
+On ervizanment by 
+etivioq olata pacelice 
+Hme 
+oS. 
+Reod diae os mst 
+esporo quickly 
+Al obave 
+os lik 
+UNIX, sindous_ad not 
+eas 
+Exomple 
+Air foallic conmlen. 
+|1USerIrkentace 
+a 
+Cemices 
+hare 
+Rrocgam 
+euiioal 
+Openating 
+Gystemn 
+Gevice 
+5.Conmuonicaton 
+31/0 openations 
+4Eile Systn 
+Maiputodion 
+
+bat 
+eA 
+10: 
+utn 
+HIe 
+m 
+Conmunic 
+ul 
+PsPro 
+or 
+geme 
+MMi 
+rm 
+Kennal 
+Sa 
+USen 
+Spaca 
+IPC 
+Ps 
+ie 
+System 
+Call 
+thtentala 
+APPications 
+Net 
+MM 
+kepnad 
+Benie 
+botth 
+a 
+kept 
+in 
+a 
+Bame 
+s 
+Io 
+MOnolitic 
+kennad 
+dlu 
+uSen 
+kersce 
+and 
+ll 
+3. 
+Micao 
+kenoel 
+Systrm 
+Coce 
+baleo 
+ono 
+dato 
+alles 
+ase 
+nts 
+Conne 
+ce 
+of 
+wrto 
+na 
+Component 
+Bch 
+as 
+usen 
+tntente,e, 
+busine 
+c 
+AL 
+the 
+Moclula 
+or 
+mico 
+denACe 
+OppDdh. 
+Bingle 
+Coole 
+ale 
+opposecd 
+to 
+a 
+IOerate 
+o) 
+into a 
+2laycted. 
+Syskm 
+MOnof 
+thc 
+System 
+EXornpie-
+IND 
+whene 
+oll 
+omponents 
+Qte 
+Monalaic 
+Bysten 
+t 
+ic 
+a 
+souou 
+chitectre 
+Openaing 
+System 
+ipale. 
+hencting 
+Suteon 
+Shactumei 
+1 
+
+wlindouw 
+beteen Loinalow ! Linm 
+wlila it is Costy 
+isseol|(Sene kep in Sepaticla 
+aloree pce) 
+proue 
+mone 
+Linu 
+4)Botah ace kepi in Sone. 
+a open Sote 
+Es 
+Lle nome lsesen titia glile its hle 
+Linu 
+is free 
+a< cor 
+otn oto 
+kenna 
+dieo 
+leSs 
+eeurity 
+nam 
+
+Dolauctedl Sustems: Laycxedl rckuse is a type af 
+Shoct 
+Seysdero 
+ncore n whicla ilu oille 
+Benices 
+dhere each la) lase oecilic coelt olelinec/ ts 
+An os 
+an be broken into píeces 
+tetain 
+Much 
+on 
+braken soto numbex 
+layereo 
+(lerels)" 
+topmost layer Layen N) 
+sen Jnteoface 
+e. These layens 
+3h Otenast 
+HaotduO9ee 
+toyot. 
+A pentI Cela 
+layen 
+musS 
+be 
+tla 
+sen ntefaca. layen 
+toyet 
+Layet 
+* lauexao 
+penatiog dysdem. 
+-outemog layet 
+*MicapkeInel Sygtm. 
+ses 
+104eolece 
+louyen. 
+kelouo ifbut e Cannok aCess tls lajen penst 
+Cllooneil. 
+A micToKernel is a type of operaing System Kernal taat 
+is designed to prwide 
+oniy tu mast basic Aerices 
+logiradfor cpehaing syskm to function, Soch a 
+memnangemend P'pyocek dcheeling 
+his cklign allous lu Oplacting 
+km to be 
+
+Lk 
+isahre.open-Sovzce, 
+ollthic,moduatt. 
+-like 
+Ainqe 
+Pngoam 
+C(his 
+aneans 
+taed 
+la 
+keune/ 
+onsQA 
+aß 
+a 
+moraitic 
+exnel 
+1. 
+(he 
+porelk 
+bchLolula 
+alorg 
+Siolo 
+(TNU 
+foolsP 
+libroni. 
+his 
+a. 
+lay 
+Cinun 
+uhon 
+The 
+Lioux 
+kennelis 
+wsd 
+Semver 
+aHchitectre 
+hk 
+uses 
+what's 
+knon 
+aß 
+ale 
+Open-
+Aone 
+Botwat 
+thaat i 
+Vixtal 
+memsy 
+Scheololrg. 
+Seorro 
+Unir 
+Handucnt 
+BasicTPC 
+Diven 
+Deuiu 
+pen 
+bnal 
+se 
+Applicaktsn 
+nunt 
+kenna 
+kennels 
+which 
+implement 
+all 
+os 
+Bemies 
+in 
+kepmal 
+spale 
+mae 
+m0cLulan 
+exible 
+sthan 
+trancutiona 
+manalit 
+
+3he ito 
+e Sym VS 
+The Nenkicg Unit 
+nttn-Procesi ommunication Uni 
+Aceicatigo 
+Process Maranemert 
+Block Ilo 
+Chag 
+Kemel 
+VES 
+Device 
+drivEAS 
+blacluetomet 
+iEleSstandiio 
+usb 
+Lam 
+Aoplication n 
+basic 
+ncion 
+Linux ketnel. 
+CaYPto 
+SR 
+Machioe 1 
+te mnSt 
+mpaxtant 
+The 
+xncess 
+hedulat 
+This Kenel SubSystm 
+is gesonjise fr kaily 
+'shibuting tu cpu 
+the MMU aoes 
+Bimply odi epatote vntual add 
+
+Q The vicual Eile Suseco i 
+This Sobssterm is 
+Dlesponsibe fa 
+raling o orilleo 
+tealace 
+barne Bosie 
+Cocomanol 
+for 
+o Some 
+Basic Coromoras 
+we 
+need to koow 
+ile 
+wring on 
+Linux Kemnel 
+Js: uSe to list all llu Eles 
+olirectomes in a 
+Poxticulo 
+locodion specilieod by u. 
+Sunte 
+1S 
+opTION) CELe) 
+MkoiIn this 
+we uwill Ceate a ne 
+Supton 
+r mkoir [OpTIONJ DIRecToRY 
+Cot' ID tais 
+we oll priot llu lontnd inSole a text 
+Ale 
+on fesminal 
+Oupkaoi-
+Cat 
+COpTIOND CELe) 
+Pnd-In this 
+we wil qet fo knOu) the nome and patl.
+ol tu CUarend umking olirecteny. 
+Suntag 
+Pnd 
+MODoitic SustemiA Monoltic keunel is on 0s 
+architectune cohe 
+te ente SyStm. 
+Kesnel 
+mocle 
+In a monolitbic axchitectne, th 
+as keonel is 
+olesigned do paasd 
+all os Senices. inudnog mcnw 
+) 
+
+maragernentproteis &checuling, oleice oiers, P 
+ile RSterm, 
+aSioale. lans 
+binaaty 
+bis 
+meons lhat a 
+Coole 
+ns in kexoel Bpace 
+with no epotatio 
+bekween kesnel 
+wseN -lerel procelSes 
+XShellThe shel ie te outeomast layen of the as 
+Shell nospotake progromong Langag 
+processel p 
+les, as cwel as to Alardllonto gthen 
+am. (intskaca) 
+6 
+A Shell is_o cLI (Cammond ioe Ibtenpreten 
+A 
+hel 
+allouS al a is wserA 
+to establísh commobit 
+-Qtion uoitta the kernel 
+ne can 
+use Bhell commapot!Bch as mkoin 
+S p 
+mopy mart fox 
+tequesling tae completon g te &peol 
+Openation to the Openalig yem. 
+Dto Q donquaqe thot is colengAanda ble by te machine 
+a 
+A Usen 
+ntaface 
+s prosce by 
+Collad 
+progton 
+as BhelL. 
+Types 
+CShell 
+Bozne Shell 
+Kor 
+She 
+t0 contol 
+which applicaions axi 
+Applicatoa 
+onning 
+Ghell 
+Keinet 
+HaHoluate 
+Kenpel<a Kennel conbolS 
+al the dasks 
+the Bysteo 
+OS. IE 
+s a lou lerel prograrm 
+NUBaume Agoba 
+T Shelz Shel 
+untenfacica uoith the handusaxe (Cpu,RAM, disklon 
+types ata MOnoltie keanel,MiD, Hybno ete 
+keonel 
+dl 
+tonee 
+kennel 
+oleetty IDtAQck uatth the hatduwad by allti 
+macline 
+nalenslanclable langsag 
+bom t 
+al 
+6AShell penfoDDS 
+Menmny 
+monaaemcnd. 
+
+Basic 
+Shell cammans in 
+A Shell s a Soecia 
+Sen pgom hat panaota 
+Shell accept 
+bumanHeaolabie Commaods Foo 
+USes 
+(onvernd dhem oto JomlHting 
+hich 
+kenoe! CO0 Unden 4and. 
+execute Command 
+iealrom nput 
+escs 
+Soch as keybanols 
+|The hell ats 
+antea 
+when tae Uen loq in 
+m 
+isplauic cbe fte Cootenk on te teominal: 
+Cats lEis qenenally sedl to Concatenate tte les. 
+mneE is a Hlken kerx oora, throoah text on 
+at o time 
+Sreenlal 
+less 
+lt is USeo to viening the Hles insteo.d al openin 
+the Hle, Simila) do mt Cormmund bud it llous 
+42bend 
+USed to Pint the Frst N lines ala ie 
+kol ir9ed to priDt the lost N-I 1ine al a Aie. lt 
+* ile md Diorctay anipulation ommand: 
+E ocCepB tlu licctany 
+ame as an Input pahgme 
+Ceihis Cammod 
+uill Cony tae 
+les Pictms 
+romlu souHCe pata to te olesian potth 
+o |t COn Cop 
+a Ael dlleo 
+coth te ne 
+nameto tu 
+clesination Path 
+
+3MN 
+USed tO 
+more the Ale or oirectoniel. 
+Th 
+Comad 
+oomkingis almost Ainilay to cp Command but ft delels 
+elele 
+Lie 
+Jamlc-Renare epty oret 
+Oname'- commono 
+to aet balic info aba! 
+Pudois paly tee LunCerd woncing alie eteng 
+in ta ota loale 
+8touch? 
+xeate 
+eropty ile 
+man 
+2 Ps 
+Disocy tae 
+ees in tenmina 
+tp 
+Seasch lr o parilic Shing ia an ouspud 
+13 
+eaho 
+Displcs actie proceskes on te terminal 
+wget 
+olouwn load Ples 
+om tl 
+ntone 
+hoonmi Creute 
+oY ypalode pasrol 
+Srat 
+Sot t 
+le content 
+Cal 
+uies lalenoles in terminal 
+)wheis -eo tl 
+pxact lolabcn ay Cobomad type altea 
+ts conmar 
+wc3-Chocle elioewnod eout 
+Chazaelers 
+in kle 
+Copy of the 
+Ale or dlitcteg 
+
+SuStem Cale 
+GyStem Coll isilu 
+io wbicla a 
+Coropute 
+pogzam tequesta betvice fom tl kemel 
+a lu apenafing systro 
+pengznetic. 
+This 
+may 
+nclu 
+khazoluae Selatecl senices Such 
+as Creaton p execution al procosS Commnicativa 
+SySiernCall ao 
+use 
+lerelrócels to 
+eouelt 
+bome Bevices dom th 
+QS 
+Applicotion 
+lerelopen often_olo notbore olienf octels 
+do system (alle lbut con alles them Hainsqh APT 
+ApplfCation prgmamning intnfate). 
+Types o Systerm Call 
+2. Devie maniplation 
+5 
+fle manipudaton 
+IDfamation 
+mointenanee 
+1.rocess Control ?- Pc is the System Call taf is 
+USec) to diaot te pDLesel 
+Some exemyi Tinae. pzocek ete 
+PCreodaboxt, loaol execule 
+Cieale pmcel, 
+2Device monipulationi DM ia 
+USed to_ cleal uoith cee 
+Sorme 
+q oF DM 
+tegelt dlevice 
+eleale olesce, 
+Meado`te 
+1epasiion.qed oeite attibute ete 
+(omoonicaionCommunication is a bysten Coll 
+laet is csecl dox (onmonitcdion. 
+one.eq.'' tade, delete comniction Connetion 
+bend. seceive maslage 
+ete 
+secl to hancle 
+eies. 
+Sorme eg of F3- (Teate Ale, elete file open, 
+Soe 
+J1eacl, oite, ee 
+
+Lnfoxaoo mainBenance 
+TM is aSytem 
+Hat 
+sed 
+to 
+moiptain inomatioh 
+IM 
+q time 
+r odate, Set time or dote 
+SySkm olta 
+Set Systero aoda, qet poces Cle co 
+dee attibudes. ete 
+0Sex Process exteutior 
+cas Systno 
+ketnel 
+Call 
+Torop mode bit =0 
+exeote 
+ystem 
+Call 
+* The Sy Gtem all praicdes 
+to 
+tlu 
+OS 
+Senviceg. 
+Cal! 
+Retom_moc bit-l 
+an intenfate 

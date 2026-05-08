@@ -1,0 +1,476 @@
+Module 1: Fundamentals of Logical thinking – I          
+ 
+1. Number/Letter/Symbol Series 
+The goal is to identify the rule governing the sequence and use it to find the missing element. 
+A. Number Series 
+A Number Series is a sequence of numbers arranged in a specific, logical order based on a particular rule or 
+pattern. Each number in the sequence is called a term. 
+The primary objective of problems based on number series is to identify the underlying rule that governs the 
+formation of the sequence. Once the rule is determined, it can be used to: 
+• 
+Find the next term(s) in the series. 
+• 
+Find a missing term within the series. 
+• 
+Sometimes, to identify the wrong term that does not follow the pattern. 
+ 
+Strategy: Follow a step-by-step approach. 
+1. Check for a common difference (subtraction). 
+2. If not, check for a common ratio (division). 
+3. Look for squares, cubes, or other powers. 
+4. Check if it's a two-tier series (the pattern is in the differences between terms). 
+5. Consider recursive patterns (each term depends on previous ones). 
+6. Look for alternating patterns (two different rules for odd and even positions). 
+Common Patterns with Examples: 
+1. Arithmetic (Linear) Series: Constant difference between terms. 
+• 
+Example 1: 5, 8, 11, 14, 17, ? 
+o +3 each time. Next term: 20 
+• 
+Example 2: 25, 23, 21, 19, 17, ? 
+o -2 each time. Next term: 15 
+2. Geometric (Exponential) Series: Constant ratio between terms. 
+• 
+Example 1: 2, 6, 18, 54, ? 
+o ×3 each time. Next term: 162 
+• 
+Example 2: 128, 64, 32, 16, ? 
+o ÷2 (or ×0.5) each time. Next term: 8 
+3. Perfect Square/Cube Series: 
+• 
+Square Series: 1, 4, 9, 16, 25, ? 
+o 1², 2², 3², 4², 5²,... Next term: 36 (6²) 
+• 
+Cube Series: 1, 8, 27, 64, ? 
+o 1³, 2³, 3³, 4³,... Next term: 125 (5³) 
+4. Two-Tier Series: The difference between terms has its own pattern. 
+• 
+Example 1: 2, 4, 7, 11, 16, ? 
+o Differences: +2, +3, +4, +5 
+o Next difference: +6 
+
+o Next term: 16 + 6 = 22 
+• 
+Example 2: 1, 2, 5, 10, 17, 26, ? 
+o Differences: +1, +3, +5, +7, +9 (odd numbers) 
+o Next difference: +11 
+o Next term: 26 + 11 = 37 
+5. Recursive Series: A term is based on one or more previous terms. 
+• 
+Fibonacci Type: Each term is the sum of the two previous terms. 
+o Example: 3, 4, 7, 11, 18, 29, ? 
+o 3+4=7, 4+7=11, 7+11=18, 11+18=29 
+o Next term: 18 + 29 = 47 
+• 
+Other Recursive: Each term is (previous term × n) + m. 
+o Example: 3, 5, 11, 35, ? 
+▪ 
+(3 × 1) + 2 = 5 
+▪ 
+(5 × 2) + 1 = 11 
+▪ 
+(11 × 3) + 2 = 35 
+▪ 
+Pattern: ×1, +2 / ×2, +1 / ×3, +2... 
+▪ 
+Next term: (35 × 4) + 1 = 141 
+6. Alternating Series: Two series interwoven. 
+• 
+Example: 2, 4, 3, 6, 5, 10, 9, ? 
+o Split into odd and even positions: 
+▪ 
+Odd Positions (1st, 3rd, 5th, 7th): 2, 3, 5, 9 ( 
+ 
+1. Number Series 
+Here the sequence is formed with rules on numbers such as: 
+• 
+Addition/Subtraction 
+• 
+Multiplication/Division 
+• 
+Squares/Cubes 
+• 
+Prime numbers 
+• 
+Mixed rules 
+Examples: 
+Example 1: 
+5, 10, 15, 20, ? 
+ Rule: +5 each time 
+ Answer = 25 
+Example 2: 
+2, 4, 8, 16, ? 
+ Rule: Multiply by 2 each time 
+ Answer = 32 
+
+Example 3: 
+1, 4, 9, 16, 25, ? 
+ Rule: Square numbers (1², 2², 3², 4², 5², …) 
+ Answer = 36 (6²) 
+Example 4: 
+3, 6, 11, 18, 27, ? 
+Rule: Differences are +3, +5, +7, +9, … (odd numbers) 
+ Answer = 38 
+ 
+1. Simple Addition / Subtraction 
+Q1: 7, 14, 21, 28, ? 
+Rule: +7 each time 
+ Answer = 35 
+Q2: 100, 95, 90, 85, ? 
+ Rule: -5 each time 
+ Answer = 80 
+2. Multiplication / Division 
+Q3: 2, 4, 8, 16, 32, ? 
+ Rule: ×2 each time 
+ Answer = 64 
+Q4: 729, 243, 81, 27, 9, ? 
+ Rule: ÷3 each time 
+Answer = 3 
+3. Square / Cube Numbers 
+Q5: 1, 4, 9, 16, 25, ? 
+Rule: Squares of 1,2,3,4,5,… 
+Answer = 36 (6²) 
+Q6: 1, 8, 27, 64, 125, ? 
+Rule: Cubes of 1,2,3,4,5,… 
+ Answer = 216 (6³) 
+4. Prime Numbers 
+Q7: 2, 3, 5, 7, 11, 13, ? 
+Rule: Prime numbers 
+Answer = 17 
+5. Difference Pattern 
+Q8: 3, 6, 11, 18, 27, ? 
+Differences = 3, 5, 7, 9,… (odd numbers) 
+Answer = 38 
+
+Q9: 5, 10, 19, 32, 49, ? 
+Differences = 5, 9, 13, 17 (increasing by +4) 
+ Next difference = 21 
+Answer = 70 
+6. Mixed Operations 
+Q10: 2, 4, 12, 48, ? 
+Rule: ×2, ×3, ×4, ×5 … 
+Answer = 240 
+Q11: 1, 2, 6, 24, 120, ? 
+Rule: Factorials (1!, 2!, 3!, 4!, 5!, …) 
+Answer = 720 (6!) 
+ 
+ 
+Letter Series 
+Letter series are based on the position of alphabets (A=1, B=2, … Z=26). 
+Patterns may involve addition, subtraction, skipping letters, reverse order, or combinations. 
+1. Simple Forward / Backward 
+Q1: A, B, C, D, ? 
+Rule: +1 each time 
+Answer = E 
+Q2: Z, Y, X, W, ? 
+Rule: -1 each time (reverse order) 
+ Answer = V 
+2. Skipping Letters 
+Q3: A, C, E, G, ? 
+Positions: 1, 3, 5, 7… (+2 each time) 
+Answer = I 
+Q4: B, E, H, K, ? 
+Positions: 2, 5, 8, 11… (+3 each time) 
+Answer = N 
+3. Alternate Forward/Backward 
+Q5: A, Z, B, Y, C, ? 
+Rule: Forward +1, Backward -1 alternately 
+Answer = X 
+Q6: M, N, L, O, K, P, ? 
+ Rule: One step forward, one step backward 
+Answer = J 
+4. Double / Repeated Letters 
+
+Q7: A, BB, CCC, DDDD, ? 
+Rule: Letter repeats as per its position 
+Answer = EEEEE 
+Q8: AA, CC, EE, GG, ? 
+ Even letters repeated twice 
+ Answer = II 
+5. Complex Patterns 
+Q9: A, C, F, J, O, ? 
+Positions: 1, 3, 6, 10, 15 (triangular numbers) 
+Answer = U (21st letter) 
+Q10: D, H, L, P, ? 
+Positions: 4, 8, 12, 16 (+4 each time) 
+Answer = T 
+  Complex Letter Series Examples 
+1. Increasing Gaps 
+Q1: A, C, F, J, O, ? 
+Positions: 1, 3, 6, 10, 15 (+2, +3, +4, +5 …) 
+Answer = U (21st letter) 
+2. Two Different Series Mixed 
+Q2: A, Z, B, Y, C, X, ? 
+ Two series running: 
+• 
+A, B, C … (forward) 
+• 
+Z, Y, X … (backward) 
+• 
+Answer = D, W 
+3. Odd–Even Position Rule 
+Q3: A, D, I, P, ? 
+Positions: 1, 4, 9, 16 … (Squares) 
+Answer = Q (17th letter) 
+4. Alternating Step Size 
+Q4: B, E, I, N, T, ? 
+ Positions: +3, +4, +5, +6 … 
+ Answer = A (27 → wraps to 1st letter) 
+5. Reversing Inside Series 
+Q5: Z, X, U, Q, L, ? 
+ Positions: -2, -3, -4, -5 … 
+ Answer = F 
+6. Repeated Pairs 
+
+Q6: A, A, B, B, C, C, D, D, ? 
+Rule: Each letter repeated twice 
+ Answer = E, E 
+7. Vowel–Consonant Pattern 
+Q7: A, B, E, F, I, J, O, ? 
+ Pattern: Vowel, Consonant, Vowel, Consonant … 
+ Answer = P 
+8. Jumbled / Jumping Pattern 
+Q8: A, F, K, P, U, ? 
+ Positions: 1, 6, 11, 16, 21 … (+5 each time) 
+Answer = Z (26th letter) 
+9. Combination of Forward + Reverse 
+Q9: M, N, L, O, K, P, J, ? 
+ Rule: One step forward, one step backward alternately 
+Answer = Q 
+10. Using Multiplication of Positions 
+Q10: A, C, G, M, ? 
+ Positions: 1, 3, 7, 13 (+2, +4, +6 …) 
+Answer = S (19th letter) 
+ 
+ 
+ 
+ 
+Odd Man Out  
+ 
+Definition (in simple terms) 
+Odd Man Out means: In a given sequence of numbers, letters, or symbols, all follow a rule/pattern except 
+one. The task is to identify that one different (odd) element. 
+Odd man out means all items follow the same rule except one, and you have to find the different one. 
+1. Which number is the odd one out? 
+2, 4, 6, 7, 8, 10 
+Answer: 7 
+• 
+Why? 2, 4, 6, 8, and 10 are all even numbers. 7 is an odd number. 
+ 
+2. Which number is the odd one out? 
+3, 6, 9, 12, 14, 15 
+Answer: 14 
+• 
+Why? 3, 6, 9, 12, and 15 are all multiples of 3. 14 is not (14 ÷ 3 = 4.666...). 
+ 
+
+3. Which number is the odd one out? 
+5, 10, 15, 20, 23, 25 
+Answer: 23 
+• 
+Why? 5, 10, 15, 20, and 25 are all multiples of 5. 23 is not. 
+ 
+4. Which number is the odd one out? 
+11, 13, 17, 19, 21, 23 
+Answer: 21 
+• 
+Why? 11, 13, 17, 19, and 23 are all prime numbers (only divisible by 1 and themselves). 21 is 
+a composite number (3 x 7 = 21). 
+ 
+5. Which number is the odd one out? 
+16, 25, 36, 48, 49 
+Answer: 48 
+• 
+Why? 16 (4x4), 25 (5x5), 36 (6x6), and 49 (7x7) are all perfect squares. 48 is not a perfect square. 
+ 
+6. Which number is the odd one out? 
+1, 4, 9, 16, 25, 30 
+Answer: 30 
+• 
+Why? 1 (1x1), 4 (2x2), 9 (3x3), 16 (4x4), and 25 (5x5) are all perfect squares. 30 is not a perfect 
+square. 
+ 
+7. Which number is the odd one out? 
+10, 20, 30, 35, 40, 50 
+Answer: 35 
+• 
+Why? 10, 20, 30, 40, and 50 are all multiples of 10. 35 is a multiple of 5, but not 10. 
+ 
+1. Find the odd one out. 
+A) Apple 
+B) Banana 
+C) Orange 
+D) Carrot 
+Answer: D) Carrot 
+• 
+Justification: Apple, Banana, and Orange are fruits. Carrot is a vegetable. 
+2. Find the odd one out. 
+A) 2 
+B) 4 
+
+C) 6 
+D) 7 
+Answer: D) 7 
+• 
+Justification: 2, 4, and 6 are even numbers. 7 is an odd number. 
+ 
+3. Find the odd one out. 
+A) Cat 
+B) Dog 
+C) Cow 
+D) Lion 
+Answer: D) Lion 
+• 
+Justification: Cat, Dog, and Cow are common domestic animals. A Lion is a wild animal. 
+ 
+4. Find the odd one out. 
+A) Pen 
+B) Pencil 
+C) Eraser 
+D) Water 
+Answer: D) Water 
+• 
+Justification: Pen, Pencil, and Eraser are things you use for writing. Water is not. 
+ 
+5. Find the odd one out. 
+A) Monday 
+B) Tuesday 
+C) Friday 
+D) January 
+Answer: D) January 
+• 
+Justification: Monday, Tuesday, and Friday are days of the week. January is a month. 
+6. Find the odd one out. 
+A) Red 
+B) Blue 
+C) Green 
+D) Rose 
+Answer: D) Rose 
+• 
+Justification: Red, Blue, and Green are colors. Rose is a flower (or a shade of a color, but primarily 
+it's a thing, not a basic color name). 
+7. Find the odd one out. 
+A) △ Triangle 
+
+B) □ Square 
+C) ◯ Circle 
+D) ⬢ Pentagon 
+Answer: C) ◯ Circle 
+• 
+Justification: A Triangle, Square, and Pentagon are shapes with straight sides. A Circle is round 
+with no sides. 
+ 
+8. Find the odd one out. 
+A) Eye 
+B) Ear 
+C) Nose 
+D) Chair 
+Answer: D) Chair 
+• 
+Justification: Eye, Ear, and Nose are parts of the face/body. A Chair is a piece of furniture. 
+ 
+9. Which letter is the odd one out? 
+a, e, i, o, u, k 
+Answer: k 
+• 
+Why? The letters a, e, i, o, u are called vowels. The letter k is a consonant. 
+10. Find the odd one out. 
+ 
+a) Figure A 
+b) Figure B 
+c) Figure C 
+d) Figure D 
+• 
+Answer: c 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Blood RELATION 
+1)  If A is the brother of B, B is the sister of C, and C is the father of D, how is A related to D? 
+A) Uncle 
+B) Brother 
+C) Nephew 
+D) Cannot be determined 
+Ans: A) Uncle 
+ 
+2) Pick the right choice from the given options 
+If Esha is Mother of Karan, Karan is Grandson of Seema, Seema is Mother of Bharat, Bharat is Son of Sanjay, 
+Sanjay is Father of Abhishek. 
+Esha is _______________ of Abhishek 
+ 
+A) Granddaughter 
+B) Daughter 
+C) Wife 
+D) Mother 
+Ans: C 
+ 
+ 
+3) A is son of C while C and Q are the sisters to one another. Z is the mother of Q. If P is the son of Z, 
+Which one of the following statements is correct? 
+A. Q is the grandfather of A   
+B. P is the maternal uncle of A   
+C. P is the cousin of A   
+D. Z is the brother of C   
+✔ Correct Answer: B. P is the maternal uncle of A 
+4) A man said to a lady, "The son of your only brother is the brother of my wife." What is the 
+lady to the man? 
+Mother 
+B. Sister 
+C. Sister of father-in-law 
+D. Grandfathe 
+Answer: Option C 
+5. Introducing Rajesh, Neha said, “His brother’s father is the only son of my grandfather”. How Neha is 
+related to Rajesh? 
+(a) Sister (b) Daughter (c) Mother (d) Niece 
+Correct Answer: A 
+6. Deepak said to Nitin, “That boy playing with the football is the younger of the two brothers of the 
+daughter of my father’s wife”. How is the boy playing football related to Deepak? 
+ 
+           (a) Son (b) Brother (c) Causin (d) Nephew 
+
+ 
+         Correct Answer: b 
+ 
+ 
+7. A and B are married couple. X and Y are brothers. X is the brother of A. How is Y related to B? 
+           (a) Brother-in-law (b) Brother (c) Son-in-law (d) Cousin 
+ 
+         Correct Answer: a 
+ 
+8. A is the son of C; C and Q are sisters; Z is the mother of Q and P is the son of Z. Which of the 
+following statements is true? 
+(a) P and A are cousins 
+(b) P is the maternal uncle of A 
+(c) Q is the maternal grandfather of A 
+(d) C and P are sisters 
+ 
+Correct Answer: b 
+ 
+ 
+9. A man said to lady, “Your mother’s husband’s sister is my aunt.” How is the lady related to the man? 
+(a) Daughter (b) Grand daughter (c) Mother (d) Sister 
+ 
+Correct Answer: d 
+ 
+ 
+10. X introduces Y saying, "He is the husband of the granddaughter of the father of my father ". How is Y 
+related to X? 
+a  
+Son-in-law 
+b  
+Brother-in-law        correct 
+b   
+Son 
+d.         Brother 
+   
+          answer b 
+ 
+
+
+ 

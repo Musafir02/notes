@@ -1,0 +1,316 @@
+[Page 1]
+This page from a student's notes appears to be an introduction to Structured Query Language (SQL), a standard language for relational databases. The main topic is divided into two sections: "3.1 Overview of SQL" and "3.1.1 Characteristics of SQL".
+
+The first section explains that SQL is used to store and manage data in a database management system, and it was the first commercial language introduced for E.F. Codd's Relational model of database. It enables users to create, read, update, and delete relational databases and tables. All RDBMSs like MySQL, Informix, Sybase, Oracle, MS Access, and SQL Server use SQL as their standard database language. SQL allows users to query the database in various ways using English-like statements.
+
+The second section highlights several key characteristics of SQL:
+
+*   **Reserved Words**: SQL keywords are reserved and cannot be used as names. If needed, they can be wrapped in quotes ("") or backticks (`).
+*   **Real-world Entity**: A modern DBMS is more realistic and uses real-world entities to design its architecture. It uses behavior and attributes too.
+*   **Relation-based Tables**: DBMS allows entities and relations among them to form tables. A user can understand the architecture of a database just by looking at the table names.
+*   **Isolation of Data and Application**: A database system is entirely different than its data. A database is an active entity, whereas data is said to be passive, on which the database works and organizes. DBMS also stores metadata, which is data about data, to ease its own process.
+*   **Less Redundancy**: DBMS follows the rules of normalization, which splits a relation when any of its attributes is having redundancy in values. Normalization is a mathematically rich and scientific process that reduces data redundancy.
+*   **Consistency**: Consistency is a state where every relation in a database remains consistent. There exist methods and techniques, which can detect attempt of leaving database in inconsistent state. A DBMS can provide greater consistency as compared to earlier forms of data storing applications like file-processing systems.
+
+Overall, this page provides a solid foundation for understanding the basics of SQL and its characteristics, setting the stage for further exploration of database management systems.
+
+[Page 5]
+**SQL Data Types and Character Encoding**
+
+This page provides a comprehensive overview of the various data types used in SQL, including character and string data types, as well as their corresponding encoding schemes.
+
+**Character and String Data Types**
+
+The page explains that character and string data types are used to store text data, which can be represented in different formats depending on the specific requirements of the application. These data types include:
+
+*   **CHAR(n)**: A fixed-length string that is always padded with spaces to meet the specified length n.
+*   **VARCHAR(n)**: A variable-length string with a maximum length of n, which uses only the storage required for the actual text.
+*   **TEXT**: A variable-length type for storing very large blocks of text.
+*   **NCHAR(n)**: A national character set, which is a fixed-length Unicode string that is essential for multilingual data that is always a consistent length.
+*   **NVARCHAR(n)**: A national character set, which is a variable-length Unicode string that is the standard choice for storing multilingual text.
+
+**Encoding Schemes**
+
+The page also discusses the different encoding schemes used for character and string data types, including:
+
+*   **ASCII**: A 7-bit character set that is widely used for storing text data.
+*   **Unicode**: A 16-bit character set that is used to represent a wide range of languages and characters.
+*   **UTF-8**: A variable-length character encoding scheme that is widely used for storing text data in web applications.
+
+**Common Use Cases**
+
+The page provides examples of common use cases for each data type, including:
+
+*   **CHAR(n)**: Used for storing fixed-length strings, such as names or addresses.
+*   **VARCHAR(n)**: Used for storing variable-length strings, such as descriptions or comments.
+*   **TEXT**: Used for storing large blocks of text, such as articles or documents.
+*   **NCHAR(n)**: Used for storing multilingual text data.
+*   **NVARCHAR(n)**: Used for storing variable-length Unicode strings.
+
+**Summary**
+
+In summary, this page provides a comprehensive overview of the different data types used in SQL, including character and string data types, as well as their corresponding encoding schemes. It also provides examples of common use cases for each data type, highlighting their strengths and weaknesses. By understanding these concepts, developers can choose the appropriate data type for their application and ensure that their data is stored and retrieved efficiently.
+
+[Page 9]
+The main topic of this page is Data Definition Language (DDL), which is used to create and modify database structures. The page explains the different types of commands used in DDL, including DROP, TRUNCATE, and RENAME.
+
+The DROP command is used to remove an entire table from a database, including its definition, indexes, constraints, and data. It is a DDL (Data Definition Language) command.
+
+The TRUNCATE command is used to remove all rows from a table, regardless of whether or not any conditions are met and resets the table definition. It is also a DDL (Data Definition Language) command.
+
+The RENAME command is used to change the name of a table. It is a DDL (Data Definition Language) command.
+
+The page also explains the syntax for each command, including the use of single-line comments and multi-line comments. Single-line comments start with a double dash (--), while multi-line comments are enclosed between asterisks (*) and can span multiple lines.
+
+The page also provides examples of how to use each command, including how to drop a table, truncate a table, and rename a table. For example, the command to drop a table named "customers" would be: DROP TABLE customers.
+
+In addition, the page explains the concept of renaming tables, which involves changing the name of a table without affecting its structure or data. This is useful when a table needs to be renamed for organizational or security reasons.
+
+Overall, this page provides a comprehensive overview of the different types of commands used in DDL, including their syntax and examples of how to use them. It is an important resource for anyone looking to learn about database management and how to use DDL to create and modify database structures.
+
+**Summary of Key Points:**
+
+* Data Definition Language (DDL) is used to create and modify database structures.
+* The DROP command is used to remove an entire table from a database.
+* The TRUNCATE command is used to remove all rows from a table.
+* The RENAME command is used to change the name of a table.
+* Single-line comments start with a double dash (--), while multi-line comments are enclosed between asterisks (*) and can span multiple lines.
+* The command to drop a table named "customers" would be: DROP TABLE customers.
+* Renaming tables involves changing the name of a table without affecting its structure or data.
+
+**Important Terms:**
+
+* Data Definition Language (DDL)
+* DROP command
+* TRUNCATE command
+* RENAME command
+* Single-line comments
+* Multi-line comments
+
+**Examples:**
+
+* DROP TABLE customers
+* TRUNCATE TABLE customers
+* RENAME TABLE customers TO new_customers
+
+[Page 13]
+This page appears to be part of a textbook or study guide for a computer science or programming course, specifically focusing on database management systems.
+
+**Main Topic and Concepts**
+
+The main topic of this page is "Transaction Control Language (TCL) and its various commands." TCL is a subset of SQL (Structured Query Language) used to manage transactions in a database. It provides a way to control how changes are made to the database, ensuring data integrity and consistency.
+
+**TCL Commands**
+
+There are several TCL commands explained on this page, each with its own purpose:
+
+*   **COMMIT**: Saves all changes made during the current transaction permanently to the database.
+*   **ROLLBACK**: Undoes all changes made during the current transaction, reverting the database to its previous state.
+*   **SET TRANSACTION ISOLATION LEVEL**: Sets the level of isolation for a transaction, determining how it interacts with other transactions.
+
+**Grant and Revoke**
+
+The page also explains the concepts of granting and revoking privileges in a database. Granting privileges assigns access rights to users or roles, while revoking privileges removes them.
+
+**SQL Commands**
+
+The page provides examples of SQL commands used in TCL, such as UPDATE, INSERT, and DELETE. These commands are used to modify data in the database.
+
+**Transaction Control Language**
+
+TCL is a subset of SQL that provides a way to control how changes are made to the database. It ensures data integrity and consistency by controlling how changes are made.
+
+**Example**
+
+The page provides an example of how TCL commands can be used to manage transactions in a database. It shows how to use the COMMIT and ROLLBACK commands to save and undo changes to the database.
+
+**Conclusion**
+
+In conclusion, this page provides a comprehensive overview of TCL and its various commands. It explains the concepts of granting and revoking privileges, as well as how to use SQL commands to manage transactions in a database. By understanding these concepts, students can learn how to effectively manage transactions in a database and ensure data integrity and consistency.
+
+[Page 17]
+**Summary of Database Management System Notes**
+
+The main topic of this page is **Database Integrity Constraints**, which are rules that ensure the accuracy and consistency of data in a database. These constraints can be classified into two main categories: **Primary Key Constraints** and **Foreign Key Constraints**.
+
+**Primary Key Constraints**
+
+A primary key is a unique identifier for each row in a table. It is used to distinguish one row from another and ensure that each row has a unique value. The primary key can be a single column or a combination of multiple columns. For example, in a table that stores information about students, the student ID could be the primary key.
+
+**Foreign Key Constraints**
+
+A foreign key is a column or set of columns in a table that references the primary key of another table. It is used to establish relationships between tables and ensure data consistency. For example, in a table that stores information about courses, the course ID could be a foreign key that references the primary key of the students table.
+
+**Types of Integrity Constraints**
+
+There are several types of integrity constraints, including:
+
+* **Not Null Constraints**: These ensure that a column cannot have a null value.
+* **Unique Key Constraints**: These ensure that each row in a table has a unique value for a particular column.
+* **Check Constraints**: These allow you to specify a condition that must be true for a row to be inserted or updated.
+* **Domain Constraints**: These restrict the values that can be entered into a column.
+
+**Example**
+
+Consider a table that stores information about students, with columns for student ID, name, and age. We can apply the following integrity constraints:
+
+* **Not Null Constraint**: The student ID column cannot have a null value.
+* **Unique Key Constraint**: The student ID column must have a unique value for each row.
+* **Check Constraint**: The age column must be greater than or equal to 18.
+* **Domain Constraint**: The student ID column must be an integer between 1 and 100.
+
+**Importance of Domain Constraints**
+
+Domain constraints are important because they help ensure that data is accurate and consistent. For example, if we have a table that stores information about products, we can use a domain constraint to ensure that the price column only accepts values that are greater than or equal to 0.
+
+**Entity Integrity Constraints**
+
+Entity integrity constraints ensure that each row in a table has a unique identifier. They are used to prevent duplicate rows from being inserted into a table. For example, in a table that stores information about customers, the customer ID could be an entity integrity constraint.
+
+**Key Features of Entity Integrity Constraints**
+
+The key features of entity integrity constraints are:
+
+* **Uniqueness**: The primary key value must be unique for each row in the table.
+* **No Duplicate Entries**: No duplicate entries are allowed in the primary key column.
+
+**Conclusion**
+
+In conclusion, database integrity constraints are an essential part of ensuring the accuracy and consistency of data in a database. By applying these constraints, we can prevent errors and ensure that our data is reliable and trustworthy. As a database administrator, it is important to understand the different types of integrity constraints and how to apply them effectively.
+
+[Page 21]
+This page appears to be part of a textbook or study guide focused on SQL and aggregate functions. The main topic covered is how to calculate the total salary, find the average salary, and identify the highest and lowest salaries using aggregate functions.
+
+The page begins by explaining the concept of aggregate functions, which are used to perform calculations on a group of data. It defines the MIN function as the minimum value of a column, the MAX function as the maximum value, and the AVG function as the average value. The page also explains how to use the GROUP BY statement to group data by a specific column and then apply aggregate functions to each group.
+
+The page provides several examples of how to use aggregate functions, including calculating the total salary, finding the average salary, and identifying the highest and lowest salaries. For example, it shows how to use the SUM function to calculate the total salary of all employees, and how to use the AVG function to find the average salary.
+
+In addition to explaining the concepts and formulas, the page includes several diagrams and figures to illustrate the key parts of the SQL code. These diagrams show how to use the GROUP BY statement to group data by a specific column, and how to use the aggregate functions to perform calculations on each group.
+
+Overall, this page provides a clear and concise explanation of how to use aggregate functions in SQL to perform calculations on a group of data. It covers the key concepts, formulas, and techniques needed to work with aggregate functions, and includes several examples and diagrams to help illustrate the concepts.
+
+[Page 26]
+This page delves into the fundamentals of creating views in a database, providing a comprehensive introduction to the concept. The main topic is "Creating Views," which is further divided into two subtopics: "Creating Views from Multiple Tables" and "Deleting Views."
+
+**Creating Views from Multiple Tables**
+
+The page explains that a view is a virtual table that is based on a query. It illustrates this concept using an example where a view named "MarksView" is created from two tables, "StudentDetails" and "Marks." The query used to create the view is: "CREATE VIEW MarksView AS SELECT StudentDetails.Name, StudentDetails.Address, StudentDetails.Marks FROM StudentDetails, Marks WHERE StudentDetails.Name = Marks.Name." This query selects the name, address, and marks of students from both tables where the name matches.
+
+**Deleting Views**
+
+The page also discusses deleting views, which involves using the DROP VIEW statement. For example, to delete a view named "MarksView," one would use the command: "DROP VIEW MarksView." This statement removes the view from the database.
+
+**Key Concepts and Definitions**
+
+The page highlights several key concepts and definitions related to creating and deleting views. These include:
+
+* **View**: A virtual table that is based on a query.
+* **Query**: A request for data retrieval from a database.
+* **CREATE VIEW statement**: A command used to create a new view in a database.
+* **DROP VIEW statement**: A command used to delete an existing view from a database.
+* **Multiple tables**: The ability to create a view from data stored in multiple tables.
+
+**Examples and Numerical Values**
+
+The page provides several examples and numerical values to illustrate the concepts being discussed. These include:
+
+* **Example 1**: Creating a view named "MarksView" from two tables, "StudentDetails" and "Marks."
+* **Example 2**: Deleting a view named "MarksView" using the DROP VIEW statement.
+
+Overall, this page provides a clear and concise introduction to creating and deleting views in a database. It explains the key concepts and definitions related to views, provides examples and numerical values to illustrate the concepts, and offers step-by-step instructions on how to create and delete views.
+
+[Page 30]
+This page appears to be a continuation of a computer programming assignment. The main topic is the use of built-in functions in programming, specifically the ASCII, CHARINDEX, CONCAT, and LOWER functions.
+
+The page explains the purpose of each function:
+
+*   **ASCII**: Returns the ASCII value for a specific character.
+*   **CHARINDEX**: Returns the position of a substring in a string.
+*   **CONCAT**: Concatenates two or more strings together.
+*   **LOWER**: Converts a string to lowercase.
+
+The page also provides examples of how to use each function, including:
+
+*   **ASCII**: "SELECT ASCII('A') AS ascii_value;" returns 65.
+*   **CHARINDEX**: "SELECT CHARINDEX('World', 'Hello World') AS position;" returns 7.
+*   **CONCAT**: "SELECT CONCAT('Hello ', 'World') AS greeting;" returns "Hello World".
+*   **LOWER**: "SELECT LOWER('Hello World') AS lowercase_text;" returns "hello world".
+
+The page also includes a table that lists the output of the functions, with columns for the name, length, upper-left, and full description of each function.
+
+Overall, this page provides a clear and concise explanation of the built-in functions in programming, along with examples and numerical values to illustrate their use.
+
+[Page 34]
+The main topic of this page is about creating a book log table and applying triggers to it. The page explains how to create a book log table, insert data into it, and update the table based on certain conditions. It also covers how to create triggers for the table, which are special procedures that run automatically when a specific event occurs.
+
+The page starts by explaining how to create a book log table, which includes columns for the book's title, author, price, and publication year. It then shows how to insert data into the table using SQL queries.
+
+Next, the page discusses how to create triggers for the table. A trigger is a special procedure that runs automatically when a specific event occurs, such as when a new row is inserted into the table. The page explains how to create two types of triggers: "AFTER INSERT" and "AFTER UPDATE". The "AFTER INSERT" trigger runs after a new row is inserted into the table, while the "AFTER UPDATE" trigger runs after an existing row is updated.
+
+The page also provides examples of how to use these triggers. For example, it shows how to create a trigger that updates the price of a book when a new row is inserted into the table. It also shows how to create a trigger that checks if a book has been updated and updates the price accordingly.
+
+In addition to explaining the concepts of triggers and how to use them, the page also provides code examples and diagrams to illustrate the concepts. The diagrams show the structure of the book log table and how the triggers work.
+
+Overall, this page provides a comprehensive overview of how to create a book log table and apply triggers to it. It covers the basics of creating a table, inserting data, and creating triggers, as well as more advanced topics such as updating the price of a book based on certain conditions. The page is well-organized and easy to follow, making it a useful resource for anyone looking to learn about database triggers.
+
+[Page 38]
+This page delves into the world of SQL triggers, a crucial aspect of database management. Triggers are essentially events that occur in response to specific actions within a database, such as inserting, updating, or deleting data. They enable developers to enforce business rules, maintain data consistency, and automate tasks without requiring manual intervention.
+
+The page highlights the importance of understanding the different types of triggers, including:
+
+* **Before**: Triggers that execute before the action occurs.
+* **After**: Triggers that execute after the action occurs.
+* **Instead of**: Triggers that replace the action with a different one.
+
+The page also emphasizes the need to consider the timing and scope of triggers, as well as their potential impact on performance.
+
+To illustrate the concept, the page provides a simple example of a trigger that checks if a customer's age is valid before inserting a new record into the database. The trigger is defined as follows:
+
+```sql
+CREATE TRIGGER chk_customer_age
+BEFORE INSERT ON customers
+FOR EACH ROW
+BEGIN
+    IF NEW.age < 18 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Customer age must be 18 or older';
+    END IF;
+END;
+```
+
+This trigger checks if the age of the new customer is less than 18 and, if so, raises an error message. The `NEW` keyword refers to the new row being inserted, and the `IF` statement checks the condition. If the condition is true, the `SIGNAL` statement raises an error.
+
+The page also discusses the use of trigger functions, which are reusable blocks of code that can be called from multiple triggers. These functions can simplify trigger development and improve code maintainability.
+
+In summary, this page provides a comprehensive overview of SQL triggers, including their types, timing, and scope. It also offers practical examples and code snippets to illustrate the concept, making it an essential resource for developers working with databases.
+
+[Page 42]
+The page under review appears to be a collection of PL/SQL programming examples, which are designed to assist students in learning and practicing the language. The examples are presented in a clear and concise manner, with each example accompanied by a brief description and a solution.
+
+The first example, labeled "3.1," demonstrates how to display a message using a simple PL/SQL statement. The example shows how to use the `DBMS_OUTPUT.PUT_LINE` function to print a message to the console.
+
+The second example, labeled "3.2," illustrates how to display a message with a string variable using PL/SQL. This example builds on the previous one by introducing a string variable and demonstrating how to use it to display a message.
+
+The third example, labeled "3.3," shows how to write a PL/SQL block that performs the sum of two numbers and displays it using concatenation. This example introduces the concept of concatenation, which is used to combine two or more strings into a single string.
+
+The fourth example, labeled "3.4," demonstrates how to write a PL/SQL block that performs the sum of two numbers with reading values from the keyboard. This example introduces the concept of reading input from the keyboard using the `DBMS_OUTPUT.PUT_LINE` function.
+
+The fifth example, labeled "3.5," shows how to write a PL/SQL block to find a given number is even or odd. This example introduces the concept of conditional statements, which are used to make decisions based on conditions.
+
+The sixth example, labeled "3.6," illustrates how to write a PL/SQL block to read a number and print the number is zero/positive/negative. This example builds on the previous one by introducing the concept of conditional statements and demonstrating how to use them to make decisions based on conditions.
+
+The seventh example, labeled "3.7," demonstrates how to write a program to print the grade with reading the marks. This example introduces the concept of conditional statements and demonstrates how to use them to make decisions based on conditions.
+
+Overall, the page provides a comprehensive introduction to PL/SQL programming, covering topics such as displaying messages, using string variables, concatenating strings, reading input from the keyboard, and making decisions based on conditions. The examples are well-structured and easy to follow, making it an excellent resource for students learning PL/SQL.
+
+[Page 46]
+This page appears to be part of a textbook or study guide for a database management systems (DBMS) course. The main topic is SQL (Structured Query Language) and its applications.
+
+The page begins by explaining how to write SQL relations, which are used to define the structure of a database. It provides examples of how to write SQL queries to retrieve data from a database, including selecting specific columns, filtering data based on conditions, and joining tables together.
+
+The page also covers the concept of normalization, which is the process of organizing data in a database to minimize data redundancy and improve data integrity. It explains how to use the normalization rules to identify and eliminate redundant data in a database.
+
+In addition, the page discusses the concept of indexing, which is a technique used to improve the performance of database queries. It explains how indexes work and how they can be used to speed up query execution.
+
+The page also includes several examples of SQL queries, including those that use aggregate functions, subqueries, and joins. These examples demonstrate how to use SQL to perform various tasks, such as calculating sums, averages, and counts, and how to retrieve data from multiple tables.
+
+Overall, this page provides a comprehensive overview of SQL and its applications in DBMS. It covers a range of topics, from basic SQL queries to advanced concepts like normalization and indexing. The examples and exercises provided will help students practice their skills and apply what they have learned to real-world scenarios.

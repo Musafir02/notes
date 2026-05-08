@@ -1,0 +1,719 @@
+moy,60) 
+mov(G 
+Flyan's clas sißication 
+-stoeam. 
+- lostvc hon Stoeo) 
+-
+Datactoc om 
+SISD 
+APDASBL 
+mov BL, AL 
+pool 
+Csingle Ins tauchen Sngle dota qgiem 
+(Laspvc hon poo 
+Data 
+SImp sing le Ins toac hon mu lbple dak) yie, 
+patu 
+pool 
+Pool 
+’Pa0ce&so 
+Ins tecthon pool 
+->pDceRros 
+LPopcegod 
+PoDCeRcod 
+molhple Ins tic hon Siogle data ysten 
+uns tochon Pool 
+mOU AL, SO 
+ADA A4,BL)mUL AA 
+moUASS
+Teachar's Signaturaz 
+
+molhple ins tovc bon hulhple dala Syfle n 
+pool 
+Ap0 
+Ingucth'on Po o} 
+AL60 
+ALBL 
+MOV 
+CX,0x 
+mult 
+ALBL 
+mochience which is capoble os ex eebns 
+Qsinglp ins buchoD end opeabog oo 
+Q sing le dat sbeom 
+TO SISD m gchip e inS fovchon gtepbDc QRIe d 
+in seau en tial man0 e 
+ood compeee 
+adop hog this mode/ 9àepa puloy colled 
+seauenhal coDpufet 
+iMast 
+con venbonQlcompolep 
+houe 
+SISD qTchitechoe 
+R tBe insbuchon 9nd dota to be processed bave 
+h be çto ed in p tima 
+memay 
+Teacher's Signature:. 
+
+9he speed 
+of the poCeRSing element in SLDoe) 
+S tim ited bg the rote gt which the compUttr (on 
+foans fes in fonmebon in ternallg 
+wosk sabon s 
+Sm D 
+iAn Sim D sy&lem is o mulhpbCesOS mathicne 
+ca pable i 
+execu hng the same instuc bon oD all 1he CPU but 
+hag on 
+dib6eaen t dato sbeam 
+MaChi encs based on an shh sIm2 model s2e wel s kd 
+Sdenhfic Compubn9 sioce BEg invoue_lots ofvecle 
+and matx opetchon. 
+to 
+So thot the in Soma bon cenbe possed o all the 
+ponceRSing elemeot, e corg 9nis e doh elen ent 
+vecer 9n be d/vid ed inbmelbple set 
+(N-ce t bo 
+NpE Syetem) ond egch PE 
+poDcegSing element 
+cen 
+pbD (eRC oOe do 
+cet 
+Dominen t 
+RepD3On hhUe 
+SIM D Syem 
+is Cgu Coag's veclb 
+poncBRrigg mocbiene 
+cMSD 
+machien e c9pable of exeCuhng di6fesent 
+iostwchon on dibsesemt poceRSing eleNDt 
+bot gll of Them 
+operahng on come dotoset 
+ope 
+Usekel is most o6 applico hon mode), a6ew machiene 
+are bui ld 
+bot none o, them ae Qvailable ome 
+cioly 
+Taauhar'a Signatueat.anr 
+
+An mLmD Sy&iem is Qmulhp 29 ce2s08 
+mochieote_whichi 
+capable oß execu bng 
+mu lhple instwchon on mulhiple 
+dohset caeh pPC 
+poncegsiog elem ent in the mim0 mode/hac 
+Seperale 
+ins auchon God doh soeom Theoefore machiene
+build using fhis 
+mo sel ase copable b ony kind ef 
+applica hon 
+mm 
+machience. wosk Gchonously 
+Ins torc ton pipeline -
+808S 
+eKecubon 
+Fehh 
+execute 
+Feth 
+2 
+Fehh 
+Feleh 
+3 
+2 
+3 stage ppehniag 
+Execute Execute 
+Exerute 
+Exerufe 
+Fekh 
+Fekh 
+Fetzh 
+Decocle Ex ecute 
+Fehh 
+0 eco de 
+6elh 
+E xeruke Fekh execefe 
+3 
+Exeute 
+Decode 
+bekh 
+Exente 
+decode 
+Teacher's Signature: 
+ExeçeE
+
+4) 4shge pipelniog. 
+2 
+3 
+Fekh 
+Fekh 
+LNC 
+Exeru le 
+Pipe lin e hagard 
+AL 
+derode 
+AL=X6 
+6ebh 
+sBut valoeis 6 
+che 
+moV 
+eXerule 
+Daa hag ard 
+Data d'epend any ha g a> d 
+Con tool hagard /cae hagaad 
+derade 
+bekh 
+Reg istee 
+Shoe 
+exerole 
+memoy 
+dercde 
+exerofe 
+DE C DL I 
+be 2 
+Tuachr's Sign atura:eeettce 
+
+Q3] what is paging mechonism! 
+’ Paging is q memosy 
+man a9ement 
+techoigye in which the 
+pDCessis divided in to bixed cige 6orameg 
+im an qvailable 6oomes 9nd 
+Page 
+able is vsed tkeep 
+toack oh theis lo cq hons 
+i Fram eg an d Pagesi 
+Main memony is divided in bcool sixed Sineblock colleaßen 
+-9he proceRSLpong bomn it divided in to block obsame Si 
+called poger 
+Pageg f aprocess can be logded in tb gny qviale ble 
+me moy btome 
+- 9hey donot need fo be conhguoUs So memog is used esbC/enlg 
+he page huble keept q ecod of os which page is in which 6r00e 
+ü 
+Addegs toran slaton 
+-when CPU ace&cER memoy itgenete teg q logical addees 
+Cpage numbes toßbset) 
+-9he oS uS R the page table o con vestit ioto a physical 
+addces l actual fome locaton) 
+
+duontages: 
+wibhral addoas 
+’Page 
+Numbes 
+solves 
+ex fersnal 
+makes 
+memo Oy 
+fPage tbie 
+base De9i se 
+6og MeD t hon 
+allocq tion 
+wotd 
+eb6den t 
+Page tble 
+physitol 
+-Easy h shoe and man9ge memoy behueenpoceRof 
+
+QExplaia pipeline ttagasds 
+-Io cPU pipe lining qllowc 
+mmulbple 
+ins tovcbons tobe poDceRrs
+at tie Seme hme,ach gtQ dibßesemt stage 
+Ike seteh 
+decode,execute 
+) 
+d evic e 
+H pipeline haBabd happens 
+when som e thilOg 
+poeven s he 
+nexr ins tovchon in tße plpeline Apm execu bng in IIS PoDpe 
+clock sly le In simple 
+wprd 
+"Some tBipg gets in IBe wo 
+and 
+cquses q delay in the pipeline: 
+Type of 
+pipeline 
+Hag9 bd is fouchhed 
+Hopods 
+-Occu 
+when habd wgse 
+eeourceR 
+goe in su66 icieDt608exKUb 
+mulhple 
+insuc hon at the same hme 
+-2xample 
+i6 the CPU has ony one 
+memo 
+ondbo t6 iDSucte 
+6ehh and dgta acc ss need it simu ltaneour ly one ios tucbon 
+has to wait: 
+- Solu tion : Add moDE hard wat 
+eeoUoceg 
+o 
+Stal thepipelire
+
+felh 
+e xecude 
+6ekh 
+ii 
+Data Hagards 
+Type c Oota Hog4t ds 
+gRAw CRead A6ler uwile) 
+-0cC0bs whean an 
+instouc bon depends on 
+he delUlt cf a 
+pievious ins touc hon that is ot yet available 
+b wAR [wile aßies Read) 
+derode 
+-Ie hos o wait_6os Iito 7inish 
+exerute 
+Ins louc Hon needs a value hekobe it is ws ten hy the peviouc 
+instavc hon. 
+- Example. 
+wAw Lwse g7 ter wi ke] 
+üi 
+(on ol Hagosds 
+xderdt 
+de code 
+exerud e 
+Ins tchon wi teg to a locatbon befoe it is oead by ape uiDuc 
+instnchon 
+Tuo ins uchon wie o the ceme locaho n. in wtDng oardes 
+-Occo 
+due to boanch ins tec hon's (like i7soc tos 
+shutement oa loops): 
+Bsgnch Poedicbon: 
+pe dictor 
+- CPU m ay not know which ins tauchon to 6efeh next 
+unbl the baanch is seolved 
+Soluton : Boonch poedica hon o chlling uh hl boonch 
+decision is n9de: 
+Explain bra nch poedichon technique 
+- Branch poe dic bon isa techoigye uSed in poCe8Sob 
+with pipe liniag to moke ins tuchon exece bon sectes 
+-It foie& 
+to gU ERS the deSult gtQ Condibon ol branch Clike 
+Gn i6 ele decision ) be bose itis gchally koown so tâ e poncetor 
+can Con bnue. fetching insuc bons 
+with aut weibag 
+-9he pabt oß the CPU tho t doeg this is coled 
+e btonch. 
+-In puopase. is to keep the ins tuc bon pipe line auDig 
+sm oo thly 
+
+shuhc Boranch Poedicho. 
+-In shubc paedichonthe de cston gbouta boonch is mode gf 
+compile hme ond oemains thecome 
+h oo ugh or 
+poegom_ execuh'on 
+-It caDnot ehenge atcotdiog to pgrom behauiou 
+-Two main hpeS 
+dad 
+wo dE -6Xed_poedichoa Cdecided byhord wqe) 
+Com pile -ditcte d poedich'on 
+Cd ecided by compuler) 
+i 
+Dg00mic Bxanch Predc hon 
+-In dyn9mic pEdjc hon the ceU_monibss baonch 
+be hquiour at nn bme and _uretst past outromel 
+to gus the next out(ome 
+- ASSemphon: Past behouibu heles bpaedic 6ut be 
+be haviouT 
+-Each boranch is idenb6/ed by its prbgram (ouneo 
+(ec) o bzanch his tony 
+- Pvedic hon in volu eg huo fhingsi 
+a) outcome -whether 
+boanch will betken oT not 
+b) 
+Target - the gddress of theapxt 
+ns foucbo 
+(Poe dict tken 
+Taken 
+Clo) 
+vot taken 
+Pedic 
+ngt tken 
+Co) 
+te ken 
+Not taken 
+To Ren 
+feken 
+Poedict fken) 
+(1) 
+Psedich aot toke) 
+(oo) 
+wot 
+ken 
+
+Pig~e Prpelioning shge 
+lns tauchian Pipeliing 
+Instuchon pipelinicg is a techaique of ogonigio g he 
+inctax hons kor execubon in sch a way thot 
+De 
+Cxerution of tie cedoet inshchon is oUeslopped 
+by tme ex ecuhon ek ik asebseqy emt instuchoos 
+lnshayc hon pipelinng impbou eR th e peoßorMoDce 
+o6Ihe p bec ees obt by in caegsing ik thDUgh put 
+ie numb er ohins tvchon s_peouni thme 
+S shuge pipelining. 
+fehh 
+Instochon 
+CET) 
+Decode 
+Josbucbop 
+3 
+2 
+opeoubon 
+4 
+S 
+3 
+Fekh 
+opeaond 
+2 
+2 
+fehh op er0n d (EO) 
+Regd 
+3 
+feh inctmchonFeh LReod) Benext 
+ins chon be be execeled intoinsochoD busßeo 
+- Q ecode lastovcton (ot ): D EodP the opcode 
+Jostavchon opeboNd 
+op eban d oDm aeMob 
+Loperond in segisfer need notbe aead 
+-Execote Instovc oo (E) Pex fosp he in dice he d 
+Wite operen o (wo)shoe eultin 
+memoy 
+
+6 stage pipe lining 
+|lns tuc hon ’ecod e lolrolohel >lFehbl »xecu Don) 
+lopeoond 
+opesand 
+Fehh 
+12 3 
+1 
+2 
+Supescalas 
+achileche i 
+Bunchonal 
+onit 
+os tchon bekh) 
+R egiste 6ile 
+Decod e & lcsve 
+benchong! 
+fwste 
+topesand 
+|m emoy 
+(unc honglunil 
+Superscqlgt techniyei 
+9 CP dezigo Bot allous 
+Q poDc eeso 
+ho execute 
+mode tbon op e ins 
+ctia 
+perclock cycle by using melhple execehon un)k 
+Ins head oß poceCing ins trchon 
+one aßfe 
+pothes 
+qSupe 
+ccalad popceRrO 
+ceR 6ehh decede ood 
+execue 
+seu eral ins buc hon s Sinultopeouch 
+
+A sup ers calar prbcestor achieU eg this paballelisom 
+by in.coxpurahog molhple Pipelioe ond func bonal 
+Units such as a, th me bc logic units (ALUg)9nd. 
+6loahng-point units CePusl 2he key ctepc ote i 
+Ins buchen 6ebhi2he proceAC or fehbee molbple 
+instuchon ghonce 6um the 
+memooy 
+Ins tuchon decod e i 2hesp inc tchanc_ abt them deced 
+in paallel: 
+Depen dem cy check 9he ponc eRso's contopluoit 
+cta anal4nes he ips tuchon s ho id emb6y depenaleocie 
+itchecks ibone instnchon sls deeUl S peeded as G0 
+in put 6or ono hes Zncfovchar hotase todepende 
+Can bg 
+execoted 
+ConCuà bet 
+Pooalle 
+execuhon: 
+psuchon thet dontdep Emd 
+on each othe 
+gàe dispakhed 
+b dibl epent 
+executon unjtt o beproceeced 
+simulneously 
+for example asimple iateg-eg adolibon snd 4 
+6loabng point mlhplic a bcA c00 6e exerujed ot 
+Ins tuchon 
+Commmi-
+2he beRots boDm the compleed 
+ios buchon s o•f 
+wotem back 
+tbe ocoictec os 
+Memoy 
+moinlaining Ihe Coràect preg bom csder 
+Dhe pom a y chall vnge in supeataolo o deign it 
+de aling witth h9g ahds 
+which goe cal. dibonr 
+that poev em 
+paÝall el exX eLUbon 
+
+Dahe 
+Hal, 
+OCcey when gn insbycbon npeds de fa 
+fhat deeRA hosnt beempopduced by c prece diI 
+ins tovc hon 
+(ontoo! 
+boonch 
+Lns toucbons qc thepoo(elror 
+may Dot know UbICh 
+boach to 
+ke onb! the condibon e voluate o 
+STouc ho HagGe dsiHappemc 
+wh se tuo iasbcons 
+Same sne 
+Qata Foowax ding techniqye 
+-Ln pipelined pDc egsosgda 
+hezodr occu 
+wheo 90 
+ins trvchon pepdc 
+Be eRult of e pof ujous jnctachins 
+thgt has not yet been 
+wosten back ho the 
+gicher 
+bile 
+To oues come this po ble m 9nd avot dpipe 
+linpshulls, the data 
+Fos us dipg odatq 
+By pasig 
+-In this 
+echniqye the ovtput o The ALuo 
+memo 
+boDm one insfovcton 
+is 6orwas de d dlstctly 
+to the 
+ioput 
+oh the Dext inc touchon thot àequirek lt 
+insead owgihng 
+bo it to be soed io the 
+2egis ep 
+his iS 
+done thoo vgh speiol hardwose 
+paths (on tool ed by 
+fowas ding unit which 
+detecte depen d encieA 
+and acbuahes 
+the 
+
+Dahu 
+boDwGS diog allows depemdemt ins tuch ols 
+to execute withovt delay tfebe by otdocing 
+Shll s and 
+mpob Uing pipelinepeo GoDQhCe 
+Eow eUeit can not emove qlb0BasSuh 
+9s 
+load uSe 
+hag ao os 
+wh ert dotu is shn beiog 6ehhed 
+Hemce dala 
+bo nwardin 9 is qn ekficiemt me thod 
+mihga he dah hagabds 
+gn d maola in cmooth 
+inschen s 6low in epe lin e d porcekoof 
+IEI D|Ex 
+Q) wite short 
+note on Amdabl's lou 
+Geßina hon : 
+Byposr path 
+Fosmule 
+Am doh's lowis ure d in Com outer 
+hind the m9ximum posible speed up o6 a pg ba D 
+wh em only puoT o 
+pzDgbD 
+can be perellelig ed. 
+Speedue 
+wB l 
+C-p)te 
+onchitece to 
+
+whene 
+6rachon oß poDgbam hat ca 
+be 
+paralleliged 
+LPE boachon of pg 
+hat is seqy em h 
+N= 
+key ldeg: 
+0a ppg bam bas a poshon that mus bun cegueMD 
+fhem adading mobt proceesoe willon ly speea p 
+Ihe patalle L_past 
+Ihe seoyenbel pLt t Imit the maximum speed up 
+Example 
+(P=O- &) and 207 
+with 4_ponceiroDe (N = 4) 
+S= 
+0-2 + o&. 
+Impoa hunce: 
+-2-S 
+So eue) with spoceRIOf th e ponggm deD 
+2-s hme 
+6as e, 
+is Seqpenhal 
+compubng 
+-ShowDL the imiubon oß p9be/lel 
+tg 
+Helps conpuler a schiec hae decide whether a daing 
+Poo ves that beyod o point inc atasing proCBRIO>R givee 
+dim in ishin g ae bons. 
+
+Qhe &038 6 DX porceerOd 
+Real 
+mod e 
+Purpose 
+To poDUid e (ompa bbihh 
+with eGshek_processOR 
+like the 
+o Jel &o A6 
+80 366 eal mode 
+is the default opeogbng mode ofhe 
+Inte 
+s03&6 land /a tes xe6 p pceeCP ) whese the 
+poocesU 6unChone like gleg Qcy &os6 CpU o66eog 
+Im& oß addbeecgble memoby wi thot odvaDCedeg hee 
+IËke memoy pelechonpa9ing 2h es mode is 
+Used 6od inibgl syttenm shotyp andsehp beßode the 
+pDcESOo oansibens 
+o mooe o duan(ed 
+mod ee 
+Ike poeched m od e ho otilige ik sol 32 bis 
+Capabiihes 
+chasacerichcr 
+Iegacy (om pahbilily: 
+Opeaafe in Thoee modef 
+2he to2£6 i9 dtol mod e behauek ike &osb, gllowiDG 
+Soßtua bt wtun bo 
+oldes pDCeLraf byn wihout 
+modibicohon 
+I6 bit opebqhonc 
+A) th e opera bon S in eolmode ae linite d tols bit 
+including degis hes 9n dinshuc hohs similat bthe fot6 
+|mB 
+memQDy UsiD9 20 addoe& ho es CAo - Ar9) 
+
+Se gmernt Sige: 9he maximum 
+modeis 64 kB due ho l6 bit o6seZ 
+Dis qbled Advgnced 7eahoee 
+Key &03&6 6eahnes cuch as protected memoy 
+pe g ing,vio 
+al 
+memoàyy andmelhacking 
+9be 
+Un available in beal m0de 
+In ihal Powe 
+up shate 
+de6aults to seal med e o iaib9hge aodset 
+p lhe 
+lo66set addos 
+s egmemt qddsees 
+4ddseg 
+q dd ea 
+Memoy opedond 
+|SegmenT Bgre 
+b4 kByle 
+in Real 
+physicolmemary 
+mad e 
+
+Po tec Hed m ode 
+Putpase To em a b/e the foll 92 bit oeabili heg of B03&6 includilg 
+aduanced memoy monagemomk an dmulh'9sking 
+he s0 386s poutected mode ic its most aduanced operahog modle 
+un loc king ib fol 32 bit qrchitec hune and Geahoe ike mEno7y 
+pmtec hon, molhasking, seqmen ta hon and poging -It paa uides 
+aCegC fo 4yBe6 physical memo?y and 64 T8 of uish al memoy 
+by using selkca in.segmen begis tert baccess segment decope 
+which conhin kose adad ta es ond imis This mode allows opeaaheng 
+Sysfems to iso la le pucereg ; mam ang 
+anage 
+me moy ehici emly 
+molhtas king applicahons seairely 
+Rey Geatnes 
+o6 poptecfe d mode 
+Segm em h hon i DiuideR memoy inh logicolunit colled 
+S eg menfe, alowing tie o366 f mop vi thol addegcee 
+to physlcal qddbeeeg. 
+Paging Fus ther divideg memoy inte bxed sge pager (GRB 6or effcin 
+memcmy manlg Em en F and 
+engble uiahal memo y whee port 
+6h 
+mem0 24 can be swepppd to gAd fosm disk 
+Memoy Pmotechon Povideg mechonismL for the operehog Syetem o 
+paotech n EMDay an d ptuemt 4plicaSons foom in tea emng wth each 
+o thex ox with the Systom itrel. 
+Molh aski pg. Suppoat : facilitatee molhaking by ollowsiog m ulhjale 
+programsh aun Can Cuxatmtly with memoy pontec bon and tack 
+Sw itehing capqbilih eg 
+space of afB of phyeicol memoy 
+
+Dolhple pivge leu els : 
+lmple ments a hie rgbchical ppfechen model wjh bous 
+pmvilege leuel ocon t/ acc eRS o sgstemn seROUoes 
+and poeu emt oppli cahens 6aom peabosmi 0y 
+povilla ged opeogbo ns. 
+How pD tec ted mode wotks 
+Transihon ighe &0 356staa ts o Real mode gnd rhem 
+toansibons ho pro tec ted hode bysetiog 
+he poplcchon epable (E) bits in the 
+Seg mentuhon: segmen egishest Can tain selecht which 
+Lmemoby 9hee decCaplo>t Shàe theregment 
+base addaees limit and acceRL igbtr 
+Adoes tanslahon 2he Bo38 6 uSeg the segmeni 
+base addbeer and he obfset 630m tae 
+SEgment degislcr ho form a hneg gddhreer 
+Paging foph : if ema ble d the pagin9 unit foGnsatee teit 
+liness odgegs ia t physicol gdd'oeer 
+pzoviding the fincGl memosy locabon 
+
+Viaual &oB6_mode 
+Uishal 8os6_mod e. loftem w iH em as VE6 mode)ia 
+Specialopesahng m0de o 
+he lo le k&Op D ceaos 
+Cintoducedwit 
+fe 
+&o 256CPw) that allowc Be 
+eXecohon oß tal mode C&os6) 9ppliCahon inside q 
+Paotec ed 
+mode emyiDnment 
+Rey 6ea haec 
+)Real mde comnpahbill 
+-Execoles co66 ins tucbon S ec Is 
+he CPU wese io 
+oeal m Qde 
+l6 bit bEglshe20 bit Qddreecing 
+CLm Bald de2s cpace ) 
+Rn inside 
+poptec ted 
+mo de 
+-Each Sss6 tusk 
+as segD BO e d 
+memnDoy 
+addoeSing but the 0S 
+con em booTe pootccboo 
+3 Mulbple 
+s& 6_tasks 
+An opero hog yfem con sen molbple poc 
+applica hons qt once each in jk oLwn visal 
+80&6 
+mode enUjdDAMeDt 
+Reset 
+PReol gddbeeS mode 
+PE =O 
+Paptected gad e 
+Vival 8086 moe 
+Relet 
+RSm 
+RSm 
+Sye te 

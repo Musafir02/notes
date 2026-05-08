@@ -1,0 +1,176 @@
+Module 6
+I/O Management
+Disk Scheduling
+As we know, a process needs two type of time, CPU time and IO time. For I/O, it 
+requests the Operating system to access the disk.
+However, the operating system must be fare enough to satisfy each request and at the 
+same time, operating system must maintain the efficiency and speed of process 
+execution.
+The technique that operating system uses to determine the request which is to be 
+satisfied next is called disk scheduling.
+Let's discuss some important terms related to disk scheduling.
+Seek Time
+Seek time is the time taken in locating the disk arm to a specified track where the 
+read/write request will be satisfied.
+Rotational Latency
+It is the time taken by the desired sector to rotate itself to the position from where it 
+can access the R/W heads.
+Transfer Time
+It is the time taken to transfer the data.
+Disk Access Time
+Disk access time is given as,
+Disk Access Time = Rotational Latency + Seek Time + Transfer Time
+Disk Response Time
+It is the average of time spent by each request waiting for the IO operation.
+
+Purpose of Disk Scheduling
+The main purpose of disk scheduling algorithm is to select a disk request from the 
+queue of IO requests and decide the schedule when this request will be processed.
+Goal of Disk Scheduling Algorithm
+o
+Fairness
+o
+High throughout
+o
+Minimal traveling head time
+Disk Scheduling Algorithms
+The list of various disks scheduling algorithm is given below. Each algorithm is carrying 
+some advantages and disadvantages. The limitation of each algorithm leads to the 
+evolution of a new algorithm.
+o
+FCFS scheduling algorithm
+o
+SSTF (shortest seek time first) algorithm
+o
+SCAN scheduling
+o
+C-SCAN scheduling
+o
+LOOK Scheduling
+o
+C-LOOK scheduling
+FCFS Scheduling Algorithm
+It is the simplest Disk Scheduling algorithm. It services the IO requests in the order in 
+which they arrive. There is no starvation in this algorithm, every request is serviced.
+Disadvantages
+o
+The scheme does not optimize the seek time.
+o
+The request may come from different processes therefore there is the possibility 
+of inappropriate movement of the head.
+Example
+Consider the following disk request sequence for a disk with 100 tracks 45, 21, 67, 90, 
+4, 50, 89, 52, 61, 87, 25
+
+Head pointer starting at 50 and moving in left direction. Find the number of head 
+movements in cylinders using FCFS scheduling.
+Solution
+Number of cylinders moved by the head
+= (50-45)+(45-21)+(67-21)+(90-67)+(90-4)+(50-4)+(89-50)+(61-52)+(87-
+61)+(87-25)
+= 5 + 24 + 46 + 23 + 86 + 46 + 49 + 9 + 26 + 62
+= 376
+
+SSTF Scheduling Algorithm
+Shortest seek time first (SSTF) algorithm selects the disk I/O request which requires 
+the least disk arm movement from its current position regardless of the direction. It 
+reduces the total seek time as compared to FCFS.
+It allows the head to move to the closest track in the service queue.
+Disadvantages
+o
+It may cause starvation for some requests.
+o
+Switching direction on the frequent basis slows the working of algorithm.
+o
+It is not the most optimal algorithm.
+Example
+Consider the following disk request sequence for a disk with 100 tracks
+45, 21, 67, 90, 4, 89, 52, 61, 87, 25
+Head pointer starting at 50. Find the number of head movements in cylinders using 
+SSTF scheduling.
+Solution:
+
+Number of cylinders = 5 + 7 + 9 + 6 + 20 + 2 + 1 + 65 + 4 + 17 = 136
+SCAN and C-SCAN algorithm
+Scan Algorithm
+It is also called as Elevator Algorithm. In this algorithm, the disk arm moves into a 
+particular direction till the end, satisfying all the requests coming in its path,and then it 
+turns backand moves in the reverse direction satisfying requests coming in its path.
+It works in the way an elevator works, elevator moves in a direction completely till the 
+last floor of that direction and then turns back.
+Example
+Consider the following disk request sequence for a disk with 100 tracks
+98, 137, 122, 183, 14, 133, 65, 78
+Head pointer starting at 54 and moving in left direction. Find the number of head movements in 
+cylinders using SCAN scheduling.
+
+Number of Cylinders = 40 + 14 + 65 + 13 + 20 + 24 + 11 + 4 + 46 = 237
+C-SCAN algorithm
+In C-SCAN algorithm, the arm of the disk moves in a particular direction servicing 
+requests until it reaches the last cylinder, then it jumps to the last cylinder of the 
+opposite direction without servicing any request then it turns back and start moving in 
+that direction servicing the remaining requests.
+Example
+Consider the following disk request sequence for a disk with 100 tracks
+98, 137, 122, 183, 14, 133, 65, 78
+Head pointer starting at 54 and moving in left direction. Find the number of head 
+movements in cylinders using C-SCAN scheduling.
+No. of cylinders crossed = 40 + 14 + 199 + 16 + 46 + 4 + 11 + 24 + 20 + 13 = 387
+
+Look Scheduling
+It is like SCAN scheduling Algorithm to some extant except the difference that, in this 
+scheduling algorithm, the arm of the disk stops moving inwards (or outwards) when no 
+more request in that direction exists. This algorithm tries to overcome the overhead of 
+SCAN algorithm which forces disk arm to move in one direction till the end regardless of 
+knowing if any request exists in the direction or not.
+Example
+Consider the following disk request sequence for a disk with 100 tracks
+98, 137, 122, 183, 14, 133, 65, 78
+Head pointer starting at 54 and moving in left direction. Find the number of head 
+movements in cylinders using LOOK scheduling.
+Number of cylinders crossed = 40 + 51 + 13 + +20 + 24 + 11 + 4 + 46 = 209
+C Look Scheduling
+C Look Algorithm is similar to C-SCAN algorithm to some extent. In this algorithm, the 
+arm of the disk moves outwards servicing requests until it reaches the highest request 
+
+cylinder, then it jumps to the lowest request cylinder without servicing any request then 
+it again start moving outwards servicing the remaining requests.
+It is different from C SCAN algorithm in the sense that, C SCAN force the disk arm to 
+move till the last cylinder regardless of knowing whether any request is to be serviced 
+on that cylinder or not.
+Example
+Consider the following disk request sequence for a disk with 100 tracks
+98, 137, 122, 183, 14, 133, 65, 78
+Head pointer starting at 54 and moving in left direction. Find the number of head 
+movements in cylinders using C LOOK scheduling.
+Number of cylinders crossed = 11 + 13 + 20 + 24 + 11 + 4 + 46 + 169 = 298
+Numerical on SSTF and SCAN
+
+Question:
+Suppose the following disk request sequence (track numbers) for a disk with 100 tracks 
+is given: 45, 20, 90, 10, 50, 60, 80 and 70. Assume that the initial position of the R/W 
+head is on track 50. The additional distance that will be traversed by the R/W head 
+when the Shortest Seek Time First (SSTF) algorithm is used compared to the SCAN 
+(Elevator) algorithm (assuming that SCAN algorithm moves towards 100 when it starts 
+execution) is _________ tracks
+(A) 5
+(B) 9
+(C) 10
+(D) 11
+Using SSTF Algorithm
+Number of track are 100.
+Initial Position of R/W head is 50.
+The requests are: 45, 20, 90, 10, 50, 60, 80 and 70
+Number of crossed cylinders = 5 + 15 + 10 + 10 + 10 + 70 + 10 = 130
+Using SCAN Algorithm
+
+Number of cylinders crosses = 0 + 10 + 10 + 10 + 10 + 10 + 55 + 20 + 10 = 135
+Therefore the answer is (A). The SCAN algorithm travels for 5 additional tracks.
+Numerical on Disk Scheduling Algorithms
+Q. Consider a disk with 200 tracks and the queue has random 
+requests from different processes in the order:
+55, 58, 39, 18, 90, 160, 150, 38, 184
+Initially arm is at 100. Find the Average Seek length using FIFO, SSTF, SCAN and C-
+SCAN algorithm.
+Solution :
+

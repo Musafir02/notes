@@ -1,0 +1,282 @@
+[Page 1]
+The page appears to be a handwritten note on a topic related to data frames and word tokenization in Python. The main topic or heading is not explicitly stated, but the content suggests that it may be about processing text data using data frames and word tokenization techniques.
+
+The first concept explained on the page is the idea of adding new columns to a data frame. The note states that a new column called "num_words" is added to the data frame, where the number of words in each entry from the text column is calculated. This is done using the `apply` function, which applies a given function along the axis of the data frame. In this case, the function is `lambda x: len(x.split())`, which splits each entry into words and returns the count.
+
+The next concept explained is the use of the `apply` function with a lambda function to apply a given function along the axis of the data frame. The note provides an example of how to use this function to apply a function to each row of a data frame. The function is defined as `lambda x: x**2`, which squares each value in the column.
+
+The third concept explained is the use of the `nltk.word_tokenize()` function to tokenize words in a text. The note states that this function is a part of the NLTK Toolkit, a library in Python used for NLP. The function takes a string as input and returns a list of tokens (words).
+
+The fourth concept explained is the use of the `len()` function to calculate the length of a list of tokens. The note states that this function is used to compute the length of the list of tokens in the string.
+
+The fifth concept explained is the use of the `i=0` and `i=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The sixth concept explained is the use of the `j=0` and `j=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The seventh concept explained is the use of the `k=0` and `k=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The eighth concept explained is the use of the `len()` function to calculate the length of a list of tokens. The note states that this function is used to compute the length of the list of tokens in the string.
+
+The ninth concept explained is the use of the `i=0` and `i=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The tenth concept explained is the use of the `j=0` and `j=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The eleventh concept explained is the use of the `k=0` and `k=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The twelfth concept explained is the use of the `len()` function to calculate the length of a list of tokens. The note states that this function is used to compute the length of the list of tokens in the string.
+
+The thirteenth concept explained is the use of the `i=0` and `i=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The fourteenth concept explained is the use of the `j=0` and `j=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The fifteenth concept explained is the use of the `k=0` and `k=1` variables to iterate over the list of tokens. The note states that these variables are used to keep track of the index of the current token in the list.
+
+The sixteenth concept explained is the use of the
+
+[Page 2]
+The page appears to be a student's notes on a topic related to pattern recognition and indexing.
+
+The main topic or heading of the page is not explicitly stated, but it seems to be focused on understanding patterns and creating an index for them. The student has written down a table with two columns, labeled "a" and "b", and a third column with numbers from 1 to 5. The table is accompanied by a diagram that illustrates how to compare the patterns in the table.
+
+The student has also written down a formula for calculating the index of a pattern, which involves comparing the patterns in the table and determining their position. The formula is written as:
+
+i = j+1 (if match then move increment i &j)
+
+This formula suggests that the student is trying to create an algorithm for recognizing patterns and assigning an index to each one.
+
+The student has also provided some examples of how to apply this formula to different patterns. For instance, they have shown how to compare two patterns, "a b a b" and "a b a b d", and determine their position in the table. They have also shown how to calculate the index for a pattern that does not match any of the patterns in the table.
+
+Overall, the page suggests that the student is trying to develop a system for recognizing and indexing patterns, and is using a combination of tables, diagrams, and formulas to do so. The student's notes are clear and concise, and provide a good starting point for further study and exploration of this topic.
+
+**Key Concepts:**
+
+* Pattern recognition
+* Indexing patterns
+* Comparison of patterns
+* Positioning patterns in a table
+* Calculating the index of a pattern
+
+**Formulas and Equations:**
+
+* i = j+1 (if match then move increment i &j)
+
+**Diagrams and Figures:**
+
+* A table with two columns, labeled "a" and "b", and a third column with numbers from 1 to 5.
+* A diagram illustrating how to compare patterns in the table.
+
+**Definitions:**
+
+* Pattern: A sequence of symbols or characters that follow a specific order or structure.
+* Index: A unique identifier assigned to a pattern to distinguish it from others.
+
+**Examples:**
+
+* Comparing two patterns, "a b a b" and "a b a b d", and determining their position in the table.
+* Calculating the index for a pattern that does not match any of the patterns in the table.
+
+**Numerical Values:**
+
+* Numbers from 1 to 5 in the third column of the table.
+* Indices assigned to patterns in the table (e.g. i=2, j=3).
+
+[Page 3]
+**Summary of the Page**
+
+The page appears to be a handwritten note on guitar tablature, focusing on the concept of "backtracking" in music notation. The main topic is how to increment a note when it cannot be played back in the correct position.
+
+**Key Concepts and Formulas**
+
+*   **Backtracking**: When a note cannot be played back in the correct position, the next note is played one step lower than intended.
+*   **Incrementing**: The process of moving up or down a note in a sequence.
+*   **Note Values**: The page includes several note values, including whole notes, half notes, quarter notes, eighth notes, and sixteenth notes.
+
+**Diagrams and Figures**
+
+*   **Guitar Tablature**: The page features a guitar tablature diagram, which illustrates the layout of the fretboard and the notes that can be played on each string.
+*   **Note Positions**: The diagram shows the position of each note on the fretboard, including the note value and the string number.
+
+**Definitions and Examples**
+
+*   **Note Value**: A note value represents the duration of a note in music notation. Whole notes are played for four beats, half notes for two beats, quarter notes for one beat, eighth notes for half a beat, and sixteenth notes for a quarter of a beat.
+*   **Backtracking Example**: The page includes an example of backtracking, where a note is played one step lower than intended because it cannot be played back in the correct position.
+
+**Conclusion**
+
+In summary, the page provides a clear explanation of the concept of backtracking in music notation and how to increment a note when it cannot be played back in the correct position. The page includes diagrams and figures to illustrate the concept, as well as examples and definitions to help the student understand the material.
+
+[Page 4]
+The main topic of this page is Robin-Karp, a string matching algorithm used to find patterns in text. The algorithm works by comparing the hash value of the pattern with the hash value of the text, and if they match, then the pattern is found at that position.
+
+The algorithm uses a hash function to map a larger input value to a smaller output value, which is called the hash value. The hash function is used to compare the hash value of the pattern with the hash value of the text.
+
+The algorithm has three main steps:
+
+1. Calculate the hash value of the pattern.
+2. Calculate the hash value of the text.
+3. Compare the hash value of the pattern with the hash value of the text.
+
+If the hash values match, then the pattern is found at that position.
+
+The algorithm also uses a simple hash function, which is defined as:
+
+h = dm-1 mod q
+
+where h is the hash value, dm-1 is the length of the pattern, and q is a prime number.
+
+The algorithm also uses a variable p, which is initialized to 0. The variable p is used to keep track of the position of the pattern in the text.
+
+The algorithm also uses a variable t, which is initialized to 1. The variable t is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable s, which is initialized to 0. The variable s is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable n, which is initialized to 0. The variable n is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable m, which is initialized to 0. The variable m is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable q, which is initialized to 0. The variable q is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable h, which is initialized to 0. The variable h is used to keep track of the hash value of the pattern.
+
+The algorithm also uses a variable t, which is initialized to 0. The variable t is used to keep track of the hash value of the text.
+
+The algorithm also uses a variable p, which is initialized to 0. The variable p is used to keep track of the position of the pattern in the text.
+
+The algorithm also uses a variable s, which is initialized to 0. The variable s is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable n, which is initialized to 0. The variable n is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable m, which is initialized to 0. The variable m is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable q, which is initialized to 0. The variable q is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable h, which is initialized to 0. The variable h is used to keep track of the hash value of the pattern.
+
+The algorithm also uses a variable t, which is initialized to 0. The variable t is used to keep track of the hash value of the text.
+
+The algorithm also uses a variable p, which is initialized to 0. The variable p is used to keep track of the position of the pattern in the text.
+
+The algorithm also uses a variable s, which is initialized to 0. The variable s is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable n, which is initialized to 0. The variable n is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable m, which is initialized to 0. The variable m is used to keep track of the number of times the pattern has been found in the text.
+
+The algorithm also uses a variable q, which is initialized to 0. The variable q is used to keep track of the number of
+
+[Page 5]
+This page appears to be a handwritten note on the topic of "Hash Functions" in computer science.
+
+The main topic is the concept of hash functions, which are used to map data of any size to a fixed-size output, known as a hash value. The note explains that hash functions are used to store and retrieve data efficiently in computer systems. It also mentions that the hash function is used to convert the input data into a fixed-size output, which is then used to store and retrieve the data.
+
+The note provides a formula for calculating the hash value, which is:
+
+Hash function = (pattern [0] * (x^m-1) + pattern [1] * (x^m-2) + ... + pattern [n-1] * (x^0)) mod m
+
+where x is the input data, m is the length of the pattern, and n is the number of alphabets used in the text.
+
+The note also explains that the time complexity of the hash function is O(n*m), where n is the number of alphabets used in the text and m is the length of the pattern. This means that the time it takes to calculate the hash value increases linearly with the size of the input data.
+
+Additionally, the note mentions that the space complexity of the hash function is O(1), which means that the amount of memory required to store the hash value does not increase with the size of the input data.
+
+Overall, this note provides a clear and concise explanation of the concept of hash functions and their application in computer science. It also provides a formula for calculating the hash value and discusses the time and space complexity of the hash function.
+
+[Page 6]
+**Summary of the Page**
+
+The main topic or heading of this page is **"text: abcdefghijk"**, which appears to be a mathematical problem or exercise related to text manipulation.
+
+**Pattern: Cdef**
+
+The first section of the page discusses a pattern, labeled as **"Cdef"**, which is a sequence of characters that follows a specific rule. The rule is not explicitly stated, but it seems to involve the repetition of a certain character or sequence of characters. For example, the pattern **"Cdef"** is repeated three times, with each repetition having a different character in the second position (**"d"**, **"e"**, and **"f"**).
+
+**Multiplication: 18^n-1**
+
+The next section of the page deals with multiplication, specifically the calculation of **"18^n-1"**. This formula appears to be related to modular arithmetic, where the result of the multiplication is taken modulo 18. The page provides several examples of this calculation, including **"h(cdef) = h(8, 4, 5, 6) = 18"** and **"h(cabcde) = h(1, 2, 3, 4) = 10"**.
+
+**HCabed**
+
+The following section introduces a new concept, **"HCabed"**, which is defined as **"(1*10^3 + 2*10^2 + 3*10^1 + 4*10^0) mod 113"**. This formula appears to be a way of representing a numerical value using a combination of powers of 10 and modular arithmetic.
+
+**HCabed**
+
+The next section repeats the same formula, **"HCabed"**, but with a different set of values. This time, the formula is **"(2*10^3 + 3*10^2 + 4*10^1 + 5*10^0) mod 113"**.
+
+**HCabed**
+
+The final section of the page introduces another formula, **"HCabed"**, which is defined as **"(3*10^3 + 4*10^2 + 5*10^1 + 6*10^0) mod 113"**. This formula appears to be a variation of the previous ones, with different values being used.
+
+**Key Takeaways**
+
+In summary, this page discusses several mathematical concepts related to text manipulation and modular arithmetic. The key takeaways from this page are:
+
+* The pattern **"Cdef"** involves the repetition of a certain character or sequence of characters.
+* The formula **"18^n-1"** is used to calculate the result of multiplying a number by itself a certain number of times, modulo 18.
+* The concept of **"HCabed"** involves representing a numerical value using a combination of powers of 10 and modular arithmetic.
+* The formulas **"HCabed"** are variations of each other, with different values being used.
+
+Overall, this page provides a range of mathematical concepts and formulas that can be used to solve problems related to text manipulation and modular arithmetic.
+
+[Page 7]
+The page appears to be a handwritten note from a student's engineering class, covering the topic of modular arithmetic and its applications in coding theory. The main heading is not explicitly stated, but the content suggests that it may be related to "Modular Arithmetic" or "Coding Theory".
+
+**Modular Arithmetic**
+
+The page begins by explaining the concept of modular arithmetic, which involves performing arithmetic operations (addition, subtraction, multiplication, and division) on integers, but with a twist: the results are taken modulo some positive integer n. In other words, the remainder of the division of the result by n is the actual result. This is denoted by the symbol "mod" or "%". For example, if we have two integers a and b, and we want to find the result of a + b mod n, we would first add a and b, and then take the remainder of the result when divided by n.
+
+**Properties of Modular Arithmetic**
+
+The page highlights several important properties of modular arithmetic, including:
+
+* **Closure**: The result of any modular arithmetic operation is always an integer.
+* **Associativity**: The order in which we perform modular arithmetic operations does not affect the result.
+* **Commutativity**: The order in which we add or multiply integers does not affect the result.
+* **Distributivity**: The multiplication of two integers can be distributed over addition.
+
+**Examples**
+
+The page provides several examples to illustrate these properties. For instance, it shows that 2 + 3 mod 5 = 0, since 2 + 3 = 5, and 5 mod 5 = 0. It also demonstrates that 4 × 6 mod 7 = 3, since 4 × 6 = 24, and 24 mod 7 = 3.
+
+**Diagrams**
+
+There are two diagrams on the page, which illustrate the concept of modular arithmetic. The first diagram shows a circle with numbers 0 to 4 marked on it, representing the set of integers modulo 5. The second diagram shows a rectangle with numbers 0 to 6 marked on it, representing the set of integers modulo 7. These diagrams help to visualize the concept of modular arithmetic and how it works.
+
+**Key Concepts**
+
+Some important terms defined on the page include:
+
+* **Modulus**: The positive integer n that determines the result of a modular arithmetic operation.
+* **Residue**: The remainder of the division of the result by the modulus.
+
+Overall, the page provides a clear and concise introduction to modular arithmetic and its applications in coding theory. It covers the basic properties and concepts of modular arithmetic, and provides examples to illustrate these concepts. The diagrams help to visualize the concept and make it easier to understand.
+
+[Page 8]
+The main topic of this page is the Knuth-Morris-Pratt (KMP) algorithm, a method for solving the pattern matching problem. The KMP algorithm is used to find all occurrences of a given pattern in a text, which is useful when it comes to finding multiple patterns.
+
+The KMP algorithm works by avoiding redundant comparisons. To avoid such redundancy, Knuth-Morris-Pratt developed a linear sequence - matching algorithm named the KMP pattern matching algorithm. The algorithm starts the search operation from left to right. It uses the prefix function to avoid unnecessary comparisons while searching for the pattern. This function stores the number of characters matched so far, which is known as LPS value.
+
+The LPS value is calculated by determining a prefix function. The prefix function is calculated by sliding the pattern over the text for comparison. If all the characters match, we have found a match. If not, we use the prefix function to skip unnecessary comparisons.
+
+The steps of the KMP algorithm are:
+
+1. Define a prefix function.
+2. Slide the pattern over the text for comparison.
+3. If all the characters match, we have found a match.
+4. If not, use the prefix function to skip unnecessary comparisons.
+
+If the LPS value of the previous character from the mismatched character is 10, then start comparison from index 0 of the pattern with the next character in the text. However, if the LPS value is more than 10, start the comparison from index value equal to LPS value of the previously mismatched character.
+
+In summary, the KMP algorithm is a method for solving the pattern matching problem by avoiding redundant comparisons. It uses the prefix function to store the number of characters matched so far and to skip unnecessary comparisons. The algorithm starts the search operation from left to right and uses the LPS value to determine the next character to compare.
+
+[Page 9]
+The page in question appears to be a handwritten note on a lined piece of paper, focusing on the concept of suffixes and their relationship to the longest prefix that is also a suffix (LPS). The main topic or heading is not explicitly stated, but the content suggests that it is related to string manipulation or algorithm design.
+
+The first section of the page introduces the concept of a suffix and its significance in finding the longest prefix that is also a suffix. It explains that a suffix is a part of a string that comes after a certain point, and that the longest prefix that is also a suffix is the longest substring that appears at the beginning and end of the string.
+
+The next section presents a table with various strings and their corresponding LPS values. The table is divided into two columns, with the first column listing the strings and the second column showing the LPS values for each string. The LPS values are represented by a number, which indicates the length of the longest prefix that is also a suffix for each string.
+
+The third section of the page provides an example of how to use the LPS table to find the longest prefix that is also a suffix for a given string. It explains that the LPS value for a string can be used to determine the longest prefix that is also a suffix by looking up the value in the table and using it to construct the prefix.
+
+The fourth section of the page presents a diagram illustrating the concept of a suffix and its relationship to the longest prefix that is also a suffix. The diagram shows a string with a suffix highlighted, and a prefix that is also a suffix is shown in bold. The diagram helps to visualize the concept and make it easier to understand.
+
+Overall, the page provides a clear and concise explanation of the concept of suffixes and their relationship to the longest prefix that is also a suffix. It also provides examples and diagrams to help illustrate the concept and make it easier to understand.

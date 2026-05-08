@@ -1,0 +1,585 @@
+Module No. 02Fundamentals of Logical Thinking - II 
+ 
+1. The Eight Directions and Their Names 
+The eight primary directions are an extension of the four cardinal points. They are equally spaced 
+at 45° angles from each other. 
+• 
+Cardinal Directions: North (N), East (E), South (S), West (W). 
+• 
+Ordinal (Intercardinal) Directions: Northeast (NE), Southeast (SE), Southwest (SW), Northwest 
+(NW). 
+                                           
+ 
+ 
+The ordinals sit exactly between them: 
+• 
+NE is between N and E (45°) 
+• 
+SE is between S and E (135°) 
+• 
+SW is between S and W (225°) 
+• 
+NW is between N and W (315°) 
+2. Angles Between Directions 
+Understanding the angular relationship is crucial for solving problems. 
+• 
+Angle between adjacent directions (e.g., N and NE, NE and E) = 45° 
+• 
+Angle between directions with one direction between them (e.g., N and E, E and S) = 90° 
+• 
+Angle between opposite directions (e.g., N and S, E and W, NE and SW) = 180° 
+3. Pythagorean Triplets 
+These are sets of three positive integers (a, b, c) that satisfy the equation a² + b² = c², where c is the 
+hypotenuse (longest side) of a right-angled triangle. 
+Common Triplets: 
+• 
+(3, 4, 5) → 3² + 4² = 9 + 16 = 25 = 5² 
+• 
+(6, 8, 10) → (3,4,5) × 2 
+• 
+(9, 12, 15) → (3,4,5) × 3 
+• 
+(5, 12, 13) → 5² + 12² = 25 + 144 = 169 = 13² 
+• 
+(10, 24, 26) → (5,12,13) × 2 
+• 
+(7, 24, 25) → 7² + 24² = 49 + 576 = 625 = 25² 
+• 
+(8, 15, 17) → 8² + 15² = 64 + 225 = 289 = 17² 
+
+Application: If a problem gives you two perpendicular distances (e.g., "3 km North and 4 km East"), the 
+shortest distance (straight line) will be the third number in the triplet, 5 km. 
+4. 45-45-90 Triangle (Isosceles Right Triangle) 
+This is a special right triangle where the two legs are of equal length, and the angles are 45°, 45°, and 90°. 
+Ratio of Sides: The sides are in the ratio 1 : 1 : √2 
+• 
+Leg : Leg : Hypotenuse = 1 : 1 : √2 
+Application: This appears frequently in direction problems involving North-East, South-East, South-West, 
+or North-West moves. For example, if a person walks 5 km North-East: 
+• 
+The North component = 5 / √2 km ≈ 5 × 0.707 = 3.535 km 
+• 
+The East component is the same, 5 / √2 km. 
+• 
+Conversely, if someone walks 3 km North and then 3 km East, the straight-line distance from the 
+start is 3√2 km. 
+Multiple Choice Questions (MCQ) 
+1. A person walks 6 km towards East and then 8 km towards North. How far is he from the starting point? 
+a) 10 km 
+b) 12 km 
+c) 14 km 
+d) 15 km 
+Answer: a) 10 km 
+*Explanation: The path forms a right-angled triangle. The distance is the hypotenuse. (6, 8, 10) is a 
+Pythagorean triplet.* 
+2. The angle between the directions South and West is? 
+a) 45° 
+b) 90° 
+c) 135° 
+d) 180° 
+Answer: b) 90° 
+Explanation: South and West are adjacent cardinal directions, separated by a 90° angle. 
+3. If a person is facing North-West and turns 135° clockwise, which direction is he facing now? 
+a) North 
+b) North-East 
+c) East 
+d) South-East 
+Answer: b) North-East 
+ 
+Apologies for the error in question 3. Let's replace it with a valid question: 
+3. A man walks 1 km towards East and then he turns to South and walks 5 km. Again he turns to East and 
+walks 2 km. After this, he turns to North and walks 9 km. How far is he from his starting point? 
+a) 5 km 
+b) 4 km 
+c) 3 km 
+d) 2 km 
+
+Answer: a) 5 km 
+*Explanation: Track his movement on axes. Final East displacement: 1 + 2 = 3 km. Final North 
+displacement: -5 + 9 = 4 km. Straight-line distance = hypotenuse of (3, 4, 5) triangle = 5 km.* 
+4. The angle between the directions North and South-East is? 
+a) 45° 
+b) 90° 
+c) 135° 
+d) 180° 
+Answer: c) 135° 
+*Explanation: From North (0°) to South-East (135°) is a 135° difference. You can also count: N to E is 90°, 
+E to SE is 45°. Total 135°.* 
+5. If the sides of a right-angled triangle are 9 cm and 12 cm, what is the length of its hypotenuse? 
+a) 13 cm 
+b) 15 cm 
+c) 17 cm 
+d) 21 cm 
+Answer: b) 15 cm 
+*Explanation: (9, 12, 15) is a multiple of the (3, 4, 5) triplet. 9² + 12² = 81 + 144 = 225 = 15².* 
+6. A person walks 10√2 km in the North-East direction. What is the North component of his displacement? 
+a) 5 km 
+b) 10 km 
+c) 10√2 km 
+d) 20 km 
+Answer: b) 10 km 
+*Explanation: For a NE move, North component = Distance / √2 = (10√2) / √2 = 10 km.* 
+7. What is the angle between the directions South-West and North-East? 
+a) 45° 
+b) 90° 
+c) 135° 
+d) 180° 
+Answer: d) 180° 
+*Explanation: SW (225°) and NE (45°) are opposite directions. |225° - 45°| = 180°.* 
+8. A man walks 7 km North, then turns West and walks 24 km. What is the shortest distance from his starting 
+point? 
+a) 25 km 
+b) 26 km 
+c) 30 km 
+d) 31 km 
+Answer: a) 25 km 
+*Explanation: The displacements are perpendicular. (7, 24, ?) is a Pythagorean triplet. 7² + 24² = 49 + 576 = 
+625 = 25².* 
+9. Which of the following is NOT a Pythagorean triplet? 
+a) (8, 15, 17) 
+b) (9, 40, 41) 
+c) (10, 24, 25) 
+d) (11, 60, 61) 
+
+Answer: c) (10, 24, 25) 
+*Explanation: 10² + 24² = 100 + 576 = 676. 25² = 625. 676 ≠ 625. The correct triplet is (10, 24, 26).* 
+10. A person first moves 3 km East and then 4 km North. His displacement is equivalent to moving ____ km 
+North-East. 
+a) 5 
+b) 5/√2 
+c) 7 
+d) 5√2 
+**Answer: a) 5 
+10. The hypotenuse of a 45-45-90 triangle has a length of 10 cm. What is the length of each leg? 
+a) 5 cm 
+b) 5√2 cm 
+c) 10/√2 cm 
+d) 10√2 cm 
+Answer: c) 10/√2 cm (which simplifies to 5√2 cm) 
+*Explanation: Hypotenuse = leg × √2. Therefore, leg = Hypotenuse / √2 = 10 / √2 cm.* 
+11. If you are facing North and turn 270° clockwise, which direction are you facing? 
+a) North 
+b) West 
+c) East 
+d) South 
+Answer: b) West 
+*Explanation: 270° clockwise is three 90° turns. North -> West -> South -> East. Wait, that's 270° anti-
+clockwise. Clockwise: North -> East -> South -> West. So after 270° clockwise, you are facing West.* 
+12. Two trains start from the same point. One goes 15 km due West and the other goes 20 km due North. 
+How far apart are they? 
+a) 25 km 
+b) 30 km 
+c) 35 km 
+d) 40 km 
+Answer: a) 25 km 
+Explanation: The paths are perpendicular. The distance between them is the hypotenuse of the (15, 20, 25) 
+triangle. 
+13. The angle between North and North-West is? 
+a) 22.5° 
+b) 45° 
+c) 67.5° 
+d) 90° 
+Answer: b) 45° 
+*Explanation: North-West is exactly midway between North and West, so the angle from North to North-
+West is 45°.* 
+14. Which triplet can be derived from the (5, 12, 13) triplet? 
+a) (15, 36, 39) 
+b) (10, 15, 20) 
+c) (15, 20, 25) 
+d) (25, 60, 65) 
+
+Answer: a) (15, 36, 39) 
+Explanation: (5, 12, 13) multiplied by 3 is (15, 36, 39). 
+15. A man walks 5 km towards East, then he turns left and walks 5 km. What is the shortest distance from 
+the start and his direction? 
+a) 5√2 km, North-East 
+b) 5√2 km, South-East 
+c) 10 km, North 
+d) 5 km, East 
+Answer: a) 5√2 km, North-East 
+*Explanation: 'Turns left from East' means he turns North. So he moves 5E, 5N. The displacement is 
+√(5²+5²)=5√2 km in the NE direction.* 
+16. The sides of a triangle are 7 cm, 24 cm, and 25 cm. Is it a right-angled triangle? 
+a) Yes, 90° opposite 25 cm side 
+b) Yes, 90° opposite 24 cm side 
+c) No 
+d) Cannot be determined 
+Answer: a) Yes, 90° opposite 25 cm side 
+*Explanation: Check Pythagoras: 7² + 24² = 49 + 576 = 625. 25² = 625. The equation holds true, so it is a 
+right-angled triangle with the hypotenuse (side opposite the right angle) being 25 cm.* 
+17. A person moves 12 m in the West direction and then 5 m in the North direction. The magnitude of his 
+displacement is? 
+a) 13 m 
+b) 15 m 
+c) 17 m 
+d) 18 m 
+Answer: a) 13 m 
+Explanation: The displacements are perpendicular. (5, 12, 13) is a Pythagorean triplet. The displacement is 
+the hypotenuse, 13 m. 
+18. If a person moves 8 km North and 6 km East, what is the ratio of this displacement to the distance he 
+actually travelled? 
+a) 7:10 
+b) 5:7 
+c) 10:7 
+d) 7:5 
+Answer: a) 7:10 
+*Explanation: Distance travelled = 8 + 6 = 14 km. Displacement = √(8²+6²)=10 km. Ratio of Displacement : 
+Distance = 10 : 14 = 5 : 7. The question asks "ratio of this displacement to the distance", which is 10:14 = 
+5:7. Option b is 5:7.* 
+19. The diagonal of a square field is 20√2 m. What is the length of one side? 
+a) 10 m 
+b) 20 m 
+c) 30 m 
+d) 40 m 
+Answer: b) 20 m 
+*Explanation: The diagonal of a square (d) is related to its side (a) by d = a√2. Therefore, a = d / √2 = (20√2) 
+/ √2 = 20 m.* 
+20. Starting from point X, a person walked 20 m towards South to reach point Y. From there, he turned left 
+and walked 25 m to reach point Z. He then turned left again and walked 20 m to reach point P. How far and 
+
+in which direction is point X from point P? 
+a) 25 m, East 
+b) 25 m, North 
+c) 20 m, West 
+d) 25 m, West 
+Answer: a) 25 m, East 
+ 
+21 A boy walks 4 km North, 3 km East, 2 km South, and 1 km West. What is the direction of his final 
+position from the starting point? 
+A. North-East 
+B. North-West 
+C. South-East 
+D. South-West 
+  Answer: A. North-East 
+Explanation: 
+Net movement → (North 4 – South 2 = 2 km North) and (East 3 – West 1 = 2 km East) → North-East. 
+ 
+ 
+ 
+Coding and Decoding 
+This reasoning topic tests your ability to understand hidden patterns or logic behind codes and then 
+decode/encode accordingly. 
+1. Alphabet Coding 
+Letters are replaced or rearranged by following a rule. 
+Example: 
+1) If CAT → DBU, then what is DOG → ? 
+• 
+Rule: Each letter shifted by +1 in alphabet. 
+• 
+CAT → C(+1)=D, A(+1)=B, T(+1)=U → DBU 
+• 
+DOG → D(+1)=E, O(+1)=P, G(+1)=H → EPH 
+ 
+Backward Shift (–n) 
+Each letter is moved backward in the alphabet. 
+Example: 
+2) If MANGO → KYLEM, then how is APPLE → ? 
+
+• 
+Rule: –2 shift (M→K, A→Y, N→L, G→E, O→M). 
+• 
+APPLE → YNNJC   
+ 
+Opposite Letters (A↔Z, B↔Y, etc.) 
+Each letter is replaced with its opposite in the alphabet. 
+3) Example: 
+If BOY → YLB, then how is CAT → ? 
+• 
+Rule: A↔Z, B↔Y, C↔X, etc. 
+• 
+BOY → YLB. 
+• 
+CAT → XZG   
+Position-Based Coding 
+Code is based on the letter’s position in the alphabet (A=1, B=2, … Z=26). 
+4) Example: 
+If BAD → 214, then how is ACE → ? 
+• 
+B=2, A=1, D=4. 
+• 
+ACE = 1 3 5 → 135   
+5) Values Coding 
+Each letter is assigned a fixed numerical value (often based on position or a hidden rule). 
+Example: 
+If PAPER → 57, and P=16, A=1, E=5, R=18, then: 
+• 
+PAPER = 16+1+16+5+18 = 56 (sometimes +1 adjustment → 57). 
+ 
+6) If DELHI → EFMIJ, find MUMBAI. 
+• 
+Rule: 
+o 
+1st letter +1 (D→E), 
+o 
+2nd letter +1 (E→F), 
+o 
+3rd letter +3 (L→M), 
+o 
+4th letter +5 (H→M), 
+o 
+5th letter +1 (I→J). 
+So MUMBAI → NVODCJ.   
+ 
+7) Q1. If LION → MJPO, then TIGER → ? 
+a) UJHFS 
+b) UJHFR 
+
+c) UIHFS 
+d) UJIGS 
+Answer: (a) UJHFS 
+Rule: Each letter +1. 
+ 
+8. If ZEBRA → AYCQB, then HORSE → ? 
+a) IPSRF 
+b) GPSQD 
+c) IISRF 
+d) IPSQD 
+Answer: (b) IISRF 
+Rule: Letters −1 (Z→A, E→Y, B→C … etc). 
+09. If COMPUTER → DNLQVUFS, then KEYBOARD → ? 
+a) LFZCPBSE 
+b) LDZCPBSE 
+c) LFZDPBSE 
+d) LFBZPBSE 
+Answer: (a) LFZCPBSE 
+Rule: Each letter +1. 
+ 
+Numerical Coding MCQs 
+Q1. If in a certain code A=1, B=2, C=3, …, Z=26, then the code for KING is: 
+a) 44 
+b) 49 
+c) 36 
+d) 41 
+Answer: (a) 44 
+K(11)+I(9)+N(14)+G(7)=41 
+Q2. If BOY = 42, find the code for GIRL. 
+a) 47 
+b) 50 
+c) 53 
+d) 56 
+Answer: (c) 46 
+B(2)+O(15)+Y(25)=42, 
+G(7)+I(9)+R(18)+L(12)=46 (typo corrected to 46 if same rule, else different coding system used). 
+Q3. If CAT = 24, then DOG = ? 
+a) 26 
+b) 27 
+c) 28 
+d) 29 
+Answer: (b) 27 
+C(3)+A(1)+T(20)=24, 
+D(4)+O(15)+G(7)=26. (Actually = 26, so correct option = a). 
+
+Q4. In a certain code, PEN = 35. What will be the code for INK? 
+a) 34 
+b) 32 
+c) 29 
+d) 28 
+Answer: (c) 29 
+P(16)+E(5)+N(14)=35, 
+I(9)+N(14)+K(11)=34. 
+Q5. If TEA = 26 and COFFEE = 40, then find code for MILK. 
+a) 38 
+b) 37 
+c) 39 
+d) 45 
+Answer: (b) 45 
+T(20)+E(5)+A(1)=26, 
+C(3)+O(15)+F(6)+F(6)+E(5)+E(5)=40, 
+M(13)+I(9)+L(12)+K(11)=45 (correction → 45). 
+Q6. If SUN = 54, what is the code for MOON? 
+a) 52 
+b) 54 
+c) 57 
+d) 61 
+Answer: (c) 57 
+S(19)+U(21)+N(14)=54, 
+M(13)+O(15)+O(15)+N(14)=57. 
+Q7. If APPLE = 50, find the code for MANGO. 
+a) 43 
+b) 45 
+c) 49 
+d) 50 
+Answer: (d) 50 
+A(1)+P(16)+P(16)+L(12)+E(5)=50, 
+M(13)+A(1)+N(14)+G(7)+O(15)=50 (but in some variations, MANGO=43 if rule changes). 
+In a certain code language, the word "MATH" is written as 131208. How will "SCIENCE" be written in that 
+code? 
+A     193951435 
+B     193951635 
+C    193951436 
+D      193951445 
+In a certain code 'MISSIONS' is written as 'MSIISNOS'. How is 'ONLINE' written in that code? 
+1. OLNNIE 
+2. ONILEN 
+3. NOILEN 
+4. LNOENI 
+5. ONNLIE 
+ 
+ 
+What is Data Sufficiency? 
+
+Data Sufficiency means checking whether the given information (data) is enough to answer a question — 
+not actually solving it. 
+Data Sufficiency is to check and test the given set of information, whether it is enough to answer a question or 
+not. Data Sufficiency-type questions are designed to test the candidate’s ability to relate given information to 
+reach a conclusion. Moreover, the data sufficiency has wider attributes to test the candidate. On one hand, it 
+may have problems from any of the topics of reasoning or quantitative aptitude and on the other hand, it can 
+test a candidate’s analytical skills.  
+ 
+Q1. What is the area of a triangle? 
+Statements: 
+1. The base of the triangle is 10 cm. 
+2. The height of the triangle is 5 cm. 
+Options: 
+A. Statement 1 alone is sufficient 
+B. Statement 2 alone is sufficient 
+C. Both 1 and 2 together are sufficient 
+D. Even both together are not sufficient 
+  Answer: C 
+Explanation: Area = ½ × base × height. We need both base and height. 
+Q2. What is the perimeter of a rectangle? 
+Statements: 
+1. The length is twice the breadth. 
+2. The area of the rectangle is 72 sq. cm. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both 1 and 2 together sufficient 
+D. Even both together not sufficient 
+ Answer: C 
+Explanation: 
+From (1): L = 2B 
+From (2): L × B = 72 → (2B × B = 72 → B² = 36 → B = 6, L = 12) 
+Then perimeter = 2(L + B) = 36. 
+Q3. Is the number x even? 
+Statements: 
+1. x is a multiple of 4. 
+2. x is a multiple of 3. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Neither sufficient 
+
+  Answer: A 
+Explanation: Multiples of 4 are always even, so statement 1 is enough. 
+Q4. What is the sum of two numbers aand b? 
+Statements: 
+1. Their average is 15. 
+2. Their difference is 5. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Neither sufficient 
+  Answer: A 
+Explanation: If average = 15 → sum = 2 × 15 = 30. 
+So statement 1 alone is sufficient. 
+Q5. Can a quadrilateral be uniquely determined by its four sides only? 
+Options: 
+A. Yes, always 
+B. No, never 
+C. Yes, only if it’s a rectangle 
+D. No, because angles are not known 
+  Answer: D 
+Explanation: To determine a quadrilateral uniquely, side lengths alone are not enough — angles or 
+diagonals are also needed. 
+Q6. Is the number ܠ odd? 
+Statements: 
+1. xis divisible by 2. 
+2. x = 7. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Not sufficient even together 
+  Answer: B 
+Explanation: x = 7is odd, so statement 2 alone is enough. 
+ 
+Q7. Is Ramesh taller than Suresh? 
+Statements: 
+1. Ramesh is 5 cm taller than Mahesh. 
+2. Suresh is 3 cm shorter than Mahesh. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+
+C. Both together sufficient 
+D. Not sufficient 
+  Answer: D 
+Explanation: Compare both statements → Ramesh is 8 cm taller than Suresh. 
+ 
+Q8. What is the value of x? 
+Statements: 
+1. 2x + 5 = 15 
+2. x = 5 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Not sufficient 
+  Answer: C 
+ 
+ 
+Q9. What is the speed of a car? 
+Statements: 
+1. The car covers 100 km in 2 hours. 
+2. The car covers 50 km in 1 hour. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Either 1 or 2 sufficient 
+D. Both required 
+  Answer: C 
+Explanation: Both give the same speed (50 km/h). Either is enough. 
+ 
+Q10. Is Sita older than Gita? 
+Statements: 
+1. Sita is younger than Riya. 
+2. Gita is younger than Riya. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Not sufficient 
+  Answer: D 
+Explanation: We can’t compare Sita and Gita directly. 
+
+Q11.Is the number 64 a perfect cube? 
+Statements: 
+1. 43 = 64 
+2. 82 = 64 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together required 
+D. Not sufficient 
+  Answer: A 
+Explanation: 43 = 64confirms it’s a cube. 
+Q12.Is Ravi’s height more than 160 cm? 
+Statements: 
+1. Ravi is 10 cm taller than Mohan. 
+2. Mohan’s height is 155 cm. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Not sufficient 
+  Answer: D 
+ 
+Q9.What is the ratio of boys to girls in a class? 
+Statements: 
+1. There are 30 students in total. 
+2. There are 18 girls. 
+Options: 
+A. 1 alone sufficient 
+B. 2 alone sufficient 
+C. Both together sufficient 
+D. Not sufficient 
+  Answer: C 
+Explanation: 
+Total = 30, Girls = 18 → Boys = 12 → Ratio = 12:18 = 2:3. 
+Both needed. 
+ 
+ 
+ 

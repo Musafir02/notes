@@ -1,0 +1,6002 @@
+Operating System  
+Notes 
+Module 1  
+Fundamentals of  Operating System 
+ 
+●​ Introduction of Operating Systems: 
+An Operating System (OS) is the core software that acts as an interface between a computer’s 
+hardware and the user. It manages all hardware resources and provides a platform for running 
+application programs like browsers, games, and word processors.  
+ 
+●​ System Boot 
+System booting is the process of starting a computer and loading the operating system into 
+memory so the system becomes ready to use.  
+What Happens During Booting? 
+            When you press the power button, a sequence of steps takes place: 
+1.​ Power On​
+ The computer receives power and hardware components initialize. 
+2.​ Firmware Execution (BIOS/UEFI)​
+ The system runs firmware like BIOS or UEFI.​
+ It performs a POST (Power-On Self-Test) to check hardware (RAM, keyboard, etc.). 
+3.​ Boot Device Selection​
+ The firmware looks for a bootable device (hard drive, SSD, USB). 
+4.​ Bootloader Execution​
+ A program called the bootloader (e.g., GRUB) is loaded.​
+ It is responsible for loading the operating system kernel. 
+5.​ Kernel Loading​
+ The OS kernel is loaded into RAM and takes control of the system. 
+6.​ System Initialization​
+ The OS starts essential services and prepares the user interface 
+Types of Booting 
+1. Cold Boot (Hard Boot) 
+●​ Starting the computer from a completely powered-off state. 
+●​ Example: Turning on your PC in the morning. 
+
+2. Warm Boot (Soft Boot) 
+●​ Restarting the computer without turning off the power. 
+●​ Example: Clicking "Restart" in the OS. 
+Why Booting Is Important 
+●​ Initializes hardware 
+●​ Loads the operating system 
+●​ Ensures the system is ready for user interaction 
+Objectives of an Operating System 
+An Operating System (OS) is designed with a few core objectives that ensure a computer system works 
+efficiently, reliably, and conveniently for users. 
+ 
+1. Convenience (Ease of Use) 
+The OS makes the computer easy to use by providing user-friendly interfaces like: 
+●​ Graphical interfaces (windows, icons, menus) 
+●​ Command-line interfaces 
+Without an OS, interacting with hardware directly would be extremely complex. 
+ 
+2. Efficiency (Resource Utilization) 
+An OS ensures that hardware resources such as CPU, memory, and storage are used effectively: 
+●​ Allocates CPU time to processes 
+●​ Manages memory efficiently 
+●​ Reduces idle time of resources 
+ 
+3. Ability to Evolve (Flexibility & Upgradability) 
+Operating systems should be adaptable: 
+●​ Allow new features and updates 
+●​ Support new hardware and software 
+
+●​ Improve performance over time 
+ 
+4. Resource Management 
+The OS manages all system resources: 
+●​ CPU management (process scheduling) 
+●​ Memory management 
+●​ Device management 
+●​ File management 
+ 
+5. Security and Protection 
+Protects data and programs from unauthorized access: 
+●​ User authentication (passwords, biometrics) 
+●​ Access control and permissions 
+●​ Data protection mechanisms 
+ 
+6. Control of System Performance 
+The OS monitors and controls system performance: 
+●​ Tracks resource usage 
+●​ Optimizes system speed 
+●​ Handles errors and recovery 
+ 
+7. Multitasking and Sharing 
+Allows multiple programs and users to share system resources: 
+●​ Runs several applications simultaneously 
+●​ Supports multi-user environments 
+Functions of an Operating System 
+
+An Operating System (OS) performs several essential functions to ensure a computer system runs 
+smoothly and efficiently. 
+ 
+1. Process Management 
+●​ Creates, schedules, and terminates processes (programs in execution) 
+●​ Allocates CPU time to different tasks 
+●​ Enables multitasking 
+👉 Example: Running a browser and music player at the same time 
+ 
+2. Memory Management 
+●​ Manages primary memory (RAM) 
+●​ Allocates and deallocates memory to programs 
+●​ Ensures efficient memory usage and prevents conflicts 
+ 
+3. File System Management 
+●​ Organizes data into files and directories 
+●​ Handles file creation, deletion, reading, and writing 
+●​ Maintains file permissions and access 
+ 
+4. Device Management 
+●​ Controls input/output devices like keyboard, mouse, printer, and disk 
+●​ Uses device drivers to communicate with hardware 
+●​ Manages device allocation and usage 
+ 
+5. Secondary Storage Management 
+●​ Manages data stored on hard disks/SSDs 
+●​ Handles disk scheduling and space allocation 
+●​ Keeps track of free and used storage 
+
+ 
+6. Security and Protection 
+●​ Prevents unauthorized access to data and system resources 
+●​ Provides authentication (login systems) 
+●​ Protects against threats and errors 
+ 
+7. User Interface (UI) 
+●​ Provides a way for users to interact with the system: 
+○​ Graphical User Interface (GUI) 
+○​ Command Line Interface (CLI) 
+ 
+8. Networking 
+●​ Manages network connections and communication between computers 
+●​ Enables internet access and resource sharing 
+ 
+9. Error Detection and Handling 
+●​ Detects system errors (hardware/software) 
+●​ Takes corrective actions to maintain system stability 
+ 
+10. Accounting and Performance Monitoring 
+●​ Tracks system usage (CPU time, memory usage) 
+●​ Helps in optimizing performance 
+ 
+Operating System Structure and Operations 
+Understanding how an Operating System (OS) is organized (structure) and how it works internally 
+(operations) is key to learning OS concepts. 
+ 
+
+1. Operating System Structure 
+The structure of an OS refers to how its components are arranged and interact with each other. 
+Basic Layered View 
+ 
+
+ 
+ 
+6 
+User → Application Programs → Operating System → Hardware 
+ 
+Types of OS Structures 
+
+1. Simple Structure 
+●​ No clear separation between components 
+●​ All functions are mixed together 
+👉 Example: Early systems like MS-DOS 
+ 
+2. Layered Structure 
+●​ OS is divided into layers 
+●​ Each layer performs specific functions 
+●​ Higher layers depend on lower layers 
+✔ Easy to design and debug 
+ 
+3. Monolithic Structure 
+●​ Entire OS works as a single large unit 
+●​ All services run in kernel space 
+👉 Example: Linux kernel 
+✔ Fast performance​
+ ❌ Hard to maintain 
+ 
+4. Microkernel Structure 
+●​ Only essential functions are in the kernel 
+●​ Other services run in user space 
+👉 Example: Minix 
+✔ More secure and stable​
+ ❌ Slightly slower due to communication overhead 
+ 
+5. Modular Structure 
+●​ Uses loadable modules 
+
+●​ Combines benefits of monolithic and microkernel 
+✔ Flexible and efficient 
+ 
+6. Hybrid Structure 
+●​ Mix of monolithic and microkernel approaches 
+👉 Examples: 
+●​ Windows NT 
+●​ macOS 
+ 
+2. Operating System Operations 
+OS operations describe how the system actually runs and manages tasks. 
+ 
+Key OS Operations 
+1. Process Execution 
+●​ Loads programs into memory 
+●​ Executes and manages processes 
+ 
+2. Interrupt Handling 
+●​ Responds to signals from hardware or software 
+●​ Ensures immediate attention to important events 
+ 
+3. System Calls 
+●​ Interface between user programs and OS 
+●​ Programs request services like file access 
+
+ 
+4. I/O Operations 
+●​ Manages input/output devices 
+●​ Provides controlled access to hardware 
+ 
+5. Memory Operations 
+●​ Allocates and frees memory 
+●​ Handles virtual memory 
+ 
+6. File System Operations 
+●​ Creates, deletes, reads, and writes files 
+ 
+7. Resource Allocation 
+●​ Distributes CPU, memory, and devices among processes 
+ 
+8. Protection and Security 
+●​ Prevents unauthorized access 
+●​ Isolates processes from each other 
+ 
+Operating System Services 
+Operating System Services are the functions provided by the OS to help users and programs interact 
+with the computer system efficiently and safely. 
+ 
+1. User Interface (UI) 
+The OS provides a way for users to interact with the system: 
+
+●​ GUI (Graphical User Interface) – windows, icons, menus 
+●​ CLI (Command Line Interface) – text-based commands 
+ 
+2. Program Execution 
+●​ Loads a program into memory 
+●​ Runs and terminates programs 
+●​ Handles errors during execution 
+ 
+3. I/O Operations 
+●​ Manages input and output devices (keyboard, mouse, printer) 
+●​ Provides a standard interface for device communication 
+ 
+4. File System Manipulation 
+●​ Creates, deletes, reads, and writes files 
+●​ Organizes files into directories 
+●​ Manages file permissions 
+ 
+5. Communication (Inter-Process Communication) 
+●​ Allows processes to exchange data 
+●​ Can be done through: 
+○​ Shared memory 
+○​ Message passing 
+ 
+6. Error Detection 
+●​ Detects errors in hardware and software 
+●​ Takes appropriate action to maintain system stability 
+ 
+7. Resource Allocation 
+
+●​ Allocates CPU, memory, and devices to processes 
+●​ Ensures fair and efficient usage 
+ 
+8. Accounting 
+●​ Keeps track of system usage 
+●​ Monitors performance and resource consumption 
+ 
+9. Protection and Security 
+●​ Controls access to system resources 
+●​ Prevents unauthorized access 
+●​ Ensures data safety 
+Multiprogramming and Multitasking 
+These are two important concepts in operating systems that improve how efficiently a computer uses its 
+CPU. 
+ 
+1. Multiprogramming 
+What is Multiprogramming? 
+Multiprogramming means keeping multiple programs in memory at the same time so the CPU 
+always has something to execute. 
+How It Works 
+●​ When one program is waiting (e.g., for I/O), 
+●​ The OS switches to another program 
+●​ This keeps the CPU busy and improves efficiency 
+Key Idea 
+👉 Maximize CPU utilization 
+
+Example 
+●​ Program A is waiting for disk input 
+●​ CPU switches to Program B for execution 
+ 
+2. Multitasking 
+What is Multitasking? 
+Multitasking allows a user to run multiple tasks (programs) seemingly at the same time. 
+How It Works 
+●​ CPU switches rapidly between tasks using time-sharing 
+●​ Each task gets a small time slice 
+Key Idea 
+👉 Provide smooth user experience 
+Example 
+●​ Listening to music while browsing the internet and typing a document 
+ 
+Key Differences 
+Feature 
+Multiprogramming 
+Multitasking 
+Main 
+Goal 
+Maximize CPU 
+utilization 
+Improve user 
+experience 
+Focus 
+System efficiency 
+User interaction 
+Switchin
+g 
+When a job waits 
+(I/O) 
+Time-based 
+switching 
+
+User 
+Interacti
+on 
+Usually limited 
+High (interactive 
+systems) 
+Multithreading and Its Types 
+What is Multithreading? 
+Multithreading is a feature of an Operating System that allows a single process to have multiple 
+threads running concurrently. 
+●​ A thread is the smallest unit of execution within a process 
+●​ Threads share the same memory and resources of the process 
+●​ This makes execution faster and more efficient 
+👉 Example: A web browser can: 
+●​ Load a webpage 
+●​ Play a video 
+●​ Download files​
+ all at the same time using different threads 
+ 
+Benefits of Multithreading 
+●​ Better CPU utilization 
+●​ Faster execution (parallelism) 
+●​ Improved responsiveness 
+●​ Efficient resource sharing 
+ 
+Types of Multithreading 
+1. User-Level Threads (ULT) 
+●​ Managed by user-level libraries (not directly by OS) 
+●​ Fast to create and manage 
+●​ OS is unaware of these threads 
+✔ Advantages: 
+
+●​ Faster switching 
+●​ Less overhead 
+❌ Disadvantages: 
+●​ If one thread blocks, all threads may block 
+ 
+2. Kernel-Level Threads (KLT) 
+●​ Managed directly by the Operating System 
+●​ Each thread is known to the OS 
+✔ Advantages: 
+●​ Better scheduling by OS 
+●​ One blocked thread does not affect others 
+❌ Disadvantages: 
+●​ Slower due to system calls 
+●​ More overhead 
+ 
+Multithreading Models 
+These models define how user threads map to kernel threads: 
+1. Many-to-One Model 
+●​ Many user threads → One kernel thread 
+●​ Fast but limited (no true parallelism) 
+ 
+2. One-to-One Model 
+●​ Each user thread → One kernel thread 
+●​ Supports parallelism 
+●​ More resource usage 
+ 
+
+3. Many-to-Many Model 
+●​ Many user threads → Many kernel threads 
+●​ Combines benefits of both models 
+ 
+Types of System Calls 
+System calls are the interface through which a program requests services from the Operating System. 
+They act as a bridge between user programs and the OS kernel. 
+ 
+Main Types of System Calls 
+1. Process Control 
+These system calls manage processes (programs in execution). 
+Functions include: 
+●​ Create and terminate processes 
+●​ Load and execute programs 
+●​ Wait for process completion 
+●​ Allocate/free memory 
+👉 Example: Starting or stopping a program 
+ 
+2. File Management 
+These calls handle operations related to files. 
+Functions include: 
+●​ Create and delete files 
+●​ Open, read, write, and close files 
+●​ Get/set file attributes 
+👉 Example: Opening a text file or saving a document 
+ 
+
+3. Device Management 
+These system calls manage hardware devices. 
+Functions include: 
+●​ Request and release devices 
+●​ Read/write data to devices 
+●​ Get/set device attributes 
+👉 Example: Sending data to a printer 
+ 
+4. Information Maintenance 
+Used to get or set system and process information. 
+Functions include: 
+●​ Get system time and date 
+●​ Get process or device information 
+●​ Set system data 
+👉 Example: Checking system time 
+ 
+5. Communication (Inter-Process Communication) 
+These calls allow processes to communicate with each other. 
+Functions include: 
+●​ Create communication channels 
+●​ Send and receive messages 
+●​ Share data between processes 
+👉 Example: Data exchange between two programs 
+ 
+6. Protection and Security 
+These calls ensure system security and controlled access. 
+Functions include: 
+
+●​ Control access permissions 
+●​ Set user IDs and privileges 
+●​ Authenticate users 
+👉 Example: File permission settings 
+ 
+Self-learning Topics: 
+Study of Various Operating System Architectures (IoT, 
+Android) 
+Operating system architecture refers to the design structure and working model of an OS, including 
+how it manages hardware, software, and user interaction. Different systems use different architectures 
+depending on their purpose. 
+ 
+1. IoT Operating System Architecture 
+What is IoT OS? 
+An Internet of Things (IoT) operating system is designed for small, smart, connected devices like 
+sensors, smart watches, home automation systems, etc. 
+Architecture Overview 
+
+ 
+
+ 
+ 
+7 
+ 
+
+Key Components 
+●​ Hardware Layer 
+○​ Sensors, actuators, microcontrollers 
+●​ OS Kernel 
+○​ Often lightweight or real-time (RTOS) 
+●​ Communication Layer 
+○​ Wi-Fi, Bluetooth, Zigbee, MQTT protocols 
+●​ Application Layer 
+○​ Smart apps (home automation, health monitoring) 
+●​ Cloud/Edge Layer 
+○​ Data storage and processing 
+ 
+Features of IoT OS 
+●​ Lightweight (low memory usage) 
+●​ Real-time response 
+●​ Energy efficient 
+●​ Supports networking and remote control 
+ 
+Examples 
+●​ FreeRTOS 
+●​ Contiki OS 
+●​ RIOT OS 
+ 
+Use Cases 
+●​ Smart homes 
+●​ Industrial automation 
+●​ Smart agriculture 
+●​ Wearable devices 
+ 
+2. Android Operating System Architecture 
+
+What is Android OS? 
+Android is a Linux-based operating system designed mainly for mobile devices like smartphones and 
+tablets. 
+ 
+Architecture Overview 
+
+ 
+
+ 
+
+ 
+5 
+ 
+Layers of Android Architecture 
+1. Linux Kernel Layer 
+●​ Base of Android system 
+●​ Manages: 
+○​ Memory 
+○​ Drivers 
+○​ Security 
+
+○​ Power management 
+ 
+2. Hardware Abstraction Layer (HAL) 
+●​ Provides interface between hardware and software 
+●​ Allows Android to work on different devices 
+ 
+3. Android Runtime (ART) 
+●​ Executes applications 
+●​ Includes core libraries and runtime environment 
+ 
+4. Application Framework 
+●​ Provides APIs for developers 
+●​ Manages: 
+○​ Activity manager 
+○​ Location services 
+○​ Notification system 
+ 
+5. Applications Layer 
+●​ End-user apps like: 
+○​ Phone 
+○​ Messages 
+○​ Chrome 
+○​ Play Store 
+ 
+Features of Android OS 
+●​ Open-source 
+●​ User-friendly interface 
+●​ Strong app ecosystem 
+●​ Multi-tasking support 
+●​ High device compatibility 
+
+ 
+Use Cases 
+●​ Smartphones 
+●​ Tablets 
+●​ Smart TVs 
+●​ Wearable devices 
+ 
+Key Differences (IoT OS vs Android OS) 
+Feature 
+IoT OS 
+Android OS 
+Purpose 
+Smart devices, 
+sensors 
+Mobile and smart 
+devices 
+Resource 
+Usage 
+Very low 
+Moderate to high 
+Real-tim
+e 
+Often real-time 
+Not strictly real-time 
+Complex
+ity 
+Simple 
+Complex layered 
+architecture 
+Example 
+FreeRTOS, 
+Contiki 
+Android (Google) 
+Module 2 
+Process Management 
+ 
+Basic Concepts of Process (Operating System) 
+A process is one of the most fundamental concepts in an Operating System. It represents a 
+program in execution. 
+ 
+
+1. What is a Process? 
+A process is a program that is currently running and being executed by the CPU. 
+👉 Example: 
+●​ A .exe file is a program 
+●​ When you open it, it becomes a process 
+ 
+2. Components of a Process 
+A process consists of: 
+●​ Program Code (Text Section) – instructions to execute 
+●​ Program Counter – points to next instruction 
+●​ Stack – stores function calls and local variables 
+●​ Heap – dynamic memory allocation 
+●​ Data Section – global and static variables 
+ 
+3. Process States 
+A process goes through different states during execution: 
+
+ 
+ 
+
+ 
+4 
+Main States: 
+●​ New → Process is being created 
+●​ Ready → Waiting for CPU 
+●​ Running → Currently executing 
+●​ Waiting (Blocked) → Waiting for I/O or event 
+●​ Terminated → Execution completed 
+ 
+4. Process Control Block (PCB) 
+A PCB (Process Control Block) is a data structure that stores information about a process. 
+It contains: 
+●​ Process ID (PID) 
+
+●​ Process state 
+●​ CPU registers 
+●​ Program counter 
+●​ Memory information 
+●​ Scheduling information 
+👉 It acts like the identity card of a process 
+ 
+5. Types of Processes 
+●​ Foreground Process → Needs user interaction 
+●​ Background Process → Runs without user interaction 
+●​ CPU-bound Process → Uses more CPU time 
+●​ I/O-bound Process → Waits more for input/output 
+ 
+6. Process Scheduling 
+The OS decides which process gets CPU time using scheduling: 
+●​ First Come First Serve (FCFS) 
+●​ Round Robin 
+●​ Priority Scheduling 
+ 
+7. Process vs Program 
+Feature 
+Program 
+Process 
+State 
+Passive (stored 
+code) 
+Active (running 
+code) 
+Nature 
+Static 
+Dynamic 
+Executio
+n 
+Not executed 
+Executed by 
+CPU 
+Process State Transition Model (Operating System) 
+
+The Process State Transition Model describes how a process moves between different states 
+during its execution in the operating system. 
+ 
+1. Process States 
+A process typically goes through these states: 
+●​ New → Process is being created 
+●​ Ready → Waiting in queue for CPU 
+●​ Running → Currently executing on CPU 
+●​ Waiting (Blocked) → Waiting for I/O or event 
+●​ Terminated → Process has finished execution 
+ 
+2. Process State Transition Diagram 
+ 
+
+ 
+ 
+6 
+ 
+3. State Transitions (How Process Moves) 
+
+1. New → Ready 
+●​ Process is created and admitted into the ready queue 
+●​ OS prepares it for execution 
+ 
+2. Ready → Running 
+●​ Scheduler selects a process from the ready queue 
+●​ CPU is assigned to the process 
+ 
+3. Running → Waiting (Blocked) 
+●​ Process requests I/O or waits for an event 
+●​ CPU is released and process waits 
+ 
+4. Waiting → Ready 
+●​ I/O operation completes 
+●​ Process returns to ready queue 
+ 
+5. Running → Ready 
+●​ Process is preempted (time slice over or higher priority process arrives) 
+●​ Goes back to ready queue 
+ 
+6. Running → Terminated 
+●​ Process completes execution 
+●​ Resources are released 
+ 
+4. Key Idea 
+
+👉 The OS continuously switches processes between states to ensure: 
+●​ Efficient CPU utilization 
+●​ Fair scheduling 
+●​ Smooth multitasking 
+Operations on Process & Process Control Block (PCB) 
+ 
+1. Operations on Process 
+Operating systems perform several operations to manage processes efficiently. 
+ 
+(A) Process Creation 
+A new process is created when: 
+●​ A user starts a program 
+●​ Another process creates a child process 
+👉 System call example: fork() (in Unix/Linux systems) 
+ 
+(B) Process Scheduling 
+●​ OS selects a process from the ready queue 
+●​ Assigns CPU for execution 
+●​ Uses scheduling algorithms (FCFS, Round Robin, etc.) 
+ 
+(C) Process Execution 
+●​ CPU executes instructions of the process 
+●​ Process moves from Ready → Running 
+
+ 
+(D) Process Blocking (Waiting) 
+●​ Process waits for I/O or event 
+●​ Moves to Waiting state 
+ 
+(E) Process Termination 
+●​ Process completes execution or is stopped 
+●​ OS frees allocated resources 
+ 
+(F) Process Suspension & Resumption 
+●​ Process can be temporarily stopped (suspended) 
+●​ Later resumed from same state 
+ 
+2. Process Control Block (PCB) 
+A Process Control Block (PCB) is a data structure maintained by the Operating System for each 
+process. 
+👉 It stores all important information about a process. 
+ 
+Structure of PCB 
+
+ 
+
+ 
+
+ 
+7 
+ 
+Information Stored in PCB 
+1. Process ID (PID) 
+●​ Unique identification number of the process 
+2. Process State 
+●​ New, Ready, Running, Waiting, Terminated 
+3. Program Counter 
+
+●​ Address of next instruction to execute 
+4. CPU Registers 
+●​ Stores current execution context 
+5. CPU Scheduling Information 
+●​ Priority, scheduling queue pointers 
+6. Memory Management Information 
+●​ Memory limits, page tables 
+7. I/O Status Information 
+●​ List of open files and devices 
+ 
+3. Importance of PCB 
+●​ Helps OS track all processes 
+●​ Enables context switching 
+●​ Ensures smooth multitasking 
+●​ Maintains process execution details 
+ 
+4. Context Switching (Related Concept) 
+When CPU switches from one process to another: 
+●​ Current process state is saved in PCB 
+●​ Next process state is loaded from its PCB 
+👉 This is called context switching 
+Context Switching (Operating System) 
+Context Switching is the process of saving the state of a currently running process and restoring 
+the state of another process so that the CPU can switch between multiple processes. 
+
+ 
+What is “Context”? 
+The context of a process includes all the information needed to restart it later, such as: 
+●​ Program Counter (next instruction address) 
+●​ CPU registers 
+●​ Process state 
+●​ Memory management details 
+All this information is stored in the Process Control Block (PCB). 
+ 
+How Context Switching Works 
+ 
+
+ 
+
+ 
+7 
+Steps: 
+1.​ Save current process state 
+○​ CPU stores the current process state into its PCB 
+2.​ Update PCB 
+○​ Process state is changed (e.g., Running → Ready/Waiting) 
+3.​ Select next process 
+○​ OS scheduler chooses another process from the ready queue 
+4.​ Load new process state 
+○​ CPU loads the saved state from the selected process’s PCB 
+5.​ Resume execution 
+○​ New process continues from where it left off 
+ 
+When Context Switching Happens 
+●​ Time slice (quantum) expires in Round Robin scheduling 
+●​ Higher priority process arrives 
+●​ Process requests I/O and goes to waiting state 
+
+●​ Interrupt occurs 
+ 
+Types of Context Switching 
+1. Process Context Switching 
+●​ Switching between two different processes 
+●​ More overhead (slower) 
+2. Thread Context Switching 
+●​ Switching between threads of the same process 
+●​ Faster (shared memory space) 
+ 
+Advantages 
+●​ Enables multitasking 
+●​ Improves CPU utilization 
+●​ Ensures fair sharing of CPU 
+●​ Allows smooth user experience 
+ 
+Disadvantages 
+●​ Time overhead due to saving/loading state 
+●​ Reduces system performance if frequent 
+●​ Requires additional memory for PCB storage 
+Introduction to Threads 
+A thread is the smallest unit of execution within a process. It represents a single sequence of 
+instructions that can be scheduled and executed by the CPU. 
+A process can have one or more threads, and all threads within a process share: 
+●​ Code section 
+
+●​ Data section 
+●​ Open files 
+●​ Heap memory 
+But each thread has its own: 
+●​ Program counter 
+●​ Registers 
+●​ Stack 
+👉 Example: In a web browser, one thread loads a page, another plays video, and another 
+handles user input. 
+ 
+Why Threads are Used 
+●​ Faster execution (parallelism) 
+●​ Better CPU utilization 
+●​ Improved responsiveness 
+●​ Efficient resource sharing 
+●​ Reduced overhead compared to processes 
+ 
+Types of Threads 
+Threads are mainly classified into two types: 
+ 
+1. User-Level Threads (ULT) 
+These are managed by user-level libraries, not the operating system. 
+Features: 
+●​ OS is unaware of these threads 
+●​ Managed in user space 
+●​ Fast creation and switching 
+Advantages: 
+
+●​ Very fast 
+●​ No kernel intervention needed 
+●​ Low overhead 
+Disadvantages: 
+●​ If one thread blocks, all threads block 
+●​ Cannot utilize multiple CPUs effectively 
+ 
+2. Kernel-Level Threads (KLT) 
+These are managed directly by the operating system kernel. 
+Features: 
+●​ OS knows each thread 
+●​ Managed in kernel space 
+●​ Scheduling done by OS 
+Advantages: 
+●​ True parallelism (can run on multiple CPUs) 
+●​ If one thread blocks, others continue 
+●​ Better performance in multiprocessor systems 
+Disadvantages: 
+●​ Slower than user threads 
+●​ Higher overhead due to system calls 
+ 
+Thread Models 
+Thread models define how user threads are mapped to kernel threads. 
+ 
+1. Many-to-One Model 
+●​ Many user threads → One kernel thread 
+
+Features: 
+●​ Managed in user space 
+●​ Only one thread executes at a time 
+Disadvantage: 
+●​ No parallel execution 
+●​ If one thread blocks, entire process blocks 
+ 
+2. One-to-One Model 
+●​ Each user thread → One kernel thread 
+Features: 
+●​ Supports true parallelism 
+●​ Better performance on multi-core systems 
+Disadvantage: 
+●​ High overhead 
+●​ Limited number of threads supported 
+ 
+3. Many-to-Many Model 
+●​ Many user threads → Many kernel threads 
+Features: 
+●​ Combines advantages of both models 
+●​ Flexible mapping 
+●​ Supports concurrency and parallelism 
+Advantage: 
+●​ Efficient and scalable 
+ 
+
+Simple Summary 
+Concept 
+Meaning 
+Thread 
+Smallest unit of execution 
+inside a process 
+User 
+Thread 
+Managed by user, fast but 
+limited 
+Kernel 
+Thread 
+Managed by OS, powerful but 
+slower 
+Thread 
+Model 
+Mapping between user and 
+kernel threads 
+ 
+In Simple Words 
+●​ Thread = A single task inside a program 
+●​ Multithreading = Running multiple tasks within the same program 
+●​ Thread Models = How OS organizes and manages these tasks 
+ 
+Introduction to Threads (with Diagrams) 
+A thread is the smallest unit of execution inside a process. Multiple threads can exist within a 
+single process and share its resources. 
+ 
+1. Basic Thread Structure in a Process 
+
+ 
+
+ 
+
+ 
+7 
+Explanation: 
+A process contains: 
+●​ Code section (shared) 
+●​ Data section (shared) 
+●​ Heap (shared) 
+●​ Multiple threads 
+Each thread has: 
+●​ Own Program Counter 
+●​ Own Registers 
+●​ Own Stack 
+ 
+2. Types of Threads 
+(A) User-Level Threads (ULT) 
+
+ 
+
+ 
+
+ 
+7 
+Features: 
+●​ Managed by user-level thread library 
+●​ OS is unaware of threads 
+●​ Fast creation and switching 
+Structure: 
+●​ Many user threads mapped to one kernel thread 
+ 
+(B) Kernel-Level Threads (KLT) 
+
+ 
+ 
+
+ 
+6 
+Features: 
+●​ Managed by Operating System kernel 
+●​ Each thread is known to OS 
+●​ Supports true parallel execution 
+ 
+3. Thread Models (Mapping Models) 
+(A) Many-to-One Model 
+User Threads → 1 Kernel Thread 
+T1 ─┐ 
+T2 ─┼──→ Kernel Thread 
+T3 ─┘ 
+
+✔ Simple and fast​
+ ❌ No parallelism 
+ 
+(B) One-to-One Model 
+T1 → K1 
+T2 → K2 
+T3 → K3 
+✔ True parallelism​
+ ❌ High overhead 
+ 
+(C) Many-to-Many Model 
+User Threads → Multiple Kernel Threads 
+T1 ─┐ 
+T2 ─┼──→ K1, K2, K3 
+T3 ─┘ 
+✔ Flexible and efficient​
+ ✔ Balanced performance 
+Basic Concepts of CPU Scheduling (Operating System) 
+CPU Scheduling is the process by which the Operating System decides which process will get 
+the CPU next when multiple processes are ready to execute. 
+ 
+1. Basic Concepts of Scheduling 
+What is Scheduling? 
+Scheduling is the mechanism of: 
+●​ Selecting a process from the ready queue 
+●​ Allocating CPU to that process 
+●​ Improving CPU utilization and system performance 
+
+ 
+Important Terms: 
+●​ CPU Burst → Time process uses CPU 
+●​ I/O Burst → Time process waits for input/output 
+●​ Ready Queue → Processes waiting for CPU 
+●​ Turnaround Time → Total time from submission to completion 
+●​ Waiting Time → Time spent in ready queue 
+●​ Response Time → Time until first response 
+ 
+2. Types of Schedulers 
+1. Long-Term Scheduler (Job Scheduler) 
+●​ Selects jobs from disk and loads into memory 
+●​ Controls degree of multiprogramming 
+●​ Runs infrequently 
+ 
+2. Short-Term Scheduler (CPU Scheduler) 
+●​ Selects process from ready queue 
+●​ Assigns CPU to process 
+●​ Runs very frequently 
+ 
+3. Medium-Term Scheduler 
+●​ Temporarily removes processes from memory (swapping) 
+●​ Improves memory management 
+ 
+3. Types of Scheduling Algorithms 
+Scheduling algorithms decide which process runs next. 
+
+They are classified into: 
+●​ Preemptive Scheduling 
+●​ Non-Preemptive Scheduling 
+ 
+4. Preemptive vs Non-Preemptive Scheduling 
+Featur
+e 
+Preemptiv
+e 
+Non-Preempt
+ive 
+CPU 
+control 
+Can be 
+taken away 
+Cannot be 
+taken away 
+Flexibi
+lity 
+High 
+Low 
+Respo
+nse 
+time 
+Better 
+Slower 
+Examp
+le 
+Round 
+Robin 
+FCFS 
+ 
+5. Scheduling Algorithms 
+ 
+(A) First Come First Serve (FCFS) 
+
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Processes executed in order of arrival 
+●​ Non-preemptive 
+Example: 
+P1 → P2 → P3 → P4 
+Advantages: 
+●​ Simple 
+●​ Easy to implement 
+Disadvantages: 
+●​ High waiting time (convoy effect) 
+ 
+(B) Shortest Job First (SJF) 
+
+ 
+ 
+
+ 
+6 
+Concept: 
+●​ Process with shortest burst time is executed first 
+Types: 
+●​ Non-preemptive SJF 
+●​ Preemptive SJF (Shortest Remaining Time First) 
+Advantages: 
+●​ Minimum average waiting time 
+Disadvantages: 
+●​ Starvation of long processes 
+ 
+(C) Priority Scheduling 
+
+ 
+
+ 
+
+ 
+5 
+Concept: 
+●​ Each process is assigned a priority 
+●​ Highest priority process executes first 
+Types: 
+●​ Preemptive Priority Scheduling 
+●​ Non-preemptive Priority Scheduling 
+Advantages: 
+●​ Important tasks executed first 
+Disadvantages: 
+●​ Starvation (low priority processes may wait forever) 
+ 
+(D) Round Robin (RR) 
+
+ 
+
+ 
+
+ 
+7 
+Concept: 
+●​ Each process gets a fixed time slice (time quantum) 
+●​ After time expires, process goes to end of queue 
+Example: 
+P1 → P2 → P3 → P1 → P2... 
+Advantages: 
+●​ Fair scheduling 
+●​ Good response time 
+Disadvantages: 
+●​ More context switching overhead 
+Self-Learning Topic: Real-Time Scheduling Algorithms 
+and Applications 
+
+ 
+1. What is Real-Time Scheduling? 
+Real-time scheduling is used in operating systems where tasks must be completed within a 
+strict time limit (deadline). 
+👉 The main goal is not just correctness, but timely execution. 
+These systems are used in real-time operating systems (RTOS) where delay can cause system 
+failure. 
+ 
+2. Types of Real-Time Systems 
+(A) Hard Real-Time Systems 
+●​ Missing a deadline = system failure 
+●​ Very strict timing constraints 
+👉 Example: 
+●​ Airbags in cars 
+●​ Pacemakers 
+●​ Flight control systems 
+ 
+(B) Soft Real-Time Systems 
+●​ Missing a deadline = performance degradation, not failure 
+●​ Less strict timing 
+👉 Example: 
+●​ Video streaming 
+●​ Online gaming 
+●​ Multimedia applications 
+ 
+
+3. Real-Time Scheduling Algorithms 
+ 
+1. Rate Monotonic Scheduling (RMS) 
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Fixed-priority scheduling 
+●​ Shorter period = higher priority 
+Example: 
+●​ Task A (10 ms period) → High priority 
+●​ Task B (20 ms period) → Lower priority 
+Features: 
+●​ Preemptive 
+●​ Used for periodic tasks 
+Advantages: 
+
+●​ Simple and predictable 
+●​ Mathematically proven schedulable 
+Disadvantages: 
+●​ Not efficient for all workloads 
+ 
+2. Earliest Deadline First (EDF) 
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Dynamic priority scheduling 
+●​ Task with earliest deadline gets CPU first 
+Features: 
+●​ Preemptive 
+●​ Works on all types of tasks 
+Advantages: 
+●​ Very efficient CPU utilization 
+●​ Optimal scheduling (if possible, meets all deadlines) 
+Disadvantages: 
+
+●​ Complex to implement 
+ 
+3. Least Laxity First (LLF) 
+Concept: 
+●​ Based on laxity = deadline − remaining execution time 
+●​ Task with least laxity runs first 
+Features: 
+●​ Highly dynamic 
+●​ Frequent context switching 
+Disadvantages: 
+●​ High overhead 
+ 
+4. Applications of Real-Time Scheduling 
+Real-time scheduling is used in systems where timing is critical: 
+1. Embedded Systems 
+●​ Washing machines 
+●​ Microwave ovens 
+2. Automotive Systems 
+●​ Anti-lock braking system (ABS) 
+●​ Airbag deployment 
+3. Medical Systems 
+●​ Pacemakers 
+●​ Patient monitoring systems 
+4. Industrial Control Systems 
+
+●​ Robotics 
+●​ Manufacturing automation 
+5. Multimedia Systems 
+●​ Video streaming 
+●​ Audio processing 
+6. Aerospace & Defense 
+●​ Missile control systems 
+●​ Aircraft navigation 
+ 
+5. Key Differences: RMS vs EDF 
+Feature 
+RMS 
+EDF 
+Priority 
+Fixed 
+Dynamic 
+Basis 
+Period 
+Deadline 
+Efficiency 
+Moderate 
+High 
+Complexit
+y 
+Low 
+High 
+Optimality 
+Not always 
+optimal 
+Optimal 
+(single 
+CPU case) 
+ 
+6. Simple Understanding 
+●​ Real-time scheduling = meeting deadlines 
+●​ RMS = fixed priority based on frequency 
+●​ EDF = dynamic priority based on urgency 
+ 
+ 
+ 
+
+Module 3  
+Process Synchronization and Deadlock 
+Management 
+ 
+Basic Concepts of Inter-Process Communication (IPC) and Synchronization 
+In an Operating System, multiple processes often run at the same time. They may need to 
+communicate with each other and coordinate their execution, which is handled by IPC and 
+Synchronization. 
+ 
+1. Inter-Process Communication (IPC) 
+What is IPC? 
+Inter-Process Communication (IPC) is a mechanism that allows processes to exchange data and 
+information with each other. 
+👉 Since processes are isolated, IPC provides a way for them to interact. 
+ 
+Why IPC is Needed? 
+●​ Data sharing between processes 
+●​ Speed up computation (parallel work) 
+●​ Modular system design 
+●​ Resource sharing 
+ 
+IPC Models 
+(A) Shared Memory Model 
+
+ 
+ 
+
+ 
+6 
+Concept: 
+●​ Processes share a common memory region 
+●​ Data is written and read from this shared space 
+Advantages: 
+●​ Very fast communication 
+●​ No kernel involvement after setup 
+Disadvantages: 
+●​ Requires synchronization 
+●​ Risk of data inconsistency 
+ 
+(B) Message Passing Model 
+
+ 
+ 
+
+ 
+6 
+Concept: 
+●​ Processes communicate by sending and receiving messages 
+●​ Uses OS kernel for communication 
+Types: 
+●​ Direct communication (process-to-process) 
+●​ Indirect communication (mailboxes/queues) 
+Advantages: 
+●​ Easier to implement 
+●​ Safe and secure 
+Disadvantages: 
+●​ Slower than shared memory 
+ 
+2. Synchronization 
+What is Synchronization? 
+
+Synchronization is the process of coordinating execution of processes so that shared resources 
+are accessed correctly. 
+👉 It ensures no data inconsistency occurs when multiple processes access shared data. 
+ 
+Need for Synchronization 
+●​ Avoid race conditions 
+●​ Ensure data consistency 
+●​ Maintain correct execution order 
+ 
+Critical Section Problem 
+A critical section is the part of code where shared resources are accessed. 
+👉 Only one process should enter critical section at a time 
+ 
+Requirements of Synchronization 
+1. Mutual Exclusion 
+●​ Only one process can enter critical section at a time 
+2. Progress 
+●​ Decision of which process enters next should not be delayed 
+3. Bounded Waiting 
+●​ A process should not wait forever 
+ 
+Synchronization Tools 
+1. Mutex (Mutual Exclusion Lock) 
+
+●​ Allows only one process to access resource 
+2. Semaphores 
+●​ Integer-based signaling mechanism 
+●​ Can be: 
+○​ Binary semaphore (0/1) 
+○​ Counting semaphore 
+3. Monitors 
+●​ High-level synchronization tool 
+●​ Automatically handles mutual exclusion 
+ 
+3. Difference Between IPC and Synchronization 
+Feature 
+IPC 
+Synchronization 
+Purpose 
+Communication 
+Coordination 
+Focus 
+Data exchange 
+Resource sharing 
+control 
+Proble
+m 
+solved 
+Sharing information 
+Avoiding conflicts 
+Tools 
+Shared memory, message 
+passing 
+Semaphores, mutex, 
+monitors 
+ 
+Simple Understanding 
+●​ IPC = Talking between processes 
+●​ Synchronization = Taking turns safely while using shared data 
+ 
+Real-Life Example 
+Imagine: 
+
+●​ IPC → Two people exchanging messages 
+●​ Synchronization → Only one person using a bathroom at a time 
+Inter-Process Communication (IPC) and Synchronization, Race Condition, Critical 
+Section Problem, Peterson’s Solution 
+ 
+1. Inter-Process Communication (IPC) 
+What is IPC? 
+Inter-Process Communication (IPC) is a mechanism that allows processes to exchange data and 
+coordinate their actions. 
+ 
+IPC Models 
+(A) Shared Memory Model 
+ 
+
+ 
+ 
+6 
+Concept: 
+
+●​ Processes share a common memory region 
+●​ Data is written and read directly from shared memory 
+✔ Fast communication​
+ ❌ Needs synchronization 
+ 
+(B) Message Passing Model 
+ 
+
+ 
+ 
+5 
+Concept: 
+●​ Processes communicate by sending messages 
+●​ OS manages message transfer 
+✔ Safe and simple​
+ ❌ Slower than shared memory 
+ 
+
+2. Synchronization 
+What is Synchronization? 
+Synchronization ensures that multiple processes do not access shared data at the same time, 
+preventing inconsistency. 
+ 
+Why Needed? 
+●​ Avoid data corruption 
+●​ Maintain correct execution order 
+●​ Prevent conflicts in shared resources 
+ 
+3. Race Condition 
+What is a Race Condition? 
+A race condition occurs when multiple processes access and modify shared data simultaneously, 
+and the final result depends on the timing of execution. 
+ 
+Example: 
+Two processes increment a shared variable: 
+Counter = Counter + 1 
+If both execute at the same time: 
+●​ One update may be lost 
+●​ Incorrect final value occurs 
+ 
+Problem: 
+👉 Result becomes unpredictable due to concurrent access 
+
+ 
+4. Critical Section Problem 
+What is Critical Section? 
+A critical section is a part of code where a process accesses shared resources (variables, files, 
+etc.). 
+ 
+Critical Section Problem: 
+The challenge is to ensure: 
+●​ Only one process enters critical section at a time 
+ 
+Requirements: 
+1. Mutual Exclusion 
+Only one process in critical section at a time 
+2. Progress 
+If no process is in critical section, selection should not be delayed 
+3. Bounded Waiting 
+A process should not wait indefinitely 
+ 
+Critical Section Structure: 
+Entry Section → Critical Section → Exit Section → Remainder Section 
+ 
+5. Peterson’s Solution 
+
+What is Peterson’s Solution? 
+It is a software-based solution for synchronization between two processes. 
+ 
+Works for: 
+●​ Two processes only (P0 and P1) 
+ 
+Algorithm Idea: 
+Uses two variables: 
+●​ flag[i] → process wants to enter critical section 
+●​ turn → whose turn it is 
+ 
+Peterson’s Algorithm: 
+For Process Pi: 
+flag[i] = true; 
+turn = j; 
+ 
+while (flag[j] == true && turn == j); 
+// wait 
+ 
+Critical Section 
+ 
+flag[i] = false; 
+ 
+Working: 
+●​ If both processes want to enter: 
+○​ turn decides who goes first 
+●​ Ensures only one enters at a time 
+ 
+
+Properties: 
+✔ Mutual Exclusion​
+ ✔ Progress​
+ ✔ Bounded Waiting 
+ 
+Advantages: 
+●​ Simple software solution 
+●​ No special hardware required 
+ 
+Disadvantages: 
+●​ Works only for 2 processes 
+●​ Busy waiting (CPU waste) 
+●​ Not suitable for modern systems 
+ 
+6. Relationship Between Concepts 
+Concept 
+Meaning 
+IPC 
+Communication between processes 
+Synchroniz
+ation 
+Coordination of processes 
+Race 
+Condition 
+Incorrect result due to timing issues 
+Critical 
+Section 
+Shared resource access area 
+Peterson’s 
+Solution 
+Software solution to avoid critical section 
+conflict 
+ 
+Simple Understanding 
+
+●​ IPC = Talking between processes 
+●​ Synchronization = Taking turns properly 
+●​ Race Condition = Confusion due to no coordination 
+●​ Critical Section = Sensitive shared area 
+●​ Peterson’s Solution = Rule to avoid conflict (for 2 processes) 
+Process Synchronization, Hardware Solutions & 
+Semaphores, Producer–Consumer Problem 
+ 
+1. Process Synchronization 
+What is Process Synchronization? 
+Process Synchronization is the mechanism used by the Operating System to control the 
+execution of multiple processes so that they can safely access shared resources. 
+👉 Goal: Prevent conflicts and ensure correct execution. 
+ 
+Why Synchronization is Needed? 
+●​ Avoid race conditions 
+●​ Ensure data consistency 
+●​ Maintain orderly execution 
+●​ Prevent simultaneous access to shared data 
+ 
+Critical Section Concept 
+A critical section is the part of a program where shared resources are accessed. 
+👉 Only one process should execute in critical section at a time 
+ 
+
+Requirements of Synchronization 
+●​ Mutual Exclusion → Only one process enters critical section 
+●​ Progress → Decision should not be delayed 
+●​ Bounded Waiting → No infinite waiting 
+ 
+2. Hardware Solutions for Synchronization 
+Hardware provides low-level support to solve synchronization problems. 
+ 
+(A) Interrupt Disabling 
+Concept: 
+●​ CPU disables interrupts while executing critical section 
+Advantages: 
+●​ Simple method 
+Disadvantages: 
+●​ Not suitable for multiprocessor systems 
+●​ Reduces system efficiency 
+ 
+(B) Test-and-Set Instruction 
+Concept: 
+●​ Atomic instruction that checks and sets a lock 
+Working: 
+if (lock == 0) 
+   lock = 1;   // enter critical section 
+
+Advantages: 
+●​ Simple and fast 
+●​ Works in multiprocessor systems 
+Disadvantages: 
+●​ Busy waiting (CPU waste) 
+ 
+(C) Compare-and-Swap (CAS) 
+Concept: 
+●​ Compares value and swaps if condition matches 
+Advantages: 
+●​ Used in modern processors 
+●​ Efficient synchronization 
+ 
+3. Semaphores 
+What is a Semaphore? 
+A semaphore is a synchronization tool used to control access to shared resources using a 
+counter variable. 
+ 
+Types of Semaphores 
+1. Binary Semaphore (Mutex) 
+●​ Value: 0 or 1 
+●​ Used for mutual exclusion 
+
+2. Counting Semaphore 
+●​ Value: Any integer 
+●​ Used to manage multiple resources 
+ 
+Semaphore Operations 
+(A) wait() / P operation 
+wait(S): 
+   while S <= 0 do wait 
+   S = S - 1 
+(B) signal() / V operation 
+signal(S): 
+   S = S + 1 
+ 
+Advantages: 
+●​ Solves critical section problem 
+●​ Supports multiple processes 
+Disadvantages: 
+●​ Complex 
+●​ Risk of deadlock if misused 
+ 
+4. Producer–Consumer Problem 
+What is Producer–Consumer Problem? 
+It is a classic synchronization problem where: 
+●​ Producer → Produces data 
+
+●​ Consumer → Consumes data 
+●​ Both share a buffer (memory space) 
+ 
+Problem: 
+●​ Producer should not add data when buffer is full 
+●​ Consumer should not remove data when buffer is empty 
+ 
+Solution using Semaphores 
+Semaphores used: 
+●​ mutex → mutual exclusion 
+●​ empty → empty buffer slots 
+●​ full → filled buffer slots 
+ 
+Producer Algorithm: 
+wait(empty); 
+wait(mutex); 
+ 
+add item to buffer; 
+ 
+signal(mutex); 
+signal(full); 
+ 
+Consumer Algorithm: 
+wait(full); 
+wait(mutex); 
+ 
+remove item from buffer; 
+ 
+signal(mutex); 
+
+signal(empty); 
+ 
+Diagram: 
+ 
+
+ 
+ 
+6 
+ 
+
+Key Idea: 
+●​ Producer waits if buffer is full 
+●​ Consumer waits if buffer is empty 
+●​ Mutex ensures only one process accesses buffer at a time 
+ 
+Real-Life Example: 
+●​ Producer → Bakery making bread 
+●​ Consumer → Customers buying bread 
+●​ Buffer → Shop shelf 
+ 
+Summary 
+Concept 
+Meaning 
+Process 
+Synchronizatio
+n 
+Coordination of processes 
+Hardware 
+Solutions 
+Low-level locking methods 
+Semaphore 
+Counter-based 
+synchronization tool 
+Producer-Cons
+umer 
+Shared buffer 
+synchronization problem 
+ 
+In Simple Words 
+👉 Synchronization ensures processes don’t interfere with each other​
+ 👉 Semaphores act like traffic signals for processes​
+ 👉 Producer–Consumer ensures safe sharing of data 
+
+Deadlocks Management (Operating System) – Detailed 
+Notes 
+A deadlock is a situation in an operating system where a set of processes are blocked 
+forever, each waiting for a resource held by another process. 
+ 
+1. System Model 
+What is System Model? 
+A system model describes how processes and resources interact in an OS. 
+Components: 
+●​ Processes (P1, P2, P3...) 
+●​ Resources (R1, R2, R3...) 
+●​ Each resource type may have multiple instances 
+ 
+Resource Usage Cycle: 
+
+ 
+
+ 
+ 
+
+6 
+1.​ Request resource 
+2.​ Use resource 
+3.​ Release resource 
+ 
+2. Deadlock Characterization 
+What is Deadlock Characterization? 
+Deadlock occurs when a set of processes are stuck due to resource waiting conditions. 
+ 
+Four Necessary Conditions (Coffman Conditions) 
+All four must hold for deadlock to occur: 
+ 
+1. Mutual Exclusion 
+●​ Only one process can use a resource at a time​
+ 👉 Example: Printer 
+ 
+2. Hold and Wait 
+●​ Process holds one resource and waits for another 
+ 
+3. No Preemption 
+●​ Resource cannot be forcibly taken away 
+ 
+
+4. Circular Wait 
+ 
+ 
+
+ 
+6 
+●​ Processes form a circular chain waiting for resources​
+ 👉 P1 → P2 → P3 → P1 
+ 
+3. Deadlock Prevention 
+Concept: 
+Design system so that at least one deadlock condition never occurs. 
+ 
+Methods: 
+
+1. Eliminate Mutual Exclusion 
+●​ Make resources sharable​
+ ❌ Not possible for all resources (printer) 
+ 
+2. Eliminate Hold and Wait 
+●​ Process must request all resources at once​
+ ❌ Low resource utilization 
+ 
+3. Allow Preemption 
+●​ Take resource back if needed​
+ ✔ Used in some systems 
+ 
+4. Eliminate Circular Wait 
+●​ Assign ordering to resources 
+●​ Processes must request in increasing order 
+ 
+Summary: 
+✔ Prevents deadlock​
+ ❌ Low efficiency 
+ 
+4. Deadlock Avoidance 
+Concept: 
+The system checks future resource allocation and avoids unsafe states. 
+
+ 
+Safe State: 
+A state where all processes can complete execution in some order. 
+ 
+Banker's Algorithm 
+What is Banker's Algorithm? 
+A deadlock avoidance algorithm that ensures the system always stays in a safe state. 
+ 
+Idea: 
+Like a bank: 
+●​ Bank only gives loans if it can still satisfy all customers later 
+ 
+Data Structures Used: 
+●​ Available → Free resources 
+●​ Max → Maximum demand of each process 
+●​ Allocation → Currently allocated resources 
+●​ Need = Max − Allocation 
+ 
+Steps: 
+1. Check Request 
+Process requests resources 
+
+2. Check Availability 
+If request ≤ available, proceed 
+3. Pretend Allocation 
+Temporarily allocate resources 
+4. Safety Check 
+Check if system remains safe 
+5. Grant or Reject 
+●​ Safe → Grant request 
+●​ Unsafe → Rollback request 
+ 
+Advantages: 
+✔ Prevents deadlock​
+ ✔ Ensures safe state 
+Disadvantages: 
+❌ Requires prior knowledge of maximum needs​
+ ❌ High overhead 
+ 
+5. Deadlock Detection and Recovery 
+Concept: 
+Allow deadlock to occur, then detect and recover. 
+ 
+
+(A) Deadlock Detection 
+Method 1: Resource Allocation Graph (RAG) 
+●​ Detect cycles in graph 
+ 
+Method 2: Wait-for Graph 
+ 
+
+ 
+
+ 
+6 
+●​ Nodes = processes 
+●​ Edge P1 → P2 means P1 is waiting for P2 
+●​ Cycle = Deadlock 
+ 
+(B) Deadlock Recovery 
+Once detected, system must recover: 
+ 
+1. Process Termination 
+
+●​ Abort all deadlocked processes​
+ OR 
+●​ Abort one process at a time 
+✔ Simple​
+ ❌ May lose work 
+ 
+2. Resource Preemption 
+●​ Take resources from some processes 
+●​ Give to others 
+✔ Better utilization​
+ ❌ May cause starvation 
+ 
+3. Rollback 
+●​ Return process to safe checkpoint 
+ 
+6. Summary Table 
+Concept 
+Idea 
+System 
+Model 
+Process-resource 
+interaction 
+Deadlock 
+Processes stuck 
+forever 
+Preventio
+n 
+Break necessary 
+conditions 
+Avoidance 
+Use safe state 
+(Banker’s Algorithm) 
+
+Detection 
+Find deadlock after it 
+occurs 
+Recovery 
+Kill or rollback 
+processes 
+ 
+Simple Understanding 
+●​ Prevention → Stop deadlock before it happens 
+●​ Avoidance → Carefully allocate resources 
+●​ Detection → Find deadlock after it happens 
+●​ Recovery → Fix the deadlock 
+Self-Learning Topics 
+1. Real-Time Case Study: Deadlock 
+Detection and Recovery 
+ 
+Case Study: Database System Deadlock (Banking 
+Application) 
+Scenario: 
+In a banking database system, two transactions occur simultaneously: 
+●​ T1 (Transaction 1): Transfers money from Account A to B 
+●​ T2 (Transaction 2): Transfers money from Account B to A 
+ 
+Step-by-Step Deadlock Formation 
+Step 1: Locking Resources 
+
+●​ T1 locks Account A 
+●​ T2 locks Account B 
+Step 2: Waiting Situation 
+●​ T1 requests Account B (held by T2) 
+●​ T2 requests Account A (held by T1) 
+👉 Both processes wait forever → Deadlock occurs 
+ 
+Deadlock Detection 
+Method Used: Wait-for Graph 
+ 
+
+ 
+ 
+6 
+
+●​ T1 → waiting for T2 
+●​ T2 → waiting for T1​
+ 👉 Cycle detected → Deadlock confirmed 
+ 
+Deadlock Recovery (Real System Actions) 
+1. Transaction Rollback (Most Common) 
+●​ Database aborts one transaction (e.g., T2) 
+●​ Releases its locks 
+●​ T1 continues execution 
+✔ Simple and safe​
+ ❌ Work of aborted transaction is lost 
+ 
+2. Process Termination 
+●​ System kills one transaction based on priority 
+●​ Higher priority transaction continues 
+ 
+3. Checkpoint & Restart 
+●​ Save progress periodically 
+●​ Restart from last safe state 
+ 
+Real Systems Using This Approach: 
+●​ Oracle Database 
+●​ MySQL InnoDB engine 
+●​ Banking transaction systems 
+ 
+
+Key Learning from Case Study: 
+●​ Deadlock often occurs in shared resource systems 
+●​ Detection is done using graph cycles 
+●​ Recovery is usually done using rollback or termination 
+ 
+2. Overview of Security Mechanisms in 
+Operating Systems 
+ 
+What is OS Security? 
+Operating System security refers to mechanisms that protect system resources, data, and 
+processes from unauthorized access and threats. 
+ 
+Security Goals (CIA Model) 
+1. Confidentiality 
+●​ Data should not be accessed by unauthorized users​
+ 👉 Example: Password protection 
+2. Integrity 
+●​ Data should not be modified illegally​
+ 👉 Example: File protection 
+3. Availability 
+●​ System should be available when needed​
+ 👉 Example: Protection against crashes or attacks 
+ 
+
+Security Mechanisms in OS 
+ 
+1. Authentication 
+ 
+ 
+
+ 
+7 
+●​ Verifies user identity 
+●​ Methods: 
+○​ Passwords 
+○​ Biometrics (fingerprint, face recognition) 
+○​ OTP / tokens 
+ 
+2. Authorization 
+●​ Defines what a user can access 
+●​ Uses access control policies 
+👉 Example: 
+●​ Admin can delete files 
+●​ User can only read files 
+ 
+
+3. Access Control 
+●​ Controls permissions for resources 
+●​ Types: 
+○​ Discretionary Access Control (DAC) 
+○​ Mandatory Access Control (MAC) 
+ 
+4. Protection Mechanisms 
+●​ Memory protection (prevents illegal access) 
+●​ File protection (read/write/execute permissions) 
+●​ CPU protection (mode switching: user mode vs kernel mode) 
+ 
+5. Encryption 
+●​ Converts data into unreadable format 
+●​ Protects data during storage and transmission 
+ 
+6. Auditing and Logging 
+●​ Records system activities 
+●​ Helps detect attacks or misuse 
+ 
+7. Firewall and Network Security 
+●​ Blocks unauthorized network access 
+●​ Monitors incoming/outgoing traffic 
+ 
+User Mode vs Kernel Mode 
+Mode 
+Description 
+
+User 
+Mode 
+Restricted access for 
+applications 
+Kernel 
+Mode 
+Full access to system 
+resources 
+ 
+Simple Understanding 
+●​ Authentication → Who are you? 
+●​ Authorization → What can you do? 
+●​ Protection → How system resources are safeguarded 
+ 
+ 
+Module 4  
+Memory Management 
+Basic Concepts of Memory Management (Operating 
+System) 
+Memory Management is a core function of the Operating System that deals with managing 
+the computer’s main memory (RAM) efficiently and effectively. 
+👉 It decides how memory is allocated, used, and freed for processes. 
+ 
+1. What is Memory Management? 
+Memory management is the process of: 
+●​ Allocating memory to processes when needed 
+●​ Deallocating memory when processes finish 
+●​ Optimizing memory usage 
+
+ 
+2. Objectives of Memory Management 
+●​ Efficient use of memory 
+●​ Fast access to data and programs 
+●​ Prevent memory wastage 
+●​ Support multitasking 
+●​ Ensure process isolation and protection 
+ 
+3. Types of Memory 
+(A) Primary Memory (Main Memory) 
+●​ RAM 
+●​ Fast but limited 
+(B) Secondary Memory 
+●​ Hard disk / SSD 
+●​ Large but slower 
+ 
+4. Basic Memory Management Techniques 
+ 
+1. Contiguous Memory Allocation 
+
+ 
+
+ 
+ 
+5 
+Concept: 
+Each process is assigned a single continuous block of memory. 
+
+Types: 
+●​ Fixed Partitioning 
+●​ Variable (Dynamic) Partitioning 
+Advantages: 
+●​ Simple 
+●​ Fast access 
+Disadvantages: 
+●​ Internal fragmentation 
+●​ External fragmentation 
+ 
+2. Non-Contiguous Memory Allocation 
+Concept: 
+Process is divided into parts and stored in different memory locations. 
+Techniques: 
+●​ Paging 
+●​ Segmentation 
+ 
+5. Paging (Important Concept) 
+
+ 
+
+ 
+ 
+
+6 
+Concept: 
+●​ Memory divided into fixed-size blocks called frames 
+●​ Process divided into pages 
+●​ Pages are loaded into any available frames 
+Advantages: 
+●​ No external fragmentation 
+●​ Efficient memory use 
+ 
+6. Segmentation 
+Concept: 
+●​ Memory divided based on logical segments 
+●​ Example: code, data, stack 
+Advantages: 
+●​ Logical view of memory 
+●​ Easy protection and sharing 
+ 
+7. Virtual Memory 
+Concept: 
+Virtual memory allows execution of processes that are larger than physical RAM by using 
+disk space. 
+ 
+
+ 
+
+ 
+
+ 
+6 
+Key Features: 
+●​ Uses swap space (disk) 
+●​ Uses page replacement techniques 
+●​ Supports large programs 
+ 
+8. Fragmentation 
+(A) Internal Fragmentation 
+
+●​ Wasted space inside allocated memory block 
+(B) External Fragmentation 
+●​ Free memory scattered in small blocks 
+ 
+9. Memory Allocation Methods 
+1. First Fit 
+●​ Allocates first suitable block 
+2. Best Fit 
+●​ Allocates smallest suitable block 
+3. Worst Fit 
+●​ Allocates largest block 
+ 
+10. Simple Summary 
+Concept 
+Meaning 
+Memory 
+Management 
+Handling RAM 
+efficiently 
+Contiguous 
+Allocation 
+One continuous 
+memory block 
+Paging 
+Fixed-size blocks 
+system 
+Segmentation 
+Logical division of 
+memory 
+
+Virtual 
+Memory 
+Uses disk as 
+extended RAM 
+ 
+Swapping (Operating System) 
+What is Swapping? 
+Swapping is a memory management technique in which a process is temporarily moved 
+from main memory (RAM) to secondary memory (disk) to free up RAM, and later brought 
+back when needed. 
+ 
+Swapping Concept Diagram 
+ 
+
+ 
+
+ 
+5 
+ 
+How Swapping Works 
+Step-by-step process: 
+1.​ Process in RAM 
+○​ Process is currently executing or waiting 
+2.​ Swap Out 
+○​ OS moves the process from RAM → Disk (Swap Space) 
+○​ Frees memory for other processes 
+3.​ Swap In 
+○​ When needed again, process is moved back from Disk → RAM 
+
+ 
+Types of Swapping Operations 
+1. Swap Out 
+●​ Process is removed from main memory 
+●​ Stored in swap space (disk) 
+2. Swap In 
+●​ Process is brought back into RAM 
+●​ Execution resumes 
+ 
+Why Swapping is Used? 
+●​ To increase degree of multiprogramming 
+●​ To allow more processes than RAM can hold 
+●​ To improve CPU utilization 
+ 
+Advantages of Swapping 
+●​ Efficient use of memory 
+●​ Supports multitasking 
+●​ Allows execution of large programs 
+ 
+Disadvantages of Swapping 
+●​ Slow (disk access is much slower than RAM) 
+●​ High overhead due to frequent transfer 
+●​ Performance may decrease if swapping is excessive 
+ 
+
+Simple Real-Life Example 
+Think of RAM as a small working desk: 
+●​ You keep only important files on the desk (RAM) 
+●​ Other files are stored in a cupboard (disk) 
+●​ You swap files between desk and cupboard as needed 
+Memory Allocation Strategies (Operating System) 
+What is Memory Allocation? 
+Memory allocation is the process in which the Operating System assigns memory space 
+(RAM) to processes when they are executed. 
+When multiple processes request memory, the OS must decide where and how to place 
+them efficiently. 
+ 
+Memory Allocation Strategies 
+1. First Fit 
+
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Allocate the first available memory block that is large enough. 
+Working: 
+●​ OS scans memory from beginning 
+●​ Assigns first suitable hole 
+
+Advantages: 
+●​ Fast and simple 
+●​ Low overhead 
+Disadvantages: 
+●​ Leads to fragmentation 
+●​ Poor memory utilization in long run 
+ 
+2. Best Fit 
+
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Allocate the smallest block that fits the process 
+Working: 
+●​ Searches entire memory 
+●​ Chooses best (smallest) suitable hole 
+Advantages: 
+●​ Better memory utilization 
+●​ Reduces wasted space 
+Disadvantages: 
+
+●​ Slow (full search required) 
+●​ Creates small unusable fragments 
+ 
+3. Worst Fit 
+ 
+
+ 
+ 
+6 
+Concept: 
+●​ Allocate the largest available memory block 
+Working: 
+
+●​ Finds largest hole 
+●​ Splits it for process 
+Advantages: 
+●​ Leaves large remaining free blocks 
+●​ Useful for future large processes 
+Disadvantages: 
+●​ Inefficient memory usage 
+●​ Still causes fragmentation 
+ 
+4. Next Fit (Optional Extension) 
+●​ Similar to First Fit 
+●​ Starts search from last allocated position 
+ 
+Comparison of Strategies 
+Strategy 
+Speed 
+Memory 
+Utilization 
+Fragmentation 
+First Fit 
+Fast 
+Medium 
+Moderate 
+Best Fit 
+Slow 
+High 
+High (small holes) 
+Worst 
+Fit 
+Slow 
+Low efficiency 
+Moderate 
+ 
+Types of Fragmentation 
+1. Internal Fragmentation 
+
+●​ Wasted memory inside allocated block 
+●​ Occurs in fixed partitioning 
+2. External Fragmentation 
+●​ Free memory exists but is not continuous 
+●​ Occurs in variable partitioning 
+ 
+Simple Understanding 
+●​ First Fit → Quick allocation 
+●​ Best Fit → Most efficient space usage 
+●​ Worst Fit → Uses largest block first 
+ 
+Real-Life Example 
+Think of memory like hotel rooms: 
+●​ First Fit → First available room is given 
+●​ Best Fit → Smallest suitable room is chosen 
+●​ Worst Fit → Biggest room is given 
+ 
+Paging, Structure of Page Table, Segmentation, TLB 
+(Detailed Notes) 
+These are core memory management concepts used by the Operating System to manage 
+RAM efficiently and support virtual memory. 
+ 
+1. Paging 
+
+What is Paging? 
+Paging is a memory management technique in which: 
+●​ Logical memory is divided into fixed-size blocks called pages 
+●​ Physical memory is divided into fixed-size blocks called frames 
+👉 Pages are loaded into any available frames (non-contiguous allocation) 
+ 
+Paging Diagram 
+ 
+
+ 
+
+ 
+
+6 
+ 
+How Paging Works 
+1.​ Process is divided into pages 
+2.​ RAM is divided into frames 
+3.​ Pages are mapped to frames using a page table 
+4.​ CPU generates logical address → converted to physical address 
+ 
+Advantages: 
+●​ No external fragmentation 
+●​ Efficient memory utilization 
+●​ Supports virtual memory 
+Disadvantages: 
+●​ Internal fragmentation possible 
+●​ Overhead of page table 
+ 
+2. Structure of Page Table 
+What is a Page Table? 
+A page table is a data structure used by the OS to map:​
+ 👉 Logical page number → Physical frame number 
+ 
+Page Table Structure 
+
+ 
+ 
+
+ 
+6 
+ 
+Page Table Entry (PTE) Contains: 
+●​ Frame Number → Where page is stored in RAM 
+●​ Valid/Invalid Bit → Whether page is in memory 
+●​ Protection Bits → Read/write permissions 
+●​ Reference Bit → Used for replacement algorithms 
+●​ Dirty Bit → Indicates modification 
+ 
+Types of Page Tables: 
+1. Single-Level Page Table 
+●​ Simple structure 
+●​ Large memory overhead 
+2. Multi-Level Page Table 
+●​ Page table divided into smaller tables 
+
+●​ Saves memory 
+3. Inverted Page Table 
+●​ One entry per frame instead of page 
+●​ Used in large systems 
+ 
+3. Segmentation 
+What is Segmentation? 
+Segmentation divides memory into logical variable-sized sections based on program 
+structure. 
+ 
+Segmentation Diagram 
+
+ 
+
+ 
+
+ 
+6 
+ 
+Memory Segments: 
+●​ Code segment 
+●​ Data segment 
+●​ Stack segment 
+ 
+How it Works: 
+●​ Each segment has: 
+○​ Base address 
+○​ Limit (size) 
+
+●​ Logical address = (segment number + offset) 
+ 
+Advantages: 
+●​ Matches user view of program 
+●​ Easy protection and sharing 
+Disadvantages: 
+●​ External fragmentation 
+ 
+Paging vs Segmentation 
+Feature 
+Paging 
+Segmentation 
+Division 
+Fixed size 
+Variable size 
+Basis 
+Physical 
+Logical 
+Fragmentation 
+Internal 
+External 
+User view 
+No 
+Yes 
+ 
+4. TLB (Translation Lookaside Buffer) 
+What is TLB? 
+A TLB is a small, fast cache memory inside the CPU that stores recent page table entries. 
+👉 It speeds up address translation. 
+ 
+TLB Working 
+
+ 
+
+ 
+
+ 
+5 
+ 
+Process: 
+1. TLB Hit 
+●​ Page number found in TLB​
+ 👉 Fast access (no page table lookup) 
+2. TLB Miss 
+●​ Page number not found 
+●​ OS checks page table 
+ 
+Advantages: 
+
+●​ Faster memory access 
+●​ Reduces page table lookup time 
+Disadvantages: 
+●​ Small size 
+●​ Expensive hardware 
+ 
+Simple Understanding 
+●​ Paging → Fixed-size memory system 
+●​ Page Table → Mapping of pages to frames 
+●​ Segmentation → Logical memory division 
+●​ TLB → Fast cache for address translation 
+ 
+Real-Life Analogy 
+●​ Paging → Boxes of equal size in warehouse 
+●​ Segmentation → Different departments in office 
+●​ Page Table → Index book for storage location 
+●​ TLB → Quick reference bookmark 
+Demand Paging, Copy-on-Write, Page Replacement 
+Algorithms (OS Memory Management) 
+These are key concepts used in Virtual Memory systems to manage RAM efficiently. 
+ 
+1. Demand Paging 
+What is Demand Paging? 
+
+Demand Paging is a technique where a page is loaded into memory only when it is needed 
+(on demand), not in advance. 
+👉 It reduces unnecessary loading of pages into RAM. 
+ 
+Demand Paging Diagram 
+ 
+
+ 
+ 
+5 
+ 
+
+How Demand Paging Works 
+1.​ Process starts execution 
+2.​ Required page is checked in RAM 
+3.​ If page is NOT in RAM → Page Fault occurs 
+4.​ OS loads page from disk into RAM 
+5.​ Execution continues 
+ 
+Advantages: 
+●​ Saves memory 
+●​ Faster program startup 
+●​ Efficient RAM usage 
+Disadvantages: 
+●​ Page fault overhead 
+●​ Slower when many faults occur 
+ 
+Simple Idea: 
+👉 “Load pages only when required.” 
+ 
+2. Copy-on-Write (COW) 
+What is Copy-on-Write? 
+Copy-on-Write is a memory optimization technique where multiple processes initially share 
+the same memory, and a copy is created only when one process modifies it. 
+ 
+
+Copy-on-Write Diagram 
+ 
+ 
+
+ 
+6 
+ 
+How it Works 
+1.​ Parent process creates child process (e.g., fork()) 
+2.​ Both share same memory pages initially 
+3.​ Pages marked as read-only 
+4.​ If one process modifies a page → new copy is created 
+ 
+Advantages: 
+●​ Saves memory 
+●​ Faster process creation 
+●​ Efficient resource usage 
+
+ 
+Example: 
+●​ Used in Unix/Linux fork system call 
+ 
+3. Page Replacement Algorithms 
+What is Page Replacement? 
+When RAM is full and a new page needs to be loaded, the OS must remove an existing 
+page. 
+👉 This is called Page Replacement 
+ 
+Page Replacement Diagram 
+
+ 
+
+ 
+
+ 
+6 
+ 
+Common Page Replacement Algorithms 
+ 
+1. FIFO (First In First Out) 
+Concept: 
+●​ Oldest page in memory is replaced first 
+Advantages: 
+●​ Simple to implement 
+Disadvantages: 
+●​ May remove frequently used pages 
+●​ Can cause Belady’s anomaly 
+
+ 
+2. LRU (Least Recently Used) 
+Concept: 
+●​ Removes page that has not been used for the longest time 
+Advantages: 
+●​ Better performance than FIFO 
+●​ Closest to optimal 
+Disadvantages: 
+●​ Requires tracking usage history 
+●​ More overhead 
+ 
+3. Optimal Page Replacement 
+Concept: 
+●​ Replace page that will not be used for the longest future time 
+Advantages: 
+●​ Best possible performance 
+●​ Minimum page faults 
+Disadvantages: 
+●​ Theoretical (future knowledge required) 
+ 
+4. LFU (Least Frequently Used) 
+Concept: 
+
+●​ Replaces page used least frequently 
+Advantage: 
+●​ Useful in some workloads 
+Disadvantage: 
+●​ May keep old but frequently used pages 
+ 
+Comparison Table 
+Algorithm 
+Idea 
+Efficiency 
+FIFO 
+Oldest page 
+removed 
+Low 
+LRU 
+Least recently 
+used 
+High 
+Optimal 
+Future-based 
+removal 
+Best 
+(theoretical) 
+LFU 
+Least frequently 
+used 
+Moderate 
+ 
+Simple Understanding 
+●​ Demand Paging → Load pages only when needed 
+●​ Copy-on-Write → Share memory until modification 
+●​ Page Replacement → Replace pages when RAM is full 
+Page Replacement Algorithms (Operating System) 
+What is Page Replacement? 
+
+When a page fault occurs and RAM is full, the Operating System must:​
+ 👉 Remove an existing page from memory​
+ 👉 Load the required new page 
+This process is called Page Replacement. 
+ 
+Page Replacement Concept 
+ 
+
+ 
+
+ 
+6 
+ 
+Why Page Replacement is Needed? 
+●​ RAM is limited 
+●​ More pages than available frames 
+●​ New page must replace old page 
+●​ Helps continue execution of processes 
+ 
+Major Page Replacement Algorithms 
+
+ 
+1. FIFO (First In First Out) 
+Concept: 
+The oldest loaded page is replaced first 
+Working: 
+●​ Pages stored in queue 
+●​ Remove page that came first 
+Advantages: 
+●​ Simple 
+●​ Easy to implement 
+Disadvantages: 
+●​ Poor performance 
+●​ May remove frequently used pages 
+●​ Belady’s anomaly (more frames → more faults sometimes) 
+ 
+2. LRU (Least Recently Used) 
+Concept: 
+Replace the page that has not been used for the longest time 
+Working: 
+●​ Tracks page usage history 
+●​ Removes least recently accessed page 
+Advantages: 
+●​ Better performance than FIFO 
+●​ Close to optimal 
+
+Disadvantages: 
+●​ High overhead (tracking usage needed) 
+ 
+3. Optimal Page Replacement (OPT) 
+Concept: 
+Replace the page that will not be used for the longest time in future 
+Working: 
+●​ Looks into future page references 
+Advantages: 
+●​ Minimum page faults (best algorithm) 
+Disadvantages: 
+●​ Impossible in real systems (future knowledge required) 
+ 
+4. LFU (Least Frequently Used) 
+Concept: 
+Replace page that is used least number of times 
+Working: 
+●​ Counts usage frequency 
+Advantages: 
+●​ Useful in repeated workloads 
+Disadvantages: 
+
+●​ May keep old but occasionally used pages 
+ 
+5. MRU (Most Recently Used) 
+Concept: 
+Replace the most recently used page 
+Use case: 
+●​ Useful in specific workloads (stack-based access) 
+ 
+Comparison Table 
+Algorithm 
+Idea 
+Efficiency 
+Complexity 
+FIFO 
+Oldest page 
+removed 
+Low 
+Simple 
+LRU 
+Least 
+recently used 
+High 
+Complex 
+OPT 
+Future-base
+d choice 
+Best 
+Theoretical 
+LFU 
+Least 
+frequently 
+used 
+Medium 
+Moderate 
+ 
+Simple Explanation 
+●​ FIFO → “Remove oldest book from shelf” 
+●​ LRU → “Remove least recently read book” 
+●​ OPT → “Remove book you won’t need soon (predict future)” 
+●​ LFU → “Remove least used book” 
+
+ 
+Key Points for Exams 
+●​ Page replacement happens during page fault 
+●​ It is required when no free frame is available 
+●​ Goal is to minimize page faults 
+●​ LRU is most practical and widely used 
+Thrashing (Operating System) 
+What is Thrashing? 
+Thrashing is a situation in an operating system where the CPU spends most of its time 
+swapping pages in and out of memory (paging) instead of executing actual processes. 
+👉 In simple words:​
+ Too much paging = very little useful work 
+ 
+Thrashing Concept Diagram 
+
+ 
+ 
+
+ 
+6 
+ 
+Why Thrashing Happens? 
+Thrashing occurs when: 
+●​ Too many processes are in memory 
+●​ Each process has too few frames 
+●​ High degree of multiprogramming 
+●​ Insufficient RAM 
+ 
+Symptoms of Thrashing 
+●​ Very high page fault rate 
+●​ Low CPU utilization 
+●​ Slow system performance 
+●​ Continuous disk activity (swapping) 
+●​ Processes spend more time waiting than executing 
+
+ 
+Example Scenario 
+Imagine: 
+●​ 10 processes running 
+●​ Only enough memory for 3 processes properly 
+👉 System keeps swapping pages continuously​
+ 👉 CPU waits for pages instead of executing work​
+ 👉 This leads to thrashing 
+ 
+Thrashing vs Normal Paging 
+Featu
+re 
+Normal 
+Paging 
+Thrash
+ing 
+Page 
+faults 
+Modera
+te 
+Very 
+high 
+CPU 
+usage 
+High 
+Low 
+Syste
+m 
+speed 
+Good 
+Very 
+slow 
+Disk 
+activi
+ty 
+Normal 
+Extrem
+ely 
+high 
+ 
+Causes of Thrashing 
+●​ Too many processes in memory 
+●​ Small number of frames per process 
+
+●​ Poor page replacement decisions 
+●​ High degree of multiprogramming 
+ 
+How to Prevent Thrashing? 
+1. Reduce Degree of Multiprogramming 
+●​ Limit number of processes in memory 
+ 
+2. Increase RAM 
+●​ More physical memory reduces paging 
+ 
+3. Working Set Model 
+ 
+
+ 
+ 
+
+5 
+●​ Keep only actively used pages in memory 
+●​ Each process gets required working set 
+ 
+4. Page Fault Frequency (PFF) 
+●​ Monitor page fault rate 
+●​ If too high → allocate more frames 
+●​ If too low → reduce frames 
+ 
+Simple Understanding 
+Think of thrashing like:​
+ 👉 A student constantly searching for books instead of studying​
+ 👉 Too much time wasted in searching (paging)​
+ 👉 Very little actual learning (execution) 
+ 
+Key Points for Exams 
+●​ Thrashing = excessive paging 
+●​ Causes low CPU utilization 
+●​ Happens due to insufficient memory 
+●​ Leads to system slowdown 
+●​ Controlled using working set or PFF 
+Self-learning Topics: Memory Management in IoT and 
+Android OS 
+ 
+
+1. Memory Management in IoT (Internet of 
+Things) 
+What is IoT Memory Management? 
+In IoT systems, memory management refers to how small embedded devices manage very 
+limited RAM and storage efficiently while running real-time tasks. 
+👉 IoT devices include sensors, smart watches, smart home devices, etc. 
+ 
+IoT Memory Characteristics 
+●​ Very limited RAM (KB to few MB) 
+●​ Limited CPU power 
+●​ Energy (battery) constraints 
+●​ Real-time processing requirements 
+ 
+IoT Memory Management Techniques 
+1. Static Memory Allocation 
+●​ Memory assigned at compile time 
+●​ No runtime allocation changes 
+✔ Fast and predictable​
+ ❌ Wastes memory if not used properly 
+ 
+2. Dynamic Memory Allocation (Limited Use) 
+●​ Memory allocated during runtime 
+●​ Used carefully due to fragmentation risk 
+ 
+
+3. Memory Pooling 
+ 
+ 
+
+ 
+6 
+●​ Pre-allocated fixed memory blocks 
+●​ Processes take memory from pool 
+●​ Returned after use 
+✔ Reduces fragmentation​
+ ✔ Fast allocation 
+ 
+4. Real-Time OS (RTOS) Memory Management 
+●​ Used in IoT devices 
+●​ Priority-based task scheduling 
+●​ Deterministic memory behavior 
+ 
+Challenges in IoT Memory Management 
+●​ Very small memory space 
+●​ Energy constraints 
+●​ Real-time deadlines 
+●​ Avoiding fragmentation 
+
+ 
+Example IoT Devices 
+●​ Smart thermostats 
+●​ Fitness trackers 
+●​ Smart sensors 
+●​ Industrial IoT controllers 
+ 
+Simple Understanding 
+👉 IoT memory management is about doing more with very little memory in real-time 
+systems. 
+ 
+2. Memory Management in Android 
+Operating System 
+What is Android Memory Management? 
+Android uses a Linux-based kernel and manages memory for mobile applications 
+efficiently to support multitasking and smooth performance. 
+ 
+Android Memory Architecture 
+
+ 
+
+ 
+ 
+6 
+ 
+
+Key Components 
+1. Linux Kernel Memory Management 
+●​ Handles physical memory (RAM) 
+●​ Manages paging and swapping 
+ 
+2. Dalvik / ART Runtime 
+●​ Each app runs in its own process 
+●​ Uses heap memory allocation 
+●​ Garbage collection removes unused objects 
+ 
+3. Heap Memory 
+●​ Each app has a dedicated heap 
+●​ Dynamic allocation of objects 
+ 
+Memory Management Techniques in Android 
+ 
+1. Garbage Collection (GC) 
+●​ Automatically frees unused memory 
+●​ Reduces memory leaks 
+✔ Improves efficiency​
+ ❌ May cause slight performance pauses 
+ 
+2. Low Memory Killer (LMK) 
+●​ Android kills background apps when memory is low 
+●​ Prioritizes foreground apps 
+
+ 
+3. ZRAM (Compressed RAM) 
+●​ Compresses memory instead of swapping to disk 
+●​ Saves space and improves speed 
+ 
+4. App Lifecycle Management 
+●​ Apps in background are paused or killed 
+●​ Only active apps consume memory 
+ 
+Android Memory Priority Levels 
+Lev
+el 
+State 
+For
+egro
+und 
+Active 
+app 
+Visi
+ble 
+Partially 
+visible 
+Bac
+kgr
+oun
+d 
+Not 
+visible 
+Cac
+hed 
+Ready to 
+be killed 
+ 
+Challenges in Android Memory Management 
+●​ Limited RAM on mobile devices 
+●​ Multiple apps running simultaneously 
+●​ Battery optimization needs 
+
+●​ Preventing app crashes 
+ 
+Simple Understanding 
+👉 Android memory management ensures smooth multitasking by intelligently allocating 
+memory, killing background apps, and recycling unused memory. 
+ 
+IoT vs Android Memory Management 
+Featu
+re 
+IoT 
+Android 
+Mem
+ory 
+Size 
+Very 
+small 
+Moderate to 
+large 
+Syste
+m 
+Type 
+Embedde
+d RTOS 
+Mobile OS 
+Alloc
+ation 
+Static/po
+ol-based 
+Dynamic + 
+GC 
+Com
+plexit
+y 
+Low-leve
+l simple 
+Complex 
+multitasking 
+Focus 
+Real-tim
+e control 
+User 
+experience 
+ 
+In Short 
+●​ IoT Memory Management → Optimized for tiny, real-time devices 
+●​ Android Memory Management → Optimized for multitasking and user applications 
+
+Module 5 
+File and IO Management 
+ 
+File Management: Basic Concepts of File System 
+(Operating System) 
+ 
+1. What is a File System? 
+A File System is the part of the Operating System that: 
+●​ Organizes and stores data on storage devices (HDD/SSD) 
+●​ Provides a way to create, access, modify, and delete files 
+●​ Manages how data is stored and retrieved efficiently 
+👉 In simple words:​
+ It is the method OS uses to manage files on disk. 
+ 
+2. What is a File? 
+A file is a collection of related data stored on secondary storage. 
+Examples: 
+●​ Document (.txt, .docx) 
+●​ Image (.jpg, .png) 
+●​ Program files (.exe) 
+ 
+3. Basic File System Structure 
+
+ 
+ 
+
+ 
+6 
+ 
+4. File Attributes 
+Each file contains metadata (information about file): 
+●​ Name → File identifier 
+●​ Type → Format (txt, jpg, exe) 
+●​ Size → File size in bytes 
+●​ Location → Address on disk 
+●​ Protection → Read/write/execute permissions 
+●​ Time stamps → Creation, modification time 
+ 
+5. File Operations 
+The OS provides operations to manage files: 
+1. Create 
+●​ Make a new file 
+
+2. Open 
+●​ Prepare file for access 
+3. Read 
+●​ Read data from file 
+4. Write 
+●​ Add or modify data 
+5. Delete 
+●​ Remove file from storage 
+6. Close 
+●​ Save and release file 
+ 
+6. File Structure Types 
+1. Sequential File 
+●​ Data stored in order 
+●​ Simple but slow for searching 
+ 
+2. Direct (Random) File 
+●​ Data accessed directly using address 
+●​ Faster access 
+ 
+3. Indexed File 
+
+ 
+
+ 
+
+ 
+7 
+●​ Uses index table to locate data 
+●​ Fast and efficient 
+ 
+7. File Access Methods 
+1. Sequential Access 
+●​ Data accessed in order 
+●​ Example: tape 
+2. Direct Access 
+
+●​ Access any block directly 
+●​ Example: hard disk 
+3. Indexed Access 
+●​ Uses index to find data 
+ 
+8. File System Operations by OS 
+The OS manages: 
+●​ File storage allocation 
+●​ File naming 
+●​ Directory structure 
+●​ Access permissions 
+●​ Free space management 
+ 
+9. Directory Structure 
+Types of Directory Structures: 
+●​ Single-level directory 
+●​ Two-level directory 
+●​ Tree structure directory 
+●​ Graph directory 
+ 
+10. Simple Understanding 
+Think of file system like a library: 
+●​ Files → Books 
+●​ Directory → Shelves 
+
+●​ File system → Library management system 
+ 
+11. Key Points for Exams 
+●​ File system manages data on disk 
+●​ File = collection of related information 
+●​ OS handles file creation, deletion, reading, writing 
+●​ File systems use directories to organize data 
+●​ File attributes store metadata 
+File Access Methods (Operating System) 
+What are File Access Methods? 
+File access methods define how data stored in a file can be read or written by the operating 
+system. 
+👉 In simple words:​
+ They decide how a program retrieves data from a file. 
+ 
+1. Sequential Access Method 
+
+ 
+
+ 
+ 
+
+6 
+Concept: 
+Data is accessed in a linear order (one after another). 
+👉 Like reading a book page by page. 
+ 
+How it Works: 
+●​ File pointer starts at beginning 
+●​ Reads data sequentially 
+●​ Moves forward step by step 
+ 
+Operations: 
+●​ Read next 
+●​ Write next 
+●​ Rewind (go back to start) 
+ 
+Advantages: 
+●​ Simple to implement 
+●​ Efficient for reading entire file 
+Disadvantages: 
+●​ Slow for random access 
+●​ Must go through previous data 
+ 
+Example: 
+
+●​ Audio/video streaming 
+●​ Log files 
+ 
+2. Direct (Random) Access Method 
+ 
+
+ 
+ 
+
+7 
+Concept: 
+Data can be accessed directly at any location without reading previous data. 
+👉 Like jumping directly to a page number in a book. 
+ 
+How it Works: 
+●​ File divided into fixed-size blocks 
+●​ Each block has an address 
+●​ OS jumps directly to required block 
+ 
+Advantages: 
+●​ Very fast access 
+●​ Suitable for large files 
+Disadvantages: 
+●​ More complex 
+●​ Requires indexing or address mapping 
+ 
+Example: 
+●​ Databases 
+●​ Hard disk files 
+ 
+3. Indexed Access Method 
+
+ 
+ 
+
+ 
+5 
+Concept: 
+An index table is used to store addresses of file blocks. 
+👉 Like a book index that tells where chapters are located. 
+ 
+How it Works: 
+●​ Index contains addresses of all blocks 
+●​ OS searches index first 
+●​ Then accesses required block 
+ 
+Advantages: 
+●​ Fast access 
+●​ Supports both sequential and direct access 
+
+Disadvantages: 
+●​ Extra memory needed for index 
+●​ Slight overhead for index maintenance 
+ 
+Example: 
+●​ Database systems 
+●​ Large file systems (like NTFS, inode-based systems) 
+ 
+4. Comparison of File Access Methods 
+Method 
+Speed 
+Access Type 
+Complexity 
+Sequential 
+Slow 
+One by one 
+Simple 
+Direct 
+Fast 
+Random 
+access 
+Medium 
+Indexed 
+Fast 
+Both 
+sequential & 
+random 
+Complex 
+ 
+5. Simple Understanding 
+●​ Sequential Access → Read like a story book (page by page) 
+●​ Direct Access → Jump to any page directly 
+●​ Indexed Access → Use index to find page quickly 
+ 
+6. Key Points for Exams 
+
+●​ File access methods define how data is accessed 
+●​ Three types: Sequential, Direct, Indexed 
+●​ Sequential is simplest but slow 
+●​ Direct is fast and used in disks 
+●​ Indexed is most flexible and efficient 
+ 
+In Short 
+👉 File access methods are techniques used by the OS to retrieve and store data efficiently in 
+files depending on the application requirements. 
+Directory Structure (Operating System) 
+What is a Directory? 
+A directory (or folder) is a special type of file that stores information about files and other 
+directories. 
+👉 It helps the Operating System organize files in a structured way. 
+ 
+Why Directory Structure is Needed? 
+●​ Organize files logically 
+●​ Easy searching and access 
+●​ Avoid name conflicts (same file names in different folders) 
+●​ Improve security and management 
+●​ Efficient storage handling 
+ 
+Types of Directory Structures 
+ 
+
+1. Single-Level Directory 
+ 
+ 
+
+ 
+6 
+Concept: 
+●​ Only one directory for all files 
+●​ No subdirectories 
+Example: 
+/ (root) 
+├── file1 
+├── file2 
+├── file3 
+Advantages: 
+●​ Very simple 
+●​ Easy to implement 
+Disadvantages: 
+●​ File name conflicts 
+●​ Poor organization 
+●​ Not suitable for large systems 
+
+ 
+2. Two-Level Directory 
+ 
+ 
+
+ 
+5 
+Concept: 
+●​ Each user has their own directory 
+●​ No sharing between users easily 
+Example: 
+Root 
+├── User1 
+│     ├── fileA 
+├── User2 
+      ├── fileB 
+Advantages: 
+
+●​ Avoids name conflicts 
+●​ Better organization 
+Disadvantages: 
+●​ No easy file sharing 
+●​ Limited flexibility 
+ 
+3. Tree-Structured Directory 
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Most commonly used structure 
+●​ Hierarchical (tree-like) arrangement 
+●​ Root directory at top 
+Example: 
+/ 
+├── home 
+│     ├── user 
+│           ├── file.txt 
+├── bin 
+├── etc 
+Advantages: 
+●​ Well organized 
+●​ Easy navigation 
+●​ Supports large systems 
+Disadvantages: 
+
+●​ More complex than previous types 
+ 
+4. Acyclic Graph Directory 
+ 
+
+ 
+ 
+6 
+Concept: 
+
+●​ Allows sharing of files/subdirectories 
+●​ No cycles allowed (no infinite loop) 
+Example: 
+●​ Same file shared between two users 
+Advantages: 
+●​ Efficient file sharing 
+●​ Saves storage space 
+Disadvantages: 
+●​ More complex management 
+●​ Deletion issues (reference handling) 
+ 
+5. General Graph Directory 
+Concept: 
+●​ Extension of acyclic graph 
+●​ Cycles are allowed 
+Disadvantages: 
+●​ Difficult to manage 
+●​ Risk of infinite loops 
+ 
+Comparison of Directory Structures 
+Structure 
+Complexity 
+Usage 
+
+Single-Level 
+Very simple 
+Small systems 
+Two-Level 
+Simple 
+Multi-user systems 
+Tree 
+Moderate 
+Most OS (Windows/Linux) 
+Acyclic Graph 
+Complex 
+Advanced systems 
+General Graph 
+Very complex 
+Rare use 
+ 
+Simple Understanding 
+●​ Single-level → One room for everything 
+●​ Two-level → Separate rooms for each user 
+●​ Tree → House with multiple floors and rooms 
+●​ Graph → Shared rooms between people 
+ 
+Key Points for Exams 
+●​ Directory organizes files in OS 
+
+●​ Tree structure is most widely used 
+●​ Acyclic graph allows file sharing 
+●​ Directories help in file management and security 
+ 
+In Short 
+👉 Directory structure defines how files are organized, stored, and accessed efficiently in an 
+operating system. 
+File-System Implementation (Operating System) 
+What is File-System Implementation? 
+File-System Implementation refers to how the operating system physically organizes files on 
+disk and manages their storage, access, and retrieval. 
+👉 In simple words:​
+ It explains how file systems are actually built inside the OS. 
+ 
+1. File System Structure (Overall View) 
+
+ 
+
+ 
+ 
+7 
+Layers: 
+1.​ User Applications 
+2.​ Logical File System 
+3.​ File Organization Module 
+4.​ Basic File System 
+
+5.​ I/O Control 
+6.​ Physical Storage (Disk) 
+ 
+2. Key Components of File System 
+Implementation 
+ 
+1. File Control Block (FCB) / Inode 
+ 
+
+ 
+
+ 
+6 
+
+What is it? 
+A data structure that stores information about a file. 
+Contains: 
+●​ File name 
+●​ Size 
+●​ Location on disk 
+●​ Permissions 
+●​ Timestamps 
+●​ Block pointers 
+👉 In Linux: called inode 
+ 
+2. File Allocation Methods 
+These methods define how files are stored on disk blocks. 
+ 
+(A) Contiguous Allocation 
+ 
+
+ 
+
+ 
+6 
+●​ File stored in continuous blocks 
+●​ Fast access 
+✔ Simple​
+ ❌ External fragmentation 
+ 
+(B) Linked Allocation 
+
+ 
+
+ 
+
+ 
+5 
+●​ Each block points to next block 
+●​ No need for continuous space 
+✔ No external fragmentation​
+ ❌ Slow random access 
+ 
+(C) Indexed Allocation 
+
+ 
+
+ 
+
+ 
+6 
+●​ Uses index block to store addresses 
+●​ Supports direct access 
+✔ Fast access​
+ ✔ No fragmentation issues​
+ ❌ Extra index storage needed 
+ 
+3. Directory Implementation 
+Directory stores: 
+●​ File names 
+●​ File metadata (via FCB/inode) 
+Methods: 
+●​ Linear list 
+●​ Hash table (fast search) 
+
+ 
+4. Free Space Management 
+ 
+
+ 
+ 
+6 
+
+Methods: 
+1. Bit Vector (Bitmap) 
+●​ 0 = free block 
+●​ 1 = allocated block 
+✔ Simple and fast 
+ 
+2. Linked List 
+●​ Free blocks linked together 
+✔ Easy but slow traversal 
+ 
+3. Grouping 
+●​ Groups of free blocks stored together 
+ 
+4. Counting 
+●​ Stores starting block + number of free blocks 
+ 
+5. Disk Structure in File System 
+●​ Disk divided into blocks 
+●​ Blocks grouped into: 
+○​ Boot block 
+○​ Superblock (file system info) 
+○​ Inode table 
+○​ Data blocks 
+ 
+
+6. File System Operations Handling 
+File system implementation supports: 
+●​ File creation 
+●​ File deletion 
+●​ Read/write operations 
+●​ File search 
+●​ Space allocation 
+ 
+7. Simple Understanding 
+Think of file system implementation like a library system: 
+●​ Inode = Book details card 
+●​ Disk blocks = Shelves 
+●​ Allocation method = How books are arranged 
+●​ Directory = Index section 
+ 
+8. Key Points for Exams 
+●​ File system implementation defines how files are stored internally 
+●​ Uses structures like inode / FCB 
+●​ Uses allocation methods: contiguous, linked, indexed 
+●​ Manages free space using bitmap, linked list, etc. 
+●​ Ensures efficient file storage and retrieval 
+ 
+In Short 
+👉 File-system implementation is the way an OS organizes files on disk using data structures 
+and allocation methods to store, manage, and retrieve data efficiently. 
+
+File Allocation Methods (Operating System) 
+What is File Allocation? 
+File allocation refers to the way the Operating System stores files on disk blocks and keeps 
+track of where each file’s data is located. 
+👉 Goal: Efficient storage + fast access + minimal wastage 
+ 
+1. Contiguous Allocation 
+
+ 
+
+ 
+
+ 
+6 
+Concept: 
+Each file is stored in continuous (adjacent) disk blocks. 
+ 
+Example: 
+File A → Blocks 5, 6, 7, 8 
+ 
+Advantages: 
+●​ Very fast access (both sequential & direct) 
+●​ Simple implementation 
+ 
+Disadvantages: 
+
+●​ External fragmentation 
+●​ Difficult to find large continuous space 
+●​ File size must be known in advance 
+ 
+Simple Idea: 
+👉 Like booking a row of adjacent seats in a cinema 
+ 
+2. Linked Allocation 
+
+ 
+
+ 
+ 
+5 
+
+Concept: 
+File is stored in non-contiguous blocks, and each block contains a pointer to the next block. 
+ 
+Example: 
+File A → Block 2 → Block 7 → Block 10 → Block 4 
+ 
+Advantages: 
+●​ No external fragmentation 
+●​ Easy file growth 
+ 
+Disadvantages: 
+●​ Slow random access 
+●​ Pointer overhead 
+●​ If pointer is lost → file may break 
+ 
+Simple Idea: 
+👉 Like a treasure hunt with clues in each step 
+ 
+3. Indexed Allocation 
+
+ 
+
+ 
+ 
+7 
+Concept: 
+Each file has an index block that stores addresses of all its data blocks. 
+
+ 
+Example: 
+Index Block → [5, 9, 12, 20] 
+ 
+Advantages: 
+●​ Supports direct access 
+●​ No external fragmentation 
+●​ Efficient for large files 
+ 
+Disadvantages: 
+●​ Extra memory needed for index block 
+●​ Small files may waste index space 
+ 
+Simple Idea: 
+👉 Like a book index telling exact page locations 
+ 
+4. Comparison of Allocation Methods 
+Feature 
+Contiguous 
+Linked 
+Indexed 
+Storage 
+Continuous 
+blocks 
+Scattered 
+blocks 
+Index-base
+d 
+Access 
+speed 
+Very fast 
+Slow 
+(random) 
+Fast 
+
+Fragmentat
+ion 
+External 
+No external 
+No 
+external 
+File 
+growth 
+Difficult 
+Easy 
+Easy 
+Overhead 
+Low 
+Pointer 
+overhead 
+Index 
+overhead 
+ 
+5. Key Points for Exams 
+●​ File allocation defines how files are stored on disk 
+●​ Three main methods: 
+○​ Contiguous 
+○​ Linked 
+○​ Indexed 
+●​ Contiguous → fast but fragmented 
+●​ Linked → flexible but slow 
+●​ Indexed → balanced and widely used 
+ 
+Simple Understanding 
+●​ Contiguous → “All blocks together in a row” 
+●​ Linked → “Chain of blocks connected by pointers” 
+●​ Indexed → “Use an index to find all blocks” 
+ 
+In Short 
+👉 File allocation methods determine how the OS stores file data on disk blocks to ensure 
+efficient storage and access. 
+Overview of Mass-Storage Structure (Operating System) 
+
+What is Mass Storage? 
+Mass storage refers to large-capacity secondary storage devices used to store data 
+permanently. 
+👉 Examples: 
+●​ Hard Disk Drive (HDD) 
+●​ Solid State Drive (SSD) 
+●​ Optical disks (CD/DVD) 
+●​ Magnetic tapes 
+ 
+1. Mass-Storage Structure Overview 
+
+ 
+
+ 
+
+ 
+6 
+ 
+Storage Hierarchy 
+Computers use a hierarchy of storage: 
+1.​ CPU Registers (fastest, smallest) 
+2.​ Cache Memory 
+3.​ Main Memory (RAM) 
+4.​ Secondary Storage (Mass Storage) 
+5.​ Tertiary Storage (Backup systems) 
+👉 Mass storage is slower than RAM but has huge capacity and is non-volatile. 
+ 
+2. Hard Disk Structure 
+
+Components of HDD: 
+●​ Platters (circular disks) 
+●​ Tracks (circular paths) 
+●​ Sectors (small data units) 
+●​ Cylinder (same track across platters) 
+ 
+Disk Structure Diagram: 
+ 
+
+ 
+
+ 
+5 
+ 
+How Data is Stored: 
+●​ Disk is divided into tracks 
+●​ Tracks divided into sectors 
+●​ Data is written in sectors 
+ 
+3. Disk Scheduling (Important Part of Mass 
+Storage) 
+Since multiple processes request disk access, OS uses scheduling: 
+Common Algorithms: 
+●​ FCFS (First Come First Serve) 
+
+●​ SSTF (Shortest Seek Time First) 
+●​ SCAN (Elevator algorithm) 
+●​ C-SCAN (Circular SCAN) 
+ 
+Disk Scheduling Concept: 
+ 
+
+ 
+ 
+6 
+ 
+
+Goal of Disk Scheduling: 
+●​ Minimize seek time 
+●​ Reduce disk arm movement 
+●​ Improve performance 
+ 
+4. Disk Management in OS 
+The OS handles: 
+1. Disk Formatting 
+●​ Low-level formatting (tracks/sectors creation) 
+●​ Logical formatting (file system setup) 
+2. Boot Block 
+●​ Stores boot loader program 
+3. Bad Block Management 
+●​ Marks damaged sectors 
+ 
+5. Swap Space (Part of Mass Storage) 
+●​ Used as extension of RAM 
+●​ Stores inactive processes temporarily 
+●​ Used in virtual memory systems 
+ 
+6. Advantages of Mass Storage 
+●​ Very large storage capacity 
+
+●​ Non-volatile (data remains after power off) 
+●​ Cost-effective per GB 
+●​ Suitable for backup and archives 
+ 
+7. Disadvantages 
+●​ Slow compared to RAM 
+●​ Mechanical delays (HDD) 
+●​ Seek and rotational latency 
+●​ More complex management 
+ 
+8. Simple Understanding 
+Think of storage like a library: 
+●​ CPU → Librarian (fastest access) 
+●​ RAM → Reading desk 
+●​ HDD/SSD → Storage room (mass storage) 
+●​ Disk scheduling → Deciding who gets book first 
+ 
+9. Key Points for Exams 
+●​ Mass storage = secondary storage devices 
+●​ Includes HDD, SSD, optical disks, tapes 
+●​ Uses tracks, sectors, and cylinders 
+●​ OS uses disk scheduling for efficiency 
+●​ Provides permanent storage 
+ 
+In Short 
+
+👉 Mass-storage structure is the way the operating system organizes, manages, and accesses 
+large secondary storage devices efficiently using disk structure and scheduling techniques. 
+I/O Devices & Organization of the I/O Function (Operating 
+System) 
+ 
+1. I/O Devices (Input/Output Devices) 
+What are I/O Devices? 
+I/O devices are hardware components that allow a computer system to communicate with the 
+external world. 
+👉 They are used for: 
+●​ Input (data entry) 
+●​ Output (result display) 
+●​ Storage and communication 
+ 
+Types of I/O Devices 
+1. Input Devices 
+Devices used to enter data into the system 
+ 
+
+ 
+
+ 
+5 
+Examples: 
+●​ Keyboard 
+●​ Mouse 
+●​ Scanner 
+●​ Microphone 
+●​ Barcode reader 
+ 
+2. Output Devices 
+Devices used to display or produce results 
+
+ 
+ 
+
+ 
+6 
+Examples: 
+●​ Monitor 
+●​ Printer 
+●​ Speakers 
+●​ Projector 
+ 
+3. Storage Devices (I/O Hybrid) 
+●​ HDD, SSD, USB drives 
+●​ Used for both input and output 
+ 
+2. Organization of I/O Function 
+
+What is I/O Organization? 
+It refers to how the Operating System manages communication between CPU and I/O 
+devices. 
+👉 Goal: Efficient and smooth data transfer between CPU and devices. 
+ 
+I/O System Structure 
+ 
+
+ 
+
+ 
+7 
+ 
+Components of I/O Organization 
+1. CPU (Central Processing Unit) 
+●​ Controls overall system 
+●​ Sends commands to I/O devices 
+ 
+2. Device Controller 
+●​ Hardware interface for I/O devices 
+●​ Converts CPU commands into device operations 
+
+ 
+3. Device Driver 
+●​ Software that controls device operation 
+●​ Acts as translator between OS and hardware 
+ 
+4. I/O Channels 
+●​ Dedicated processors for I/O operations 
+●​ Reduces CPU workload 
+ 
+5. System Bus 
+●​ Communication path between CPU, memory, and I/O devices 
+ 
+3. I/O Communication Methods 
+ 
+1. Programmed I/O 
+●​ CPU continuously checks device status 
+●​ CPU waits until I/O completes 
+❌ Inefficient (CPU waste) 
+ 
+2. Interrupt-Driven I/O 
+
+ 
+ 
+
+ 
+6 
+●​ Device sends interrupt signal when ready 
+●​ CPU performs other tasks until interrupt arrives 
+✔ Efficient use of CPU 
+ 
+3. Direct Memory Access (DMA) 
+
+ 
+
+ 
+
+ 
+5 
+
+●​ Data transferred directly between device and memory 
+●​ CPU not involved in data transfer 
+✔ Very fast and efficient 
+ 
+4. Comparison of I/O Methods 
+Method 
+CPU Usage 
+Speed 
+Efficiency 
+Program
+med I/O 
+High 
+Slow 
+Low 
+Interrupt 
+I/O 
+Medium 
+Moder
+ate 
+Good 
+DMA 
+Low 
+Fast 
+Very High 
+ 
+5. Goals of I/O Organization 
+●​ Efficient data transfer 
+●​ Reduce CPU idle time 
+●​ Improve system performance 
+●​ Support multiple devices 
+●​ Ensure synchronization between CPU and devices 
+ 
+6. Simple Understanding 
+●​ I/O devices = tools to communicate with computer 
+●​ OS I/O organization = system that manages these tools 
+●​ DMA = fastest method (CPU free) 
+●​ Interrupts = CPU works smartly instead of waiting 
+ 
+
+7. Key Points for Exams 
+●​ I/O devices are input, output, and storage devices 
+●​ OS manages I/O using device drivers and controllers 
+●​ Three main I/O methods: Programmed, Interrupt-driven, DMA 
+●​ DMA is most efficient 
+●​ Interrupts improve CPU utilization 
+ 
+In Short 
+👉 I/O organization is the way an operating system controls and coordinates communication 
+between CPU and external devices efficiently using drivers, controllers, and transfer 
+techniques. 
+Disk Organization and I/O Management (Operating 
+System) 
+ 
+1. Disk Organization 
+What is Disk Organization? 
+Disk organization refers to how data is physically arranged and managed on a storage device 
+(HDD/SSD) so that it can be stored and retrieved efficiently. 
+👉 It defines the structure of disk and how OS accesses it. 
+ 
+Disk Structure 
+
+ 
+
+ 
+
+ 
+7 
+Components: 
+1. Platters 
+●​ Circular disks that store data magnetically 
+2. Tracks 
+●​ Concentric circles on a platter 
+3. Sectors 
+●​ Smallest storage unit (fixed size blocks) 
+4. Cylinders 
+●​ Set of tracks at same position across platters 
+
+ 
+How Data is Stored: 
+●​ Data written in sectors 
+●​ Sectors grouped into blocks 
+●​ Blocks form files 
+ 
+2. Disk Access Time 
+Total time to access data: 
+Disk Access Time = Seek Time + Rotational Latency + Transfer Time 
+ 
+1. Seek Time 
+●​ Time to move read/write head to correct track 
+2. Rotational Latency 
+●​ Time for disk to rotate to correct sector 
+3. Transfer Time 
+●​ Time to read/write data 
+ 
+3. Disk Scheduling (Important Part of 
+Organization) 
+
+ 
+ 
+
+ 
+7 
+Why Disk Scheduling? 
+●​ Multiple processes request disk access 
+●​ OS decides order of access 
+Common Algorithms: 
+●​ FCFS (First Come First Serve) 
+●​ SSTF (Shortest Seek Time First) 
+●​ SCAN (Elevator algorithm) 
+●​ C-SCAN (Circular SCAN) 
+ 
+Goal: 
+👉 Minimize disk seek time and improve performance 
+ 
+4. Disk Formatting 
+1. Low-Level Formatting 
+
+●​ Creates tracks and sectors 
+●​ Done by manufacturer 
+2. Logical Formatting 
+●​ Creates file system (FAT, NTFS, ext4) 
+ 
+5. Disk Management Tasks (OS) 
+●​ File allocation 
+●​ Free space management 
+●​ Disk scheduling 
+●​ Bad block handling 
+●​ Boot block management 
+ 
+6. I/O Management 
+What is I/O Management? 
+I/O Management is the part of the OS that handles communication between CPU and 
+input/output devices efficiently. 
+👉 It ensures smooth data transfer and device control. 
+ 
+7. I/O System Structure 
+
+ 
+
+ 
+
+ 
+6 
+ 
+Components of I/O Management: 
+1. Device Drivers 
+●​ Software that controls hardware devices 
+●​ Acts as translator between OS and device 
+ 
+2. Device Controllers 
+
+●​ Hardware interface for devices 
+●​ Executes commands from OS 
+ 
+3. I/O Scheduler 
+●​ Decides order of I/O requests 
+ 
+4. Buffering & Caching 
+●​ Temporary storage to speed up I/O 
+●​ Reduces device waiting time 
+ 
+5. Spooling 
+●​ Stores I/O data temporarily (e.g., printer queue) 
+ 
+8. I/O Techniques 
+ 
+1. Programmed I/O 
+●​ CPU waits for device 
+●​ Inefficient 
+ 
+2. Interrupt-Driven I/O 
+
+ 
+
+ 
+ 
+5 
+
+●​ Device interrupts CPU when ready 
+●​ CPU is free otherwise 
+✔ Efficient 
+ 
+3. Direct Memory Access (DMA) 
+
+ 
+
+ 
+ 
+6 
+
+●​ Direct transfer between device and memory 
+●​ CPU not involved in data transfer 
+✔ Very fast 
+ 
+9. Goals of I/O Management 
+●​ Efficient device communication 
+●​ Reduce CPU idle time 
+●​ Improve system performance 
+●​ Manage multiple devices 
+●​ Ensure synchronization 
+ 
+10. Disk Organization vs I/O Management 
+Feature 
+Disk Organization 
+I/O Management 
+Focus 
+Storage structure 
+Device 
+communication 
+Deals with 
+Disk layout 
+CPU-device 
+interaction 
+Includes 
+Tracks, sectors 
+Drivers, DMA, 
+interrupts 
+Goal 
+Efficient storage 
+Efficient data 
+transfer 
+ 
+11. Simple Understanding 
+●​ Disk Organization → “How data is arranged on disk” 
+●​ I/O Management → “How OS communicates with devices” 
+
+ 
+12. Key Points for Exams 
+●​ Disk is divided into tracks, sectors, cylinders 
+●​ Disk scheduling reduces seek time 
+●​ I/O management handles device communication 
+●​ DMA is fastest I/O method 
+●​ Interrupts improve CPU utilization 
+ 
+In Short 
+👉 Disk organization defines how data is stored on storage devices, and I/O management 
+defines how the OS controls data transfer between CPU and devices efficiently. 
+Disk Scheduling Algorithms (OS) 
+What is Disk Scheduling? 
+When multiple processes request disk I/O, the OS decides the order in which requests are 
+served to reduce: 
+●​ Seek time (movement of disk arm) 
+●​ Total disk head movement 
+●​ Waiting time 
+👉 Goal: Improve disk performance 
+ 
+1. FCFS (First Come First Serve) 
+
+ 
+ 
+
+ 
+5 
+Concept: 
+Requests are served in the order they arrive 
+Example: 
+Queue: 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67​
+ Head moves in same order 
+Advantages: 
+●​ Simple 
+●​ Fair (no starvation) 
+Disadvantages: 
+●​ High seek time 
+
+●​ Inefficient 
+ 
+2. SSTF (Shortest Seek Time First) 
+ 
+
+ 
+ 
+7 
+Concept: 
+Serves request closest to current head position 
+
+Advantages: 
+●​ Better performance than FCFS 
+●​ Reduces seek time 
+Disadvantages: 
+●​ Starvation possible (far requests may wait long) 
+ 
+3. SCAN (Elevator Algorithm) 
+ 
+
+ 
+
+ 
+6 
+Concept: 
+Disk arm moves in one direction servicing requests, then reverses direction 
+Example: 
+Like an elevator going up and down floors 
+Advantages: 
+●​ No starvation 
+●​ Efficient than FCFS 
+Disadvantages: 
+●​ Uneven wait time (edge tracks wait longer) 
+ 
+
+4. C-SCAN (Circular SCAN) 
+ 
+
+ 
+
+ 
+7 
+Concept: 
+●​ Head moves in one direction only 
+●​ After reaching end, jumps back to start 
+Advantages: 
+●​ More uniform waiting time 
+●​ Fairer than SCAN 
+Disadvantages: 
+●​ Extra movement (jumping back) 
+ 
+
+5. LOOK 
+ 
+
+ 
+
+ 
+6 
+Concept: 
+●​ Like SCAN but does not go to end of disk 
+●​ Only goes as far as last request 
+Advantages: 
+●​ Reduces unnecessary movement 
+●​ Better than SCAN 
+Disadvantages: 
+●​ Slightly more complex 
+ 
+6. C-LOOK 
+
+ 
+ 
+
+ 
+6 
+Concept: 
+●​ Like C-SCAN but only goes to last request (not disk end) 
+●​ Then jumps to first request 
+Advantages: 
+●​ Most efficient circular method 
+●​ Reduces unnecessary travel 
+Disadvantages: 
+●​ Slight overhead of jumping 
+ 
+Comparison Table 
+Algorithm 
+Movement Type 
+Efficiency 
+Starvation 
+FCFS 
+Arrival order 
+Low 
+No 
+
+SSTF 
+Nearest request 
+High 
+Yes 
+SCAN 
+Back & forth 
+Good 
+No 
+C-SCAN 
+One direction 
+circular 
+Better 
+No 
+LOOK 
+SCAN without full 
+end 
+Better 
+No 
+C-LOOK 
+Circular LOOK 
+Best 
+No 
+ 
+Simple Understanding 
+●​ FCFS → “Serve in queue order” 
+●​ SSTF → “Serve nearest first” 
+●​ SCAN → “Elevator goes up and down” 
+●​ C-SCAN → “One-way elevator with reset” 
+●​ LOOK → “Elevator stops at last request” 
+●​ C-LOOK → “One-way LOOK without going to end” 
+ 
+Key Points for Exams 
+●​ Disk scheduling reduces seek time 
+●​ SSTF is faster but may cause starvation 
+●​ SCAN and C-SCAN are more fair 
+●​ LOOK and C-LOOK are optimized versions 
+●​ C-LOOK is often most efficient in practice 
+ 
+In Short 
+👉 Disk scheduling algorithms decide the order of disk access requests to minimize seek time 
+and improve system performance. 
+
+Below are step-by-step numerical examples of disk scheduling algorithms (very important for 
+exams). I’ll solve them clearly so you can copy the method. 
+ 
+✅ Given Problem (Common Format) 
+Disk request queue: 
+98, 183, 37, 122, 14, 124, 65, 67 
+Initial head position: 
+53 
+Disk range: 
+0 to 199 
+👉 We will calculate Total Head Movement for each algorithm. 
+ 
+1. FCFS (First Come First Serve) 
+Order: 
+53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67 
+Calculation: 
+Move 
+Distance 
+53 → 98 
+45 
+98 → 183 
+85 
+183 → 37 
+146 
+37 → 122 
+85 
+122 → 14 
+108 
+
+14 → 124 
+110 
+124 → 65 
+59 
+65 → 67 
+2 
+Total Head Movement: 
+= 45 + 85 + 146 + 85 + 108 + 110 + 59 + 2 
+= 640 tracks 
+ 
+2. SSTF (Shortest Seek Time First) 
+Idea: 
+Always go to nearest request 
+Steps: 
+Start = 53 
+Nearest order: 
+53 → 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183 
+Calculation: 
+Move 
+Distance 
+53 → 65 
+12 
+65 → 67 
+2 
+67 → 37 
+30 
+37 → 14 
+23 
+14 → 98 
+84 
+98 → 
+122 
+24 
+
+122 → 
+124 
+2 
+124 → 
+183 
+59 
+Total Head Movement: 
+= 12 + 2 + 30 + 23 + 84 + 24 + 2 + 59 
+= 236 tracks 
+ 
+3. SCAN (Elevator Algorithm) 
+Direction: Assume moving towards 0 first 
+Order: 
+53 → 37 → 14 → 0 → 65 → 67 → 98 → 122 → 124 → 183 
+Calculation: 
+Move 
+Distance 
+53 → 37 
+16 
+37 → 14 
+23 
+14 → 0 
+14 
+0 → 65 
+65 
+65 → 67 
+2 
+67 → 98 
+31 
+98 → 122 
+24 
+122 → 124 
+2 
+124 → 183 
+59 
+Total Head Movement: 
+
+= 236 tracks 
+ 
+4. C-SCAN (Circular SCAN) 
+Direction: Only increasing direction 
+Order: 
+53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 0 → 14 → 37 
+Calculation: 
+Move 
+Distance 
+53 → 65 
+12 
+65 → 67 
+2 
+67 → 98 
+31 
+98 → 122 
+24 
+122 → 124 
+2 
+124 → 183 
+59 
+183 → 199 
+16 
+199 → 0 
+199 
+0 → 14 
+14 
+14 → 37 
+23 
+Total Head Movement: 
+= 382 tracks 
+ 
+5. LOOK 
+Only goes till last request (not full disk) 
+
+Order: 
+53 → 37 → 14 → 65 → 67 → 98 → 122 → 124 → 183 
+Calculation: 
+Move 
+Distance 
+53 → 37 
+16 
+37 → 14 
+23 
+14 → 65 
+51 
+65 → 67 
+2 
+67 → 98 
+31 
+98 → 122 
+24 
+122 → 124 
+2 
+124 → 183 
+59 
+Total Head Movement: 
+= 208 tracks 
+ 
+6. C-LOOK 
+Circular but only till last request 
+Order: 
+53 → 65 → 67 → 98 → 122 → 124 → 183 → 14 → 37 
+Calculation: 
+Move 
+Distance 
+53 → 65 
+12 
+65 → 67 
+2 
+
+67 → 98 
+31 
+98 → 122 
+24 
+122 → 124 
+2 
+124 → 183 
+59 
+183 → 14 
+169 
+14 → 37 
+23 
+Total Head Movement: 
+= 322 tracks 
+ 
+📊 FINAL COMPARISON 
+Algorithm 
+Total Head Movement 
+FCFS 
+640 
+SSTF 
+236 
+SCAN 
+236 
+C-SCAN 
+382 
+LOOK 
+208 
+C-LOOK 
+322 
+ 
+🧠 Final Conclusion (VERY 
+IMPORTANT) 
+●​ Best (least movement): LOOK 
+●​ Next best: SSTF / SCAN 
+●​ Worst: FCFS 
+
+Self-learning Topics 
+1. File System in Linux and Windows 
+File systems define how an operating system stores, organizes, and accesses files on storage 
+devices. 
+ 
+🐧 Linux File System 
+
+ 
+
+ 
+
+ 
+6 
+1. Structure 
+Linux follows a single-root hierarchical tree structure: 
+/ 
+├── bin 
+├── etc 
+├── home 
+├── var 
+├── usr 
+├── tmp 
+
+👉 Everything starts from / (root directory) 
+ 
+2. Common Linux File Systems 
+●​ ext3 / ext4 (most widely used) 
+●​ XFS 
+●​ Btrfs 
+ 
+3. Key Features 
+✔ Everything is a file 
+●​ Devices, directories, processes → treated as files 
+✔ Inode-based system 
+●​ Each file has an inode (stores metadata, not filename) 
+✔ Case-sensitive 
+●​ File.txt ≠ file.txt 
+✔ Mounting system 
+●​ Devices are mounted into directory tree (no drive letters) 
+✔ Strong permissions 
+●​ Read / Write / Execute for user, group, others 
+ 
+4. Advantages 
+●​ Highly secure 
+●​ Efficient for servers 
+●​ Flexible file handling 
+
+●​ Supports multiple file systems 
+ 
+5. Disadvantages 
+●​ More complex for beginners 
+●​ Command-line based management 
+ 
+🪟 Windows File System 
+ 
+
+ 
+ 
+6 
+1. Structure 
+Windows uses a drive-based hierarchical system: 
+C:\ 
+├── Program Files 
+├── Users 
+├── Windows 
+
+├── System32 
+ 
+2. Common File Systems 
+●​ NTFS (New Technology File System) → main modern system 
+●​ FAT32 
+●​ exFAT 
+ 
+3. Key Features 
+✔ Drive-based structure 
+●​ Each storage device has a letter (C:, D:, etc.) 
+✔ NTFS support 
+●​ Security permissions 
+●​ Encryption 
+●​ Compression 
+●​ Journaling 
+✔ GUI-based file management 
+●​ File Explorer 
+✔ Case-insensitive 
+●​ File.txt = file.txt 
+ 
+4. NTFS Features (Important) 
+●​ Master File Table (MFT) 
+●​ Access control lists (ACL) 
+●​ File compression 
+●​ Encryption (EFS) 
+●​ Disk quotas 
+
+ 
+5. Advantages 
+●​ Easy to use (GUI-based) 
+●​ Strong security (NTFS) 
+●​ Good compatibility 
+ 
+6. Disadvantages 
+●​ Less flexible than Linux 
+●​ Heavier system overhead 
+ 
+🔁 Linux vs Windows File System 
+Feature 
+Linux 
+Windows 
+Structure 
+Single root (/) 
+Drive-based (C:, D:) 
+Case sensitivity 
+Yes 
+No 
+File system 
+ext4, XFS 
+NTFS, FAT32 
+Security 
+Strong 
+permissions 
+ACL-based security 
+Interface 
+CLI + GUI 
+GUI focused 
+ 
+2. Features of I/O Facility in Different OS 
+I/O facility = how OS manages input/output devices like keyboard, disk, printer, network 
+ 
+
+🧠 General I/O Features in OS 
+ 
+
+ 
+
+ 
+6 
+ 
+1. Device Independence 
+●​ Programs don’t depend on specific hardware 
+●​ OS hides device details 
+ 
+2. Buffering 
+●​ Temporary storage of data during transfer 
+
+●​ Improves speed 
+ 
+3. Caching 
+●​ Stores frequently used data in fast memory 
+●​ Reduces access time 
+ 
+4. Spooling 
+ 
+
+ 
+ 
+
+6 
+●​ Stores I/O tasks in queue (e.g., printer jobs) 
+●​ Used in printers 
+ 
+5. Interrupt-driven I/O 
+●​ Device interrupts CPU when ready 
+●​ CPU is free otherwise 
+ 
+6. DMA (Direct Memory Access) 
+●​ Direct transfer between device and memory 
+●​ CPU not involved 
+ 
+7. I/O Scheduling 
+●​ Orders I/O requests (disk scheduling, etc.) 
+ 
+🪟 I/O Features in Different OS 
+Linux I/O Features 
+●​ Uses device files (/dev) 
+●​ Supports asynchronous I/O 
+●​ Strong DMA and interrupt handling 
+●​ Highly efficient buffering system 
+●​ Everything treated as a file 
+ 
+
+Windows I/O Features 
+●​ Uses I/O Manager (kernel-level system) 
+●​ Plug-and-play device support 
+●​ Graphical driver installation 
+●​ NTFS supports caching + buffering 
+●​ Strong GUI-based device handling 
+ 
+Mobile OS (Android) I/O Features 
+●​ Power-efficient I/O management 
+●​ Uses Linux kernel I/O system 
+●​ Aggressive process control for battery saving 
+●​ Optimized for touch and sensor input 
+ 
+🔁 Comparison of I/O in OS 
+Feature 
+Linux 
+Windows 
+Android 
+Structure 
+File-ba
+sed 
+Kernel-m
+anaged 
+Linux-based 
+Efficiency 
+High 
+Moderate 
+High (mobile 
+optimized) 
+Device 
+handling 
+Advanc
+ed 
+GUI-frien
+dly 
+Power-efficient 
+Flexibility 
+Very 
+high 
+Medium 
+Mobile-focused 
+ 
+📌 Key Points for Exams 
+●​ Linux uses ext4 and inode-based file system 
+
+●​ Windows uses NTFS with drive-based structure 
+●​ I/O features include buffering, caching, spooling, DMA, interrupts 
+●​ Linux is more powerful for servers 
+●​ Windows is easier for users 
+●​ Android is optimized for mobile power efficiency 
+ 
+🧾 In Short 
+👉 Linux = powerful, secure, file-based OS​
+ 👉 Windows = user-friendly, drive-based OS​
+ 👉 I/O systems = manage how OS communicates with devices efficiently 
+ 
+ 
+ 
+Module 6  
+Special-purpose Operating Systems 
+Open-source and Proprietary Operating Systems (OS) 
+Operating systems are mainly classified based on how their source code is available and 
+licensed. 
+ 
+1. Open-Source Operating System 
+
+ 
+
+ 
+
+ 
+5 
+What is Open Source OS? 
+An open-source operating system is one whose source code is freely available to the public. 
+Anyone can: 
+●​ View the code 
+●​ Modify it 
+●​ Distribute it 
+ 
+Examples: 
+●​ Linux 
+●​ Ubuntu 
+●​ Fedora 
+●​ Debian 
+ 
+Key Features: 
+
+●​ Free to use and modify 
+●​ Community-driven development 
+●​ High security (many developers review code) 
+●​ Highly customizable 
+●​ Transparent system 
+ 
+Advantages: 
+●​ No license cost 
+●​ Highly flexible 
+●​ Strong community support 
+●​ Secure (bugs fixed quickly) 
+ 
+Disadvantages: 
+●​ Can be complex for beginners 
+●​ Limited official customer support 
+●​ Hardware compatibility issues sometimes 
+ 
+Simple Understanding: 
+👉 “You can open the system’s source code like a book and change it.” 
+ 
+2. Proprietary Operating System 
+
+ 
+ 
+
+ 
+8 
+What is Proprietary OS? 
+A proprietary operating system is owned by a company and its source code is not publicly 
+available. 
+👉 Users can use it but cannot modify or access its source code. 
+ 
+
+Examples: 
+●​ Microsoft Windows 
+●​ macOS 
+●​ iOS 
+ 
+Key Features: 
+●​ Closed source 
+●​ Controlled by company 
+●​ Paid or licensed software 
+●​ Regular official updates 
+●​ Limited customization 
+ 
+Advantages: 
+●​ Easy to use (user-friendly UI) 
+●​ Strong technical support 
+●​ Stable and well-tested 
+●​ Better hardware compatibility 
+ 
+Disadvantages: 
+●​ Expensive (license cost) 
+●​ No access to source code 
+●​ Less customization 
+●​ Vendor dependency 
+ 
+Simple Understanding: 
+👉 “You can use it, but you cannot see or change how it works inside.” 
+
+ 
+3. Comparison Table 
+Feature 
+Open Source 
+OS 
+Proprietary OS 
+Source code 
+Public 
+Hidden 
+Cost 
+Free 
+Paid 
+Customization 
+High 
+Low 
+Security 
+Community-bas
+ed 
+Company-controlled 
+Support 
+Community 
+Official support 
+Examples 
+Linux, Ubuntu 
+Windows, macOS 
+ 
+4. Key Points for Exams 
+●​ Open-source OS → freely available and modifiable 
+●​ Proprietary OS → closed and controlled by company 
+●​ Linux = most popular open-source OS 
+●​ Windows & macOS = most popular proprietary OS 
+●​ Open-source is flexible, proprietary is user-friendly 
+ 
+5. In Short 
+👉 Open-source OS allows users to view and modify code, while proprietary OS allows only 
+licensed usage without code access. 
+Fundamentals of Distributed Operating System (DOS) 
+ 
+
+1. What is a Distributed Operating System? 
+A Distributed Operating System (DOS) is an OS that manages a group of independent 
+computers connected through a network and makes them appear to users as a single unified 
+system. 
+👉 In simple words:​
+ Many computers work together like one powerful system. 
+ 
+Concept Diagram 
+ 
+
+ 
+ 
+6 
+ 
+2. Characteristics of Distributed OS 
+1. Resource Sharing 
+●​ Hardware, files, and data are shared among computers 
+2. Transparency 
+
+Users do not know where resources are located. 
+Types: 
+●​ Location transparency 
+●​ Access transparency 
+●​ Replication transparency 
+ 
+3. Concurrency 
+●​ Multiple processes run simultaneously on different machines 
+ 
+4. Scalability 
+●​ System can be expanded easily by adding more nodes 
+ 
+5. Fault Tolerance 
+●​ If one system fails, others continue working 
+ 
+6. Parallelism 
+●​ Tasks are divided and executed simultaneously 
+ 
+3. Goals of Distributed OS 
+●​ Make multiple systems work like a single system 
+●​ Improve performance using parallel processing 
+●​ Increase reliability and availability 
+●​ Share resources efficiently 
+●​ Provide transparency to users 
+
+ 
+4. Advantages of Distributed OS 
+●​ High performance (parallel processing) 
+●​ Resource sharing 
+●​ Better reliability 
+●​ Scalability (easy to expand) 
+●​ Load balancing 
+ 
+5. Disadvantages of Distributed OS 
+●​ Complex design 
+●​ Security issues in network 
+●​ Network dependency 
+●​ High communication overhead 
+●​ Difficult debugging 
+ 
+6. Types of Distributed Systems 
+ 
+1. Client-Server System 
+
+ 
+ 
+
+ 
+6 
+●​ Clients request services 
+●​ Server provides services 
+Example: Web browsing 
+ 
+2. Peer-to-Peer System 
+
+ 
+ 
+
+ 
+5 
+●​ All nodes are equal 
+●​ Each node acts as both client and server 
+Example: Torrent systems 
+ 
+3. Cluster Systems 
+●​ Group of computers working together 
+●​ Used for high-performance computing 
+ 
+7. Components of Distributed OS 
+●​ Nodes (computers) 
+●​ Network communication system 
+●​ Resource manager 
+●​ Process manager 
+●​ File system manager 
+
+ 
+8. Distributed OS vs Centralized OS 
+Feature 
+Distributed 
+OS 
+Centralized OS 
+System 
+Multiple 
+computers 
+Single computer 
+Performance 
+High 
+Limited 
+Fault 
+tolerance 
+High 
+Low 
+Complexity 
+High 
+Low 
+Resource 
+sharing 
+Yes 
+Limited 
+ 
+9. Real-Life Examples 
+●​ Google Cloud Platform 
+●​ Amazon Web Services 
+●​ Apache Hadoop 
+●​ Kubernetes 
+ 
+10. Simple Understanding 
+Think of it like: 
+●​ Many computers = workers 
+●​ Network = communication system 
+●​ OS = manager​
+ 👉 Together they work as one big super computer 
+
+ 
+11. Key Points for Exams 
+●​ Distributed OS manages multiple connected computers 
+●​ Provides single system image 
+●​ Supports resource sharing and parallel processing 
+●​ Key features: transparency, scalability, fault tolerance 
+●​ Types: client-server, peer-to-peer, cluster systems 
+ 
+12. In Short 
+👉 A Distributed Operating System is an OS that coordinates multiple independent 
+computers over a network to work together as a single unified system. 
+Network Operating System (NOS) 
+ 
+1. What is a Network Operating System? 
+A Network Operating System (NOS) is an operating system that is designed to manage and 
+coordinate computers connected over a network, allowing them to share resources like files, 
+printers, and applications. 
+👉 In simple words:​
+ It helps multiple computers communicate and share resources over a network. 
+ 
+NOS Concept Diagram 
+
+ 
+ 
+
+ 
+7 
+ 
+2. Key Features of Network OS 
+1. Resource Sharing 
+●​ Files, printers, and applications are shared across the network 
+2. Centralized Management 
+●​ A central server controls network resources 
+3. User Management 
+●​ Controls user accounts, permissions, and security 
+4. Network Communication 
+●​ Enables communication between connected systems 
+5. Security 
+
+●​ Authentication and access control for users 
+ 
+3. Types of Network Operating Systems 
+ 
+1. Peer-to-Peer NOS 
+ 
+
+ 
+ 
+6 
+Concept: 
+●​ No central server 
+●​ All computers are equal (peers) 
+
+Features: 
+●​ Each system can act as client and server 
+●​ Simple setup 
+●​ Suitable for small networks 
+Example: 
+●​ Home networks 
+●​ File-sharing systems 
+ 
+2. Client-Server NOS 
+ 
+
+ 
+ 
+7 
+Concept: 
+●​ Central server controls all clients 
+●​ Clients request services from server 
+
+Features: 
+●​ Centralized control 
+●​ High security 
+●​ Scalable and reliable 
+Example: 
+●​ Office networks 
+●​ Banks 
+●​ University systems 
+ 
+4. Functions of Network Operating System 
+●​ File sharing across network 
+●​ Printer sharing 
+●​ User authentication 
+●​ Network security management 
+●​ Data communication 
+●​ Remote access control 
+ 
+5. Advantages of Network OS 
+●​ Easy resource sharing 
+●​ Centralized management (in client-server model) 
+●​ Better security control 
+●​ Efficient communication 
+●​ Scalable system 
+ 
+6. Disadvantages of Network OS 
+●​ Depends on network connectivity 
+
+●​ Server failure affects entire system 
+●​ Higher setup cost 
+●​ Requires maintenance and administration 
+ 
+7. Network OS vs Distributed OS 
+Feature 
+Network OS 
+Distributed OS 
+System view 
+Multiple 
+connected 
+systems 
+Single system image 
+Transparency 
+Low 
+High 
+Control 
+Central server 
+Distributed control 
+Complexity 
+Less complex 
+Highly complex 
+Example 
+Windows Server 
+Hadoop cluster 
+ 
+8. Real-Life Examples 
+●​ Windows Server 
+●​ Novell NetWare 
+●​ Linux Server 
+ 
+9. Simple Understanding 
+Think of a school computer lab: 
+●​ Server = teacher controlling system 
+●​ Clients = student computers 
+●​ Network OS = system that connects and manages all computers 
+
+ 
+10. Key Points for Exams 
+●​ NOS connects computers over a network 
+●​ Supports file and printer sharing 
+●​ Two types: Peer-to-peer and Client-server 
+●​ Client-server is more secure and widely used 
+●​ Depends heavily on network connectivity 
+ 
+11. In Short 
+👉 A Network Operating System is an OS that manages and coordinates multiple computers 
+connected over a network to share resources and communicate efficiently. 
+Architecture and Functions of a Network Operating 
+System (NOS) 
+ 
+1. Architecture of Network Operating 
+System 
+A Network Operating System architecture describes how different components (clients, 
+servers, network services, and protocols) are organized to enable communication and resource 
+sharing. 
+ 
+(A) General NOS Architecture 
+
+ 
+ 
+
+ 
+6 
+ 
+2. Components of NOS Architecture 
+1. Client Machines 
+●​ Request services (files, printing, applications) 
+●​ Do not manage resources 
+ 
+2. Server Machines 
+●​ Provide resources and services 
+●​ Manage network control and security 
+Types of servers: 
+●​ File server 
+●​ Print server 
+●​ Application server 
+
+●​ Authentication server 
+ 
+3. Network Interface 
+●​ Connects computers via LAN/WAN 
+●​ Uses protocols (TCP/IP) 
+ 
+4. NOS Software Layer 
+●​ Runs on server or client 
+●​ Handles communication, security, and resource sharing 
+ 
+5. Communication Protocols 
+●​ Rules for data exchange 
+●​ Example: TCP/IP, FTP, HTTP 
+ 
+2. Types of NOS Architecture 
+ 
+(A) Peer-to-Peer Architecture 
+
+ 
+ 
+
+ 
+7 
+Features: 
+●​ No central server 
+●​ All computers are equal 
+●​ Each node can act as client and server 
+Use: 
+●​ Small networks 
+●​ Home networks 
+ 
+(B) Client-Server Architecture 
+
+ 
+
+ 
+ 
+6 
+Features: 
+
+●​ Central server manages everything 
+●​ Clients request services 
+●​ High security and control 
+Use: 
+●​ Offices 
+●​ Banks 
+●​ Universities 
+ 
+3. Functions of Network Operating System 
+NOS performs several important functions: 
+ 
+1. File Sharing 
+●​ Allows users to access files from other systems 
+ 
+2. Printer Sharing 
+●​ Multiple users use one printer via network 
+ 
+3. User Management 
+
+ 
+ 
+
+ 
+7 
+●​ Manages user accounts 
+●​ Authentication and login control 
+●​ Permission management 
+ 
+4. Resource Management 
+●​ Allocates CPU, memory, storage, and devices over network 
+ 
+5. Communication Services 
+●​ Enables messaging and data transfer between systems 
+ 
+6. Security Management 
+●​ Protects data using authentication and encryption 
+●​ Controls access rights 
+
+ 
+7. Network Monitoring 
+●​ Tracks network performance 
+●​ Detects faults and errors 
+ 
+4. Key Features of NOS Architecture 
+●​ Centralized or decentralized control 
+●​ Resource sharing 
+●​ Security enforcement 
+●​ Scalability 
+●​ Fault detection and recovery 
+ 
+5. Advantages of NOS Architecture 
+●​ Easy resource sharing 
+●​ Efficient communication 
+●​ Centralized control (client-server) 
+●​ Better security 
+●​ Scalable system 
+ 
+6. Disadvantages 
+●​ Network dependency 
+●​ Server failure affects system 
+●​ Complex administration 
+●​ Security risks in large networks 
+ 
+
+7. Simple Understanding 
+Think of a school: 
+●​ Server = teacher managing system 
+●​ Clients = students 
+●​ Network OS = system connecting everyone 
+●​ Functions = sharing books, printing, attendance 
+ 
+8. Key Points for Exams 
+●​ NOS architecture connects clients and servers over a network 
+●​ Two types: Peer-to-peer and Client-server 
+●​ Main functions: file sharing, printing, security, user management 
+●​ Client-server is widely used in enterprises 
+●​ NOS depends on network communication protocols 
+ 
+9. In Short 
+👉 Network Operating System architecture defines how computers, servers, and network 
+services are organized to enable communication, resource sharing, and centralized 
+management across a network. 
+Cloud Operating System (Cloud OS) 
+ 
+1. What is a Cloud Operating System? 
+A Cloud Operating System (Cloud OS) is a software platform that manages and delivers 
+computing resources (like storage, servers, applications, and services) over the internet (cloud) 
+instead of a local computer. 
+
+👉 In simple words:​
+ It is an OS that allows users to use computing power from the internet instead of their own 
+device. 
+ 
+Cloud OS Concept 
+ 
+
+ 
+ 
+
+6 
+ 
+2. Working of Cloud Operating System 
+1.​ User connects via internet 
+2.​ Requests services (storage, apps, processing) 
+3.​ Cloud OS allocates resources from data centers 
+4.​ Results are sent back to user device 
+👉 Everything runs on remote servers, not on local PC. 
+ 
+3. Characteristics of Cloud OS 
+1. Internet-Based Access 
+●​ Works through web browsers or apps 
+2. Virtualization 
+ 
+
+ 
+ 
+6 
+●​ Creates virtual machines from physical resources 
+●​ Multiple users share same hardware safely 
+
+ 
+3. Scalability 
+●​ Resources can be increased or decreased easily 
+ 
+4. On-Demand Services 
+●​ Users get resources whenever needed 
+ 
+5. Multi-Tenancy 
+●​ Multiple users share same infrastructure securely 
+ 
+6. Resource Pooling 
+●​ CPU, storage, and memory are shared dynamically 
+ 
+4. Types of Cloud Services 
+ 
+1. IaaS (Infrastructure as a Service) 
+●​ Provides virtual machines, storage, networks 
+●​ Example: AWS EC2 
+ 
+2. PaaS (Platform as a Service) 
+●​ Provides environment for application development 
+●​ Example: Google App Engine 
+
+ 
+3. SaaS (Software as a Service) 
+ 
+
+ 
+
+ 
+7 
+●​ Software is provided over internet 
+●​ Example: Gmail, Google Docs 
+ 
+5. Examples of Cloud Operating Systems 
+●​ Google Chrome OS 
+●​ Microsoft Azure 
+●​ Amazon Web Services 
+●​ Google Workspace 
+ 
+6. Advantages of Cloud OS 
+●​ No need for powerful local hardware 
+●​ Access from anywhere 
+●​ Easy backup and recovery 
+●​ Scalable resources 
+●​ Cost-effective (pay-as-you-use model) 
+●​ Centralized updates 
+
+ 
+7. Disadvantages of Cloud OS 
+●​ Requires internet connection 
+●​ Security and privacy risks 
+●​ Dependence on service provider 
+●​ Possible downtime issues 
+●​ Limited offline access 
+ 
+8. Cloud OS vs Traditional OS 
+Feature 
+Cloud OS 
+Traditional OS 
+Location 
+Internet-based 
+Installed locally 
+Storage 
+Cloud servers 
+Local disk 
+Access 
+Anywhere 
+Device-specific 
+Updates 
+Automatic 
+Manual 
+Dependency 
+Internet 
+required 
+No internet needed 
+ 
+9. Simple Understanding 
+Think of: 
+●​ Traditional OS = system inside your laptop 
+●​ Cloud OS = system living on the internet​
+ 👉 You just use it through browser/apps 
+ 
+
+10. Key Points for Exams 
+●​ Cloud OS works over internet 
+●​ Uses virtualization and cloud computing 
+●​ Provides SaaS, PaaS, IaaS services 
+●​ Enables resource sharing and scalability 
+●​ Google Chrome OS is a common example 
+●​ Highly dependent on internet connectivity 
+ 
+11. In Short 
+👉 A Cloud Operating System is an OS that delivers computing services over the internet 
+using cloud infrastructure, allowing users to access applications, storage, and processing 
+remotely. 
+Real-Time Operating System (RTOS) 
+ 
+1. What is a Real-Time Operating System? 
+A Real-Time Operating System (RTOS) is an operating system designed to process data and 
+respond to inputs within a strict time limit (deadline). 
+👉 In simple words:​
+ It is an OS that gives results exactly on time—not late, not early (in critical systems). 
+ 
+RTOS Concept 
+
+ 
+
+ 
+
+ 
+6 
+ 
+2. Key Features of RTOS 
+1. Deterministic Response 
+●​ Always responds within a fixed time limit 
+ 
+2. Time Constraints (Deadlines) 
+●​ Tasks must finish before deadline 
+●​ Late output may be useless or harmful 
+ 
+3. Priority-Based Scheduling 
+
+ 
+
+ 
+
+ 
+6 
+●​ High priority tasks executed first 
+●​ Preemption allowed 
+ 
+4. Predictability 
+●​ Execution time is predictable 
+●​ No random delays 
+ 
+5. Minimal Interrupt Latency 
+●​ Fast response to external events 
+ 
+
+3. Types of RTOS 
+ 
+1. Hard Real-Time System 
+ 
+ 
+
+ 
+6 
+Characteristics: 
+●​ Missing deadline = system failure 
+●​ Very strict timing 
+Examples: 
+●​ Airbag systems 
+●​ Pacemakers 
+●​ Nuclear control systems 
+ 
+2. Soft Real-Time System 
+
+ 
+ 
+
+ 
+6 
+Characteristics: 
+●​ Occasional delays allowed 
+●​ Performance may degrade but system still works 
+Examples: 
+●​ Video streaming 
+●​ Online gaming 
+●​ Audio systems 
+
+ 
+4. RTOS Architecture 
+●​ Task scheduler 
+●​ Interrupt handler 
+●​ Memory manager 
+●​ Inter-process communication system 
+ 
+5. RTOS vs General OS 
+Feature 
+RTOS 
+General OS 
+Timing 
+Strict 
+Flexible 
+Scheduling 
+Priority-b
+ased 
+Fair sharing 
+Response time 
+Predictabl
+e 
+Variable 
+Usage 
+Critical 
+systems 
+General computing 
+Examples 
+Airbags, 
+robots 
+Windows, Linux 
+ 
+6. Applications of RTOS 
+●​ Robotics 
+●​ Automotive systems 
+●​ Medical devices 
+●​ Industrial automation 
+●​ Defense systems 
+●​ Telecom systems 
+
+ 
+7. Advantages of RTOS 
+●​ Fast response time 
+●​ Reliable for critical systems 
+●​ Efficient task scheduling 
+●​ Predictable behavior 
+ 
+8. Disadvantages of RTOS 
+●​ Complex design 
+●​ Expensive development 
+●​ Limited flexibility 
+●​ Requires high precision programming 
+ 
+9. Simple Understanding 
+Think of: 
+●​ General OS → “First come, first served restaurant” 
+●​ RTOS → “Emergency hospital (critical patients treated instantly)” 
+ 
+10. Key Points for Exams 
+●​ RTOS works under strict time constraints 
+●​ Two types: Hard RTOS and Soft RTOS 
+●​ Uses priority-based preemptive scheduling 
+●​ Used in embedded and critical systems 
+●​ Predictable and fast response system 
+
+ 
+11. In Short 
+👉 A Real-Time Operating System is an OS that ensures tasks are completed within strict 
+deadlines, making it suitable for time-critical applications like medical, industrial, and 
+automotive systems. 
+Mobile Operating System (Mobile OS) 
+ 
+1. What is a Mobile Operating System? 
+A Mobile Operating System (Mobile OS) is an operating system designed to run on 
+smartphones, tablets, and other mobile devices. It manages hardware, applications, and 
+provides a user interface optimized for touch and mobility. 
+👉 In simple words:​
+ It is the OS that powers your mobile phone and controls apps, calls, internet, camera, etc. 
+ 
+Mobile OS Concept 
+ 
+
+ 
+
+ 
+6 
+ 
+2. Features of Mobile Operating System 
+1. Touch-Based Interface 
+●​ Designed for touchscreen interaction 
+●​ Uses gestures like swipe, tap, pinch 
+
+ 
+2. Mobility Support 
+●​ Works on portable devices (battery-powered) 
+●​ Optimized for low power usage 
+ 
+3. Wireless Communication 
+ 
+
+ 
+ 
+5 
+
+●​ Supports Wi-Fi, Bluetooth, 4G/5G, GPS 
+ 
+4. App Management 
+●​ Downloads, installs, and manages apps via app stores 
+ 
+5. Multitasking 
+●​ Runs multiple apps at the same time 
+ 
+6. Security 
+●​ App permissions 
+●​ Biometric authentication (fingerprint, face unlock) 
+ 
+7. Energy Efficiency 
+●​ Optimized to save battery power 
+ 
+3. Architecture of Mobile OS 
+Mobile OS typically has layered architecture: 
+Layers: 
+●​ Kernel layer (hardware control) 
+●​ Middleware (services) 
+●​ Application framework 
+●​ User applications 
+ 
+
+4. Popular Mobile Operating Systems 
+ 
+1. Android 
+ 
+
+ 
+ 
+6 
+●​ Developed by Google Android 
+●​ Linux-based OS 
+●​ Open-source 
+●​ Most widely used mobile OS 
+ 
+
+2. iOS 
+ 
+
+
+ 
+6 
+●​ Developed by Apple iOS 
+●​ Closed-source (proprietary) 
+●​ High security and performance 
+●​ Used in iPhones and iPads 
+ 
+3. Other Mobile OS 
+●​ HarmonyOS 
+●​ KaiOS (feature phones) 
+ 
+5. Advantages of Mobile OS 
+●​ Easy to use (touch interface) 
+●​ Portable and lightweight 
+●​ Supports wireless connectivity 
+●​ Large app ecosystem 
+●​ Regular updates 
+
+ 
+6. Disadvantages of Mobile OS 
+●​ Limited processing power compared to PCs 
+●​ Battery dependency 
+●​ Security risks from apps 
+●​ Less customization (especially iOS) 
+ 
+7. Mobile OS vs Desktop OS 
+Feature 
+Mobile OS 
+Desktop OS 
+Device 
+Smartphones 
+PCs/Laptops 
+Interface 
+Touch-based 
+Keyboard/Mouse 
+Power usage 
+Low 
+High 
+Portability 
+High 
+Low 
+Examples 
+Android, iOS 
+Windows, Linux 
+ 
+8. Applications of Mobile OS 
+●​ Communication (calls, messaging) 
+●​ Social media apps 
+●​ Gaming 
+●​ Navigation (GPS) 
+●​ Online banking 
+●​ Entertainment (video/music streaming) 
+ 
+
+9. Simple Understanding 
+Think of: 
+●​ Mobile OS = “Brain of smartphone” 
+●​ It controls everything like apps, calls, camera, internet, and battery. 
+ 
+10. Key Points for Exams 
+●​ Mobile OS is designed for smartphones and tablets 
+●​ Supports touch interface and wireless communication 
+●​ Android is open-source, iOS is proprietary 
+●​ Provides app management and security features 
+●​ Optimized for low power consumption 
+ 
+11. In Short 
+👉 A Mobile Operating System is an OS designed for mobile devices that manages hardware, 
+apps, and communication while providing a touch-friendly and energy-efficient 
+environment. 
+Self-Learning Topic: Case Study on Special-Purpose 
+Operating System 
+Case Study: Android OS (Mobile 
+Operating System) 
+ 
+1. Introduction 
+
+ 
+
+ 
+
+ 
+6 
+Google Android is a special-purpose operating system designed specifically for mobile 
+devices like smartphones, tablets, smart TVs, and wearable devices. 
+👉 It is based on the Linux kernel and optimized for touch interfaces, mobility, and wireless 
+communication. 
+ 
+2. Why Android is a Special-Purpose OS? 
+Android is called a special-purpose OS because it is designed for: 
+●​ Mobile computing only 
+●​ Touch-based interaction 
+●​ Low power devices (battery optimization) 
+●​ Wireless connectivity (Wi-Fi, mobile data, Bluetooth) 
+●​ App-based ecosystem 
+
+ 
+3. Architecture of Android OS 
+ 
+
+ 
+ 
+5 
+
+Android has a layered architecture: 
+1. Linux Kernel 
+●​ Manages hardware (CPU, memory, drivers) 
+2. Hardware Abstraction Layer (HAL) 
+●​ Connects hardware with software 
+3. Libraries + Android Runtime (ART) 
+●​ Provides core system libraries 
+●​ Executes apps 
+4. Application Framework 
+●​ Provides APIs for app developers 
+5. Applications Layer 
+●​ User apps (WhatsApp, YouTube, etc.) 
+ 
+4. Features of Android OS 
+✔ Open Source 
+●​ Based on Linux kernel 
+●​ Free and customizable 
+✔ Multi-Tasking 
+●​ Runs multiple apps simultaneously 
+✔ Touch Interface 
+●​ Designed for mobile interaction 
+✔ Security System 
+
+ 
+
+ 
+
+ 
+5 
+●​ App permissions 
+●​ Sandboxing (each app isolated) 
+●​ Biometrics (fingerprint, face unlock) 
+ 
+✔ App Ecosystem 
+●​ Millions of apps via Google Play Store 
+ 
+✔ Power Management 
+●​ Battery optimization techniques 
+●​ Background app control 
+
+ 
+5. Working of Android OS 
+1.​ User interacts with touchscreen 
+2.​ Input goes to application layer 
+3.​ Framework processes request 
+4.​ Kernel communicates with hardware 
+5.​ Output is displayed to user 
+ 
+6. Advantages of Android OS 
+●​ Free and open-source 
+●​ Highly customizable 
+●​ Large app ecosystem 
+●​ Supports many devices 
+●​ Regular updates 
+ 
+7. Disadvantages of Android OS 
+●​ Security risks from third-party apps 
+●​ Fragmentation (many versions) 
+●​ Battery drain in heavy usage 
+●​ Performance varies by device 
+ 
+8. Real-Life Applications 
+●​ Smartphones 
+●​ Tablets 
+●​ Smart TVs 
+
+●​ Smartwatches 
+●​ Car infotainment systems 
+ 
+9. Comparison with General OS 
+Feature 
+Android OS 
+Desktop OS 
+Device type 
+Mobile 
+PC/Laptop 
+Interface 
+Touch-based 
+Keyboard/M
+ouse 
+Power usage 
+Low 
+High 
+Portability 
+High 
+Low 
+Example 
+Android 
+Windows 
+ 
+10. Conclusion 
+Android OS is a special-purpose operating system designed for mobile and embedded devices. 
+It provides: 
+●​ Efficient mobile computing 
+●​ Secure application environment 
+●​ Rich user experience 
+●​ Strong ecosystem support 
+👉 It is one of the most widely used mobile OS in the world. 
+ 
+11. In Short 
+
+👉 Android OS is a Linux-based, open-source mobile operating system designed specifically 
+for smartphones and portable devices with touch-based interaction and app-driven 
+functionality. 
+ 

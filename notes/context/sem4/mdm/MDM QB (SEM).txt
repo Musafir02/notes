@@ -1,0 +1,82 @@
+MDM 
+Q.1) Draw and explain the architecture of 8086 
+microprocessor. 
+Q.2) Explain various addressing modes of 8086 
+microprocessor. 
+Q.3) Explain in detail with diagram timers of 8051 
+microcontroller. (SCON, TCON, TMOD register 
+comes under this question and they ask single register for 
+5M and for 10M complete question) 
+Q.4) Explain various operating modes of 8255 PPI. 
+Q.5) Explain serial communication in 8051 using SCON 
+register. 
+Q.6) Explain memory organization of 8051 microcontroller 
+Q.7) Explain various addressing modes of 8051 
+microcontroller. 
+Q.8) Draw and explain the architecture of Pentium 
+processor with neat diagram. 
+Q.9) Explain the interfacing of a stepper motor to 8051 
+microcontroller. 
+Q.10) State and explain the features of Pentium processor 
+and ARM cortex. 
+
+Q.11) Explain the interrupt structure of the 8086 processor 
+(IVT) and differentiate between 
+Hardware and software interrupts. 
+Q.12) Define assembler directives. Explain all the assembler 
+directives supported by 8086 
+microprocessors with examples. 
+Q.13) Draw and explain read and write operation timing 
+diagram for 8086 microprocessor in 
+minimum and maximum mode 
+Q.14) Draw and explain the architecture of ARM cortex core. 
+Q.15) Draw and explain the Program status word (PSW) 
+register of 8051. 
+Q.16) Explain the following instruction of 8086 
+microprocessor: STOSB, DAA, CALL, XLAT, LAHF, 
+AAA, XLATB, DIV AX and CMPSB. 
+  
+Q.17) Explain the generation of the clock and reset signals 
+using the 8284 clock generator. 
+Q.18) Draw and explain the interfacing of a LCD to the 8051. 
+Q.19) Explain memory segmentation of 8086 
+microprocessor. (Note: This question may be directly 
+
+asked as logical and physical address in 8086, as they are 
+part of memory segmentation) 
+Q.20) Draw and explain the architecture of 8051 
+microcontroller in detail. 
+Q.21) Explain the modes of 8255 with a neat block diagram. 
+Q.22) Explain the internal RAM organization of the 8051. 
+Highlight the importance of the register 
+Banks. 
+Q.22) Differentiate between the following: 
+i) Microprocessor and Microcontroller 
+ii) Stepper motor and Dc motor interfacing 
+iii) Minimum and maximum mode (Note may this question 
+ask in explanation form also) 
+Q.23) Write a short note on the following: 
+i) Function of port 0 of 8051 
+ii) Interfacing of DC motor to 8051 microcontroller 
+iii) Memory banking in 8086. 
+iv) String instruction of 8086 and Arithmetic instruction of 
+8051 microcontroller 
+v) port structure of the 8051 microcontroller. 
+
+vi) pipeline features of 8086 in detail. 
+  
+Programming 
+ 
+Q.1) Write a program in 8086 to exchange contents of two 
+memory blocks. 
+Q.2) Write an assembly language program to arrange the 10 
+number in ascending order using 8086 
+microprocessor. 
+Q.3) Write a program to transfer block of data (10 bytes) 
+from DS: 2000H to ES: 4000H using 
+instruction set of 8086. 
+Q.4) Write a program to generate a square wave on Port Pin 
+2.0 using Timer 0 in Mode 1 in 8051. 
+Q.5) Write an assembly language program using 8051 to 
+swap two numbers. 
+ 

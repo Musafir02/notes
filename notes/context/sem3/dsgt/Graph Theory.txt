@@ -1,0 +1,346 @@
+[Page 1]
+This page delves into the concept of graph theory, a fundamental topic in mathematics and computer science.
+
+**Key Concepts**
+
+* A graph is a finite set of vertices (nodes) connected by edges, which can be directed or undirected. Directed graphs have arrows on the edges, indicating the direction of the connection between vertices.
+* The degree of a vertex is the number of edges connected to it. In an undirected graph, the degree of a vertex is the number of edges that connect to it. In a directed graph, the degree of a vertex is the number of edges that connect to it, taking into account the direction of the edges.
+* A loop is a self-connected edge that forms a closed path from a vertex back to itself. Loops are not adjacent vertices.
+* Adjacent vertices are vertices that are connected by an edge.
+* A path is a sequence of vertices, each adjacent to the next, with no edge chosen more than once. A path can be simple if it never uses the same edge twice.
+* A circuit is a path that begins and ends with the same vertex.
+
+**Formulas and Equations**
+
+* The degree of a vertex in a graph is represented by the equation: V = E + 2, where V is the number of vertices and E is the number of edges.
+* The formula for the sum of degrees of all vertices in a graph is: Σd(v) = 2E, where d(v) is the degree of vertex v.
+
+**Diagrams and Figures**
+
+* The first diagram illustrates a simple undirected graph with five vertices (A, B, C, D, and E) and six edges. The vertices are labeled with their degrees, and the edges are labeled with their weights (the number of edges connected to each vertex).
+* The second diagram shows a directed graph with three vertices (A, B, and C) and four edges. The edges are labeled with their directions, and the vertices are labeled with their in-degrees and out-degrees (the number of edges connected to them in the direction of the edge).
+
+**Important Terms**
+
+* Vertex: a node in a graph
+* Edge: a connection between two vertices
+* Degree: the number of edges connected to a vertex
+* Loop: a self-connected edge
+* Adjacent vertices: vertices connected by an edge
+* Path: a sequence of vertices, each adjacent to the next
+* Circuit: a path that begins and ends with the same vertex
+
+**Examples and Numerical Values**
+
+* Example 1: A graph with five vertices and six edges, where the degree of each vertex is represented by the equation: V = E + 2.
+* Example 2: A directed graph with three vertices and four edges, where the in-degrees and out-degrees of each vertex are calculated using the formula: Σd(v) = 2E.
+
+In summary, this page provides a comprehensive introduction to graph theory, covering key concepts such as vertices, edges, degrees, loops, adjacent vertices, paths, and circuits. It also includes formulas and equations for calculating the sum of degrees of all vertices in a graph and the number of edges in a graph. The diagrams and figures illustrate these concepts, providing a visual understanding of the material.
+
+[Page 2]
+**Graph Theory Concepts**
+
+This page delves into various concepts in graph theory, providing a comprehensive overview of key terms and definitions.
+
+**Undirected Graph**
+
+An undirected graph is a collection of two or more edges having identical end points. It is denoted by 'e' and is represented as V1-e-V2.
+
+**Simple Graph**
+
+A simple graph is a graph that does not contain any loop (self-loop) and multiedge. A multiedge is a graph that does not contain any self-loop but contains multiple edges.
+
+**Pseudo Graph**
+
+A pseudo graph is a graph that contains both self-loop and multiedge. It is called a pseudo graph.
+
+**Incidence**
+
+Incidence is the relationship between an edge and a vertex. An edge 'e' is said to be incident on a vertex 'v' if 'e' is said to incident on 'v'.
+
+**Isolated Vertex**
+
+An isolated vertex is a vertex having degree 0. A vertex having degree 1 is a pendant vertex.
+
+**Finite Graph**
+
+A finite graph is a graph with a finite number of vertices and as well as edges. It is called a finite graph otherwise it is an infinite graph.
+
+**Complete Graph**
+
+A complete graph is a graph that is said to be simple complete graph if each vertex is connected to every other vertex.
+
+**Regular Graph**
+
+A regular graph is a graph that is said to be regular if every vertex has the same degree.
+
+**Connected Graph**
+
+A connected graph is a graph that is said to be connected graph if there is a path between every two vertices. A bipartite graph is a graph that is called a bipartite graph if its vertices V can be partitioned into two subsets X and such that each edge of G connects a vertex of X to a vertex of Y. It is denoted by Kmn, where m is the number of vertices in X and Y respectively.
+
+**Bipartite Graph**
+
+A bipartite graph is a graph that is said to be bipartite graph if every vertex in X is connected to every vertex in Y. It is denoted by Kmn, where m is the number of vertices in X and Y respectively.
+
+**Example**
+
+The graph K43 is a bipartite graph but not a complete bipartite graph.
+
+**Key Diagrams**
+
+The page features two diagrams:
+
+*   **K43 Diagram**: This diagram illustrates the graph K43, which is a bipartite graph with 4 vertices in X and 3 vertices in Y. The edges are labeled with the vertices they connect.
+*   **K22 Diagram**: This diagram shows the graph K22, which is a complete bipartite graph with 2 vertices in X and 2 vertices in Y. The edges are labeled with the vertices they connect.
+
+**Important Terms**
+
+*   **Vertex**: A vertex is a point in a graph.
+*   **Edge**: An edge is a line connecting two vertices.
+*   **Loop**: A loop is a self-loop, which is an edge that connects a vertex to itself.
+*   **Multiedge**: A multiedge is a graph that contains multiple edges between two vertices.
+*   **Pendant Vertex**: A pendant vertex is a vertex with degree 1.
+*   **Finite Graph**: A finite graph is a graph with a finite number of vertices and edges.
+*   **Infinite Graph**: An infinite graph is a graph with an infinite number of vertices and edges.
+*   **Complete Graph**: A complete graph is a graph in which every vertex is connected to every other vertex.
+*   **Regular Graph**: A regular graph is a graph in which every vertex has the same degree.
+*   **Connected Graph**: A connected graph is a graph in which there is a path between every two vertices.
+*   **Bipartite Graph**: A bipartite graph is a graph that can be partitioned into two subsets X and Y such that each edge connects a vertex of X to a vertex of Y.
+
+Overall, this page provides a comprehensive introduction to graph theory, covering key concepts such as undirected graphs, simple graphs, pseudo graphs, incidence, isolated vertices, finite graphs, complete graphs, regular graphs, connected graphs, and bipartite graphs. The diagrams and examples help illustrate these concepts and provide a deeper understanding of graph theory.
+
+[Page 3]
+This page of handwritten notes appears to cover the topic of graph theory, specifically focusing on complete graphs, complements of graphs, planar graphs, and handshaking theorems.
+
+The main topic or heading is not explicitly stated, but the content suggests that it may be related to graph theory or discrete mathematics.
+
+The first section explains that a complete graph is a graph where every vertex is connected to every other vertex. This means that if we have a graph with n vertices, a complete graph would have n(n-1)/2 edges, as each vertex is connected to every other vertex. For example, a complete graph with 5 vertices would have 10 edges.
+
+The next section introduces the concept of a complement of a graph. The complement of a graph G is defined as a simple graph with the same vertex set as G, where two vertices are adjacent only when they are not adjacent in G. In other words, the complement of a graph is a graph where two vertices are connected if and only if they are not connected in the original graph.
+
+The following section discusses planar graphs. A planar graph is a graph that can be drawn in the plane so that its edges do not cross. This means that the graph can be drawn without any edge intersecting with another edge. The key to drawing a planar graph is to use a planar embedding, which is a way of embedding the graph in the plane such that no two edges intersect.
+
+The next section introduces the handshaking theorem, which states that the sum of the degrees of the vertices of a graph G is equal to twice the number of edges in G. This theorem can be used to count the number of edges in a graph by summing up the degrees of all the vertices and dividing by 2.
+
+The final section provides an example of how to use the handshaking theorem to count the number of edges in a graph. It shows how to calculate the sum of the degrees of the vertices and then divide by 2 to get the number of edges.
+
+Overall, this page of notes provides a clear and concise introduction to the concepts of complete graphs, complements of graphs, planar graphs, and handshaking theorems. It includes examples and formulas to help illustrate these concepts and provides a solid foundation for further study in graph theory.
+
+[Page 4]
+This page from a student's notes appears to cover the topic of graph theory, specifically focusing on the number of edges in a graph. The page is divided into three main sections, each addressing a different aspect of graph theory.
+
+**Section 1: Graph Construction**
+
+The first section explores the process of constructing a graph with a specific number of edges. It explains that a graph with 6 edges can be constructed by handshaking, where each vertex has a degree of 2. The formula for calculating the number of edges (E) in a graph is provided, which is E = (n * (n - 1)) / 2, where n represents the number of vertices. This formula is derived from the fact that each vertex has a degree of 2, resulting in a total of 6 edges.
+
+**Section 2: Edge Counting**
+
+The second section delves into the task of determining the number of edges in a graph with 6 nodes and 2 degrees for each node. The problem is approached by considering the degrees of the nodes, which are represented by the variable "d". The formula for calculating the number of edges (E) is provided as E = (d * (d - 1)) / 2, where d represents the degree of each node. This formula is used to find the number of edges in a graph with 6 nodes and 2 degrees for each node.
+
+**Section 3: Undirected Graphs**
+
+The third section focuses on undirected graphs, specifically exploring the concept of a single undirected graph with 8 vertices that has 40 edges excluding self-loops. The page provides an example of such a graph, illustrating how it can be constructed. The graph is represented using a diagram, which shows the connections between the vertices. The key parts of the graph are labelled, including the vertices and the edges.
+
+**Key Takeaways**
+
+* A graph with 6 edges can be constructed by handshaking, where each vertex has a degree of 2.
+* The number of edges (E) in a graph can be calculated using the formula E = (n * (n - 1)) / 2, where n represents the number of vertices.
+* The number of edges (E) in a graph with 6 nodes and 2 degrees for each node can be calculated using the formula E = (d * (d - 1)) / 2, where d represents the degree of each node.
+* An undirected graph with 8 vertices can have 40 edges excluding self-loops, as illustrated by the example provided on the page.
+
+Overall, this page provides a comprehensive overview of graph theory, covering topics such as graph construction, edge counting, and undirected graphs. The formulas and equations provided offer a clear understanding of how to calculate the number of edges in a graph, while the diagrams and examples help to illustrate key concepts.
+
+[Page 5]
+The page focuses on Euler paths and circuits, specifically in the context of Eulerian graphs.
+
+**Euler Path and Circuit**
+
+An Euler path is a path in a graph that includes every edge exactly once. An Euler circuit is a cycle in a graph that includes every edge exactly once. An Eulerian cycle is a circuit in a graph that includes every edge exactly once.
+
+**Key Concepts**
+
+* **Euler Path**: A path in a graph that includes every edge exactly once.
+* **Euler Circuit**: A cycle in a graph that includes every edge exactly once.
+* **Eulerian Cycle**: A circuit in a graph that includes every edge exactly once.
+
+**Formulas and Equations**
+
+No specific formulas or equations are provided on this page.
+
+**Diagrams and Figures**
+
+The page features several diagrams illustrating Euler paths and circuits. Each diagram includes labeled vertices and edges, demonstrating how to determine if a graph has an Euler path or circuit.
+
+**Definitions of Important Terms**
+
+* **Euler Path**: A path in a graph that includes every edge exactly once.
+* **Euler Circuit**: A cycle in a graph that includes every edge exactly once.
+* **Eulerian Cycle**: A circuit in a graph that includes every edge exactly once.
+
+**Examples and Numerical Values**
+
+No specific examples or numerical values are provided on this page.
+
+In summary, this page introduces the concepts of Euler paths and circuits, providing definitions and diagrams to illustrate these concepts. The page does not include any formulas or equations, but rather focuses on explaining the key terms and concepts in a clear and concise manner.
+
+[Page 6]
+The main topic of this page is "Hamiltonian paths and circuits (Hamilton graph)". The page explains the difference between a Hamiltonian path and a Hamiltonian circuit, which is a circuit that contains each vertex exactly once. A Hamiltonian graph is a graph that contains both a Hamiltonian path and a Hamiltonian circuit, while a Hamiltonian circuit is a circuit that contains each vertex exactly once, except for the first vertex, which is also the last.
+
+The page also explains that a Hamiltonian path is a path that contains each vertex exactly once, while a Hamiltonian circuit is a circuit that contains each vertex exactly once, except for the first vertex, which is also the last. The page provides examples of Hamiltonian paths and circuits, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of an Eulerian path and circuit, which is a path or circuit that visits every edge exactly once. The page provides examples of Eulerian paths and circuits, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian cycle, which is a Hamiltonian circuit that starts and ends at the same vertex. The page provides examples of Hamiltonian cycles, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian path, which is a path that contains each vertex exactly once. The page provides examples of Hamiltonian paths, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian circuit, which is a circuit that contains each vertex exactly once, except for the first vertex, which is also the last. The page provides examples of Hamiltonian circuits, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian cycle, which is a Hamiltonian circuit that starts and ends at the same vertex. The page provides examples of Hamiltonian cycles, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian path, which is a path that contains each vertex exactly once. The page provides examples of Hamiltonian paths, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian circuit, which is a circuit that contains each vertex exactly once, except for the first vertex, which is also the last. The page provides examples of Hamiltonian circuits, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f, g, and h.
+
+The page also explains the concept of a Hamiltonian cycle, which is a Hamiltonian circuit that starts and ends at the same vertex. The page provides examples of Hamiltonian cycles, including a graph with vertices labeled 1, 2, 3, 4, 5, 6, and 7, and a graph with vertices labeled a, b, c, d, e, f,
+
+[Page 7]
+This page delves into the fundamental concepts of graph theory, focusing on Euler paths, Hamiltonian paths, and isomorphism of graphs.
+
+**Euler Paths and Circuits**
+
+The page begins by defining Euler paths and circuits as paths or closed loops that traverse each edge of a graph exactly once. It illustrates this concept with a diagram featuring vertices labeled A, B, C, D, E, and F, connected by edges. The Euler path is shown as a path that traverses each edge exactly once, while the Euler circuit is a closed loop that also traverses each edge exactly once.
+
+**Hamiltonian Paths and Circuits**
+
+The page then explains Hamiltonian paths and circuits, which are paths or closed loops that visit each vertex of a graph exactly once. It provides a diagram with vertices labeled A, B, C, D, E, F, and G, connected by edges. The Hamiltonian path is shown as a path that visits each vertex exactly once, while the Hamiltonian circuit is a closed loop that also visits each vertex exactly once.
+
+**Isomorphism of Graphs**
+
+The page introduces the concept of isomorphism of graphs, which refers to two graphs being identical in terms of their graph properties. It explains that two graphs are isomorphic if they have identical behavior in terms of graph properties. The page provides an example of two graphs that are isomorphic, with vertices labeled a, b, c, d, and e, connected by edges. The example shows that the two graphs have the same number of vertices, edges, and adjacency matrix between vertices.
+
+**Key Takeaways**
+
+In summary, this page covers the fundamental concepts of Euler paths and circuits, Hamiltonian paths and circuits, and isomorphism of graphs. It provides clear explanations and diagrams to illustrate these concepts, making it an excellent resource for students learning graph theory.
+
+[Page 8]
+This page appears to be a comprehensive study guide for graph theory, focusing on isomorphic and non-isomorphic graphs. The main topic is determining whether two graphs are isomorphic or not.
+
+**Key Concepts:**
+
+* **Isomorphic Graphs:** Two graphs are considered isomorphic if they have the same number of vertices and edges, and there exists a one-to-one correspondence between their vertices and edges such that the edges connecting vertices in one graph are also connected in the other graph.
+* **Non-Isomorphic Graphs:** If two graphs do not meet the criteria for isomorphism, they are considered non-isomorphic.
+
+**Formulas and Equations:**
+
+* None are presented on this page.
+
+**Diagrams and Figures:**
+
+* The page features several diagrams of graphs, each with labeled vertices and edges.
+* The diagrams illustrate various graph structures, including:
+	+ Vertices (represented by points or letters)
+	+ Edges (represented by lines connecting vertices)
+	+ Adjacent vertices (vertices connected by an edge)
+
+**Definitions:**
+
+* **Vertex Degree:** The number of edges connected to a vertex.
+* **Adjacent Vertices:** Vertices connected by an edge.
+* **Isomorphism:** A one-to-one correspondence between the vertices and edges of two graphs.
+
+**Examples:**
+
+* The page provides several examples of isomorphic and non-isomorphic graphs, along with explanations of why they are or are not isomorphic.
+* For instance, one example shows two graphs with the same number of vertices and edges, but with different edge connections, illustrating how they are not isomorphic.
+
+Overall, this page serves as a valuable resource for students studying graph theory, providing clear explanations and examples to help them understand the concepts of isomorphism and non-isomorphism in graphs.
+
+[Page 9]
+The page is focused on graph theory, specifically discussing isomorphic graphs and their properties.
+
+**Key Concepts:**
+
+* **Isomorphic Graphs:** Two graphs are considered isomorphic if they have the same number of vertices and edges, and if there exists a one-to-one correspondence between the vertices of the two graphs such that two vertices are adjacent in one graph if and only if the corresponding vertices are adjacent in the other graph.
+* **Vertex Degree:** The degree of a vertex in a graph is the number of edges incident on it. For example, a vertex with degree 3 has three edges connected to it.
+* **Adjacent Vertices:** Vertices that are connected by an edge are called adjacent vertices.
+* **Connected Planer Graphs:** A connected planer graph is a graph that can be drawn in the plane without any edge crossings, and in which every pair of vertices is connected by a unique path.
+* **Handshaking Lemma:** The handshaking lemma states that the sum of the degrees of all the vertices in a graph is equal to twice the number of edges in the graph.
+
+**Formulas and Equations:**
+
+* **V = 10 and degree of each vertex is 8:** This equation represents the number of vertices and the degree of each vertex in a connected planer graph.
+* **e = 15:** This equation represents the number of edges in a graph.
+
+**Diagrams and Figures:**
+
+* **Graph Diagrams:** The page includes several graph diagrams, each illustrating a different type of graph. The diagrams show the vertices and edges of the graphs, as well as any adjacent vertices.
+* **Key Parts Labelled:** The diagrams have key parts labelled, including the vertices, edges, and adjacent vertices.
+
+**Definitions:**
+
+* **Degree of a Vertex:** The degree of a vertex is the number of edges incident on it.
+* **Adjacent Vertices:** Vertices that are connected by an edge are called adjacent vertices.
+
+**Examples:**
+
+* **Connected Planer Graph:** An example of a connected planer graph is given, with 10 vertices and 15 edges. The graph has a degree of 8 for each vertex.
+* **Isomorphic Graphs:** An example of two isomorphic graphs is given, with the same number of vertices and edges, and a one-to-one correspondence between the vertices.
+
+Overall, the page provides a clear and concise introduction to graph theory, covering key concepts such as isomorphic graphs, vertex degree, adjacent vertices, and the handshaking lemma. The page also includes examples and diagrams to help illustrate these concepts.
+
+[Page 10]
+The main topic of this page appears to be the incidence matrix, a mathematical tool used to describe the relationship between vertices and edges in a graph. The page explains how to construct an incidence matrix for a given graph, including the steps to follow and the key parts of the matrix.
+
+The page starts by defining the incidence matrix as a square matrix where the rows represent the vertices and the columns represent the edges of the graph. The entries in the matrix are either 0 or 1, depending on whether a vertex is incident on an edge or not.
+
+To construct the incidence matrix, the student is instructed to follow these steps:
+
+1. Write 1 if there is an outgoing branch from the node.
+2. Write -1 if there is an incoming branch to the node.
+3. Write 0 for all other branches which are not associated with a node.
+
+The page also provides examples of how to fill in the incidence matrix for different types of graphs, including a graph with 6 vertices and 4 edges. The examples illustrate how to determine the entries in the matrix based on the structure of the graph.
+
+In addition to explaining the construction of the incidence matrix, the page also discusses how to find the number of vertices of the graph having 16 edges if the degree of each vertex is 2. This involves using the handshaking lemma, which states that the sum of the degrees of all vertices in a graph is equal to twice the number of edges.
+
+Overall, this page provides a clear and concise explanation of the incidence matrix and its application in graph theory. It covers the key concepts and techniques needed to construct and use the incidence matrix, making it a useful resource for students learning about graph theory.
+
+[Page 11]
+**Graph Theory Concepts**
+
+### Main Topic
+
+The main topic of this page is graph theory, specifically focusing on the concepts of cut vertices, cut sets, and connected graphs.
+
+### Cut Vertices
+
+A cut vertex in a graph is a single vertex whose removal disconnects a graph. This means that if you remove a cut vertex, the graph will be split into two or more separate components.
+
+### Cut Sets
+
+A cut set is the set of all minimum number of edges of a graph whose removal disconnects a graph. In other words, it's the smallest set of edges that, when removed, will disconnect the graph.
+
+### Connected Graphs
+
+A connected graph is a graph in which there is a path between every pair of vertices. This means that you can always find a way to get from one vertex to another without having to go through any other vertices.
+
+### Key Concepts and Definitions
+
+*   **Cut Vertex**: A single vertex whose removal disconnects a graph.
+*   **Cut Set**: The set of all minimum number of edges of a graph whose removal disconnects a graph.
+*   **Connected Graph**: A graph in which there is a path between every pair of vertices.
+
+### Diagrams and Figures
+
+The page includes two diagrams:
+
+*   **Diagram 1**: This diagram illustrates a graph with a cut vertex labeled "a". If you remove vertex "a", the graph will be disconnected.
+*   **Diagram 2**: This diagram shows a graph with a cut set labeled "b-c". If you remove edges "b" and "c", the graph will be disconnected.
+
+### Examples
+
+*   **Example 1**: Consider a graph with three vertices (a, b, c) and three edges (ab, bc, ca). If you remove vertex "a", the graph will be disconnected.
+*   **Example 2**: Consider a graph with four vertices (a, b, c, d) and four edges (ab, bc, cd, da). If you remove edges "b" and "c", the graph will be disconnected.
+
+In summary, this page covers the basics of graph theory, including cut vertices, cut sets, and connected graphs. It provides examples and diagrams to illustrate these concepts, making it easier for students to understand and visualize them.

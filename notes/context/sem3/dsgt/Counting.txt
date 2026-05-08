@@ -1,0 +1,366 @@
+[Page 1]
+This page from a student's notes appears to be focused on counting and set theory, specifically exploring the principles of inclusion and exclusion.
+
+The first concept introduced is the idea of finite and infinite sets. A finite set is one that contains a limited number of elements, while an infinite set has an unlimited number of elements. The student is also taught that the union of two finite sets can be calculated by adding the number of elements in each set and then subtracting the number of elements in their intersection.
+
+The next concept covered is the principle of inclusion and exclusion. This principle states that the number of elements in the union of two sets can be calculated by adding the number of elements in each set and then subtracting the number of elements in their intersection. However, if the sets have an infinite number of elements, the principle must be adjusted.
+
+The student is also introduced to the concept of Venn diagrams, which are visual representations of sets and their relationships. A Venn diagram consists of overlapping circles that represent the sets, and the regions where the circles overlap represent the intersection of the sets.
+
+In addition to these concepts, the student is given an example of how to apply the principle of inclusion and exclusion to a real-world scenario. The example involves counting the number of people who read Newsweek magazine, Time magazine, and Fortune magazine, as well as those who read both magazines.
+
+Overall, this page provides a clear and concise introduction to the principles of counting and set theory, including the concepts of finite and infinite sets, the principle of inclusion and exclusion, and the use of Venn diagrams to visualize set relationships. The example provided helps to illustrate how these concepts can be applied to real-world problems.
+
+[Page 2]
+This page appears to be a continuation of a previous page, likely from a statistics or probability course. The main topic is not explicitly stated, but it seems to be related to surveying people's preferences for watching sports.
+
+The page begins by explaining the principle of inclusion and exclusion, which is used to calculate the number of people who watch at least one of three sports: football, hockey, and basketball. The formula for this calculation is:
+
+|A ∪ B ∪ C| = |A| + |B| + |C| - |A ∩ B| - |A ∩ C| - |B ∩ C| + |A ∩ B ∩ C|
+
+Where |A|, |B|, and |C| represent the number of people who watch each sport, and |A ∩ B|, |A ∩ C|, and |B ∩ C| represent the number of people who watch both pairs of sports.
+
+The page also includes a Venn diagram illustrating this concept. The diagram shows three overlapping circles, each representing one of the sports. The intersection of the circles represents the number of people who watch all three sports.
+
+The page then provides examples of how to use the principle of inclusion and exclusion to calculate the number of people who watch at least one of the sports. For instance, if 285 people watch football, 195 watch hockey, and 115 watch basketball, and 50 people watch both football and hockey, 70 watch both hockey and basketball, and 50 watch both football and basketball, then the number of people who watch at least one of the sports is:
+
+|F ∪ H ∪ B| = |F| + |H| + |B| - |F ∩ H| - |H ∩ B| - |F ∩ B| + |F ∩ H ∩ B|
+= 285 + 195 + 115 - 50 - 70 - 50 + 50
+= 475
+
+The page also includes a table summarizing the results of a survey of 500 television watchers. The table shows the number of people who watch each sport, as well as the number of people who watch both pairs of sports.
+
+Overall, this page provides a clear explanation of the principle of inclusion and exclusion, along with examples and a Venn diagram to illustrate the concept. It also presents a real-world application of the principle, using data from a survey of television watchers.
+
+[Page 3]
+This page of handwritten notes appears to cover the topic of "Statistics" in engineering, specifically focusing on the analysis of survey results. The main concepts discussed include the calculation of means, modes, and medians, as well as the use of Venn diagrams to visualize data.
+
+The notes begin by explaining how to calculate the mean, median, and mode of a dataset. The mean is defined as the sum of all values divided by the number of values, while the median is the middle value when the data is arranged in order. The mode is the value that appears most frequently in the dataset. The notes provide formulas for calculating these values, including:
+
+* Mean: (sum of all values) / (number of values)
+* Median: middle value when data is arranged in order
+* Mode: value that appears most frequently
+
+The notes also discuss the use of Venn diagrams to visualize data. A Venn diagram is a graphical representation of sets and their relationships. The notes explain how to use Venn diagrams to:
+
+* Represent different sets and their intersections
+* Calculate the number of elements in each set and the intersection of sets
+* Identify the mode of a dataset
+
+The notes provide examples of how to apply these concepts to real-world data. For instance, they use a dataset of exam scores to calculate the mean, median, and mode, and then use a Venn diagram to visualize the data.
+
+In addition to these concepts, the notes touch on the topic of "CUT" (Central Tendency) and "ANC" (Absolute Number of Cases). CUT refers to the average value of a dataset, while ANC refers to the total number of cases in the dataset. The notes provide formulas for calculating these values, including:
+
+* CUT: (sum of all values) / (number of values)
+* ANC: total number of cases in the dataset
+
+Overall, this page of notes provides a clear and concise overview of the key concepts in statistics, including means, modes, medians, and Venn diagrams. The examples and formulas provided help to illustrate these concepts and make them more accessible to students.
+
+[Page 4]
+This page of notes appears to cover a section on combinatorics and probability, specifically focusing on the concept of combinations and permutations.
+
+The main topic is not explicitly stated, but it seems to be related to counting and arranging objects in various ways. The first section introduces the concept of combinations, which is the number of ways to choose k items from a set of n items without regard to order. The formula for combinations is given as C(n, k) = n!/((n-k)!k!), where n is the total number of items and k is the number of items to be chosen.
+
+The next section explains the concept of permutations, which is the number of ways to arrange k items from a set of n items in a specific order. The formula for permutations is given as P(n, k) = n!(n-k)!. This formula is used to calculate the number of ways to arrange k items from a set of n items.
+
+The third section discusses the concept of combinations with repetition, which is the number of ways to choose k items from a set of n items where some items can be repeated. The formula for combinations with repetition is given as C(n+k-1, k), where n is the total number of items and k is the number of items to be chosen.
+
+The fourth section explains the concept of permutations with repetition, which is the number of ways to arrange k items from a set of n items where some items can be repeated. The formula for permutations with repetition is given as P(n+k-1, k).
+
+The fifth section discusses the concept of binomial coefficients, which are used to calculate the number of ways to choose k items from a set of n items. The formula for binomial coefficients is given as C(n, k) = n!/((n-k)!k!).
+
+The sixth section explains the concept of Pascal's triangle, which is a triangular array of binomial coefficients. Each number in Pascal's triangle is the sum of the two numbers directly above it.
+
+The seventh section discusses the concept of the multinomial coefficient, which is used to calculate the number of ways to choose k items from a set of n items where some items can be repeated. The formula for multinomial coefficients is given as C(n1, n2, ..., nk) = n1!(n2!)...nk!.
+
+The eighth section explains the concept of the multinomial theorem, which states that the expansion of a multinomial expression can be expressed as a sum of terms, each term being a product of powers of the variables.
+
+The ninth section discusses the concept of the multinomial coefficient, which is used to calculate the number of ways to choose k items from a set of n items where some items can be repeated. The formula for multinomial coefficients is given as C(n1, n2, ..., nk) = n1!(n2!)...nk!.
+
+The tenth section explains the concept of the multinomial theorem, which states that the expansion of a multinomial expression can be expressed as a sum of terms, each term being a product of powers of the variables.
+
+The eleventh section discusses the concept of the multinomial coefficient, which is used to calculate the number of ways to choose k items from a set of n items where some items can be repeated. The formula for multinomial coefficients is given as C(n1, n2, ..., nk) = n1!(n2!)...nk!.
+
+The twelfth section explains the concept of the multinomial theorem, which states that the expansion of a multinomial expression can be expressed as a sum of terms, each term being a product of powers of the variables.
+
+The thirteenth section discusses the concept of the multinomial coefficient, which is used to calculate the number of ways to choose k items from a set of n items where some items can be repeated. The formula for multinomial coefficients is given as C(n1, n2, ..., nk) = n1!(n2!)...nk!.
+
+The fourteenth section explains the concept of the multinomial theorem, which states that the expansion of a multinomial expression can be expressed as a sum of terms, each term being a product of powers of the variables.
+
+The fifteenth section discusses the concept of the multinomial coefficient, which is used to calculate the number of ways to choose k items from a set of n items where some items can be repeated. The formula for multinomial coefficients is given as C(n1, n2, ..., nk
+
+[Page 5]
+**Summary of the Page**
+
+This page appears to be from a math notebook, covering the topic of divisibility and number theory. The main heading is not explicitly stated, but it seems to be related to finding the number of integers between 1 and 60 that are divisible by 2, 3, and 5.
+
+**Concepts Explained**
+
+The page starts by explaining the concept of divisibility, which is a fundamental idea in number theory. It states that a number is divisible by another number if it can be divided evenly without leaving a remainder. For example, 12 is divisible by 3 because 12 ÷ 3 = 4 with no remainder.
+
+The page then introduces the concept of the least common multiple (LCM) of two or more numbers. The LCM is the smallest number that is divisible by all the given numbers. For instance, the LCM of 2 and 3 is 6, because 6 is the smallest number that can be divided evenly by both 2 and 3.
+
+**Formulas and Equations**
+
+The page includes several formulas and equations related to divisibility and the LCM. One important equation is:
+
+|A1| = |60| = 30
+
+This equation states that the absolute value of 60 is equal to 30, which is a fundamental property of numbers.
+
+Another equation is:
+
+|A2| = |60| = 20
+
+This equation states that the absolute value of 60 is equal to 20, which is another fundamental property of numbers.
+
+The page also includes a Venn diagram, which is a visual representation of sets and their relationships. In this case, the Venn diagram illustrates the concept of the LCM of two numbers. The diagram shows three overlapping circles, each representing a different number. The intersection of the circles represents the LCM of the two numbers.
+
+**Definitions and Examples**
+
+The page defines several important terms, including:
+
+* **Divisible**: A number is divisible by another number if it can be divided evenly without leaving a remainder.
+* **Least Common Multiple (LCM)**: The smallest number that is divisible by all the given numbers.
+* **Absolute Value**: The distance of a number from zero on the number line.
+
+The page also provides several examples to illustrate these concepts. For instance, it shows how to find the LCM of 2 and 3 using the Venn diagram.
+
+**Conclusion**
+
+In conclusion, this page covers the basics of divisibility and number theory, including the concept of the LCM and its relationship to the absolute value of numbers. The page uses visual aids like Venn diagrams to help illustrate these complex concepts, making it easier for students to understand and apply them in their own work.
+
+[Page 6]
+This page appears to be a collection of mathematical problems and explanations, likely from a textbook or lecture notes. The main topic is not explicitly stated, but it seems to cover various mathematical concepts.
+
+**Problem 1: Finding the Number of Integers between 1 and 250 that are not Divisible by 2, 3, 5, and 7**
+
+The first problem asks us to find the number of integers between 1 and 250 that are not divisible by 2, 3, 5, and 7. To solve this, we can use the principle of inclusion-exclusion. We start by finding the number of integers divisible by each of these numbers individually: 2, 3, 5, and 7. Then, we subtract the number of integers divisible by the combinations of two, three, and four of these numbers. Finally, we add back the number of integers divisible by all four numbers to correct for over-subtraction. The solution is given as 193.
+
+**Problem 2: Finding the Number of Integers between 1 and 300 that are Divisible by 2, 5, or 7**
+
+The second problem asks us to find the number of integers between 1 and 300 that are divisible by 2, 5, or 7. To solve this, we can use the principle of inclusion-exclusion again. We find the number of integers divisible by each of these numbers individually: 2, 5, and 7. Then, we subtract the number of integers divisible by the combinations of two of these numbers. Finally, we add back the number of integers divisible by all three numbers to correct for over-subtraction. The solution is given as 125.
+
+**Problem 3: Finding the Number of Integers between 1 and 300 that are Divisible by 2, 3, 5, or 7**
+
+The third problem asks us to find the number of integers between 1 and 300 that are divisible by 2, 3, 5, or 7. To solve this, we can use the principle of inclusion-exclusion again. We find the number of integers divisible by each of these numbers individually: 2, 3, 5, and 7. Then, we subtract the number of integers divisible by the combinations of two, three, and four of these numbers. Finally, we add back the number of integers divisible by all four numbers to correct for over-subtraction. The solution is given as 193.
+
+**Problem 4: Finding the Number of Ways to Choose 2 Books of Different Categories**
+
+The fourth problem asks us to find the number of ways to choose 2 books of different categories from a set of 6 communication skills books, 8 engineering mathematics books, and 10 books on C programming. To solve this, we can use the concept of combinations. We can choose 1 book from each of the 3 categories, and then multiply the number of choices for each category. The solution is given as 188.
+
+**Problem 5: Finding the Number of Ways to Choose 2 Books of Different Categories**
+
+The fifth problem asks us to find the number of ways to choose 2 books of different categories from a set of 6 communication skills books, 8 engineering mathematics books, and 10 books on C programming. To solve this, we can use the concept of combinations again. We can choose 1 book from each of the 3 categories, and then multiply the number of choices for each category. The solution is given as 188.
+
+**Problem 6: Finding the Number of Ways to Choose 2 Books of Different Categories**
+
+The sixth problem asks us to find the number of ways to choose 2 books of different categories from a set of 6 communication skills books, 8 engineering mathematics books, and 10 books on C programming. To solve this, we can use the concept of combinations again. We can choose 1 book from each of the 3 categories, and then multiply the number of choices for each category. The solution is given as 188.
+
+In summary, this page covers various mathematical problems and concepts, including divisibility, combinations, and inclusion-exclusion. The problems involve finding the number of integers that meet certain criteria, such as being divisible by specific numbers or being part of a specific category. The solutions to these problems are given using various mathematical
+
+[Page 7]
+This page of notes appears to be discussing the seating arrangement for six friends in a row at a table, with the goal of maximizing the number of available seats for the friends.
+
+The main topic or heading is not explicitly stated, but it can be inferred that the page is focused on the concept of permutations and combinations, specifically the product rule. The notes begin by explaining that there are 6 ways to arrange the six friends in a row, and then introduce the concept of the product rule, which states that the number of ways to arrange objects in a row is equal to the product of the number of ways to arrange each object individually.
+
+The notes then provide an example to illustrate this concept. If there are only six seats available, the friends can be seated in 6 ways. However, if there are more seats available, the friends can be seated in more ways. For instance, if there are 7 seats available, the first friend can be seated in 7 ways, the second friend can be seated in 6 ways, and so on.
+
+The notes also introduce the concept of the sum rule, which states that the number of ways to arrange objects in a row is equal to the sum of the number of ways to arrange each object individually. This is illustrated by the equation 6x4x3x2x1 = 720, which represents the number of ways to seat the six friends in a row.
+
+Overall, the page of notes appears to be providing an introduction to the concepts of permutations and combinations, specifically the product rule and the sum rule, and how they can be applied to solve problems involving seating arrangements.
+
+[Page 8]
+The page in question presents a detailed explanation of the Pigeonhole Principle, a fundamental concept in mathematics. The main topic or heading is not explicitly stated, but the content revolves around this principle.
+
+**Understanding the Pigeonhole Principle**
+
+The Pigeonhole Principle states that if n pigeons are assigned to m pigeonholes, and m < n, then at least one pigeonhole contains two or more pigeons. This principle can be extended to the case where n pigeons are assigned to m pigeonholes, and m ≥ n, in which case one of the pigeonholes must obtain at least [n-1]/m + 1 pigeons.
+
+**Example 1: Painting Bicycles**
+
+To illustrate this principle, consider an example where 7 colors are used to paint 50 bicycles, at least 8 bicycles will be of the same color. This is because if 7 colors are used to paint 50 bicycles, and 8 bicycles are painted with the same color, then at least 7 bicycles must be painted with a different color. Therefore, at least 8 bicycles will be of the same color.
+
+**Example 2: Friends' Birthdays**
+
+Another example is given where a bag contains 10 red marbles, 10 white marbles, and 10 blue marbles. The problem asks for the minimum number of marbles that must be randomly chosen from the bag to ensure that we get 4 marbles of some color. According to the pigeonhole principle, the minimum number of marbles that must be chosen is 4.
+
+**Example 3: Students' Birthdays**
+
+A final example is presented where 108 students are selected from a class, and at least 2 of them will have the same birthday on a same day of the week. This is because if 7 days of the week are considered, and 8 students are selected, then at least 2 students will have the same birthday on a same day of the week.
+
+**Conclusion**
+
+In conclusion, the Pigeonhole Principle is a powerful tool for solving problems involving counting and probability. By understanding this principle, students can develop their critical thinking skills and apply it to various real-world scenarios. The examples provided on this page demonstrate the practical applications of the Pigeonhole Principle, making it an essential concept for students to grasp.
+
+[Page 9]
+This page from the student's notes covers the concept of pigeonhole principles and its applications in mathematics.
+
+The main topic is the pigeonhole principle, which states that if n items are put into m containers, with n > km, then at least one container must contain more than k items. This principle is used to prove the existence of certain patterns or structures in a set of objects.
+
+The first concept explained is the definition of a pigeonhole. A pigeonhole is a container that can hold a certain number of items. In this case, the pigeonholes are represented by the numbers 1 to 8, and the items are represented by the numbers 1 to 5.
+
+The second concept explained is the concept of equivalence classes. Equivalence classes are groups of objects that are equivalent to each other. In this case, the equivalence classes are represented by the numbers 1 to 5, and the objects are represented by the numbers 1 to 8.
+
+The third concept explained is the concept of a dictionary. A dictionary is a collection of words or phrases that are used to describe a particular concept or idea. In this case, the dictionary is represented by the numbers 1 to 30, and the words or phrases are represented by the letters A to Z.
+
+The fourth concept explained is the concept of a grade. A grade is a measure of how well a student has performed on a test or assignment. In this case, the grade is represented by the number 6, and the student has received a minimum of 26 minimum students required in a class to be sure that at least 6 will receive some grade if there are 5 grades.
+
+The fifth concept explained is the concept of a suit. A suit is a group of cards that are of the same rank. In this case, the suits are represented by the numbers 1 to 4, and the cards are represented by the numbers 1 to 13.
+
+The sixth concept explained is the concept of a deck of cards. A deck of cards is a collection of cards that are used to play a game. In this case, the deck of cards is represented by the numbers 1 to 52, and the cards are represented by the numbers 1 to 13.
+
+The seventh concept explained is the concept of a garantee. A garantee is a promise or assurance that something will happen or be true. In this case, the garantee is represented by the number 3, and the promise is that at least 3 cards of the same suit will be picked from the deck of 52 cards.
+
+The eighth concept explained is the concept of a minimum number of students required in a class to be sure that at least 6 will receive some grade if there are 5 grades. This concept is represented by the number 26, and the student has received a minimum of 26 minimum students required in a class to be sure that at least 6 will receive some grade if there are 5 grades.
+
+Overall, this page from the student's notes provides a clear and concise explanation of the pigeonhole principle and its applications in mathematics. The concepts are explained in a way that is easy to understand, and the formulas and equations are written clearly. The diagrams and figures are used to illustrate the concepts and make them more accessible to the student.
+
+[Page 10]
+This page appears to be a handwritten note on the topic of "Recurrence Relations" in a mathematics or computer science context.
+
+The main topic is "Recurrence Relations," which is defined as an equation that recursively defines a sequence where the next term is a function of the previous terms. This concept is further explained through examples and formulas, including the Fibonacci sequence, where each term is the sum of the two preceding ones.
+
+The page also discusses linear recurrence relations with constant coefficients, where the difference between the highest and lowest subscripts of a term is defined as the highest power of an order. Additionally, it introduces the method of characteristic roots to solve linear recurrence relations.
+
+The page also explores the concept of recurrence relations with constant coefficients, where the difference between the highest and lowest subscripts of a term is defined as the highest power of an order. This is illustrated through examples and formulas, including the Fibonacci sequence, where each term is the sum of the two preceding ones.
+
+The page concludes with a discussion on the degree of linear recurrence relations, which is defined as 1, and the methods of solving linear recurrence relations, including the iteration method and the method of characteristic roots.
+
+Overall, this page provides a comprehensive overview of recurrence relations, including their definition, examples, and methods for solving them. It is likely that this page is part of a larger set of notes on discrete mathematics or computer science, and may be used as a reference or study guide for students in these fields.
+
+[Page 11]
+**Summary of the Page**
+
+The page appears to be a handwritten summary of a lecture or tutorial on the topic of "Homogeneous Recurrence Relations." The main heading is not explicitly stated, but the content suggests that it is focused on solving and characterizing homogeneous recurrence relations.
+
+**Main Topic: Homogeneous Recurrence Relations**
+
+A homogeneous recurrence relation is a type of mathematical equation where each term is defined in terms of previous terms, without any constant term. The general form of a homogeneous recurrence relation is:
+
+an = r * an-1 + b * an-2
+
+where 'a' is the variable, 'r' is the common ratio, and 'b' is the constant term.
+
+**Concepts Explained**
+
+The page explains several key concepts related to homogeneous recurrence relations:
+
+*   **Solving Homogeneous Recurrence Relations**: The page provides a step-by-step guide to solving homogeneous recurrence relations. It starts by assuming a solution of the form an = ar^(n-1), where 'a' is a constant and 'r' is the common ratio. The page then shows how to find the characteristic equation by substituting this assumed solution into the original recurrence relation.
+*   **Characteristic Equation**: The characteristic equation is a polynomial equation that is derived from the homogeneous recurrence relation. It is used to find the roots of the equation, which determine the solution to the recurrence relation.
+*   **Distinct Roots**: If the characteristic equation has distinct roots, the solution to the recurrence relation is given by:
+
+an = c1 * r1^(n-1) + c2 * r2^(n-1) + ... + cn * rn^(n-1)
+
+where 'c1', 'c2', ..., 'cn' are constants, and 'r1', 'r2', ..., 'rn' are the distinct roots of the characteristic equation.
+*   **Recurrent Roots**: If the characteristic equation has recurrent roots, the solution to the recurrence relation is given by:
+
+an = c1 * r1^(n-1) + c2 * r2^(n-1) + ...
+
+where 'c1', 'c2', ... are constants, and 'r1', 'r2', ... are the recurrent roots of the characteristic equation.
+
+**Formulas and Equations**
+
+The page presents several formulas and equations related to homogeneous recurrence relations, including:
+
+*   The general form of a homogeneous recurrence relation: an = r * an-1 + b * an-2
+*   The characteristic equation: r^2 - r - b = 0
+*   The solution to the recurrence relation for distinct roots: an = c1 * r1^(n-1) + c2 * r2^(n-1) + ... + cn * rn^(n-1)
+*   The solution to the recurrence relation for recurrent roots: an = c1 * r1^(n-1) + c2 * r2^(n-1) + ...
+
+**Diagrams and Figures**
+
+There are no diagrams or figures on the page.
+
+**Definitions of Important Terms**
+
+The page defines several important terms related to homogeneous recurrence relations, including:
+
+*   **Homogeneous Recurrence Relation**: A type of mathematical equation where each term is defined in terms of previous terms, without any constant term.
+*   **Characteristic Equation**: A polynomial equation that is derived from the homogeneous recurrence relation.
+*   **Distinct Roots**: Roots of the characteristic equation that are not equal.
+*   **Recurrent Roots**: Roots of the characteristic equation that are equal.
+
+**Examples and Numerical Values**
+
+The page provides several examples and numerical values to illustrate the concepts explained. For example, it shows how to solve a homogeneous recurrence relation with distinct roots, and how to find the characteristic equation and its roots.
+
+Overall, the page provides a clear and concise explanation of homogeneous recurrence relations, including how to solve them and how to find the characteristic equation and its roots. It also provides several examples and numerical values to illustrate the concepts explained.
+
+[Page 12]
+The page appears to be a collection of notes on the topic of "Homogeneous Solution of the Given Recurrence Relation." The main topic or heading is not explicitly stated, but it is clear that the notes are focused on solving a specific recurrence relation.
+
+The notes begin by explaining the concept of a homogeneous solution, which is defined as a solution to the recurrence relation that is a constant function. The notes then provide a formula for finding the homogeneous solution, which is given by:
+
+an = c
+
+where c is a constant.
+
+The notes also introduce the concept of the characteristic equation, which is a polynomial equation that is derived from the recurrence relation. The characteristic equation is used to find the roots of the recurrence relation, which are then used to construct the homogeneous solution.
+
+The notes provide an example of how to find the homogeneous solution using the characteristic equation. The example involves a recurrence relation of the form:
+
+an = 6an-1 - 9an-2
+
+The notes show how to find the characteristic equation by substituting the recurrence relation into the equation:
+
+x^2 - 6x + 9 = 0
+
+The notes then solve the characteristic equation to find the roots:
+
+x = 3, 3
+
+The notes explain that since the roots are equal, the homogeneous solution is of the form:
+
+an = c(3)^n
+
+where c is a constant.
+
+The notes also discuss the concept of the particular solution, which is a solution to the recurrence relation that is not a constant function. The notes explain that the particular solution can be found by substituting a guess for the solution into the recurrence relation and solving for the constants.
+
+The notes provide an example of how to find the particular solution using this method. The example involves a recurrence relation of the form:
+
+an = 6an-1 - 9an-2
+
+The notes show how to guess a solution of the form:
+
+an = n^2
+
+The notes then substitute this guess into the recurrence relation and solve for the constants:
+
+an = 6an-1 - 9an-2
+n^2 = 6(n-1)^2 - 9(n-2)^2
+n^2 = 6n^2 - 12n + 6 - 9n^2 + 36n - 36
+5n^2 - 24n + 30 = 0
+
+The notes explain that this equation has no integer solutions, so the guess is incorrect. The notes then provide another guess for the solution:
+
+an = n^3
+
+The notes substitute this guess into the recurrence relation and solve for the constants:
+
+an = 6an-1 - 9an-2
+n^3 = 6(n-1)^3 - 9(n-2)^3
+n^3 = 6n^3 - 18n^2 + 12n - 6 - 9n^3 + 54n^2 - 108n + 72
+-3n^3 + 36n^2 - 96n + 66 = 0
+
+The notes explain that this equation has no integer solutions, so the guess is incorrect. The notes then provide another guess for the solution:
+
+an = n^4
+
+The notes substitute this guess into the recurrence relation and solve for the constants:
+
+an = 6an-1 - 9an-2
+n^4 = 6(n-1)^4 - 9(n-2)^4
+n^4 = 6n^4 - 24n^3 + 36n^2 - 24n + 6 - 9n^4 + 108n^3 - 216n^2 + 216n - 108
+-3n^4 + 132n^3 - 252n^2 + 240n - 102 = 0
+
+The notes explain that this equation has no integer solutions, so the guess is incorrect. The notes then provide another guess for the solution:
+
+an = n^5
+
+The notes substitute this guess into the recurrence relation and solve for the constants:
+
+an = 6an-1 - 9an-2
+n^5 = 6(n-1)^5 - 9(n-2)^5
+n^5 = 6n^5 - 30n^4 + 60n^3 -

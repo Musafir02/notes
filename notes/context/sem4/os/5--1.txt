@@ -1,0 +1,402 @@
+Silberschatz, Galvin and  Gagne ©2002
+11.1
+Operating System
+Chapter 11:  File-System Interface
+●
+File Concept
+●
+Access Methods
+●
+Directory Structure
+●
+File System Mounting
+●
+File Sharing 
+●
+Protection
+
+Silberschatz, Galvin and  Gagne ©2002
+11.2
+Operating System
+File Concept
+●
+Contiguous logical address space
+●
+Types: 
+●Data
+●numeric
+●character
+●binary
+●Program
+
+Silberschatz, Galvin and  Gagne ©2002
+11.3
+Operating System
+File Structure
+●
+None - sequence of words, bytes
+●
+Simple record structure
+●Lines 
+●Fixed length
+●Variable length
+●
+Complex Structures
+●Formatted document
+●Relocatable load file
+●
+Can simulate last two with first method by inserting appropriate 
+control characters.
+●
+Who decides:
+●Operating system
+●Program
+
+Silberschatz, Galvin and  Gagne ©2002
+11.4
+Operating System
+File Attributes
+●
+Name – only information kept in human-readable form.
+●
+Type – needed for systems that support different types.
+●
+Location – pointer to file location on device.
+●
+Size – current file size.
+●
+Protection – controls who can do reading, writing, executing.
+●
+Time, date, and user identification – data for protection, 
+security, and usage monitoring.
+●
+Information about files are kept in the directory structure, 
+which is maintained on the disk.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.5
+Operating System
+File Operations
+●
+Create
+●
+Write
+●
+Read
+●
+Reposition within file – file seek
+●
+Delete
+●
+Truncate
+●
+Open(Fi) – search the directory structure on disk for entry Fi, 
+and move the content of entry to memory.
+●
+Close (Fi) – move the content of entry Fi in memory to 
+directory structure on disk.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.6
+Operating System
+File Types – Name, Extension
+
+Silberschatz, Galvin and  Gagne ©2002
+11.7
+Operating System
+Access Methods
+●
+Sequential Access
+read next
+write next 
+reset
+no read after last write
+(rewrite)
+●
+Direct Access
+read n
+write n
+position to n
+read next
+write next 
+rewrite n
+n = relative block number
+
+Silberschatz, Galvin and  Gagne ©2002
+11.8
+Operating System
+Sequential-access File
+
+Silberschatz, Galvin and  Gagne ©2002
+11.9
+Operating System
+Simulation of Sequential Access on a Direct-access File
+
+Silberschatz, Galvin and  Gagne ©2002
+11.10
+Operating System
+Example of Index and Relative Files
+
+Silberschatz, Galvin and  Gagne ©2002
+11.11
+Operating System
+Directory Structure
+●
+A collection of nodes containing information about all files.
+F 
+1
+F 
+2
+F 
+3
+F 
+4
+F 
+n
+Directory
+Files
+Both the directory structure and the files reside on disk.
+Backups of these two structures are kept on tapes.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.12
+Operating System
+A Typical File-system Organization
+
+Silberschatz, Galvin and  Gagne ©2002
+11.13
+Operating System
+Information in a Device Directory
+●
+Name 
+●
+Type
+●
+Address 
+●
+Current length
+●
+Maximum length
+●
+Date last accessed (for archival)
+●
+Date last updated (for dump)
+●
+Owner ID (who pays)
+●
+Protection information (discuss later)
+
+Silberschatz, Galvin and  Gagne ©2002
+11.14
+Operating System
+Operations Performed on Directory
+●
+Search for a file
+●
+Create a file
+●
+Delete a file
+●
+List a directory
+●
+Rename a file
+●
+Traverse the file system
+
+Silberschatz, Galvin and  Gagne ©2002
+11.15
+Operating System
+Organize the Directory (Logically) to Obtain
+●
+Efficiency – locating a file quickly.
+●
+Naming – convenient to users.
+●Two users can have same name for different files.
+●The same file can have several different names.
+●
+Grouping – logical grouping of files by properties, (e.g., all 
+Java programs, all games, …)
+
+Silberschatz, Galvin and  Gagne ©2002
+11.16
+Operating System
+Single-Level Directory
+●
+A single directory for all users.
+Naming problem
+Grouping problem
+
+Silberschatz, Galvin and  Gagne ©2002
+11.17
+Operating System
+Two-Level Directory
+●
+Separate directory for each user.
+•Path name
+•Can have the same file name for different user
+•Efficient searching
+•No grouping capability
+
+Silberschatz, Galvin and  Gagne ©2002
+11.18
+Operating System
+Tree-Structured Directories
+
+Silberschatz, Galvin and  Gagne ©2002
+11.19
+Operating System
+Tree-Structured Directories (Cont.)
+●
+Efficient searching
+●
+Grouping Capability
+●
+Current directory (working directory)
+●cd /spell/mail/prog
+●type list
+
+Silberschatz, Galvin and  Gagne ©2002
+11.20
+Operating System
+Tree-Structured Directories (Cont.)
+●
+Absolute or relative path name
+●
+Creating a new file is done in current directory.
+●
+Delete a file
+rm <file-name>
+●
+Creating a new subdirectory is done in current directory.
+mkdir <dir-name>
+Example:  if in current directory   /mail
+mkdir count
+mail
+prog
+copy
+prt
+ex
+p
+count
+Deleting “mail” ⇒ deleting the entire subtree rooted by “mail”.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.21
+Operating System
+Acyclic-Graph Directories
+●
+Have shared subdirectories and files.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.22
+Operating System
+Acyclic-Graph Directories (Cont.)
+●
+Two different names (aliasing)
+●
+If dict deletes list ⇒ dangling pointer.
+Solutions:
+●Backpointers, so we can delete all pointers.
+Variable size records a problem.
+●Backpointers using a daisy chain organization.
+●Entry-hold-count solution.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.23
+Operating System
+General Graph Directory
+
+Silberschatz, Galvin and  Gagne ©2002
+11.24
+Operating System
+General Graph Directory (Cont.)
+●
+How do we guarantee no cycles?
+●Allow only links to file not subdirectories.
+●Garbage collection.
+●Every time a new link is added use a cycle detection
+algorithm to determine whether it is OK.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.25
+Operating System
+File System Mounting
+●
+A file system must be mounted before it can be accessed.
+●
+A unmounted file system (I.e. Fig. 11-11(b)) is mounted at a 
+mount point.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.26
+Operating System
+(a) Existing.  (b) Unmounted Partition
+
+Silberschatz, Galvin and  Gagne ©2002
+11.27
+Operating System
+Mount Point
+
+Silberschatz, Galvin and  Gagne ©2002
+11.28
+Operating System
+File Sharing
+●
+Sharing of files on multi-user systems is desirable.
+●
+Sharing may be done through a protection scheme.
+●
+On distributed systems, files may be shared across a network.
+●
+Network File System (NFS) is a common distributed 
+file-sharing method.
+
+Silberschatz, Galvin and  Gagne ©2002
+11.29
+Operating System
+Protection
+●
+File owner/creator should be able to control:
+●what can be done
+●by whom
+●
+Types of access
+●Read
+●Write
+●Execute
+●Append
+●Delete
+●List
+
+Silberschatz, Galvin and  Gagne ©2002
+11.30
+Operating System
+Access Lists and Groups
+●
+Mode of access:  read, write, execute
+●
+Three classes of users
+RWX
+a) owner access 7
+⇒
+1 1 1
+RWX
+b) group access 6
+ ⇒1 1 0
+RWX
+c) public access 1
+ ⇒0 0 1
+●
+Ask manager to create a group (unique name), say G, and add 
+some users to the group.
+●
+For a particular file (say game) or subdirectory, define an 
+appropriate access.
+owner
+group
+public
+chmod
+761
+game
+Attach a group to a file
+         chgrp     G    game

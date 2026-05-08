@@ -1,0 +1,354 @@
+[Page 1]
+**Analysis of Algorithms (Algo) Notes**
+
+The main topic of this page is the analysis of algorithms, which involves understanding the time and space complexity of different algorithms.
+
+**Criteria for Analysis**
+
+To analyze an algorithm, we need to consider the following criteria:
+
+*   **Input size**: The number of input values that the algorithm needs to process.
+*   **Output size**: The number of output values produced by the algorithm.
+*   **Definiteness**: Each instruction in the algorithm should be clear and unambiguous.
+*   **Finiteness**: The algorithm should terminate after a finite number of steps.
+
+**Effectiveness**
+
+An algorithm is considered effective if every instruction must be executed at least once to produce the desired output.
+
+**Program**
+
+A program is the expression of an algorithm in a programming language, such as function and subroutine calls.
+
+**Analysis of Algo**
+
+The analysis of an algorithm involves understanding how it behaves concerning time, space complexity, and practical efficiency while manufacturing different types of data.
+
+**Key Concepts**
+
+*   **Time complexity**: The amount of time an algorithm takes to complete as a function of the size of the input.
+*   **Space complexity**: The amount of memory an algorithm uses as a function of the size of the input.
+*   **Efficiency**: The ratio of the number of steps an algorithm takes to the number of steps required by an optimal algorithm for the same problem.
+
+**Example**
+
+Suppose we have an algorithm that sorts an array of n elements in ascending order. The time complexity of this algorithm is O(n log n), which means that the number of steps it takes grows linearly with the size of the input. The space complexity is O(1), which means that the algorithm uses a constant amount of memory regardless of the size of the input.
+
+**Conclusion**
+
+In conclusion, the analysis of algorithms is a crucial step in understanding how they work and how they can be improved. By considering the criteria for analysis, understanding the key concepts, and using examples to illustrate these concepts, we can gain a deeper understanding of algorithms and how to optimize them for better performance.
+
+[Page 2]
+The page appears to be a study note on the concept of asymptotic notation in computer science. The main topic is the importance of performance, with a list of key points that include modularity, correctness, maintainability, functionality, robustness, user-friendliness, simplicity, extensibility, and reliability.
+
+The page also includes a section on asymptotic notation, which is a way of describing the performance of an algorithm as the size of the input increases. The notation is used to express the upper bound of an algorithm's time or space complexity.
+
+The page also includes a diagram that illustrates the concept of asymptotic notation, showing how the running time of an algorithm changes as the input size increases. The diagram shows three cases: the best case, the worst case, and the average case.
+
+The page also includes definitions of important terms, such as "big O", "omega", and "theta". These terms are used to describe the performance of an algorithm and are an important part of understanding asymptotic notation.
+
+Overall, the page provides a clear and concise overview of the concept of asymptotic notation and its importance in computer science. It also includes useful diagrams and definitions to help students understand the material.
+
+[Page 3]
+The main topic or heading is "Analysis of Algorithm [AOA]".
+
+This page is about time complexity, which deals with the quantification of the amount of time taken by set of code or algo to process or run as a fun of the amt of input.
+
+The page defines time complexity as the number of times a particular instruction set is executed rather than total time taken. It depends on some external factors like compiler used, some are the processor, speed, etc.
+
+There are two definitions given:
+
+1.  Constant time or O(1) is the time complexity of an algo that always uses the same number of operations regardless of the number of elements being operated on.
+2.  Time taken T(P) taken by a program P is sum of time taken compiler and the run time.
+
+There are also some examples and numerical values given:
+
+*   WAP of implement Dijkstra's Algo using greedy method.
+*   WAP of find min cost using Prim's & Kruskal Algo.
+*   To find single source shortest path using Bellman ford -11- Algo by Dynamic Approach.
+*   WAP to implement n-queen problem using backtracking.
+*   Implementation of graph coloring using back tracking.
+*   Graph naive string matching -11-
+
+Overall, this page provides a comprehensive overview of time complexity, its definition, and its importance in algorithm analysis. It also provides examples and numerical values to illustrate the concept.
+
+[Page 4]
+The page appears to be from a textbook or lecture notes on algorithms, focusing on the time complexity of different operations. The main topic is the analysis of time complexity using Big O notation.
+
+**Key Concepts**
+
+*   **Big O Notation**: This notation is used to describe the upper bound of an algorithm's time complexity. It represents the worst-case scenario, indicating the maximum amount of time an algorithm may take to complete as the size of the input increases.
+*   **Linear Time**: Linear time is represented by O(n), where n is the size of the input. This means that the time taken by the algorithm grows linearly with the size of the input. Examples include searching for an element in a sorted array or linked list.
+*   **Quadratic Time**: Quadratic time is represented by O(n^2). This means that the time taken by the algorithm grows quadratically with the size of the input. Examples include sorting algorithms like bubble sort or insertion sort.
+*   **Logarithmic Time**: Logarithmic time is represented by O(log n). This means that the time taken by the algorithm grows logarithmically with the size of the input. Examples include binary search or finding an element in a balanced binary search tree.
+
+**Formulas and Equations**
+
+*   **Time Complexity Formula**: The formula for time complexity is T(n) = O(f(n)), where T(n) is the time taken by the algorithm and f(n) is the function representing the time complexity.
+*   **Big O Notation**: The Big O notation is used to describe the upper bound of an algorithm's time complexity. It represents the worst-case scenario, indicating the maximum amount of time an algorithm may take to complete as the size of the input increases.
+
+**Diagrams and Figures**
+
+*   **Binary Search**: A diagram illustrating the process of binary search, which is an example of a logarithmic time complexity algorithm. The diagram shows how the algorithm repeatedly divides the search space in half until the target element is found.
+*   **Sorting Algorithms**: A diagram comparing the time complexities of different sorting algorithms, such as bubble sort, insertion sort, and merge sort. The diagram shows how the time complexity of each algorithm changes as the size of the input increases.
+
+**Definitions of Important Terms**
+
+*   **Algorithm**: An algorithm is a set of instructions that can be executed by a computer to solve a specific problem.
+*   **Time Complexity**: Time complexity refers to the amount of time an algorithm takes to complete as the size of the input increases.
+*   **Big O Notation**: Big O notation is a way of describing the upper bound of an algorithm's time complexity. It represents the worst-case scenario, indicating the maximum amount of time an algorithm may take to complete as the size of the input increases.
+
+**Examples and Numerical Values**
+
+*   **Searching for an Element**: An example of searching for an element in a sorted array using binary search, which has a time complexity of O(log n).
+*   **Sorting an Array**: An example of sorting an array using merge sort, which has a time complexity of O(n log n).
+
+In summary, the page provides an introduction to the analysis of time complexity using Big O notation, covering key concepts such as linear, quadratic, and logarithmic time complexities, as well as important terms like algorithm and time complexity. The page also includes diagrams and examples to illustrate these concepts, making it easier for students to understand and visualize the material.
+
+[Page 5]
+This page from a student's notes appears to be related to asymptotic notation, specifically Big O, Big Omega, and Big Theta notation. The main topic or heading is not explicitly stated, but the content suggests it is discussing the concepts of worst-case and average-case time complexities.
+
+**Big O Notation**
+
+Big O notation is used to describe the upper bound of an algorithm's time complexity. It represents the maximum time required for execution as the input size increases. The notation is defined as:
+
+*   O(g(n)) = { f(n) | there exists a positive constant c and a positive integer n0 such that 0 ≤ f(n) ≤ cg(n) for all n ≥ n0 }
+
+In simpler terms, Big O notation describes the worst-case scenario, where the algorithm's time complexity is bounded by a function g(n). The constant c is used to scale the function, and n0 is the input size threshold beyond which the bound holds.
+
+**Big Omega Notation**
+
+Big Omega notation is used to describe the lower bound of an algorithm's time complexity. It represents the minimum time required for execution as the input size increases. The notation is defined as:
+
+*   Ω(g(n)) = { f(n) | there exists a positive constant c and a positive integer n0 such that 0 ≤ cg(n) ≤ f(n) for all n ≥ n0 }
+
+In simpler terms, Big Omega notation describes the best-case scenario, where the algorithm's time complexity is bounded by a function g(n). The constant c is used to scale the function, and n0 is the input size threshold beyond which the bound holds.
+
+**Big Theta Notation**
+
+Big Theta notation is used to describe the exact time complexity of an algorithm. It represents both the upper and lower bounds of an algorithm's time complexity. The notation is defined as:
+
+*   Θ(g(n)) = { f(n) | there exist positive constants c1, c2, and n0 such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ n0 }
+
+In simpler terms, Big Theta notation describes the average-case scenario, where the algorithm's time complexity is exactly bounded by a function g(n). The constants c1 and c2 are used to scale the function, and n0 is the input size threshold beyond which the bound holds.
+
+**Diagrams and Figures**
+
+The page includes several diagrams and figures illustrating the concepts of Big O, Big Omega, and Big Theta notation. The diagrams show the relationships between the input size (n) and the time complexity functions (f(n), g(n), and c*g(n)). The key parts labelled in the diagrams include:
+
+*   The input size (n) axis
+*   The time complexity functions (f(n), g(n), and c*g(n)) axes
+*   The constant c scaling factor
+*   The input size threshold (n0)
+
+**Definitions of Important Terms**
+
+The page defines several important terms related to asymptotic notation, including:
+
+*   Worst-case upper bound: The maximum time required for execution as the input size increases.
+*   Best-case lower bound: The minimum time required for execution as the input size increases.
+*   Average-case: The exact time complexity of an algorithm, representing both the upper and lower bounds.
+
+**Examples and Numerical Values**
+
+The page provides several examples and numerical values to illustrate the concepts of Big O, Big Omega, and Big Theta notation. For instance, it shows how to calculate the time complexity of an algorithm using Big O notation, and how to determine the constants c and n0.
+
+In summary, this page from a student's notes provides a comprehensive overview of asymptotic notation, including Big O, Big Omega, and Big Theta notation. The page explains the concepts, definitions, and formulas in a clear and concise manner, making it easy for students to understand and apply the concepts to real-world problems.
+
+[Page 6]
+The main topic of this page is about algorithms, specifically focusing on the efficiency and complexity of different types of input.
+
+The page begins by discussing the efficiency of an algorithm, which depends on the amount of time, storage, and other resources required to execute the program. The author notes that asymptotic notation is used to measure the performance of an algorithm, but it may not always be the same for different types of input. This is because the increase in input size can affect the performance of the algorithm.
+
+The author then explains the difference between P, NP, and NP-complete problems. P problems are those that can be solved in polynomial time, meaning that the running time of the algorithm increases polynomially with the size of the input. NP problems, on the other hand, are those that can be verified in polynomial time, but may not necessarily be solvable in polynomial time. NP-complete problems are a subset of NP problems that are at least as hard as the hardest problems in NP.
+
+The author also discusses the concept of hardness, which is used to measure the difficulty of solving a problem. A problem is considered hard if it is at least as hard as the hardest problem in NP.
+
+The page also includes a diagram illustrating the relationship between P, NP, and NP-complete problems. The diagram shows that all P problems are also NP problems, but not all NP problems are P problems. Additionally, all NP-complete problems are also NP problems, but not all NP problems are NP-complete.
+
+Furthermore, the author explains the concept of insertion sort, which is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in the sorted list. The author provides an example of how insertion sort works, using a list of numbers as an illustration.
+
+Finally, the page concludes with a discussion of the time complexity of insertion sort, which is O(n^2) in the worst case. This means that the running time of the algorithm increases quadratically with the size of the input.
+
+Overall, this page provides a comprehensive overview of the concepts related to algorithms, including efficiency, complexity, and hardness. It also introduces the reader to the concepts of P, NP, and NP-complete problems, as well as the insertion sort algorithm and its time complexity.
+
+[Page 8]
+**Summary of the Page**
+
+The page appears to be a study guide for a computer science or programming course, focusing on sorting algorithms. The main topic is the implementation of the QuickSort algorithm.
+
+**QuickSort Algorithm**
+
+QuickSort is a divide-and-conquer algorithm that sorts an array by selecting a pivot element, partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot, and recursively sorting the sub-arrays.
+
+**Pseudocode**
+
+The pseudocode for QuickSort is:
+
+```
+QuickSort(arr, low, high)
+  if low < high
+    pivot = partition(arr, low, high)
+    QuickSort(arr, low, pivot - 1)
+    QuickSort(arr, pivot + 1, high)
+```
+
+**Partition Function**
+
+The partition function is used to divide the array into two sub-arrays. It selects a pivot element, moves all elements smaller than the pivot to the left of it, and moves all elements greater than the pivot to the right of it.
+
+**Example**
+
+The example on the page shows how to implement QuickSort using recursion. The array `[25, 9, 5, 32, 7, 2, 28]` is sorted using QuickSort.
+
+**Key Points**
+
+*   The page explains the concept of QuickSort and its implementation using recursion.
+*   The partition function is used to divide the array into two sub-arrays.
+*   The example demonstrates how to implement QuickSort using recursion.
+
+**Conclusion**
+
+In conclusion, the page provides a clear explanation of the QuickSort algorithm and its implementation using recursion. The partition function is used to divide the array into two sub-arrays, and the example demonstrates how to implement QuickSort using recursion.
+
+[Page 9]
+The main topic of this page is about merging and sorting arrays. The page explains two important concepts: merging and sorting. 
+
+Merging is the process of combining two or more arrays into a single array. This is done by comparing the elements of each array and placing them in the correct order. The page provides an example of how to merge two arrays, [64, 25, 12] and [22, 11], into a single array, [11, 12, 22, 25, 64]. The process involves comparing the elements of each array and placing them in the correct order.
+
+Sorting is the process of arranging the elements of an array in a specific order, such as ascending or descending order. The page explains how to sort an array using the quicksort algorithm. Quicksort is a divide-and-conquer algorithm that works by selecting a pivot element, partitioning the array around the pivot, and recursively sorting the subarrays.
+
+The page also provides an example of how to sort the array [25, 64, 12] using the quicksort algorithm. The process involves selecting a pivot element, partitioning the array around the pivot, and recursively sorting the subarrays.
+
+In addition to the concepts of merging and sorting, the page also explains how to divide an array into two subarrays and how to combine two subarrays. The page provides examples of how to divide the array [64, 25, 12] into two subarrays, [64, 25] and [12], and how to combine the two subarrays into a single array, [12, 25, 64].
+
+Overall, the page provides a clear and concise explanation of the concepts of merging and sorting, along with examples and diagrams to illustrate the processes.
+
+[Page 10]
+**Summary of the Page**
+
+The main topic of this page is the solution to an array problem using the merge sort method. The page explains the concept of merge sort, which is a comparison-based sorting algorithm that repeatedly selects the smallest (or largest) element from the unsorted portion and swaps it with the first unsorted element until the entire array is sorted.
+
+**Concepts Explained**
+
+*   **Merge Sort**: A comparison-based sorting algorithm that repeatedly selects the smallest (or largest) element from the unsorted portion and swaps it with the first unsorted element until the entire array is sorted.
+*   **Comparison-Based Sorting**: A sorting algorithm that compares elements in the array to determine their order.
+*   **Unsorted Portion**: The part of the array that has not yet been sorted.
+*   **First Unsorted Element**: The first element in the unsorted portion of the array.
+
+**Formulas and Equations**
+
+*   **None**: There are no formulas or equations on this page.
+
+**Diagrams and Figures**
+
+*   **Array Diagram**: A diagram showing the original array with numbers 27, 9, 5, 32, 7, 2, and 28. The diagram illustrates the process of merging two sorted subarrays to produce a single sorted subarray.
+*   **Sorted Array Diagram**: A diagram showing the sorted array with numbers 2, 5, 7, 9, 27, 28, and 32. The diagram illustrates the final sorted array after applying the merge sort algorithm.
+
+**Definitions**
+
+*   **Sorted Array**: An array in which all elements are in ascending or descending order.
+*   **Unsorted Array**: An array in which some elements are not in ascending or descending order.
+
+**Examples and Numerical Values**
+
+*   **Example Array**: The original array with numbers 27, 9, 5, 32, 7, 2, and 28.
+*   **Sorted Array**: The final sorted array with numbers 2, 5, 7, 9, 27, 28, and 32.
+
+In summary, this page explains the concept of merge sort, a comparison-based sorting algorithm that repeatedly selects the smallest (or largest) element from the unsorted portion and swaps it with the first unsorted element until the entire array is sorted. The page provides a clear explanation of the algorithm, including diagrams and examples to illustrate the process.
+
+[Page 11]
+This page from a student's notes appears to be related to sorting algorithms, specifically the merge sort algorithm.
+
+**Main Topic**
+
+The main topic is the merge sort algorithm, which is a divide-and-conquer algorithm used to sort an array of elements in ascending order. The algorithm works by dividing the array into two halves, sorting each half recursively, and then merging the two sorted halves back together.
+
+**Concepts**
+
+The student has written down several key concepts related to the merge sort algorithm, including:
+
+*   **Merge Sort**: a divide-and-conquer algorithm that sorts an array of elements in ascending order.
+*   **Divide**: the process of dividing the array into two halves.
+*   **Conquer**: the process of sorting each half recursively.
+*   **Merge**: the process of merging the two sorted halves back together.
+
+**Formulas and Equations**
+
+There are no formulas or equations on this page.
+
+**Diagrams and Figures**
+
+There are two diagrams on this page, both of which illustrate the merge sort algorithm.
+
+*   The first diagram shows an example of how the merge sort algorithm works. It shows an array of elements being divided into two halves, sorted recursively, and then merged back together.
+*   The second diagram shows the same process, but with a larger array of elements.
+
+**Key Parts Labelled**
+
+The key parts labelled in the diagrams include:
+
+*   **Array**: the array of elements being sorted.
+*   **Divide**: the process of dividing the array into two halves.
+*   **Conquer**: the process of sorting each half recursively.
+*   **Merge**: the process of merging the two sorted halves back together.
+
+**Definitions of Important Terms**
+
+There are no definitions of important terms on this page.
+
+**Examples and Numerical Values**
+
+There are several examples and numerical values given on this page, including:
+
+*   **Example 1**: an array of elements being sorted using the merge sort algorithm.
+*   **Example 2**: a larger array of elements being sorted using the merge sort algorithm.
+*   **Numerical Values**: several numerical values are given, including the number of elements in each array, the number of times the array is divided, and the number of times the array is merged.
+
+Overall, this page provides a clear and concise explanation of the merge sort algorithm, including its key concepts, formulas, and examples. The diagrams and figures help to illustrate the algorithm and make it easier to understand.
+
+[Page 12]
+The page in question appears to be a handwritten summary of an algorithm, specifically the insertion sort algorithm. The main topic or heading is not explicitly stated, but it can be inferred that the page is focused on explaining the insertion sort algorithm.
+
+The insertion sort algorithm is a simple sorting algorithm that works by dividing the input into a sorted and an unsorted region. Each subsequent element from the unsorted region is inserted into the correct position in the sorted region. The algorithm continues until the entire input is sorted.
+
+The page explains the concept of swapping elements, which is a crucial step in the insertion sort algorithm. Swapping elements involves exchanging the values of two elements in the array. This is done to ensure that the elements are in the correct order after each iteration of the algorithm.
+
+The page also explains the concept of the "sorted array" and how it is used to keep track of the sorted elements. The sorted array is a subarray of the original array that contains the sorted elements. The algorithm uses the sorted array to determine the correct position for each element in the unsorted region.
+
+The page provides a step-by-step explanation of how the insertion sort algorithm works, including the use of formulas and equations. For example, it explains how to calculate the index of the correct position for each element using the formula "arr[j] = arr[j-1] + 1". It also explains how to update the sorted array using the formula "arr[j-1] = arr[j]".
+
+The page includes several diagrams and figures that illustrate the different steps of the algorithm. For example, one diagram shows how the sorted array is updated after each iteration of the algorithm. Another diagram shows how the elements are swapped in the array.
+
+The page defines important terms such as "swapping element", "sorted array", and "insertion sort". It also provides examples and numerical values to illustrate the concepts being explained.
+
+Overall, the page provides a clear and concise explanation of the insertion sort algorithm, including the concepts of swapping elements, sorted arrays, and the step-by-step process of the algorithm. The diagrams and figures help to illustrate the different steps of the algorithm, making it easier for students to understand and follow along.
+
+In summary, the page is a detailed and informative summary of the insertion sort algorithm, covering the key concepts, formulas, and equations involved in the algorithm. It provides a clear and concise explanation of the algorithm, along with diagrams and figures to help illustrate the different steps.
+
+[Page 13]
+The page appears to be discussing the Quick Sort algorithm, a sorting algorithm that uses a divide-and-conquer approach. The main topic is to explain how to implement Quick Sort using a pivot element.
+
+The concept of a pivot element is explained as the middle element of an array, which is chosen to divide the array into two parts: elements less than the pivot and elements greater than the pivot. The algorithm then recursively sorts these two parts.
+
+The formula for calculating the pivot index is given as:
+
+`i = (l + r) / 2`
+
+where `l` is the left index and `r` is the right index of the array.
+
+The page also explains the process of partitioning the array around the pivot, which involves rearranging the elements so that all elements less than the pivot are on the left and all elements greater than the pivot are on the right. This is done by iterating through the array and swapping elements that are in the wrong position.
+
+The page also mentions the use of recursive calls to sort the sub-arrays on either side of the pivot. The formula for the recursive call is given as:
+
+`recursively call recursively call the same process to the partition, sub-arrays (left of the pivot).`
+
+The page also includes a step-by-step explanation of the Quick Sort algorithm, which involves:
+
+1. Choosing a pivot element from the array
+2. Partitioning the array around the pivot
+3. Recursively calling the Quick Sort algorithm on the sub-arrays
+
+There are no diagrams or figures on this page. The important terms defined on this page are "pivot element", "partition", and "sub-array".
+
+Overall, the page provides a clear and concise explanation of the Quick Sort algorithm, including its concept, formulae, and step-by-step process.

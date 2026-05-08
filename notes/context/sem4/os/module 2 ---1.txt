@@ -1,0 +1,737 @@
+Module 2
+Process and Process Scheduling
+Concept of Process:
+A process is basically a program in execution. The execution of a process must 
+progress in a sequential fashion.
+A process is defined as an entity which represents the basic unit of work to be 
+implemented in the system.
+When a program is loaded into the memory and it becomes a process, it can be 
+divided into four sections ─ stack, heap, text and data. The following image shows a 
+simplified layout of a process inside main memory −
+S.N.
+Component & Description
+1
+Stack
+The process Stack contains the temporary data such as method/function 
+parameters, return address and local variables.
+2
+Heap
+This is dynamically allocated memory to a process during its run time.
+
+3
+Text
+This includes the current activity represented by the value of Program Counter and 
+the contents of the processor's registers.
+4
+Data
+This section contains the global and static variables.
+Program
+A program is a piece of code which may be a single line or millions of lines. A 
+computer program is usually written by a computer programmer in a programming 
+language. For example, here is a simple program written in C programming 
+language −
+#include <stdio.h>
+int main() {
+   printf("Hello, World! \n");
+   return 0;
+}
+A computer program is a collection of instructions that performs a specific task 
+when executed by a computer. When we compare a program with a process, we 
+can conclude that a process is a dynamic instance of a computer program.
+Process States/Process Life Cycle
+
+When a process executes, it passes through different states. These stages may 
+differ in different operating systems, and the names of these states are also not 
+standardized.
+In general, a process can have one of the following five states at a time.
+S.N.
+State & Description
+1
+Start
+This is the initial state when a process is first started/created.
+2
+Ready
+The process is waiting to be assigned to a processor. Ready processes are waiting 
+to have the processor allocated to them by the operating system so that they can 
+run. Process may come into this state after Start state or while running it by but 
+interrupted by the scheduler to assign CPU to some other process.
+3
+Running
+Once the process has been assigned to a processor by the OS scheduler, the 
+
+process state is set to running and the processor executes its instructions.
+4
+Waiting
+Process moves into the waiting state if it needs to wait for a resource, such as 
+waiting for user input, or waiting for a file to become available.
+5
+Terminated or Exit
+Once the process finishes its execution, or it is terminated by the operating system, 
+it is moved to the terminated state where it waits to be removed from main 
+memory.
+6.
+Suspend ready
+A process in the ready state, which is moved to secondary memory from the main 
+memory due to lack of the resources (mainly primary memory) is called in the 
+suspend ready state.
+If the main memory is full and a higher priority process comes for the execution 
+then the OS have to make the room for the process in the main memory by 
+throwing the lower priority process out into the secondary memory. The suspend 
+ready processes remain in the secondary memory until the main memory gets 
+available.
+7.
+Suspend wait
+Instead of removing the process from the ready queue, it's better to remove the 
+blocked process which is waiting for some resources in the main memory. Since it is 
+already waiting for some resource to get available hence it is better if it waits in the 
+secondary memory and make room for the higher priority process. These processes 
+complete their execution once the main memory gets available and their wait is 
+finished.
+Process Description
+
+There may exist more than one process in the system which may require the same 
+resource at the same time. Therefore, the operating system has to manage all the 
+processes and the resources in a convenient and efficient way.
+Some resources may need to be executed by one process at one time to maintain 
+the consistency otherwise the system can become inconsistent and deadlock may 
+occur.
+The operating system is responsible for the following activities in connection with 
+Process Management
+1. Scheduling processes and threads on the CPUs.
+2. Creating and deleting both user and system processes.
+3. Suspending and resuming processes.
+4. Providing mechanisms for process synchronization.
+5. Providing mechanisms for process communication.
+Process Control Block (PCB)
+A Process Control Block is a data structure maintained by the Operating System for 
+every process. The PCB is identified by an integer process ID (PID). A PCB keeps 
+all the information needed to keep track of a process as listed below in the table −
+S.N.
+Information & Description
+1
+Process State
+The current state of the process i.e., whether it is ready, running, waiting, or 
+whatever.
+2
+Process privileges
+This is required to allow/disallow access to system resources.
+3
+Process ID
+Unique identification for each of the process in the operating system.
+4
+Pointer
+A pointer to parent process.
+
+5
+Program Counter
+Program Counter is a pointer to the address of the next instruction to be executed 
+for this process.
+6
+CPU registers
+Various CPU registers where process need to be stored for execution for running 
+state.
+7
+CPU Scheduling Information
+Process priority and other scheduling information which is required to schedule the 
+process.
+8
+Memory management information
+This includes the information of page table, memory limits, Segment table 
+depending on memory used by the operating system.
+9
+Accounting information
+This includes the amount of CPU used for process execution, time limits, execution 
+ID etc.
+10
+IO status information
+This includes a list of I/O devices allocated to the process.
+The architecture of a PCB is completely dependent on Operating System and may 
+contain different information in different operating systems. Here is a simplified 
+diagram of a PCB −
+
+The PCB is maintained for a process throughout its lifetime, and is deleted once the 
+process terminates.
+Process Scheduling
+Definition
+The process scheduling is the activity of the process manager that handles the 
+removal of the running process from the CPU and the selection of another process 
+on the basis of a particular strategy.
+Process scheduling is an essential part of Multiprogramming operating systems. 
+Such operating systems allow more than one process to be loaded into the 
+executable memory at a time and the loaded process shares the CPU using time 
+multiplexing.
+Process Scheduling Queues
+The OS maintains all PCBs in Process Scheduling Queues. The OS maintains a 
+separate queue for each of the process states and PCBs of all processes in the 
+same execution state are placed in the same queue. When the state of a process is 
+changed, its PCB is unlinked from its current queue and moved to its new state 
+queue.
+
+The Operating System maintains the following important process scheduling 
+queues −
+
+Job queue − This queue keeps all the processes in the system.
+
+Ready queue − This queue keeps a set of all processes residing in main 
+memory, ready and waiting to execute. A new process is always put in this 
+queue.
+
+Device queues − The processes which are blocked due to unavailability of 
+an I/O device constitute this queue.
+The OS can use different policies to manage each queue (FIFO, Round Robin, 
+Priority, etc.). The OS scheduler determines how to move processes between the 
+ready and run queues which can only have one entry per processor core on the 
+system; in the above diagram, it has been merged with the CPU.
+Two-State Process Model
+Two-state process model refers to running and non-running states which are 
+described below −
+S.N.
+State & Description
+1
+Running
+When a new process is created, it enters into the system as in the running state.
+2
+Not Running
+Processes that are not running are kept in queue, waiting for their turn to execute. 
+Each entry in the queue is a pointer to a particular process. Queue is implemented 
+by using linked list. Use of dispatcher is as follows. When a process is interrupted, 
+that process is transferred in the waiting queue. If the process has completed or 
+aborted, the process is discarded. In either case, the dispatcher then selects a 
+
+process from the queue to execute.
+CPU Scheduling
+CPU Scheduling is a process of determining which process will own CPU 
+for execution while another process is on hold. The main task of CPU 
+scheduling is to make sure that whenever the CPU remains idle, the OS at 
+least select one of the processes available in the ready queue for 
+execution. The selection process will be carried out by the CPU scheduler. 
+It selects one of the processes in memory that are ready for execution.
+Schedulers
+Schedulers are special system software which handle process scheduling in various 
+ways. Their main task is to select the jobs to be submitted into the system and to 
+decide which process to run. Schedulers are of three types −
+
+Long-Term Scheduler
+
+Short-Term Scheduler
+
+Medium-Term Scheduler
+Long Term Scheduler
+It is also called a job scheduler. A long-term scheduler determines which programs 
+are admitted to the system for processing. It selects processes from the queue and 
+loads them into memory for execution. Process loads into the memory for CPU 
+scheduling.
+The primary objective of the job scheduler is to provide a balanced mix of jobs, such 
+as I/O bound and processor bound. It also controls the degree of multiprogramming. 
+If the degree of multiprogramming is stable, then the average rate of process 
+creation must be equal to the average departure rate of processes leaving the 
+system.
+On some systems, the long-term scheduler may not be available or minimal. Time-
+sharing operating systems have no long term scheduler. When a process changes 
+the state from new to ready, then there is use of long-term scheduler.
+Short Term Scheduler
+It is also called as CPU scheduler. Its main objective is to increase system 
+performance in accordance with the chosen set of criteria. It is the change of ready 
+state to running state of the process. CPU scheduler selects a process among the 
+processes that are ready to execute and allocates CPU to one of them.
+Short-term schedulers, also known as dispatchers, make the decision of which 
+process to execute next. Short-term schedulers are faster than long-term 
+schedulers.
+
+Medium Term Scheduler
+Medium-term scheduling is a part of swapping. It removes the processes from the 
+memory. It reduces the degree of multiprogramming. The medium-term scheduler is 
+in-charge of handling the swapped out-processes.
+A running process may become suspended if it makes an I/O request. A suspended 
+processes cannot make any progress towards completion. In this condition, to 
+remove the process from memory and make space for other processes, the 
+suspended process is moved to the secondary storage. This process is 
+called swapping, and the process is said to be swapped out or rolled out. 
+Swapping may be necessary to improve the process mix.
+Comparison among Scheduler
+S.N.
+Long-Term Scheduler
+Short-Term Scheduler
+Medium-Term Scheduler
+1
+It is a job scheduler
+It is a CPU scheduler
+It is a process swapping 
+scheduler.
+2
+Speed is lesser than short 
+term scheduler
+Speed is fastest among 
+other two
+Speed is in between both 
+short and long term 
+scheduler.
+3
+It controls the degree of 
+multiprogramming
+It provides lesser control 
+over degree of 
+multiprogramming
+It reduces the degree of 
+multiprogramming.
+4
+It is almost absent or 
+minimal in time sharing 
+system
+It is also minimal in time 
+sharing system
+It is a part of Time sharing 
+systems.
+5
+It selects processes from 
+pool and loads them into 
+memory for execution
+It selects those 
+processes which are 
+ready to execute
+It can re-introduce the 
+process into memory and 
+execution can be 
+continued.
+
+•
+Non-pre-emptive Scheduling : In non-preemptive mode, once if a process 
+enters into running state, it continues to execute until it terminates or blocks 
+itself to wait for Input/Output or by requesting some operating system service. 
+In this type of scheduling method, the CPU has been allocated to a specific 
+process. The process that keeps the CPU busy will release the CPU either by 
+switching context or terminating. It is the only method that can be used for 
+various hardware platforms. That's because it doesn't need special hardware 
+(for example, a timer) like preemptive scheduling.
+•
+Preemptive Scheduling : In preemptive mode, currently running process 
+may be interrupted and moved to the ready State by the operating system. 
+When a new process arrives or when an interrupt occurs, preemptive policies 
+may incur greater overhead than nonpreemptive version but preemptive 
+version may provide better service.
+In Preemptive Scheduling, the tasks are mostly assigned with their priorities. 
+Sometimes it is important to run a task with a higher priority before another 
+lower priority task, even if the lower priority task is still running. The lower 
+priority task holds for some time and resumes when the higher priority task 
+finishes its execution.
+Context Switch
+A context switch is the mechanism to store and restore the state or context of a 
+CPU in Process Control block so that a process execution can be resumed from the 
+same point at a later time. Using this technique, a context switcher enables multiple 
+processes to share a single CPU. Context switching is an essential part of a 
+multitasking operating system features.
+When the scheduler switches the CPU from executing one process to execute 
+another, the state from the current running process is stored into the process control 
+block. After this, the state for the process to run next is loaded from its own PCB 
+and used to set the PC, registers, etc. At that point, the second process can start 
+executing.
+
+Context switches are computationally intensive since register and memory state 
+must be saved and restored. To avoid the amount of context switching time, some 
+hardware systems employ two or more sets of processor registers. When the 
+process is switched, the following information is stored for later use.
+
+Program Counter
+
+Scheduling information
+
+Base and limit register value
+
+Currently used register
+
+Changed State
+
+I/O State information
+
+Accounting information
+Scheduling Algorithms
+
+There are various algorithms which are used by the Operating System to schedule 
+the processes on the processor in an efficient way.
+The Purpose of a Scheduling algorithm
+1. Maximum CPU utilization
+2. Fare allocation of CPU
+3. Maximum throughput
+4. Minimum turnaround time
+5. Minimum waiting time
+6. Minimum response time
+Turnaround time: It is the total time taken between the submission of a 
+program/process/thread/task (Linux) for execution and the return of the complete output to 
+the customer/user.
+Response time: It is the time spent between the ready state and getting the CPU for the 
+first time.
+Waiting time: It is the total time spent by the process in the ready state waiting for CPU.
+There are the following algorithms which can be used to schedule the jobs.
+
+1. First Come First Serve
+It is the simplest algorithm to implement. The process with the minimal arrival time 
+will get the CPU first. The lesser the arrival time, the sooner will the process gets the 
+CPU. It is the non-preemptive type of scheduling.
+2. Round Robin
+In the Round Robin scheduling algorithm, the OS defines a time quantum (slice). All 
+the processes will get executed in the cyclic way. Each of the process will get the 
+CPU for a small amount of time (called time quantum) and then get back to the 
+ready queue to wait for its next turn. It is a preemptive type of scheduling.
+3. Shortest Job First
+The job with the shortest burst time will get the CPU first. The lesser the burst time, 
+the sooner will the process get the CPU. It is the non-preemptive type of scheduling.
+4. Shortest remaining time first
+It is the preemptive form of SJF. In this algorithm, the OS schedules the Job 
+according to the remaining time of the execution.
+5. Priority based scheduling
+In this algorithm, the priority will be assigned to each of the processes. The higher 
+the priority, the sooner will the process get the CPU. If the priority of the two 
+processes is same then they will be scheduled according to their arrival time.
+
+1.
+FCFS Scheduling
+First come first serve (FCFS) scheduling algorithm simply schedules the jobs 
+according to their arrival time. The job which comes first in the ready queue will get 
+the CPU first. The lesser the arrival time of the job, the sooner will the job get the 
+CPU. FCFS scheduling may cause the problem of starvation if the burst time of the 
+first process is the longest among all the jobs.
+Advantages of FCFS
+o
+Simple
+o
+Easy
+o
+First come, First serve
+Disadvantages of FCFS
+1. The scheduling method is non preemptive, the process will run to the 
+completion.
+2. Due to the non-preemptive nature of the algorithm, the problem of starvation 
+may occur.
+3. Although it is easy to implement, but it is poor in performance since the 
+average waiting time is higher as compare to other scheduling algorithms.
+Example
+Let's take an example of The FCFS scheduling algorithm. In the Following schedule, 
+there are 5 processes with process ID P0, P1, P2, P3 and P4. P0 arrives at time 0, 
+P1 at time 1, P2 at time 2, P3 arrives at time 3 and Process P4 arrives at time 4 in 
+the ready queue. The processes and their respective Arrival and Burst time are given 
+in the following table.
+The Turnaround time and the waiting time are calculated by using the following 
+formula.
+1. Turn Around Time = Completion Time - Arrival Time   
+2. Waiting Time = Turnaround time - Burst Time   
+The average waiting Time is determined by summing the respective waiting time of 
+all the processes and divided the sum by the total number of processes.
+
+               Avg Waiting Time=31/5
+             (Gantt chart)
+Convoy Effect in FCFS
+FCFS may suffer from the convoy effect if the burst time of the first job is the 
+highest among all. As in the real life, if a convoy is passing through the road then 
+the other persons may get blocked until it passes completely. This can be simulated 
+in the Operating System also.
+If the CPU gets the processes of the higher burst time at the front end of the ready 
+queue then the processes of lower burst time may get blocked which means they 
+may never get the CPU if the job in the execution has a very high burst time. This is 
+called convoy effect or starvation.
+
+Example
+In the Example, We have 3 processes named as P1, P2 and P3. The Burt Time of 
+process P1 is highest.
+The Turnaround time and the waiting time in the following table, are calculated by 
+the formula,
+1. Turn Around Time = Completion Time - Arrival Time  
+2.     Waiting Time = Turn Around Time - Burst Time   
+In the First scenario, The Process P1 arrives at the first in the queue although; the 
+burst time of the process is the highest among all. Since, the Scheduling algorithm, 
+we are following is FCFS hence the CPU will execute the Process P1 first.
+In this schedule, the average waiting time of the system will be very high. That is 
+because of the convoy effect. The other processes P2, P3 have to wait for their turn 
+for 40 units of time although their burst time is very low. This schedule suffers from 
+starvation.
+         Avg waiting Time = 81/3
+In the Second scenario, If Process P1 would have arrived at the last of the queue 
+and the other processes P2 and P3 at earlier then the problem of starvation would 
+not be there.
+Following example shows the deviation in the waiting times of both the scenarios. 
+Although the length of the schedule is same that is 44 units but the waiting time will 
+be lesser in this schedule.
+
+         Avg Waiting Time=6/3
+2. Shortest Job First (SJF) Scheduling
+Till now, we were scheduling the processes according to their arrival time (in FCFS 
+scheduling). However, SJF scheduling algorithm, schedules the processes according 
+to their burst time.
+In SJF scheduling, the process with the lowest burst time, among the list of available 
+processes in the ready queue, is going to be scheduled next.
+However, it is very difficult to predict the burst time needed for a process hence this 
+algorithm is very difficult to implement in the system.
+Advantages of SJF
+1. Maximum throughput
+2. Minimum average waiting and turnaround time
+Disadvantages of SJF
+1. May suffer with the problem of starvation
+2. It is not implementable because the exact Burst time for a process can't be 
+known in advance.
+There are different techniques available by which, the CPU burst time of the process 
+can be determined. We will discuss them later in detail.
+
+Example
+In the following example, there are five jobs named as P1, P2, P3, P4 and P5. Their 
+arrival time and burst time are given in the table below.
+Since, No Process arrives at time 0 hence; there will be an empty slot in the Gantt 
+chart from time 0 to 1 (the time at which the first process arrives).
+According to the algorithm, the OS schedules the process which is having the lowest 
+burst time among the available processes in the ready queue.
+Till now, we have only one process in the ready queue hence the scheduler will 
+schedule this to the processor no matter what is its burst time.
+This will be executed till 8 units of time. Till then we have three more processes 
+arrived in the ready queue hence the scheduler will choose the process with the 
+lowest burst time.
+Among the processes given in the table, P3 will be executed next since it is having 
+the lowest burst time among all the available processes.
+So that's how the procedure will go on in shortest job first (SJF) scheduling 
+algorithm.
+         Avg Waiting Time = 27/5
+
+3.
+Round Robin Scheduling Algorithm
+Round Robin scheduling algorithm is one of the most popular scheduling algorithm 
+which can actually be implemented in most of the operating systems. This is 
+the preemptive version of first come first serve scheduling. The Algorithm focuses 
+on Time Sharing. In this algorithm, every process gets executed in a cyclic way. A 
+certain time slice is defined in the system which is called time quantum. Each 
+process present in the ready queue is assigned the CPU for that time quantum, if the 
+execution of the process is completed during that time then the process 
+will terminate else the process will go back to the ready queue and waits for the 
+next turn to complete the execution.
+Advantages
+1. It can be actually implementable in the system because it is not depending on 
+the burst time.
+2. It doesn't suffer from the problem of starvation or convoy effect.
+3. All the jobs get a fare allocation of CPU.
+
+Disadvantages
+1. The higher the time quantum, the higher the response time in the system.
+2. The lower the time quantum, the higher the context switching overhead in 
+the system.
+3. Deciding a perfect time quantum is really a very difficult task in the system.
+https://www.cs.uic.edu/~jbell/CourseNotes
+/OperatingSystems/5_CPU_Scheduling.html
+4.Shortest Remaining Time
+
+Shortest remaining time (SRT) is the preemptive version of the SJN 
+algorithm.
+
+The processor is allocated to the job closest to completion but it can be 
+preempted by a newer ready job with shorter time to completion.
+
+Impossible to implement in interactive systems where required CPU time is 
+not known.
+
+It is often used in batch environments where short jobs need to give 
+preference.
+
+Example: Consider four processes with arrival time and burst time mentioned 
+below in table.
+Gantt chart: 
+
+5.Priority Scheduling Algorithm 
+Types of Priority Scheduling Algorithm
+Priority scheduling can be of two types:
+1. Preemptive Priority Scheduling: If the new process arrived at the ready 
+queue has a higher priority than the currently running process, the CPU is 
+preempted, which means the processing of the current process is stoped and 
+the incoming new process with higher priority gets the CPU for its execution.
+2. Non-Preemptive Priority Scheduling: In case of non-preemptive priority 
+scheduling algorithm if a new process arrives with a higher priority than the 
+current running process, the incoming process is put at the head of the ready 
+queue, which means after the execution of the current process it will be 
+processed.
+Example of Priority Scheduling Algorithm
+
+Consider the below table for processes with their respective CPU burst times and the 
+
+priorities.
+
+As you can see in the GANTT chart that the processes are given CPU time just on 
+the basis of the priorities.
+Problem with Priority Scheduling Algorithm
+In priority scheduling algorithm, the chances of indefinite blocking or starvation.
+A process is considered blocked when it is ready to run but has to wait for the CPU 
+as some other process is running currently.
+But in case of priority scheduling if new higher priority processes keeps coming in 
+the ready queue then the processes waiting in the ready queue with lower priority 
+may have to wait for long durations before getting the CPU for execution.
+Threads
+Definition: A thread is a path of execution within a process. A process can 
+contain multiple threads.
+There is a way of thread execution inside the process of any operating system. Apart 
+from this, there can be more than one thread inside a process. Thread is often 
+referred to as a lightweight process.
+
+The process can be split down into so many threads. For example, in a browser, 
+many tabs can be viewed as threads. MS Word uses many threads - formatting text 
+from one thread, processing input from another thread, etc.
+A thread is a flow of execution through the process code, with its own program 
+counter that keeps track of which instruction to execute next, system registers which 
+hold its current working variables, and a stack which contains the execution history.
+A thread shares with its peer threads few information like code segment, data 
+segment and open files. When one thread alters a code segment memory item, all 
+other threads see that.
+A thread is also called a lightweight process. Threads provide a way to improve 
+application performance through parallelism. Threads represent a software 
+approach to improving performance of operating system by reducing the overhead 
+thread is equivalent to a classical process.
+Each thread belongs to exactly one process and no thread can exist outside a 
+process. Each thread represents a separate flow of control. Threads have been 
+successfully used in implementing network servers and web server. They also 
+provide a suitable foundation for parallel execution of applications on shared 
+memory multiprocessors. The following figure shows the working of a single-
+threaded and a multithreaded process.
+Difference between Process and Thread
+S.N.
+Process
+Thread
+
+1
+Process is heavy weight or resource 
+intensive.
+Thread is light weight, taking lesser resources 
+than a process.
+2
+Process switching needs interaction 
+with operating system.
+Thread switching does not need to interact 
+with operating system.
+3
+In multiple processing environments, 
+each process executes the same 
+code but has its own memory and 
+file resources.
+All threads can share same set of open files, 
+child processes.
+4
+If one process is blocked, then no 
+other process can execute until the 
+first process is unblocked.
+While one thread is blocked and waiting, a 
+second thread in the same task can run.
+5
+Multiple processes without using 
+threads use more resources.
+Multiple threaded processes use fewer 
+resources.
+6
+In multiple processes each process 
+operates independently of the 
+others.
+One thread can read, write or change another 
+thread's data.
+Types of Threads
+In the operating system, there are two types of threads.
+1. Kernel level thread.
+2. User-level thread.
+User-level thread
+
+The operating system does not recognize the user-level thread. User threads can be 
+easily implemented and it is implemented by the user. If a user performs a user-
+level thread blocking operation, the whole process is blocked. The kernel level 
+thread does not know nothing about the user level thread. The kernel-level thread 
+manages user-level threads as if they are single-threaded 
+processes?examples: Java thread, POSIX threads, etc.
+Advantages of User-level threads
+1. The user threads can be easily implemented than the kernel thread.
+2. User-level threads can be applied to such types of operating systems that do 
+not support threads at the kernel-level.
+3. It is faster and efficient.
+4. Context switch time is shorter than the kernel-level threads.
+5. It does not require modifications of the operating system.
+6. User-level threads representation is very simple. The register, PC, stack, and 
+mini thread control blocks are stored in the address space of the user-level 
+process.
+7. It is simple to create, switch, and synchronize threads without the 
+intervention of the process.
+Disadvantages of User-level threads
+
+1. User-level threads lack coordination between the thread and the kernel.
+2. If a thread causes a page fault, the entire process is blocked.
+Kernel level thread
+The kernel thread recognizes the operating system. There are a thread control block 
+and process control block in the system for each thread and process in the kernel-
+level thread. The kernel-level thread is implemented by the operating system. The 
+kernel knows about all the threads and manages them. The kernel-level thread 
+offers a system call to create and manage the threads from user-space. The 
+implementation of kernel threads is difficult than the user thread. Context switch 
+time is longer in the kernel thread. If a kernel thread performs a blocking operation, 
+the Banky thread execution can continue. Example: Window Solaris.
+Advantages of Kernel-level threads
+1. The kernel-level thread is fully aware of all threads.
+2. The scheduler may decide to spend more CPU time in the process of threads 
+being large numerical.
+3. The kernel-level thread is good for those applications that block the 
+frequency.
+Disadvantages of Kernel-level threads
+1. The kernel thread manages and schedules all threads.
+2. The implementation of kernel threads is difficult than the user thread.
+3. The kernel-level thread is slower than user-level threads.
+Difference between User-Level & Kernel-Level Thread
+S.N.
+User-Level Threads
+Kernel-Level Thread
+1
+User-level threads are faster to create and 
+manage.
+Kernel-level threads are slower to 
+create and manage.
+2
+Implementation is by a thread library at the user 
+level.
+Operating system supports creation of 
+Kernel threads.
+3
+User-level thread is generic and can run on any 
+operating system.
+Kernel-level thread is specific to the 
+operating system.
+
+4
+Multi-threaded applications cannot take 
+advantage of multiprocessing.
+Kernel routines themselves can be 
+multithreaded.
+Conept of Multithreading
+Some operating system provide a combined user level thread and Kernel level 
+thread facility. Solaris is a good example of this combined approach. In a combined 
+system, multiple threads within the same application can run in parallel on multiple 
+processors and a blocking system call need not block the entire process. 
+Multithreading models are three types
+
+Many to many relationship.
+
+Many to one relationship.
+
+One to one relationship.
+Many to Many Model
+The many-to-many model multiplexes any number of user threads onto an equal or 
+smaller number of kernel threads.
+The following diagram shows the many-to-many threading model where 6 user level 
+threads are multiplexing with 6 kernel level threads. In this model, developers can 
+create as many user threads as necessary and the corresponding Kernel threads 
+can run in parallel on a multiprocessor machine. This model provides the best 
+accuracy on concurrency and when a thread performs a blocking system call, the 
+kernel can schedule another thread for execution.
+
+Many to One Model
+Many-to-one model maps many user level threads to one Kernel-level thread. 
+Thread management is done in user space by the thread library. When thread 
+makes a blocking system call, the entire process will be blocked. Only one thread 
+can access the Kernel at a time, so multiple threads are unable to run in parallel on 
+multiprocessors.
+If the user-level thread libraries are implemented in the operating system in such a 
+way that the system does not support them, then the Kernel threads use the many-
+to-one relationship modes.
+
+One to One Model
+There is one-to-one relationship of user-level thread to the kernel-level thread. This 
+model provides more concurrency than the many-to-one model. It also allows 
+another thread to run when a thread makes a blocking system call. It supports 
+multiple threads to execute in parallel on microprocessors.
+Disadvantage of this model is that creating user thread requires the corresponding 
+Kernel thread. OS/2, windows NT and windows 2000 use one to one relationship 
+model.
+

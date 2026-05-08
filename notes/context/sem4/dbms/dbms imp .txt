@@ -1,0 +1,155 @@
+Q.1 
+1.What is DDL and DML commands. Write syntax and examples for DDL and DML commands. 
+2.Discuss with suitable example Extended E-R features Specialization, Generalization and 
+aggregation, 
+3.Explain any five relational algebra operators with suitable example. 
+4.Compare File Processing System with Database Management system 
+5.Define with an example different type of Entities in ER diagram 
+6.Define Triggers. Write syntax and example of trigger. of tris 
+7.Explain type of functional dependency with suitable example. 
+8.Describe types of Entities with example. 
+9.Identify different users of database management system 
+10.Explain all types of integrity constraints with an examples? 
+11.Discuss Log based recovery with an example 
+12.Explain the concept of data independence Discuss the differences between 
+13.logical and physical data independence 
+14.List and briefly explain SQL aggregate functions with suitable examples 
+15.Explain the concept of First Normal Form (INF). Give example for the same. 
+16.Discuss conflict serializability with suitable example. 
+17.What is data abstraction  
+18.Draw Extended E-R diagram for Hospital Management System. 
+Q.2 
+1.Explain different types of users for database system and explain responsibilities of DBA. 
+2.What is Normalization. Explain 1 NF,2 NF,3NF with suitable example. 
+3.Design an EER diagram for Hospital Management System. And map it into relational model. 
+Assume Suitable data. 
+
+4.Discuss three layer schema architecture with suitable diagram. What is Data Independence? 
+Explain types of data independence. 
+5.What is deadlock? Give deadlock prevention methods with suitable example 
+6.Describe the overall architecture of DBMS with suitable diagram 
+7.Explain wait-die and wound-wait methods with suitable example 
+ 8.Explain types of joins with suitable example. 
+ 9.Write SQL expression for the following queries 
+Consider Employee relation (Emp_no, Emp_name,Emp_add, ph_no,email_id,salary) 
+Q.3 
+1.In a Hospital Management System there are many departments and many patients. Doctors 
+work in various departments and treat multiple patients. Patients undergo multiple tests, and 
+each test is conducted by lab technicians under a specific department. 
+2.Consider the above scenario and draw an E-R diagram. (Represent proper cardinalities) 
+3.Explain types of joins with suitable example. 
+A Consider the following employee database. 
+Employee (empname, street, city, date_of_joining) 
+Works (empname, company_name,salary) 
+any Company (company_name, city) 
+Manages (empname, manager_name) 
+Write the SQL queries queries for each of the statements given below 
+a) Modify the database so that 'John' now lives in 'Mumbai 
+b) Find all employees who joined in the month of 
+c) Give all employees of 'ABC Corporation' a 10% raise. 
+d) Find all employees in the database who live in the same cities as the companies for which 
+they work 
+e) Find all employees who earn more than average salary of all employees of their company 
+
+ 
+ 
+4.Construct an ER diagram and convert it into a relational model for a company which has 
+several employees working on different types of Projects. Several employees are working for 
+one department, every department has a manager. Several employees are supervised by one 
+employee. Employees have zero or more dependents 
+5.Explain the following Relational Algebra operations with suitable example. 
+1) Generalized Project 
+2) Select 
+3) Union 
+ 4) Rename 
+5) Natural Join 
+6)set difference 
+6.Draw an E-R diagram for library management system. Convert it into relational schema 
+ 
+Q.4 
+1.What is 2PL. Exapain its types. 
+ 
+2.Write SQL queries for the given database 
+Book(book id, title, author, cost) 
+Store(store no, city, state, inventory_val) 
+Stock(store_no, book_id,quantity) 
+(i) Modify the cost of DBMS books by 10% 
+(ii) Find the total number of books in Mumbai stores 
+(iii) Find title of all books whose title contains the word ' 
+(iv)Find title of the most ensive book 
+
+(v)Add a new record in Book(Assume values as per requirement 
+3.Write SQL queries for given database. 
+employee (eno, ename, bdate, title, salary, dno) 
+project (pno, pname, budget, dno) 
+department (dno, dname, mgreno) 
+works (eno, pno, resp, hours) 
+1) Find the project number and name for projects with a budget greater than 100,000. 
+2) Find the employees (name only) in department 'DI' ordered by descending salary. 
+3) Find all works records where hours worked is less than 10 and the responsibility is 'Manager'. 
+4) Find name of employees that are ending with letter 's'. 
+5) Find total number of employee. 
+6) Write the query to in increase salary of the employees by 10%. 
+7) Find Employee name with maximum salary. 
+ 
+4.Explain all types of integrity constraints with an example? 
+5.Explain concurrency control and explain time Stamp based protocol of concurrency control. 
+Q.5 
+1.Write the SQL expression for the following. 
+customer(cust_id, cname, caddress, ph_no, balance) 
+i) Find the names of customers whose name starts with the letter 'A'. 
+ii) Add one record with the values (105, 'Rakhi', 'Malad', 9826756045, 3400). 
+iii) Remove the data of the customer whose name is 'Abhay' and phone number is 8890654312. 
+iv) Find the total number of customers. 
+2.Define view. Write syntax of creation of view considering suitable example. 
+3.Explain conflict serializability with suitable example. 
+
+4.Describe ACID properties with examples and explain state transition diagram of 
+transaction. 
+5.Write note on 
+i) Log based protocol 
+ii) Timestamp-based protocols 
+ 
+6.Give example of serial schedule and equivalent to serial schedule with respect to conflict 
+serailízability. Discuss conflict serializability with example 
+7.Explain Lock based (2PL) concurrency control method with example 
+8.Design an EER schema for a BANK database. 
+9.Each bank can have multiple branches, and each branch can have multiple account and loans. 
+Bank keeps the track of different types of Accounts (Saving_aacount Checking_account), Loans 
+(Car_loans,Home_loans,...), each account's Transaction (deposit, withdrawal.check...) and each 
+loan's Payments; both of these include the amount, date and time. 
+10.State any assumptions you make about the additional requirement clearly. 
+Q.6 
+1.Write note on any two 
+a) ACID properties of transaction with 
+b) Transaction state diagram and explain TCL commands 
+c) Types of users in DBMS 
+ 
+2.Conversion of Specialization to relational schema with suitable example 
+a Log based recovery 
+b Role of DBA 
+c Types of attributes 
+d 2PL concurrency control protocol 
+e Triggers 
+
+f Lossless decomposition 
+ 
+3.Explain concept of Serializability along with Conflict Serializability and View 
+Serializability 
+4.Explain in detail with example of conflict and view serializability. 
+ 
+5.Explain following Integrity constraints: 
+a) Key Constraints. 
+b) Domain Constraints (Null & Default Constraints 
+c) Referential Constraints 
+d) Check Constraints. 
+ 
+6.Write short note on Log based recovery mechanism 
+7.Write a note on Time stamp ordering protocol. 
+ 
+ 
+ 
+
+ 
+ 
+ 

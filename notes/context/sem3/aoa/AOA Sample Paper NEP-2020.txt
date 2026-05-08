@@ -1,0 +1,163 @@
+ 
+ 
+SAMPLE PAPER/SUBJECT CODE: 2113113/ ANALYSIS OF ALGORITHM 
+SE SEM-III COMPS / AIML / AIDS (NEP 2020) ANALYSIS OF ALGIRITHM QP CODE: 123456789 
+TIME: 2.0 Hours 
+ 
+ 
+ 
+Dec-2025 
+ 
+ 
+ 
+ 
+MARKS : 60 
+Question 1 is compulsory. 
+Attempt any 3 from question 2 to 6. 
+ScientiƱc Calculator is allowed to use. 
+ 
+1. Attempt Any 5 Questions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(15) 
+a. Explain Asymptotic Notations. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(3) 
+b. Explain Binary Search with an Example. 
+ 
+ 
+ 
+ 
+ 
+ 
+(3) 
+c. What is Greedy Method? Explain Krushkal’s Algorithm for Ʊnding a minimum cost spanning 
+tree. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(3) 
+d. Explain 0/1 Knapsack problem using Dynamic Programming Approach  
+ 
+(3) 
+e. Write a Short Note On Graph Coloring Problem using Backtracking 
+ 
+ 
+(3) 
+f. Explain Navie String Matching Algorithm   
+ 
+ 
+ 
+ 
+ 
+(3) 
+ 
+2. A) Explain 4-Queen Problem Using Backtracking  
+ 
+ 
+ 
+ 
+(8) 
+B) Write algorithm for Quick Sort. Derive it’s Time Complexity 
+ 
+ 
+ 
+(7) 
+ 
+3. A) Perform Dijkstra’s Algorithm using Greedy Approach  
+ 
+ 
+ 
+(8) 
+ 
+ 
+ 
+B) Find the longest common subsequence between A: ABCDE, B: EDCBA 
+ 
+(7) 
+ 
+4. A) Explain 15 Puzzle Problem using branch and bound strategy.  
+ 
+ 
+(8) 
+B) Write an algorithm for KMP & Given the text AABAACAADAABAABA and the pattern AABA, 
+use the Knuth–Morris–Pratt (KMP) algorithm to Ʊnd all occurrences of the pattern in the text. 
+Also, show the construction of the LPS (Longest PreƱx SuƯix) array for the pattern. (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+5. A) Solve the Question Using Single Source Shortest Path : 
+ 
+ 
+ 
+(7) 
+ 
+ 
+B) Find minimum path cost between vertex s and t for following multistage graph using 
+dynamic programming. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(8) 
+ 
+ 
+ 
+ 
+6. A) Using the Backtracking approach, Ʊnd all subsets of the set S = {5, 10, 12, 13, 15, 18}, that 
+have the sum equal to 30. Show the state-space tree and explain how backtracking avoids 
+unnecessary recursive calls. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(7) 
+B) Using Dynamic Programming, solve the Travelling Salesman Problem (TSP) for the following 
+cost matrix. The salesman starts from city A and must visit all other cities exactly once before 
+returning to A. 
+Find the minimum cost and the path taken. 
+ 
+ 
+ 
+ 
+ 
+(8) 
+ 
+ 

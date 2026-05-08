@@ -1,0 +1,284 @@
+Module 5
+File Management
+What is a File ?
+A file can be defined as a data structure which stores the sequence of records. Files are 
+stored in a file system, which may exist on a disk or in the main memory. Files can be 
+simple (plain text) or complex (specially-formatted).
+The collection of files is known as Directory. The collection of directories at the different 
+levels, is known as File System.
+Attributes of the File
+1.Name
+Every file carries a name by which the file is recognized in the file system. One 
+directory cannot have two files with the same name.
+
+2.Identifier
+Along with the name, Each File has its own extension which identifies the type of the 
+file. For example, a text file has the extension .txt, A video file can have the 
+extension .mp4.
+3.Type
+In a File System, the Files are classified in different types such as video files, audio 
+files, text files, executable files, etc.
+4.Location
+In the File System, there are several locations on which, the files can be stored. Each 
+file carries its location as its attribute.
+5.Size
+The Size of the File is one of its most important attribute. By size of the file, we mean 
+the number of bytes acquired by the file in the memory.
+6.Protection
+The Admin of the computer may want the different protections for the different files. 
+Therefore each file carries its own set of permissions to the different group of Users.
+7.Time and Date
+Every file carries a time stamp which contains the time and date on which the file is last 
+modified.
+Operations on the File
+There are various operations which can be implemented on a file. We will see all of 
+them in detail.
+1.Create
+Creation of the file is the most important operation on the file. Different types of files 
+are created by different methods for example text editors are used to create a text file, 
+word processors are used to create a word file and Image editors are used to create the 
+image files.
+2.Write
+Writing the file is different from creating the file. The OS maintains a write pointer for 
+every file which points to the position in the file from which, the data needs to be 
+written.
+
+3.Read
+Every file is opened in three different modes : Read, Write and append. A Read pointer 
+is maintained by the OS, pointing to the position up to which, the data has been read.
+4.Re-position
+Re-positioning is simply moving the file pointers forward or backward depending upon 
+the user's requirement. It is also called as seeking.
+5.Delete
+Deleting the file will not only delete all the data stored inside the file, It also deletes all 
+the attributes of the file. The space which is allocated to the file will now become 
+available and can be allocated to the other files.
+6.Truncate
+Truncating is simply deleting the file except deleting attributes. The file is not 
+completely deleted although the information stored inside the file get replaced.
+File Access Methods
+Let's look at various ways to access files stored in secondary memory.
+Sequential Access
+
+Most of the operating systems access the file sequentially. In other words, we can say 
+that most of the files need to be accessed sequentially by the operating system.
+In sequential access, the OS read the file word by word. A pointer is maintained which 
+initially points to the base address of the file. If the user wants to read first word of the 
+file then the pointer provides that word to the user and increases its value by 1 word. 
+This process continues till the end of the file.
+Modern word systems do provide the concept of direct access and indexed access but 
+the most used method is sequential access due to the fact that most of the files such as 
+text files, audio files, video files, etc need to be sequentially accessed.
+Direct Access
+The Direct Access is mostly required in the case of database systems. In most of the 
+cases, we need filtered information from the database. The sequential access can be 
+very slow and inefficient in such cases.
+Suppose every block of the storage stores 4 records and we know that the record we 
+needed is stored in 10th block. In that case, the sequential access will not be 
+implemented because it will traverse all the blocks in order to access the needed 
+record.
+Direct access will give the required result despite of the fact that the operating system 
+has to perform some complex tasks such as determining the desired block number. 
+However, that is generally implemented in database applications.
+
+Indexed Access
+If a file can be sorted on any of the filed then an index can be assigned to a group of 
+certain records. However, A particular record can be accessed by its index. The index is 
+nothing but the address of a record in the file.
+In index accessing, searching in a large database became very quick and easy but we 
+need to have some extra space in the memory to store the index value.
+Directory Structure
+What is a directory?
+Directory can be defined as the listing of the related files on the disk. The directory may 
+store some or the entire file attributes.
+To get the benefit of different file systems on the different operating systems, A hard 
+disk can be divided into the number of partitions of different sizes. The partitions are 
+also called volumes or mini disks.
+
+Each partition must have at least one directory in which, all the files of the partition can 
+be listed. A directory entry is maintained for each file in the directory which stores all 
+the information related to that file.
+A directory can be viewed as a file which contains the Meta data of the bunch of files.
+Every Directory supports a number of common operations on the file:
+1. File Creation
+2. Search for the file
+3. File deletion
+4. Renaming the file
+5. Traversing Files
+6. Listing of files
+Single Level Directory
+The simplest method is to have one big list of all the files on the disk. The entire system 
+will contain only one directory which is supposed to mention all the files present in the 
+file system. The directory contains one entry per each file present on the file system.
+
+This type of directories can be used for a simple system.
+Advantages
+1. Implementation is very simple.
+2. If the sizes of the files are very small then the searching becomes faster.
+3. File creation, searching, deletion is very simple since we have only one directory.
+Disadvantages
+1. We cannot have two files with the same name.
+2. The directory may be very big therefore searching for a file may take so much 
+time.
+3. Protection cannot be implemented for multiple users.
+4. There are no ways to group same kind of files.
+5. Choosing the unique name for every file is a bit complex and limits the number 
+of files in the system because most of the Operating System limits the number of 
+characters used to construct the file name.
+Two Level Directory
+In two level directory systems, we can create a separate directory for each user. There 
+is one master directory which contains separate directories dedicated to each user. For 
+each user, there is a different directory present at the second level, containing group of 
+user's file. The system doesn't let a user to enter in the other user's directory without 
+permission.
+
+Characteristics of two level directory system
+1. Each files has a path name as /User-name/directory-name/
+2. Different users can have the same file name.
+3. Searching becomes more efficient as only one user's list needs to be traversed.
+4. The same kind of files cannot be grouped into a single directory for a particular 
+user.
+Every Operating System maintains a variable as PWD which contains the present 
+directory name (present user name) so that the searching can be done appropriately.
+Tree Structured Directory
+In Tree structured directory system, any directory entry can either be a file or sub 
+directory. Tree structured directory system overcomes the drawbacks of two level 
+directory system. The similar kind of files can now be grouped in one directory.
+Each user has its own directory and it cannot enter in the other user's directory. 
+However, the user has the permission to read the root's data but he cannot write or 
+modify this. Only administrator of the system has the complete access of root directory.
+Searching is more efficient in this directory structure. The concept of current working 
+directory is used. A file can be accessed by two types of path, either relative or 
+absolute.
+Absolute path is the path of the file with respect to the root directory of the system 
+while relative path is the path with respect to the current working directory of the 
+
+system. In tree structured directory systems, the user is given the privilege to create 
+the files as well as directories.
+Permissions on the file and directory
+A tree structured directory system may consist of various levels therefore there is a set 
+of permissions assigned to each file and directory.
+The permissions are R W X which are regarding reading, writing and the execution of 
+the files or directory. The permissions are assigned to three types of users: owner, 
+group and others.
+There is a identification bit which differentiate between directory and file. For a 
+directory, it is d and for a file, it is dot (.)
+Acyclic-Graph Structured Directories
+The tree structured directory system doesn't allow the same file to exist in multiple 
+directories therefore sharing is major concern in tree structured directory system. We 
+can provide sharing by making the directory an acyclic graph. In this system, two or 
+more directory entry can point to the same file or sub directory. That file or sub 
+directory is shared between the two directory entries.
+These kinds of directory graphs can be made using links or aliases. We can have 
+multiple paths for a same file. Links can either be symbolic (logical) or hard link 
+(physical).
+If a file gets deleted in acyclic graph structured directory system, then
+
+1. In the case of soft link, the file just gets deleted and we are left with a dangling 
+pointer.
+2. In the case of hard link, the actual file will be deleted only if all the references to it 
+gets deleted.
+File Systems
+File system is the part of the operating system which is responsible for file 
+management. It provides a mechanism to store the data and access to the file contents 
+including data and programs. Some Operating systems treats everything as a file for 
+example Ubuntu.
+The File system takes care of the following issues
+o
+File Structure
+We have seen various data structures in which the file can be stored. The task of 
+the file system is to maintain an optimal file structure.
+o
+Recovering Free space
+Whenever a file gets deleted from the hard disk, there is a free space created in 
+the disk. There can be many such spaces which need to be recovered in order to 
+reallocate them to other files.
+o
+disk space assignment to the files
+
+The major concern about the file is deciding where to store the files on the hard 
+disk. There are various disks scheduling algorithm which will be covered later in 
+this tutorial.
+o
+tracking data location
+A File may or may not be stored within only one block. It can be stored in the 
+non contiguous blocks on the disk. We need to keep track of all the blocks on 
+which the part of the files reside.
+File System Structure
+File System provide efficient access to the disk by allowing data to be stored, located 
+and retrieved in a convenient way. A file System must be able to store the file, locate 
+the file and retrieve the file.
+Most of the Operating Systems use layering approach for every task including file 
+systems. Every layer of the file system is responsible for some activities.
+The image shown below, elaborates how the file system is divided in different layers, 
+and also the functionality of each layer.
+
+o
+When an application program asks for a file, the first request is directed to the 
+logical file system. The logical file system contains the Meta data of the file and 
+directory structure. If the application program doesn't have the required 
+permissions of the file then this layer will throw an error. Logical file systems 
+also verify the path to the file.
+o
+Generally, files are divided into various logical blocks. Files are to be stored in 
+the hard disk and to be retrieved from the hard disk. Hard disk is divided into 
+various tracks and sectors. Therefore, in order to store and retrieve the files, the 
+
+logical blocks need to be mapped to physical blocks. This mapping is done by File 
+organization module. It is also responsible for free space management.
+o
+Once File organization module decided which physical block the application 
+program needs, it passes this information to basic file system. The basic file 
+system is responsible for issuing the commands to I/O control in order to fetch 
+those blocks.
+o
+I/O controls contain the codes by using which it can access hard disk. These 
+codes are known as device drivers. I/O controls are also responsible for handling 
+interrupts.
+Directory Implementation
+There is the number of algorithms by using which, the directories can be implemented. 
+However, the selection of an appropriate directory implementation algorithm may 
+significantly affect the performance of the system.
+The directory implementation algorithms are classified according to the data structure 
+they are using. There are mainly two algorithms which are used in these days.
+1. Linear List
+In this algorithm, all the files in a directory are maintained as singly lined list. Each file 
+contains the pointers to the data blocks which are assigned to it and the next file in the 
+directory.
+Characteristics
+1. When a new file is created, then the entire list is checked whether the new file 
+name is matching to a existing file name or not. In case, it doesn't exist, the file 
+can be created at the beginning or at the end. Therefore, searching for a unique 
+name is a big concern because traversing the whole list takes time.
+2. The list needs to be traversed in case of every operation (creation, deletion, 
+updating, etc) on the files therefore the systems become inefficient.
+
+2. Hash Table
+To overcome the drawbacks of singly linked list implementation of directories, there is 
+an alternative approach that is hash table. This approach suggests to use hash table 
+along with the linked lists.
+A key-value pair for each file in the directory gets generated and stored in the hash 
+table. The key can be determined by applying the hash function on the file name while 
+the key points to the corresponding file stored in the directory.
+Now, searching becomes efficient due to the fact that now, entire list will not be 
+searched on every operating. Only hash table entries are checked using the key and if 
+an entry found then the corresponding file will be fetched using the value.
+Inode
+In UNIX based operating systems, each file is indexed by an Inode. Inode are the 
+special disk block which is created with the creation of the file system. The number of 
+files or directories in a file system depends on the number of Inodes in the file system.
+
+An Inode includes the following information
+1. Attributes (permissions, time stamp, ownership details, etc) of the file
+2. A number of direct blocks which contains the pointers to first 12 blocks of the 
+file.
+3. A single indirect pointer which points to an index block. If the file cannot be 
+indexed entirely by the direct blocks then the single indirect pointer is used.
+4. A double indirect pointer which points to a disk block that is a collection of the 
+pointers to the disk blocks which are index blocks. Double index pointer is used if 
+the file is too big to be indexed entirely by the direct blocks as well as the single 
+indirect pointer.
+5. A triple index pointer that points to a disk block that is a collection of pointers. 
+Each of the pointers is separately pointing to a disk block which also contains a 
+collection of pointers which are separately pointing to an index block that 
+contains the pointers to the file blocks.
