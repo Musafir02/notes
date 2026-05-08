@@ -1,8 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Header from '../components/Header'
-import PdfViewer from '../components/PdfViewer'
-import { preloadPdfLib, prefetchPdf } from '../utils/pdfLoader'
 import { SEMESTERS } from '../data/notes'
 
 function IconPdf() {
@@ -27,8 +25,6 @@ export default function SubjectPage() {
   const sem = SEMESTERS.find((s) => s.id === Number(semId))
   const subject = sem?.subjects.find((s) => s.id === subjectId)
 
-  useEffect(() => { preloadPdfLib() }, [])
-
   if (activePdf) {
     return (
       <div className="app app--viewer">
@@ -41,7 +37,11 @@ export default function SubjectPage() {
           </div>
         </div>
         <div className="pdf-viewer-wrap">
-          <PdfViewer url={buildPdfUrl(activePdf.path)} />
+          <iframe
+            src={buildPdfUrl(activePdf.path)}
+            title={activePdf.name}
+            className="pdf-iframe"
+          />
         </div>
       </div>
     )
@@ -66,7 +66,7 @@ export default function SubjectPage() {
               <p className="section-label">Notes</p>
               <div className="pdfs-list">
                 {subject.pdfs.map((pdf, idx) => (
-                  <button key={idx} className="pdf-item" onClick={() => setActivePdf(pdf)} onMouseEnter={() => prefetchPdf(buildPdfUrl(pdf.path))}>
+                  <button key={idx} className="pdf-item" onClick={() => setActivePdf(pdf)}>
                     <span className="pdf-item-icon">
                       <IconPdf />
                     </span>
