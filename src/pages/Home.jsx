@@ -96,6 +96,7 @@ export default function Home() {
               <StatBox value={totalNotes} label="Notes" />
             </div>
           </div>
+
         </section>
 
         <section className="section-semesters container">
