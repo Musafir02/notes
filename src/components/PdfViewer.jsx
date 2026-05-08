@@ -41,7 +41,7 @@ function PdfPage({ pdf, pageNum, containerWidth }) {
           /* render error — placeholder stays */
         }
       },
-      { rootMargin: '600px' },
+      { rootMargin: '200px' },
     )
 
     observer.observe(canvas)
@@ -97,7 +97,12 @@ export default function PdfViewer({ url }) {
     setNumPages(0)
     setError(null)
 
-    const task = lib.getDocument(url)
+    const task = lib.getDocument({
+      url,
+      rangeChunkSize: 65536,
+      disableAutoFetch: true,
+      disableStream: false,
+    })
     task.promise
       .then((loaded) => {
         if (!cancelled) {
