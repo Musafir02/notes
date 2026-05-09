@@ -21,6 +21,7 @@ function buildPdfUrl(pdfPath) {
 export default function SubjectPage() {
   const { semId, subjectId } = useParams()
   const [activePdf, setActivePdf] = useState(null)
+  const [iframeLoaded, setIframeLoaded] = useState(false)
 
   const sem = SEMESTERS.find((s) => s.id === Number(semId))
   const subject = sem?.subjects.find((s) => s.id === subjectId)
@@ -31,16 +32,24 @@ export default function SubjectPage() {
         <Header />
         <div className="viewer-bar">
           <div className="container viewer-bar-inner">
-            <button className="breadcrumb btn-bare" onClick={() => setActivePdf(null)}>
+            <button className="breadcrumb btn-bare" onClick={() => { setActivePdf(null); setIframeLoaded(false) }}>
               ← {subject?.name} — {activePdf.name}
             </button>
           </div>
         </div>
         <div className="pdf-viewer-wrap">
+          {!iframeLoaded && (
+            <div className="pdf-loading">
+              <span className="chat-loading-spinner" />
+              <p className="pdf-loading-label">Loading {activePdf.name}…</p>
+            </div>
+          )}
           <iframe
             src={buildPdfUrl(activePdf.path)}
             title={activePdf.name}
             className="pdf-iframe"
+            style={{ opacity: iframeLoaded ? 1 : 0 }}
+            onLoad={() => setIframeLoaded(true)}
           />
         </div>
       </div>
