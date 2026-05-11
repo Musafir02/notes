@@ -137,7 +137,7 @@ export const SEMESTERS = [
       },
       {
         id: 'ct',
-        name: 'Theory of Computation',
+        name: 'Computational Theory',
         pdfs: [
           { name: 'CT Complete Notes', path: 'sem4/ct/CT notes.pdf' },
           { name: 'CFG to CNF', path: 'sem4/ct/CFG TO CNF.pdf' },
